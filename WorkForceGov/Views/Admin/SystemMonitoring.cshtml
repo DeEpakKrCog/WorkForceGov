@@ -1,0 +1,37 @@
+@model IEnumerable<SystemLog>
+@{ ViewData["Title"] = "System Monitoring"; }
+
+<div class="page-header d-flex justify-content-between align-items-center">
+  <div>
+    <h1><i class="bi bi-activity me-2"></i>System Logs</h1>
+    <p>Monitor all platform activities in real time</p>
+  </div>
+  <span class="badge bg-primary" style="font-size:.875rem;padding:8px 14px;">@Model.Count() entries</span>
+</div>
+
+<div class="table-card">
+  <table class="table mb-0">
+    <thead>
+      <tr><th>User</th><th>Action</th><th>Resource</th><th>IP Address</th><th>Timestamp</th></tr>
+    </thead>
+    <tbody>
+    @foreach(var l in Model){
+      <tr>
+        <td><strong>@(l.User?.FullName ?? $"User #{l.UserId}")</strong></td>
+        <td>
+          <span class="badge-status @(l.Action.Contains("Login")?"badge-success":l.Action.Contains("Delete")?"badge-danger":l.Action.Contains("Reject")?"badge-danger":"badge-info")">
+            @l.Action
+          </span>
+        </td>
+        <td>@(l.Resource ?? "—")</td>
+        <td>@(l.IpAddress ?? "—")</td>
+        <td>@l.Timestamp.ToString("MMM dd, yyyy HH:mm:ss")</td>
+      </tr>}
+    @if(!Model.Any()){
+      <tr><td colspan="5" class="text-center text-muted py-5">
+        <i class="bi bi-clock-history" style="font-size:2rem;display:block;margin-bottom:8px;"></i>
+        No system logs yet. Logs appear when users log in, post jobs, upload documents, and more.
+      </td></tr>}
+    </tbody>
+  </table>
+</div>

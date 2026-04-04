@@ -1,0 +1,59 @@
+@model Training
+@{ 
+  ViewData["Title"] = "Edit Training";
+  var programs = ViewBag.Programs as IEnumerable<EmploymentProgram> ?? Enumerable.Empty<EmploymentProgram>();
+}
+
+<div class="page-header d-flex justify-content-between align-items-center">
+  <div><h1><i class="bi bi-pencil me-2"></i>Edit Training</h1></div>
+  <a href="/ProgramManager/TrainingManagement" class="btn btn-outline-secondary"><i class="bi bi-arrow-left me-1"></i>Back</a>
+</div>
+
+<div class="row"><div class="col-lg-7">
+  <div class="table-card" style="padding:32px;">
+    <form method="post" asp-action="EditTraining" asp-route-id="@Model.Id" asp-controller="ProgramManager">
+      @Html.AntiForgeryToken()
+      <div class="row g-3">
+        <div class="col-12">
+          <label class="form-label fw-semibold">Training Title <span class="text-danger">*</span></label>
+          <input name="Title" class="form-control" value="@Model.Title" required />
+        </div>
+        <div class="col-12">
+          <label class="form-label fw-semibold">Description</label>
+          <textarea name="Description" class="form-control" rows="3">@Model.Description</textarea>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Start Date <span class="text-danger">*</span></label>
+          <input name="StartDate" type="date" class="form-control" value="@Model.StartDate.ToString("yyyy-MM-dd")" required />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">End Date <span class="text-danger">*</span></label>
+          <input name="EndDate" type="date" class="form-control" value="@Model.EndDate.ToString("yyyy-MM-dd")" required />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Status</label>
+          <select name="Status" class="form-select">
+            @foreach(var s in new[]{"Active","Upcoming","Completed","Cancelled"})
+            {
+              <option value="@s" selected="@(Model.Status==s ? "selected" : null)">@s</option>
+            }
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Program <span class="text-danger">*</span></label>
+          <select name="ProgramId" class="form-select" required>
+            <option value="">-- Select Program --</option>
+            @foreach(var p in programs)
+            {
+              <option value="@p.Id" selected="@(Model.ProgramId==p.Id ? "selected" : null)">@p.ProgramName</option>
+            }
+          </select>
+        </div>
+        <div class="col-12 mt-2">
+          <button type="submit" class="btn btn-accent me-2"><i class="bi bi-save me-2"></i>Save Changes</button>
+          <a href="/ProgramManager/TrainingManagement" class="btn btn-outline-secondary">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div></div>

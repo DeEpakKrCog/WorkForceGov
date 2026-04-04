@@ -1,0 +1,6 @@
+@model IEnumerable<Employer>
+@{ ViewData["Title"] = "Employer Review"; }
+<div class="page-header"><h1>Employer Review</h1></div>
+<div class="table-card"><table class="table mb-0"><thead><tr><th>Company</th><th>Industry</th><th>Address</th><th>Status</th><th>Registered</th></tr></thead><tbody>
+@foreach(var e in Model){<tr><td><strong>@e.CompanyName</strong></td><td>@e.Industry</td><td>@e.Address</td><td><span class="badge-status @(e.Status=="Verified"?"badge-success":"badge-warning")">@e.Status</span></td><td>@e.RegistrationDate.ToString("MMM dd, yyyy")</td></tr>}
+</tbody></table></div>

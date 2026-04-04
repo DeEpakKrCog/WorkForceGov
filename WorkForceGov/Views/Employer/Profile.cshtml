@@ -1,0 +1,14 @@
+@model Employer
+@{ ViewData["Title"] = "Company Profile"; }
+<div class="page-header"><h1>Company Profile</h1></div>
+<div class="row"><div class="col-lg-7"><div class="table-card" style="padding:32px;">
+<form method="post" asp-action="Profile" asp-controller="Employer">@Html.AntiForgeryToken()
+<div class="row g-3">
+    <div class="col-md-6"><label class="form-label">Company Name</label><input name="CompanyName" class="form-control" value="@Model?.CompanyName" required /></div>
+    <div class="col-md-6"><label class="form-label">Industry</label><input name="Industry" class="form-control" value="@Model?.Industry" required /></div>
+    <div class="col-12"><label class="form-label">Address</label><textarea name="Address" class="form-control" rows="2">@Model?.Address</textarea></div>
+    <div class="col-md-6"><label class="form-label">Contact</label><input name="ContactInfo" class="form-control" value="@Model?.ContactInfo" /></div>
+    <div class="col-md-6"><label class="form-label">Status</label><input class="form-control" value="@Model?.Status" disabled /></div>
+</div>
+<button type="submit" class="btn btn-accent mt-4">Save Changes</button>
+</form></div></div></div>

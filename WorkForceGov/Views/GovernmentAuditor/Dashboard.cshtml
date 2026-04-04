@@ -1,0 +1,87 @@
+@model AuditorDashboardViewModel
+@{ ViewData["Title"] = "Auditor Dashboard"; }
+
+<div class="page-header"><h1><i class="bi bi-clipboard-data me-2"></i>Auditor Dashboard</h1><p>Government audit and compliance monitoring</p></div>
+
+@if(TempData["SuccessMessage"] != null){<div class="alert alert-success alert-dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert"></button>@TempData["SuccessMessage"]</div>}
+
+<!-- Stats -->
+<div class="row g-3 mb-4">
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#e0e7ff;color:#4f46e5;"><i class="bi bi-clipboard-data"></i></div><div class="stat-value">@Model.TotalAudits</div><div class="stat-label">Total Audits</div></div></div>
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fef3c7;color:#d97706;"><i class="bi bi-hourglass"></i></div><div class="stat-value">@Model.OpenAudits</div><div class="stat-label">Open Audits</div></div></div>
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dcfce7;color:#16a34a;"><i class="bi bi-check-circle"></i></div><div class="stat-value">@Model.CompletedAudits</div><div class="stat-label">Completed</div></div></div>
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fee2e2;color:#dc2626;"><i class="bi bi-x-circle"></i></div><div class="stat-value">@Model.NonCompliant</div><div class="stat-label">Non-Compliant</div></div></div>
+</div>
+
+<!-- Create Audit Form + Recent Audits -->
+<div class="row g-4">
+  <div class="col-lg-4">
+    <div class="table-card" style="padding:28px;">
+      <h6 style="font-weight:700;margin-bottom:16px;"><i class="bi bi-plus-square me-2"></i>Create New Audit</h6>
+      <form method="post" asp-action="CreateAudit" asp-controller="GovernmentAuditor">
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Scope</label>
+          <select name="Scope" class="form-select" required>
+            <option value="">-- Select Scope --</option>
+            <option value="Employer Compliance">Employer Compliance</option>
+            <option value="Financial Audit">Financial Audit</option>
+            <option value="Program Review">Program Review</option>
+            <option value="Labor Standards">Labor Standards</option>
+            <option value="Document Verification">Document Verification</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Findings / Notes</label>
+          <textarea name="Findings" class="form-control" rows="3" placeholder="Initial observations..."></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Status</label>
+          <select name="Status" class="form-select">
+            <option value="Open">Open</option>
+            <option value="In Progress">In Progress</option>
+          </select>
+        </div>
+        <input type="hidden" name="Date" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+        <button type="submit" class="btn btn-accent w-100"><i class="bi bi-save me-2"></i>Create Audit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-8">
+    <div class="table-card">
+      <div class="card-header-custom">
+        <span><i class="bi bi-list-check me-2"></i>Recent Audits</span>
+        <a href="/GovernmentAuditor/AuditReports" class="btn btn-sm btn-accent">View Reports</a>
+      </div>
+      <table class="table mb-0">
+        <thead><tr><th>Scope</th><th>Findings</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+        @foreach(var a in Model.RecentAudits){
+          <tr>
+            <td><strong>@a.Scope</strong></td>
+            <td style="max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">@a.Findings</td>
+            <td>@a.Date.ToString("MMM dd, yyyy")</td>
+            <td><span class="badge-status @(a.Status=="Completed"?"badge-success":a.Status=="Open"?"badge-warning":"badge-info")">@a.Status</span></td>
+          </tr>}
+        @if(!Model.RecentAudits.Any()){<tr><td colspan="4" class="text-center text-muted py-4">No audits yet. Create your first above.</td></tr>}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-card mt-4">
+      <div class="card-header-custom"><span><i class="bi bi-diagram-3 me-2"></i>Workforce Programs</span></div>
+      <div style="padding:8px 16px;">
+      @foreach(var p in Model.Programs){
+        <div style="padding:10px 0;border-bottom:1px solid #f1f5f9;display:flex;justify-content:space-between;align-items:center;">
+          <div>
+            <div style="font-weight:600;font-size:.875rem;">@p.ProgramName</div>
+            <div style="font-size:.75rem;color:#64748b;">Budget: ₹@p.TotalBudget.ToString("N0")</div>
+          </div>
+          <span class="badge-status @(p.Status=="Active"?"badge-success":"badge-secondary")">@p.Status</span>
+        </div>}
+      @if(!Model.Programs.Any()){<p class="text-muted py-3 mb-0">No programs found.</p>}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+@model IEnumerable<EmployerDocument>
+@{ ViewData["Title"] = "Upload Verification Documents"; var emp = ViewBag.Employer as Employer; }
+
+<div class="page-header">
+  <h1><i class="bi bi-cloud-upload me-2"></i>Upload Verification Documents</h1>
+  <p>Upload your Business License and/or PAN Card to get verified before posting jobs.</p>
+</div>
+
+@if(emp != null){
+<div class="alert @(emp.Status=="Verified"?"alert-success":emp.Status=="Suspended"?"alert-danger":"alert-warning") mb-4" style="border-radius:10px;">
+  <strong>Account Status: @emp.Status</strong> —
+  @if(emp.Status=="Verified")
+  {<span>You are verified and can post jobs.</span>}
+  else if(emp.Status=="Suspended")
+  {<span>One or more documents were rejected. Please re-upload corrected documents.</span>}
+  else
+  {<span>Awaiting Labor Officer review of your submitted documents.</span>}
+</div>}
+
+<div class="row g-4">
+  <div class="col-lg-5">
+    <div class="table-card" style="padding:28px;">
+      <h6 style="font-weight:700;margin-bottom:20px;"><i class="bi bi-upload me-2"></i>Upload New Document</h6>
+      <form method="post" asp-action="UploadDocuments" asp-controller="Employer" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Document Type</label>
+          <select name="docType" class="form-select" required>
+            <option value="">-- Select Type --</option>
+            <option value="Business License">Business License</option>
+            <option value="PAN Card">PAN Card</option>
+            <option value="GST Certificate">GST Certificate</option>
+            <option value="Trade License">Trade License</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">File</label>
+          <input type="file" name="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required />
+          <div class="form-text">Accepted: PDF, JPG, PNG (max 10MB)</div>
+        </div>
+        <button type="submit" class="btn btn-accent w-100"><i class="bi bi-cloud-upload me-2"></i>Upload Document</button>
+      </form>
+    </div>
+    @if(emp?.Status == "Verified"){
+    <div class="table-card mt-3" style="padding:20px;text-align:center;">
+      <i class="bi bi-check-circle-fill text-success" style="font-size:2rem;"></i>
+      <p class="mt-2 fw-semibold">You're verified!</p>
+      <a href="/Employer/CreateJob" class="btn btn-accent"><i class="bi bi-plus-circle me-2"></i>Post a Job</a>
+    </div>}
+  </div>
+
+  <div class="col-lg-7">
+    <div class="table-card">
+      <div class="card-header-custom"><span><i class="bi bi-file-earmark-text me-2"></i>Submitted Documents</span></div>
+      <table class="table mb-0">
+        <thead><tr><th>Type</th><th>Uploaded</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+        @if(Model != null && Model.Any()){
+          @foreach(var d in Model){
+          <tr>
+            <td><strong>@d.DocType</strong></td>
+            <td>@d.UploadedDate.ToString("MMM dd, yyyy")</td>
+            <td>
+              <span class="badge-status @(d.VerificationStatus=="Verified"?"badge-success":d.VerificationStatus=="Rejected"?"badge-danger":"badge-warning")">
+                @d.VerificationStatus
+              </span>
+            </td>
+            <td>
+              @if(!string.IsNullOrEmpty(d.FileURL)){
+              <a href="@d.FileURL" target="_blank" class="btn btn-sm btn-outline-secondary" style="border-radius:6px;">
+                <i class="bi bi-eye"></i>
+              </a>}
+            </td>
+          </tr>}}
+        else{<tr><td colspan="4" class="text-center text-muted py-4">No documents uploaded yet.</td></tr>}
+        </tbody>
+      </table>
+    </div>
+    <div class="table-card mt-3" style="padding:20px;">
+      <h6 class="fw-bold mb-3"><i class="bi bi-info-circle me-2 text-primary"></i>How Verification Works</h6>
+      <ol style="font-size:.875rem;color:#475569;line-height:1.8;">
+        <li>Upload your Business License or PAN Card above.</li>
+        <li>A Labor Officer will review your documents (usually within 1-2 business days).</li>
+        <li>Once all documents are approved, your status changes to <strong>Verified</strong>.</li>
+        <li>Verified employers can post job listings and review applicants.</li>
+      </ol>
+    </div>
+  </div>
+</div>

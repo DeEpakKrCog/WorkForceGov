@@ -1,0 +1,119 @@
+@model IEnumerable<CitizenDocument>
+@{ 
+  ViewData["Title"] = "Document Verifications";
+  var employerDocs = ViewBag.EmployerDocuments as List<EmployerDocument> ?? new List<EmployerDocument>();
+}
+
+<div class="page-header">
+  <h1><i class="bi bi-shield-check me-2"></i>Document Verifications</h1>
+  <p>Review and verify citizen and employer documents</p>
+</div>
+
+@if(TempData["SuccessMessage"] != null){<div class="alert alert-success alert-dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert"></button>@TempData["SuccessMessage"]</div>}
+@if(TempData["ErrorMessage"] != null){<div class="alert alert-danger alert-dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert"></button>@TempData["ErrorMessage"]</div>}
+
+<!-- Tabs -->
+<ul class="nav nav-tabs mb-4" id="docTabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="tab" href="#citizenTab">
+      <i class="bi bi-person me-1"></i>Citizen Documents
+      <span class="badge bg-warning text-dark ms-1">@Model.Count()</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#employerTab">
+      <i class="bi bi-building me-1"></i>Employer Documents
+      <span class="badge bg-primary text-white ms-1">@employerDocs.Count</span>
+    </a>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <!-- CITIZEN DOCUMENTS TAB -->
+  <div class="tab-pane fade show active" id="citizenTab">
+    <div class="table-card">
+      <table class="table mb-0">
+        <thead><tr><th>Citizen</th><th>Document Type</th><th>File</th><th>Uploaded</th><th>Actions</th></tr></thead>
+        <tbody>
+        @foreach(var d in Model){
+          <tr>
+            <td><strong>@(d.Citizen?.FullName ?? "—")</strong></td>
+            <td>@d.DocumentType</td>
+            <td>
+              @if(!string.IsNullOrEmpty(d.FilePath)){
+                <a href="@d.FilePath" target="_blank" class="btn btn-sm btn-outline-secondary" style="border-radius:6px;">
+                  <i class="bi bi-eye me-1"></i>@d.FileName
+                </a>}
+              else{<span class="text-muted">@d.FileName</span>}
+            </td>
+            <td>@d.UploadedDate.ToString("MMM dd, yyyy")</td>
+            <td>
+              <form method="post" asp-action="VerifyDocument" asp-route-id="@d.Id" style="display:inline;">
+                @Html.AntiForgeryToken()
+                <button class="btn btn-sm btn-success" style="border-radius:6px;" title="Verify">
+                  <i class="bi bi-check-lg me-1"></i>Verify
+                </button>
+              </form>
+              <form method="post" asp-action="RejectDocument" asp-route-id="@d.Id" style="display:inline;">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="reason" value="Does not meet verification requirements." />
+                <button class="btn btn-sm btn-outline-danger" style="border-radius:6px;" title="Reject">
+                  <i class="bi bi-x-lg me-1"></i>Reject
+                </button>
+              </form>
+            </td>
+          </tr>}
+        @if(!Model.Any()){
+          <tr><td colspan="5" class="text-center text-muted py-5">
+            <i class="bi bi-check-circle" style="font-size:2rem;display:block;margin-bottom:8px;"></i>
+            No pending citizen documents.
+          </td></tr>}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- EMPLOYER DOCUMENTS TAB -->
+  <div class="tab-pane fade" id="employerTab">
+    <div class="table-card">
+      <table class="table mb-0">
+        <thead><tr><th>Company</th><th>Document Type</th><th>File</th><th>Uploaded</th><th>Actions</th></tr></thead>
+        <tbody>
+        @foreach(var d in employerDocs){
+          <tr>
+            <td><strong>@(d.Employer?.CompanyName ?? "—")</strong></td>
+            <td>@d.DocType</td>
+            <td>
+              @if(!string.IsNullOrEmpty(d.FileURL)){
+                <a href="@d.FileURL" target="_blank" class="btn btn-sm btn-outline-secondary" style="border-radius:6px;">
+                  <i class="bi bi-eye me-1"></i>View
+                </a>}
+              else{<span class="text-muted">No file</span>}
+            </td>
+            <td>@d.UploadedDate.ToString("MMM dd, yyyy")</td>
+            <td>
+              <form method="post" asp-action="VerifyEmployerDocument" asp-route-id="@d.Id" style="display:inline;">
+                @Html.AntiForgeryToken()
+                <button class="btn btn-sm btn-success" style="border-radius:6px;">
+                  <i class="bi bi-check-lg me-1"></i>Approve
+                </button>
+              </form>
+              <form method="post" asp-action="RejectEmployerDocument" asp-route-id="@d.Id" style="display:inline;">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="reason" value="Document does not meet requirements." />
+                <button class="btn btn-sm btn-outline-danger" style="border-radius:6px;">
+                  <i class="bi bi-x-lg me-1"></i>Reject
+                </button>
+              </form>
+            </td>
+          </tr>}
+        @if(!employerDocs.Any()){
+          <tr><td colspan="5" class="text-center text-muted py-5">
+            <i class="bi bi-building" style="font-size:2rem;display:block;margin-bottom:8px;"></i>
+            No pending employer documents.
+          </td></tr>}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

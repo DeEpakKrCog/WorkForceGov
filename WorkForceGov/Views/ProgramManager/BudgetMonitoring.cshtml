@@ -1,0 +1,15 @@
+@model IEnumerable<EmploymentProgram>
+@{ ViewData["Title"] = "Budget Monitoring"; }
+<div class="page-header"><h1>Budget Monitoring</h1></div>
+<div class="row g-3">
+@foreach(var p in Model){
+<div class="col-md-6 col-xl-4"><div class="stat-card">
+    <h5 style="font-weight:700;font-size:.95rem;margin-bottom:4px;">@p.ProgramName</h5>
+    <p style="font-size:.78rem;color:#64748b;margin-bottom:12px;">@p.ProgramType · @p.Status</p>
+    <div style="font-family:'Space Grotesk';font-size:1.5rem;font-weight:700;color:#16a34a;">$@p.TotalBudget.ToString("N0")</div>
+    <div style="font-size:.78rem;color:#64748b;">Total Budget Allocated</div>
+    <div style="margin-top:12px;background:#e2e8f0;border-radius:6px;height:8px;overflow:hidden;">
+        <div style="background:#ec4899;height:100%;width:30%;border-radius:6px;"></div>
+    </div>
+</div></div>}
+</div>

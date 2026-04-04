@@ -1,0 +1,26 @@
+@model IEnumerable<JobOpening>
+@{ ViewData["Title"] = "Manage Jobs"; }
+<div class="page-header" style="display:flex;justify-content:space-between;align-items:center;">
+    <div><h1>Manage Jobs</h1><p>View and manage your job postings</p></div>
+    <a href="/Employer/CreateJob" class="btn btn-accent"><i class="bi bi-plus-circle me-1"></i>Post New Job</a>
+</div>
+<div class="table-card">
+<table class="table mb-0">
+    <thead><tr><th>Title</th><th>Location</th><th>Posted</th><th>Applicants</th><th>Status</th><th>Actions</th></tr></thead>
+    <tbody>
+    @foreach (var job in Model)
+    {
+        <tr>
+            <td><strong>@job.JobTitle</strong></td><td>@job.Location</td>
+            <td>@job.PostedDate.ToString("MMM dd")</td>
+            <td><span class="badge-status badge-info">@job.Applications.Count</span></td>
+            <td><span class="badge-status @(job.Status=="Open"?"badge-success":"badge-secondary")">@job.Status</span></td>
+            <td>
+                <a href="/Employer/EditJob/@job.Id" class="btn btn-sm btn-outline-primary" style="border-radius:8px;font-size:.75rem;">Edit</a>
+                @if(job.Status=="Open"){<form method="post" asp-action="CloseJob" asp-route-id="@job.Id" style="display:inline;">@Html.AntiForgeryToken()<button class="btn btn-sm btn-outline-danger" style="border-radius:8px;font-size:.75rem;">Close</button></form>}
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>

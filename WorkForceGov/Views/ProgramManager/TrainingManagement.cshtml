@@ -1,0 +1,50 @@
+@model IEnumerable<Training>
+@{ ViewData["Title"] = "Training Management"; }
+
+<div class="page-header d-flex justify-content-between align-items-center">
+  <div><h1><i class="bi bi-mortarboard me-2"></i>Training Management</h1></div>
+  <a href="/ProgramManager/CreateTraining" class="btn btn-accent">
+    <i class="bi bi-plus-circle me-2"></i>Create Training
+  </a>
+</div>
+
+@if(TempData["SuccessMessage"] != null){<div class="alert alert-success alert-dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert"></button>@TempData["SuccessMessage"]</div>}
+@if(TempData["ErrorMessage"] != null){<div class="alert alert-danger alert-dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert"></button>@TempData["ErrorMessage"]</div>}
+
+<div class="table-card">
+  <table class="table mb-0">
+    <thead>
+      <tr><th>Training Title</th><th>Program</th><th>Start Date</th><th>End Date</th><th>Status</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+    @foreach(var t in Model){
+      <tr>
+        <td>
+          <strong>@t.Title</strong>
+          @if(!string.IsNullOrEmpty(t.Description)){
+            <br/><span style="font-size:.75rem;color:#64748b;">@t.Description</span>}
+        </td>
+        <td>@(t.Program?.ProgramName ?? "—")</td>
+        <td>@t.StartDate.ToString("MMM dd, yyyy")</td>
+        <td>@t.EndDate.ToString("MMM dd, yyyy")</td>
+        <td><span class="badge-status @(t.Status=="Active"?"badge-success":t.Status=="Completed"?"badge-info":"badge-secondary")">@t.Status</span></td>
+        <td>
+          <a href="/ProgramManager/EditTraining/@t.Id" class="btn btn-sm btn-outline-primary" style="border-radius:6px;" title="Edit">
+            <i class="bi bi-pencil"></i>
+          </a>
+          <form method="post" asp-action="DeleteTraining" asp-route-id="@t.Id" style="display:inline;"
+                onsubmit="return confirm('Delete this training?');">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-sm btn-outline-danger" style="border-radius:6px;" title="Delete">
+              <i class="bi bi-trash"></i>
+            </button>
+          </form>
+        </td>
+      </tr>}
+    @if(!Model.Any()){
+      <tr><td colspan="6" class="text-center text-muted py-4">
+        No trainings yet. <a href="/ProgramManager/CreateTraining">Create the first one.</a>
+      </td></tr>}
+    </tbody>
+  </table>
+</div>

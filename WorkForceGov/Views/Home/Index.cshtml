@@ -1,0 +1,135 @@
+@{
+    ViewData["Title"] = "Home";
+    Layout = "_Layout";
+    var jobs = ViewBag.RecentJobs as List<JobOpening> ?? new List<JobOpening>();
+}
+
+<div style="margin-top:var(--nav-h);">
+    <!-- HERO -->
+    <section style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 50%,#0ea5e9 100%);padding:100px 0 80px;color:white;text-align:center;">
+        <div class="container">
+            <div style="max-width:700px;margin:0 auto;">
+                <span style="display:inline-block;background:rgba(255,255,255,.15);border-radius:30px;padding:6px 20px;font-size:.8rem;font-weight:600;letter-spacing:.5px;margin-bottom:20px;">
+                    🏛️ GOVERNMENT EMPLOYMENT PLATFORM
+                </span>
+                <h1 style="font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:700;line-height:1.15;margin-bottom:20px;">
+                    Connecting Citizens<br/>with Opportunities
+                </h1>
+                <p style="font-size:1.1rem;color:rgba(255,255,255,.75);margin-bottom:36px;">
+                    WorkForceGov bridges the gap between job seekers, employers, and government workforce programs — ensuring transparency, compliance, and growth.
+                </p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                    <a href="/Account/Register" class="btn btn-lg" style="background:white;color:#0f172a;border-radius:12px;font-weight:700;padding:14px 36px;">
+                        Get Started <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                    <a href="/Account/Login" class="btn btn-lg btn-outline-light" style="border-radius:12px;font-weight:600;padding:14px 36px;">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section style="margin-top:-40px;position:relative;z-index:10;padding:0 16px;">
+        <div class="container">
+            <div class="row g-3" style="max-width:900px;margin:0 auto;">
+                <div class="col-6 col-md-3">
+                    <div style="background:white;border-radius:16px;padding:24px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.1);">
+                        <div style="font-family:'Space Grotesk';font-size:2rem;font-weight:700;color:#0ea5e9;">7</div>
+                        <div style="font-size:.8rem;color:#64748b;font-weight:500;">Modules</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div style="background:white;border-radius:16px;padding:24px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.1);">
+                        <div style="font-family:'Space Grotesk';font-size:2rem;font-weight:700;color:#8b5cf6;">@jobs.Count</div>
+                        <div style="font-size:.8rem;color:#64748b;font-weight:500;">Open Jobs</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div style="background:white;border-radius:16px;padding:24px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.1);">
+                        <div style="font-family:'Space Grotesk';font-size:2rem;font-weight:700;color:#10b981;">24/7</div>
+                        <div style="font-size:.8rem;color:#64748b;font-weight:500;">Availability</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div style="background:white;border-radius:16px;padding:24px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.1);">
+                        <div style="font-family:'Space Grotesk';font-size:2rem;font-weight:700;color:#f59e0b;">100%</div>
+                        <div style="font-size:.8rem;color:#64748b;font-weight:500;">Secure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROLES -->
+    <section style="padding:80px 16px;">
+        <div class="container">
+            <h2 style="font-family:'Space Grotesk';font-weight:700;text-align:center;margin-bottom:12px;">Built for Every Role</h2>
+            <p style="text-align:center;color:#64748b;margin-bottom:48px;">Seven specialized modules tailored for each stakeholder</p>
+            <div class="row g-4">
+                @{
+                    var roles = new[] {
+                        ("bi-person-badge", "Citizen / Job Seeker", "Register, search jobs, upload documents, track applications and benefits.", "#0ea5e9"),
+                        ("bi-building", "Employer", "Post jobs, manage applications, shortlist and hire candidates.", "#8b5cf6"),
+                        ("bi-shield-lock", "Administrator", "Manage users, configure workflows, monitor system, generate reports.", "#ef4444"),
+                        ("bi-file-earmark-check", "Labor Officer", "Verify documents, monitor compliance, review applications, conduct audits.", "#f59e0b"),
+                        ("bi-clipboard2-check", "Compliance Officer", "Review employer compliance, investigate complaints, record violations.", "#10b981"),
+                        ("bi-eye", "Government Auditor", "Audit programs, review compliance, monitor fund distribution.", "#6366f1"),
+                        ("bi-kanban", "Program Manager", "Create programs, allocate budgets, manage trainings and resources.", "#ec4899")
+                    };
+                }
+                @foreach (var (icon, title, desc, color) in roles)
+                {
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div style="background:white;border-radius:16px;padding:28px;border:1px solid #e2e8f0;height:100%;transition:transform .15s,box-shadow .15s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 30px rgba(0,0,0,.08)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                            <div style="width:48px;height:48px;border-radius:12px;background:@(color)15;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                                <i class="bi @icon" style="font-size:1.3rem;color:@color;"></i>
+                            </div>
+                            <h5 style="font-weight:700;font-size:.95rem;margin-bottom:8px;">@title</h5>
+                            <p style="font-size:.82rem;color:#64748b;margin:0;line-height:1.5;">@desc</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT JOBS -->
+    @if (jobs.Any())
+    {
+        <section style="background:#f8fafc;padding:80px 16px;border-top:1px solid #e2e8f0;">
+            <div class="container">
+                <h2 style="font-family:'Space Grotesk';font-weight:700;text-align:center;margin-bottom:48px;">Latest Job Openings</h2>
+                <div class="row g-4">
+                    @foreach (var job in jobs)
+                    {
+                        <div class="col-md-6 col-lg-4">
+                            <div style="background:white;border-radius:14px;padding:24px;border:1px solid #e2e8f0;">
+                                <h5 style="font-weight:700;font-size:1rem;margin-bottom:6px;">@job.JobTitle</h5>
+                                <p style="font-size:.82rem;color:#64748b;margin-bottom:12px;">
+                                    <i class="bi bi-building me-1"></i>@(job.Employer?.CompanyName ?? "N/A") ·
+                                    <i class="bi bi-geo-alt ms-1 me-1"></i>@job.Location
+                                </p>
+                                <p style="font-size:.82rem;color:#475569;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
+                                    @job.Description
+                                </p>
+                                <div style="display:flex;justify-content:space-between;align-items:center;">
+                                    <span style="font-weight:700;color:#0ea5e9;font-size:.9rem;">
+                                        $@job.SalaryMin.ToString("N0") - $@job.SalaryMax.ToString("N0")
+                                    </span>
+                                    <a href="/Account/Login" class="btn btn-sm btn-accent">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+    }
+
+    <!-- FOOTER -->
+    <footer style="background:#0f172a;color:#94a3b8;padding:40px 16px;text-align:center;">
+        <p style="font-size:.85rem;margin:0;">© @DateTime.Now.Year WorkForceGov — Employment & Labor Governance System</p>
+    </footer>
+</div>

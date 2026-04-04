@@ -1,0 +1,6 @@
+@model IEnumerable<ComplianceRecord>
+@{ ViewData["Title"] = "Compliance Monitoring"; }
+<div class="page-header"><h1>Compliance Monitoring</h1></div>
+<div class="table-card"><table class="table mb-0"><thead><tr><th>Entity</th><th>Type</th><th>Result</th><th>Date</th><th>Notes</th></tr></thead><tbody>
+@foreach(var c in Model){<tr><td>#@c.EntityId</td><td>@c.Type</td><td><span class="badge-status @(c.Result=="Compliant"?"badge-success":"badge-danger")">@c.Result</span></td><td>@c.Date.ToString("MMM dd")</td><td>@c.Notes</td></tr>}
+</tbody></table></div>

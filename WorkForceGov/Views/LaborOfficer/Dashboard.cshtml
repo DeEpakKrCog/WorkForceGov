@@ -1,0 +1,28 @@
+@model LaborOfficerDashboardViewModel
+@{ ViewData["Title"] = "Labor Officer Dashboard"; }
+<div class="page-header"><h1>Labor Officer Dashboard</h1><p>Document verification and compliance monitoring</p></div>
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fef3c7;color:#d97706;"><i class="bi bi-file-earmark-check"></i></div><div class="stat-value">@Model.PendingDocuments</div><div class="stat-label">Pending Documents</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dbeafe;color:#2563eb;"><i class="bi bi-file-earmark-text"></i></div><div class="stat-value">@Model.PendingApplications</div><div class="stat-label">Pending Applications</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dcfce7;color:#16a34a;"><i class="bi bi-check-circle"></i></div><div class="stat-value">@Model.ApprovedApplications</div><div class="stat-label">Approved</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fee2e2;color:#dc2626;"><i class="bi bi-x-circle"></i></div><div class="stat-value">@Model.RejectedApplications</div><div class="stat-label">Rejected</div></div></div>
+</div>
+<div class="row g-4">
+    <div class="col-lg-7"><div class="table-card">
+        <div class="card-header-custom"><span><i class="bi bi-file-earmark-check me-2"></i>Pending Document Verifications</span><a href="/LaborOfficer/DocumentVerifications" class="btn btn-sm btn-accent">View All</a></div>
+        <table class="table mb-0"><thead><tr><th>Citizen</th><th>Type</th><th>Uploaded</th><th>Action</th></tr></thead><tbody>
+        @foreach(var d in Model.PendingDocs){<tr><td>@d.Citizen?.FullName</td><td>@d.DocumentType</td><td>@d.UploadedDate.ToString("MMM dd")</td><td>
+            <form method="post" asp-action="VerifyDocument" asp-controller="LaborOfficer" asp-route-id="@d.Id" style="display:inline;">@Html.AntiForgeryToken()<button class="btn btn-sm btn-success" style="border-radius:8px;font-size:.75rem;">Verify</button></form>
+            <form method="post" asp-action="RejectDocument" asp-controller="LaborOfficer" asp-route-id="@d.Id" style="display:inline;">@Html.AntiForgeryToken()<input type="hidden" name="reason" value="Does not meet requirements" /><button class="btn btn-sm btn-outline-danger" style="border-radius:8px;font-size:.75rem;">Reject</button></form>
+        </td></tr>}
+        @if(!Model.PendingDocs.Any()){<tr><td colspan="4" class="text-center text-muted py-4">No pending documents.</td></tr>}
+        </tbody></table>
+    </div></div>
+    <div class="col-lg-5"><div class="table-card">
+        <div class="card-header-custom"><span><i class="bi bi-bell me-2"></i>Notifications</span></div>
+        <div style="padding:8px 16px;">
+        @foreach(var n in Model.Notifications){<div style="padding:10px 0;border-bottom:1px solid #f1f5f9;font-size:.85rem;">@n.Message<br/><span style="font-size:.72rem;color:#94a3b8;">@n.CreatedDate.ToString("MMM dd")</span></div>}
+        @if(!Model.Notifications.Any()){<div class="text-center text-muted py-3">No notifications.</div>}
+        </div>
+    </div></div>
+</div>

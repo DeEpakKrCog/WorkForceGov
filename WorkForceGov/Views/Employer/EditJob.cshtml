@@ -1,0 +1,17 @@
+@model JobOpening
+@{ ViewData["Title"] = "Edit Job"; }
+<div class="page-header"><h1>Edit Job</h1></div>
+<div class="row"><div class="col-lg-8"><div class="table-card" style="padding:32px;">
+<form method="post" asp-action="EditJob" asp-controller="Employer" asp-route-id="@Model.Id">@Html.AntiForgeryToken()
+<div class="row g-3">
+    <div class="col-md-6"><label class="form-label">Job Title</label><input name="JobTitle" class="form-control" value="@Model.JobTitle" required /></div>
+    <div class="col-md-6"><label class="form-label">Location</label><input name="Location" class="form-control" value="@Model.Location" required /></div>
+    <div class="col-12"><label class="form-label">Description</label><textarea name="Description" class="form-control" rows="4" required>@Model.Description</textarea></div>
+    <div class="col-md-4"><label class="form-label">Category</label><input name="JobCategory" class="form-control" value="@Model.JobCategory" /></div>
+    <div class="col-md-4"><label class="form-label">Min Salary</label><input type="number" name="SalaryMin" class="form-control" value="@Model.SalaryMin" /></div>
+    <div class="col-md-4"><label class="form-label">Max Salary</label><input type="number" name="SalaryMax" class="form-control" value="@Model.SalaryMax" /></div>
+    <input type="hidden" name="EmployerId" value="@Model.EmployerId" />
+    <input type="hidden" name="Status" value="@Model.Status" />
+</div>
+<button type="submit" class="btn btn-accent mt-4">Save Changes</button>
+</form></div></div></div>

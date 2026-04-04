@@ -1,0 +1,39 @@
+@model JobSearchViewModel
+@{ ViewData["Title"] = "Job Search"; }
+<div class="page-header"><h1>Job Search</h1><p>Find your next opportunity</p></div>
+<div class="table-card mb-4" style="padding:20px 24px;">
+    <form method="get" asp-action="JobSearch" asp-controller="Citizen" class="row g-3 align-items-end">
+        <div class="col-md-4"><label class="form-label">Keyword</label><input type="text" name="keyword" class="form-control" value="@Model.Keyword" placeholder="Job title, skill..." /></div>
+        <div class="col-md-3"><label class="form-label">Location</label><input type="text" name="location" class="form-control" value="@Model.Location" placeholder="City, State..." /></div>
+        <div class="col-md-3"><label class="form-label">Category</label><input type="text" name="category" class="form-control" value="@Model.Category" placeholder="Technology, Finance..." /></div>
+        <div class="col-md-2"><button type="submit" class="btn btn-accent w-100"><i class="bi bi-search me-1"></i>Search</button></div>
+    </form>
+</div>
+<div class="row g-3">
+@foreach (var job in Model.Jobs)
+{
+    <div class="col-md-6 col-xl-4">
+        <div class="stat-card" style="height:100%;">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:12px;">
+                <div>
+                    <h5 style="font-weight:700;font-size:.95rem;margin:0;">@job.JobTitle</h5>
+                    <div style="font-size:.78rem;color:#64748b;margin-top:2px;">@job.Employer?.CompanyName</div>
+                </div>
+                <span class="badge-status badge-success">@job.Status</span>
+            </div>
+            <p style="font-size:.82rem;color:#475569;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">@job.Description</p>
+            <div style="display:flex;gap:12px;font-size:.78rem;color:#64748b;margin-bottom:16px;">
+                <span><i class="bi bi-geo-alt me-1"></i>@job.Location</span>
+                <span><i class="bi bi-tag me-1"></i>@job.JobCategory</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="font-weight:700;color:#0ea5e9;font-size:.85rem;">$@job.SalaryMin.ToString("N0") - $@job.SalaryMax.ToString("N0")</span>
+                <form method="post" asp-action="Apply" asp-controller="Citizen" asp-route-jobId="@job.Id">@Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-sm btn-accent">Apply Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+@if (!Model.Jobs.Any()) { <div class="col-12"><div class="stat-card text-center py-5"><i class="bi bi-search fs-1 text-muted"></i><p class="text-muted mt-2">No jobs found. Try different search criteria.</p></div></div> }
+</div>

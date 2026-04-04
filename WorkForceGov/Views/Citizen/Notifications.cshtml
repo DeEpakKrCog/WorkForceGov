@@ -1,0 +1,18 @@
+@model IEnumerable<Notification>
+@{ ViewData["Title"] = "Notifications"; }
+<div class="page-header"><h1>Notifications</h1></div>
+<div class="table-card">
+@foreach (var n in Model)
+{
+    <div style="padding:16px 24px;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:16px;">
+        <div style="width:40px;height:40px;border-radius:10px;background:#dbeafe;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="bi bi-bell" style="color:#2563eb;"></i>
+        </div>
+        <div style="flex:1;">
+            <div style="font-size:.875rem;font-weight:@(n.IsRead ? "400" : "600");">@n.Message</div>
+            <div style="font-size:.75rem;color:#94a3b8;margin-top:2px;">@n.CreatedDate.ToString("MMM dd, yyyy h:mm tt") · @n.Category</div>
+        </div>
+    </div>
+}
+@if (!Model.Any()) { <div class="text-center text-muted py-5">No notifications.</div> }
+</div>

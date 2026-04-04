@@ -1,0 +1,17 @@
+@model Citizen
+@{ ViewData["Title"] = "My Profile"; }
+<div class="page-header"><h1>My Profile</h1><p>Update your personal information</p></div>
+<div class="row"><div class="col-lg-8">
+<div class="table-card" style="padding:32px;">
+    <form method="post" asp-action="Profile" asp-controller="Citizen">
+        @Html.AntiForgeryToken()
+        <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Full Name</label><input type="text" name="FullName" class="form-control" value="@Model?.FullName" required /></div>
+            <div class="col-md-6"><label class="form-label">Date of Birth</label><input type="date" name="DOB" class="form-control" value="@Model?.DOB?.ToString("yyyy-MM-dd")" /></div>
+            <div class="col-md-6"><label class="form-label">Gender</label><select name="Gender" class="form-select"><option value="">Select</option><option value="Male" selected="@(Model?.Gender=="Male")">Male</option><option value="Female" selected="@(Model?.Gender=="Female")">Female</option><option value="Other" selected="@(Model?.Gender=="Other")">Other</option></select></div>
+            <div class="col-md-6"><label class="form-label">Phone</label><input type="text" name="PhoneNumber" class="form-control" value="@Model?.PhoneNumber" /></div>
+            <div class="col-12"><label class="form-label">Address</label><textarea name="Address" class="form-control" rows="2">@Model?.Address</textarea></div>
+        </div>
+        <button type="submit" class="btn btn-accent mt-4">Save Changes</button>
+    </form>
+</div></div></div>

@@ -1,0 +1,30 @@
+@model DashboardViewModel
+@{ ViewData["Title"] = "Admin Dashboard"; }
+<div class="page-header"><h1>System Dashboard</h1><p>Platform overview and administration</p></div>
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fee2e2;color:#dc2626;"><i class="bi bi-people-fill"></i></div><div class="stat-value">@Model.TotalUsers</div><div class="stat-label">Total Users</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dbeafe;color:#2563eb;"><i class="bi bi-briefcase"></i></div><div class="stat-value">@Model.OpenJobs</div><div class="stat-label">Open Jobs</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dcfce7;color:#16a34a;"><i class="bi bi-kanban"></i></div><div class="stat-value">@Model.ActivePrograms</div><div class="stat-label">Active Programs</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fef3c7;color:#d97706;"><i class="bi bi-file-earmark-text"></i></div><div class="stat-value">@Model.PendingApplications</div><div class="stat-label">Pending Apps</div></div></div>
+</div>
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#ede9fe;color:#7c3aed;"><i class="bi bi-person-badge"></i></div><div class="stat-value">@Model.TotalCitizens</div><div class="stat-label">Citizens</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fce7f3;color:#db2777;"><i class="bi bi-building"></i></div><div class="stat-value">@Model.TotalEmployers</div><div class="stat-label">Employers</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#d1fae5;color:#059669;"><i class="bi bi-currency-dollar"></i></div><div class="stat-value">$@Model.TotalBudget.ToString("N0")</div><div class="stat-label">Total Budget</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#e0e7ff;color:#4f46e5;"><i class="bi bi-clipboard-data"></i></div><div class="stat-value">@Model.TotalAudits</div><div class="stat-label">Audits</div></div></div>
+</div>
+<div class="row g-4">
+    <div class="col-lg-8"><div class="table-card">
+        <div class="card-header-custom"><span><i class="bi bi-briefcase me-2"></i>Recent Jobs</span></div>
+        <table class="table mb-0"><thead><tr><th>Title</th><th>Company</th><th>Posted</th><th>Status</th></tr></thead><tbody>
+        @foreach(var j in Model.RecentJobs){<tr><td><strong>@j.JobTitle</strong></td><td>@j.Employer?.CompanyName</td><td>@j.PostedDate.ToString("MMM dd")</td><td><span class="badge-status badge-success">@j.Status</span></td></tr>}
+        </tbody></table>
+    </div></div>
+    <div class="col-lg-4"><div class="table-card">
+        <div class="card-header-custom"><span><i class="bi bi-activity me-2"></i>System Logs</span></div>
+        <div style="padding:8px 16px;max-height:300px;overflow-y:auto;">
+        @foreach(var l in Model.RecentLogs){<div style="padding:8px 0;border-bottom:1px solid #f1f5f9;font-size:.8rem;"><strong>@l.User?.FullName</strong> — @l.Action<br/><span style="color:#94a3b8;font-size:.72rem;">@l.Timestamp.ToString("MMM dd, HH:mm")</span></div>}
+        @if(!Model.RecentLogs.Any()){<div class="text-muted text-center py-3">No recent logs.</div>}
+        </div>
+    </div></div>
+</div>

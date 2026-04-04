@@ -1,0 +1,12 @@
+@model ProgramManagerDashboardViewModel
+@{ ViewData["Title"] = "Performance Tracking"; }
+<div class="page-header"><h1>Performance Tracking</h1></div>
+<div class="row g-3 mb-4">
+    <div class="col-md-4"><div class="stat-card text-center"><div class="stat-value" style="color:#ec4899;">@Model.TotalPrograms</div><div class="stat-label">Total Programs</div></div></div>
+    <div class="col-md-4"><div class="stat-card text-center"><div class="stat-value" style="color:#8b5cf6;">@Model.TotalTrainings</div><div class="stat-label">Trainings</div></div></div>
+    <div class="col-md-4"><div class="stat-card text-center"><div class="stat-value" style="color:#0ea5e9;">@Model.TotalBeneficiaries</div><div class="stat-label">Beneficiaries</div></div></div>
+</div>
+<div class="table-card"><div class="card-header-custom"><span>Programs Performance</span></div>
+<table class="table mb-0"><thead><tr><th>Program</th><th>Budget</th><th>Utilized</th><th>Status</th></tr></thead><tbody>
+@foreach(var p in Model.Programs){<tr><td><strong>@p.ProgramName</strong></td><td>$@p.TotalBudget.ToString("N0")</td><td>$@p.Benefits.Sum(b=>b.Amount).ToString("N0")</td><td><span class="badge-status badge-success">@p.Status</span></td></tr>}
+</tbody></table></div>

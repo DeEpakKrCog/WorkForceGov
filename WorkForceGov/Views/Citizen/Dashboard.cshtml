@@ -1,0 +1,76 @@
+@model CitizenDashboardViewModel
+@{ ViewData["Title"] = "Citizen Dashboard"; }
+<div class="page-header">
+    <h1>Welcome, @Model.Citizen?.FullName</h1>
+    <p>Your employment services dashboard</p>
+</div>
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#dbeafe;color:#2563eb;"><i class="bi bi-file-earmark-text"></i></div>
+            <div class="stat-value">@Model.ActiveApplications</div>
+            <div class="stat-label">Active Applications</div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#dcfce7;color:#16a34a;"><i class="bi bi-gift"></i></div>
+            <div class="stat-value">@Model.TotalBenefits</div>
+            <div class="stat-label">Benefits Received</div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#fef3c7;color:#d97706;"><i class="bi bi-folder2-open"></i></div>
+            <div class="stat-value">@Model.VerifiedDocs / @Model.DocumentCount</div>
+            <div class="stat-label">Documents Verified</div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#ede9fe;color:#7c3aed;"><i class="bi bi-currency-dollar"></i></div>
+            <div class="stat-value">$@Model.TotalBenefitAmount.ToString("N0")</div>
+            <div class="stat-label">Total Benefits</div>
+        </div>
+    </div>
+</div>
+<div class="row g-4">
+    <div class="col-lg-8">
+        <div class="table-card">
+            <div class="card-header-custom">
+                <span><i class="bi bi-file-earmark-text me-2"></i>Recent Applications</span>
+                <a href="/Citizen/JobApplications" class="btn btn-sm btn-accent">View All</a>
+            </div>
+            <table class="table mb-0">
+                <thead><tr><th>Job</th><th>Company</th><th>Date</th><th>Status</th></tr></thead>
+                <tbody>
+                @foreach (var app in Model.RecentApplications)
+                {
+                    <tr>
+                        <td><strong>@app.JobOpening?.JobTitle</strong></td>
+                        <td>@app.JobOpening?.Employer?.CompanyName</td>
+                        <td>@app.SubmittedDate.ToString("MMM dd")</td>
+                        <td><span class="badge-status @(app.Status == "Approved" ? "badge-success" : app.Status == "Rejected" ? "badge-danger" : "badge-warning")">@app.Status</span></td>
+                    </tr>
+                }
+                @if (!Model.RecentApplications.Any()) { <tr><td colspan="4" class="text-center text-muted py-4">No applications yet. <a href="/Citizen/JobSearch">Search Jobs</a></td></tr> }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="table-card">
+            <div class="card-header-custom"><span><i class="bi bi-briefcase me-2"></i>Recommended Jobs</span></div>
+            <div style="padding:12px 16px;">
+            @foreach (var job in Model.RecommendedJobs)
+            {
+                <div style="padding:12px 0;border-bottom:1px solid #f1f5f9;">
+                    <div style="font-weight:600;font-size:.875rem;">@job.JobTitle</div>
+                    <div style="font-size:.78rem;color:#64748b;">@job.Employer?.CompanyName · @job.Location</div>
+                    <div style="font-size:.78rem;color:#0ea5e9;font-weight:600;margin-top:4px;">$@job.SalaryMin.ToString("N0") - $@job.SalaryMax.ToString("N0")</div>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+</div>

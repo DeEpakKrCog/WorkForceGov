@@ -1,0 +1,72 @@
+@model Employer
+@{ ViewData["Title"] = "Register Company"; }
+
+<div class="page-header">
+  <h1><i class="bi bi-building-add me-2"></i>Register Your Company</h1>
+  <p>Create your employer profile to start hiring. Document verification is required before posting jobs.</p>
+</div>
+
+<div class="row g-4">
+  <div class="col-lg-6">
+    <div class="table-card" style="padding:32px;">
+      <form method="post" asp-action="Register" asp-controller="Employer">
+        @Html.AntiForgeryToken()
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Company Name <span class="text-danger">*</span></label>
+            <input name="CompanyName" class="form-control" required placeholder="e.g. Acme Corp Pvt Ltd" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Industry <span class="text-danger">*</span></label>
+            <select name="Industry" class="form-select" required>
+              <option value="">-- Select Industry --</option>
+              <option>Information Technology</option>
+              <option>Manufacturing</option>
+              <option>Healthcare</option>
+              <option>Finance & Banking</option>
+              <option>Education</option>
+              <option>Retail</option>
+              <option>Construction</option>
+              <option>Hospitality</option>
+              <option>Agriculture</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label fw-semibold">Address</label>
+            <textarea name="Address" class="form-control" rows="2" placeholder="Company address"></textarea>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Contact Info</label>
+            <input name="ContactInfo" class="form-control" placeholder="Phone / Email" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-accent mt-4 w-100"><i class="bi bi-arrow-right-circle me-2"></i>Register & Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="table-card" style="padding:28px;">
+      <h6 class="fw-bold mb-3"><i class="bi bi-info-circle me-2 text-primary"></i>Registration Process</h6>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="background:#e0e7ff;color:#4f46e5;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;">1</div>
+          <div><strong>Register Company</strong><br/><span style="font-size:.8rem;color:#64748b;">Fill in your company details above</span></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="background:#fef3c7;color:#d97706;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;">2</div>
+          <div><strong>Upload Documents</strong><br/><span style="font-size:.8rem;color:#64748b;">Business License or PAN Card required</span></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="background:#dcfce7;color:#16a34a;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;">3</div>
+          <div><strong>Await Verification</strong><br/><span style="font-size:.8rem;color:#64748b;">Labor Officer reviews within 1-2 days</span></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="background:#dcfce7;color:#16a34a;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;">4</div>
+          <div><strong>Post Jobs</strong><br/><span style="font-size:.8rem;color:#64748b;">Verified employers can post openings and review candidates</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

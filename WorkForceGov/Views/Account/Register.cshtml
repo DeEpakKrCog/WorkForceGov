@@ -1,0 +1,49 @@
+@model RegisterViewModel
+@{ ViewData["Title"] = "Register"; }
+
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:80px 16px 40px;">
+    <div style="width:100%;max-width:480px;">
+        <div style="text-align:center;margin-bottom:32px;">
+            <h2 style="font-family:'Space Grotesk';font-weight:700;color:white;margin-bottom:4px;">Create Account</h2>
+            <p style="color:#94a3b8;font-size:.9rem;">Join WorkForceGov and access employment services</p>
+        </div>
+        <div style="background:white;border-radius:20px;padding:36px;box-shadow:0 20px 60px rgba(0,0,0,.3);">
+            <form method="post" asp-action="Register" asp-controller="Account">
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" name="FullName" class="form-control" placeholder="John Doe" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" name="Email" class="form-control" placeholder="you@example.com" required />
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-6">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="Password" class="form-control" required />
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Confirm</label>
+                        <input type="password" name="ConfirmPassword" class="form-control" required />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Register As</label>
+                    <select name="Role" class="form-select">
+                        <option value="Citizen">Citizen / Job Seeker</option>
+                        <option value="Employer">Employer</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Phone (optional)</label>
+                    <input type="text" name="Phone" class="form-control" placeholder="+1-555-0000" />
+                </div>
+                <button type="submit" class="btn btn-accent w-100" style="padding:12px;">Create Account</button>
+            </form>
+            <p style="text-align:center;margin-top:20px;font-size:.85rem;color:#64748b;">
+                Already have an account? <a href="/Account/Login" style="color:#0ea5e9;font-weight:600;text-decoration:none;">Login</a>
+            </p>
+        </div>
+    </div>
+</div>

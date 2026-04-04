@@ -1,0 +1,24 @@
+@model UserManageViewModel
+@{ ViewData["Title"] = "Manage Users"; }
+<div class="page-header" style="display:flex;justify-content:space-between;align-items:center;">
+    <div><h1>Manage Users</h1><p>Create, edit, and manage system users</p></div>
+    <a href="/Admin/CreateUser" class="btn btn-accent"><i class="bi bi-person-plus me-1"></i>Add User</a>
+</div>
+<div class="table-card">
+<table class="table mb-0">
+    <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Joined</th><th>Actions</th></tr></thead>
+    <tbody>
+    @foreach(var u in Model.Users){
+    <tr>
+        <td><strong>@u.FullName</strong></td><td>@u.Email</td>
+        <td><span class="badge-status badge-info">@u.Role</span></td>
+        <td><span class="badge-status @(u.Status=="Active"?"badge-success":"badge-danger")">@u.Status</span></td>
+        <td>@u.CreatedAt.ToString("MMM dd, yyyy")</td>
+        <td>
+            <a href="/Admin/EditUser/@u.Id" class="btn btn-sm btn-outline-primary" style="border-radius:8px;font-size:.75rem;">Edit</a>
+            <form method="post" asp-action="DeleteUser" asp-route-id="@u.Id" style="display:inline;">@Html.AntiForgeryToken()<button class="btn btn-sm btn-outline-danger" style="border-radius:8px;font-size:.75rem;">Deactivate</button></form>
+        </td>
+    </tr>}
+    </tbody>
+</table>
+</div>

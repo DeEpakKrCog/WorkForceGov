@@ -1,0 +1,21 @@
+@model IEnumerable<Benefit>
+@{ ViewData["Title"] = "Benefits"; }
+<div class="page-header"><h1>My Benefits</h1><p>Track government program benefits</p></div>
+<div class="table-card">
+    <table class="table mb-0">
+        <thead><tr><th>Program</th><th>Type</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td><strong>@b.Program?.ProgramName</strong></td>
+                <td>@b.BenefitType</td>
+                <td style="font-weight:700;color:#16a34a;">$@b.Amount.ToString("N2")</td>
+                <td>@b.BenefitDate.ToString("MMM dd, yyyy")</td>
+                <td><span class="badge-status @(b.Status == "Active" ? "badge-success" : "badge-secondary")">@b.Status</span></td>
+            </tr>
+        }
+        @if (!Model.Any()) { <tr><td colspan="5" class="text-center text-muted py-4">No benefits allocated yet.</td></tr> }
+        </tbody>
+    </table>
+</div>

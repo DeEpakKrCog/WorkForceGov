@@ -1,0 +1,65 @@
+@model EmployerDashboardViewModel
+@{ ViewData["Title"] = "Employer Dashboard"; }
+<div class="page-header"><h1>@Model.Employer?.CompanyName</h1><p>Employer management dashboard</p></div>
+
+@{var status = Model.Employer?.Status ?? "Pending";}
+@if(status != "Verified"){
+<div class="alert @(status=="Suspended"?"alert-danger":status=="Flagged"?"alert-warning":"alert-info") mb-4" style="border-radius:10px;display:flex;justify-content:space-between;align-items:center;">
+  <div>
+    <strong><i class="bi bi-shield-exclamation me-2"></i>Account Status: @status</strong> — 
+    @if(status=="Suspended")
+    {<span>A document was rejected. Please re-upload correct documents.</span>}
+    else if(status=="Flagged")
+    {<span>Your account has been flagged for non-compliance.</span>}
+    else
+    {<span>Upload your Business License or PAN Card to get verified and start posting jobs.</span>}
+  </div>
+  <a href="/Employer/UploadDocuments" class="btn btn-sm btn-primary ms-3" style="white-space:nowrap;border-radius:6px;">
+    <i class="bi bi-upload me-1"></i>Upload Documents
+  </a>
+</div>}
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#ede9fe;color:#7c3aed;"><i class="bi bi-briefcase"></i></div><div class="stat-value">@Model.TotalJobPostings</div><div class="stat-label">Total Jobs Posted</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dbeafe;color:#2563eb;"><i class="bi bi-people"></i></div><div class="stat-value">@Model.TotalApplicationsReceived</div><div class="stat-label">Applications</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fef3c7;color:#d97706;"><i class="bi bi-star"></i></div><div class="stat-value">@Model.ShortlistedCandidates</div><div class="stat-label">Shortlisted</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dcfce7;color:#16a34a;"><i class="bi bi-person-check"></i></div><div class="stat-value">@Model.HiredCandidates</div><div class="stat-label">Hired</div></div></div>
+</div>
+<div class="row g-4">
+    <div class="col-lg-7">
+        <div class="table-card">
+            <div class="card-header-custom"><span><i class="bi bi-people me-2"></i>Recent Applications</span><a href="/Employer/Applications" class="btn btn-sm btn-accent">View All</a></div>
+            <table class="table mb-0">
+                <thead><tr><th>Candidate</th><th>Job</th><th>Date</th><th>Status</th></tr></thead>
+                <tbody>
+                @foreach (var app in Model.RecentApplications)
+                {
+                    <tr>
+                        <td><strong>@app.Citizen?.FullName</strong></td>
+                        <td>@app.JobOpening?.JobTitle</td>
+                        <td>@app.SubmittedDate.ToString("MMM dd")</td>
+                        <td><span class="badge-status @(app.Status=="Approved"?"badge-success":app.Status=="Rejected"?"badge-danger":"badge-warning")">@app.Status</span></td>
+                    </tr>
+                }
+                @if (!Model.RecentApplications.Any()) { <tr><td colspan="4" class="text-center text-muted py-4">No applications received yet.</td></tr> }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="table-card">
+            <div class="card-header-custom"><span><i class="bi bi-briefcase me-2"></i>Your Jobs</span><a href="/Employer/CreateJob" class="btn btn-sm btn-accent"><i class="bi bi-plus me-1"></i>Post Job</a></div>
+            <div style="padding:8px 16px;">
+            @foreach (var job in Model.RecentJobs)
+            {
+                <div style="padding:12px 0;border-bottom:1px solid #f1f5f9;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                        <div style="font-weight:600;font-size:.875rem;">@job.JobTitle</div>
+                        <div style="font-size:.75rem;color:#64748b;">@job.Location · @job.Applications.Count applicants</div>
+                    </div>
+                    <span class="badge-status @(job.Status=="Open"?"badge-success":"badge-secondary")">@job.Status</span>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+</div>

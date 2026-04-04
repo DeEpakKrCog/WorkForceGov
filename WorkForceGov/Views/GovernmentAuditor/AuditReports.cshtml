@@ -1,0 +1,7 @@
+@model IEnumerable<Report>
+@{ ViewData["Title"] = "Audit Reports"; }
+<div class="page-header"><h1>Audit Reports</h1></div>
+<div class="table-card"><table class="table mb-0"><thead><tr><th>Report</th><th>Type</th><th>Date</th></tr></thead><tbody>
+@foreach(var r in Model){<tr><td>@r.ReportName</td><td><span class="badge-status badge-info">@r.ReportType</span></td><td>@r.GeneratedDate.ToString("MMM dd, yyyy")</td></tr>}
+@if(!Model.Any()){<tr><td colspan="3" class="text-center text-muted py-4">No reports.</td></tr>}
+</tbody></table></div>

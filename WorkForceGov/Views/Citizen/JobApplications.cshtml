@@ -1,0 +1,29 @@
+@model IEnumerable<Application>
+@{ ViewData["Title"] = "My Applications"; }
+<div class="page-header"><h1>My Applications</h1><p>Track your job application status</p></div>
+<div class="table-card">
+    <table class="table mb-0">
+        <thead><tr><th>Job Title</th><th>Company</th><th>Applied</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody>
+        @foreach (var app in Model)
+        {
+            <tr>
+                <td><strong>@app.JobOpening?.JobTitle</strong></td>
+                <td>@app.JobOpening?.Employer?.CompanyName</td>
+                <td>@app.SubmittedDate.ToString("MMM dd, yyyy")</td>
+                <td><span class="badge-status @(app.Status == "Approved" ? "badge-success" : app.Status == "Rejected" ? "badge-danger" : app.Status == "Withdrawn" ? "badge-secondary" : "badge-warning")">@app.Status</span></td>
+                <td>
+                    @if (app.Status == "Pending")
+                    {
+                        <form method="post" asp-action="WithdrawApplication" asp-controller="Citizen" asp-route-id="@app.Id" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <button class="btn btn-sm btn-outline-danger" style="border-radius:8px;font-size:.75rem;">Withdraw</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+        @if (!Model.Any()) { <tr><td colspan="5" class="text-center text-muted py-4">No applications yet.</td></tr> }
+        </tbody>
+    </table>
+</div>

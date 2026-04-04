@@ -1,0 +1,40 @@
+@model ProgramManagerDashboardViewModel
+@{ ViewData["Title"] = "Program Manager Dashboard"; }
+<div class="page-header"><h1>Program Manager Dashboard</h1><p>Workforce programs overview</p></div>
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fce7f3;color:#db2777;"><i class="bi bi-kanban"></i></div><div class="stat-value">@Model.ActivePrograms</div><div class="stat-label">Active Programs</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dcfce7;color:#16a34a;"><i class="bi bi-wallet2"></i></div><div class="stat-value">$@Model.TotalBudget.ToString("N0")</div><div class="stat-label">Total Budget</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dbeafe;color:#2563eb;"><i class="bi bi-mortarboard"></i></div><div class="stat-value">@Model.TotalTrainings</div><div class="stat-label">Active Trainings</div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#ede9fe;color:#7c3aed;"><i class="bi bi-people"></i></div><div class="stat-value">@Model.TotalBeneficiaries</div><div class="stat-label">Beneficiaries</div></div></div>
+</div>
+<div class="row g-4">
+    <div class="col-lg-7"><div class="table-card">
+        <div class="card-header-custom"><span><i class="bi bi-kanban me-2"></i>Programs</span><a href="/ProgramManager/CreateProgram" class="btn btn-sm btn-accent"><i class="bi bi-plus me-1"></i>New</a></div>
+        <table class="table mb-0"><thead><tr><th>Program</th><th>Budget</th><th>Start</th><th>Status</th><th>Action</th></tr></thead><tbody>
+        @foreach(var p in Model.Programs){<tr><td><strong>@p.ProgramName</strong><br/><span style="font-size:.75rem;color:#64748b;">@p.ProgramType</span></td><td style="font-weight:700;">$@p.TotalBudget.ToString("N0")</td><td>@p.StartDate.ToString("MMM dd, yyyy")</td><td><span class="badge-status @(p.Status=="Active"?"badge-success":"badge-secondary")">@p.Status</span></td><td><a href="/ProgramManager/EditProgram/@p.Id" class="btn btn-sm btn-outline-primary" style="border-radius:8px;font-size:.75rem;">Edit</a></td></tr>}
+        </tbody></table>
+    </div></div>
+    <div class="col-lg-5">
+        <div class="table-card mb-4">
+            <div class="card-header-custom"><span><i class="bi bi-graph-up me-2"></i>Budget Utilization</span></div>
+            <div style="padding:20px 24px;">
+                @{ var utilPercent = Model.TotalBudget > 0 ? (int)(Model.BudgetUtilized / Model.TotalBudget * 100) : 0; }
+                <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:.85rem;">
+                    <span>Utilized: $@Model.BudgetUtilized.ToString("N0")</span>
+                    <span style="font-weight:700;">@utilPercent%</span>
+                </div>
+                <div style="background:#e2e8f0;border-radius:8px;height:12px;overflow:hidden;">
+                    <div style="background:linear-gradient(90deg,#ec4899,#8b5cf6);height:100%;width:@(utilPercent)%;border-radius:8px;transition:width .5s;"></div>
+                </div>
+                <div style="font-size:.78rem;color:#64748b;margin-top:8px;">Remaining: $@((Model.TotalBudget - Model.BudgetUtilized).ToString("N0"))</div>
+            </div>
+        </div>
+        <div class="table-card">
+            <div class="card-header-custom"><span><i class="bi bi-mortarboard me-2"></i>Active Trainings</span></div>
+            <div style="padding:8px 16px;">
+            @foreach(var t in Model.ActiveTrainings){<div style="padding:10px 0;border-bottom:1px solid #f1f5f9;"><div style="font-weight:600;font-size:.85rem;">@t.Title</div><div style="font-size:.75rem;color:#64748b;">@t.StartDate.ToString("MMM dd") - @t.EndDate.ToString("MMM dd, yyyy")</div></div>}
+            @if(!Model.ActiveTrainings.Any()){<div class="text-center text-muted py-3">No active trainings.</div>}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+@model IEnumerable<Application>
+@{ ViewData["Title"] = "Applications"; }
+
+<div class="page-header"><h1><i class="bi bi-people me-2"></i>Applications</h1><p>Review candidates who applied to your job openings</p></div>
+
+<div class="table-card">
+  <table class="table mb-0">
+    <thead>
+      <tr><th>Applicant</th><th>Job</th><th>Applied</th><th>Status</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+    @foreach(var a in Model){
+      <tr>
+        <td>
+          <strong>@(a.Citizen?.FullName ?? "—")</strong>
+          <br/><span style="font-size:.75rem;color:#64748b;">@(a.Citizen?.Email ?? "")</span>
+        </td>
+        <td>@(a.JobOpening?.JobTitle ?? "—")</td>
+        <td>@a.SubmittedDate.ToString("MMM dd, yyyy")</td>
+        <td>
+          <span class="badge-status @(a.Status=="Approved"?"badge-success":a.Status=="Rejected"?"badge-danger":a.Status=="Shortlisted"?"badge-info":"badge-warning")">
+            @a.Status
+          </span>
+        </td>
+        <td>
+          <a href="/Employer/ApplicationDetails/@a.Id" class="btn btn-sm btn-accent" style="border-radius:6px;">
+            <i class="bi bi-eye me-1"></i>Review
+          </a>
+        </td>
+      </tr>}
+    @if(!Model.Any()){
+      <tr><td colspan="5" class="text-center text-muted py-5">
+        <i class="bi bi-inbox" style="font-size:2rem;display:block;margin-bottom:8px;"></i>
+        No applications yet.
+      </td></tr>}
+    </tbody>
+  </table>
+</div>

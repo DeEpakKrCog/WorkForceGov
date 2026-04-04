@@ -1,0 +1,91 @@
+@model ComplianceDashboardViewModel
+@{ ViewData["Title"] = "Compliance Dashboard"; }
+
+<div class="page-header"><h1><i class="bi bi-shield-check me-2"></i>Compliance Dashboard</h1><p>Monitor employer compliance and investigate complaints</p></div>
+
+@if(TempData["SuccessMessage"] != null){<div class="alert alert-success alert-dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert"></button>@TempData["SuccessMessage"]</div>}
+@if(TempData["ErrorMessage"] != null){<div class="alert alert-danger alert-dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert"></button>@TempData["ErrorMessage"]</div>}
+
+<!-- Stats -->
+<div class="row g-3 mb-4">
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fef3c7;color:#d97706;"><i class="bi bi-hourglass-split"></i></div><div class="stat-value">@Model.PendingReviews</div><div class="stat-label">Pending Doc Reviews</div></div></div>
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fee2e2;color:#dc2626;"><i class="bi bi-exclamation-triangle"></i></div><div class="stat-value">@Model.PendingComplaints</div><div class="stat-label">Open Complaints</div></div></div>
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#fce7f3;color:#db2777;"><i class="bi bi-shield-x"></i></div><div class="stat-value">@Model.TotalViolations</div><div class="stat-label">Violations</div></div></div>
+  <div class="col-sm-6 col-xl-3"><div class="stat-card"><div class="stat-icon" style="background:#dcfce7;color:#16a34a;"><i class="bi bi-clipboard-check"></i></div><div class="stat-value">@Model.TotalInspections</div><div class="stat-label">Total Inspections</div></div></div>
+</div>
+
+<div class="row g-4">
+  <!-- Employers under review -->
+  <div class="col-lg-6">
+    <div class="table-card">
+      <div class="card-header-custom">
+        <span><i class="bi bi-building me-2"></i>Employers Pending Verification</span>
+        <a href="/ComplianceOfficer/EmployerReview" class="btn btn-sm btn-accent">View All</a>
+      </div>
+      <div style="padding:8px 16px;">
+      @foreach(var e in Model.Employers.Where(e=>e.Status=="Pending").Take(6)){
+        <div style="padding:10px 0;border-bottom:1px solid #f1f5f9;display:flex;justify-content:space-between;align-items:center;">
+          <div>
+            <div style="font-weight:600;font-size:.875rem;">@e.CompanyName</div>
+            <div style="font-size:.75rem;color:#64748b;">@e.Industry</div>
+          </div>
+          <span class="badge-status badge-warning">@e.Status</span>
+        </div>}
+      @if(!Model.Employers.Any(e=>e.Status=="Pending")){<p class="text-muted py-3 mb-0">No employers pending verification.</p>}
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent compliance records -->
+  <div class="col-lg-6">
+    <div class="table-card">
+      <div class="card-header-custom">
+        <span><i class="bi bi-clipboard-data me-2"></i>Recent Compliance Records</span>
+      </div>
+      <table class="table mb-0">
+        <thead><tr><th>Entity #</th><th>Type</th><th>Result</th><th>Date</th></tr></thead>
+        <tbody>
+        @foreach(var r in Model.RecentRecords){
+          <tr>
+            <td>#@r.EntityId</td>
+            <td>@r.Type</td>
+            <td><span class="badge-status @(r.Result=="Compliant"?"badge-success":r.Result=="Non-Compliant"?"badge-danger":"badge-warning")">@r.Result</span></td>
+            <td>@r.Date.ToString("MMM dd")</td>
+          </tr>}
+        @if(!Model.RecentRecords.Any()){<tr><td colspan="4" class="text-center text-muted py-3">No records yet.</td></tr>}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Recent complaints -->
+  <div class="col-12">
+    <div class="table-card">
+      <div class="card-header-custom">
+        <span><i class="bi bi-chat-square-text me-2"></i>Recent Complaints</span>
+        <a href="/ComplianceOfficer/InvestigateComplaint" class="btn btn-sm btn-accent">Investigate</a>
+      </div>
+      <table class="table mb-0">
+        <thead><tr><th>Complainant</th><th>Against</th><th>Description</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+        @foreach(var c in Model.RecentComplaints){
+          <tr>
+            <td>@(c.User?.FullName ?? "—")</td>
+            <td>@(c.Employer?.CompanyName ?? "—")</td>
+            <td style="max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">@c.ComplaintDescription</td>
+            <td><span class="badge-status @(c.Status=="Resolved"?"badge-success":"badge-warning")">@c.Status</span></td>
+            <td>
+              @if(c.Status != "Resolved"){
+              <form method="post" asp-action="ResolveComplaint" asp-route-id="@c.Id">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="resolution" value="Reviewed and resolved by compliance officer." />
+                <button class="btn btn-sm btn-outline-success" style="border-radius:6px;">Resolve</button>
+              </form>}
+            </td>
+          </tr>}
+        @if(!Model.RecentComplaints.Any()){<tr><td colspan="5" class="text-center text-muted py-3">No complaints.</td></tr>}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

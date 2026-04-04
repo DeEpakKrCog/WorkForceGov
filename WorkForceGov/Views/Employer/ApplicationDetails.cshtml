@@ -1,0 +1,128 @@
+@model Application
+@{ 
+  ViewData["Title"] = "Application Details";
+  bool reviewed = ViewBag.Reviewed == true;
+  var citizenDocs = ViewBag.CitizenDocuments as List<CitizenDocument> ?? new List<CitizenDocument>();
+}
+
+<div class="page-header d-flex justify-content-between align-items-center">
+  <div><h1>Application Details</h1><p>Review candidate information before making a decision</p></div>
+  <a href="/Employer/Applications" class="btn btn-outline-secondary"><i class="bi bi-arrow-left me-1"></i>Back</a>
+</div>
+
+@if(TempData["SuccessMessage"] != null){<div class="alert alert-success">@TempData["SuccessMessage"]</div>}
+@if(TempData["ErrorMessage"] != null){<div class="alert alert-danger">@TempData["ErrorMessage"]</div>}
+
+<div class="row g-4">
+  <!-- Candidate Info -->
+  <div class="col-lg-6">
+    <div class="table-card" style="padding:28px;">
+      <h6 style="font-weight:700;margin-bottom:16px;"><i class="bi bi-person-circle me-2"></i>Candidate Information</h6>
+      <p><strong>Name:</strong> @Model.Citizen?.FullName</p>
+      <p><strong>Email:</strong> @Model.Citizen?.Email</p>
+      <p><strong>Applied:</strong> @Model.SubmittedDate.ToString("MMMM dd, yyyy")</p>
+      <p><strong>Status:</strong> <span class="badge-status @(Model.Status=="Approved"?"badge-success":Model.Status=="Rejected"?"badge-danger":Model.Status=="Shortlisted"?"badge-info":"badge-warning")">@Model.Status</span></p>
+      @if(!string.IsNullOrEmpty(Model.CoverLetter)){
+        <div style="background:#f8fafc;border-radius:8px;padding:12px;margin-top:8px;">
+          <strong>Cover Letter:</strong><br/>
+          <span style="font-size:.875rem;color:#475569;">@Model.CoverLetter</span>
+        </div>}
+    </div>
+  </div>
+
+  <!-- Job Details -->
+  <div class="col-lg-6">
+    <div class="table-card" style="padding:28px;">
+      <h6 style="font-weight:700;margin-bottom:16px;"><i class="bi bi-briefcase me-2"></i>Job Details</h6>
+      <p><strong>Title:</strong> @Model.JobOpening?.JobTitle</p>
+      <p><strong>Location:</strong> @Model.JobOpening?.Location</p>
+      <p><strong>Category:</strong> @Model.JobOpening?.JobCategory</p>
+      <p><strong>Description:</strong> @Model.JobOpening?.Description</p>
+    </div>
+  </div>
+
+  <!-- Resume / Documents (GATE) -->
+  <div class="col-12">
+    <div class="table-card" style="padding:28px;">
+      <h6 style="font-weight:700;margin-bottom:16px;"><i class="bi bi-file-earmark-person me-2"></i>Candidate Documents</h6>
+      @if(!reviewed){
+        <div class="alert alert-info" style="border-radius:10px;">
+          <i class="bi bi-info-circle me-2"></i>
+          <strong>Review Required:</strong> You must view the candidate's resume before you can shortlist them.
+        </div>
+        <a href="/Employer/ApplicationDetails/@Model.Id?reviewed=true" class="btn btn-accent">
+          <i class="bi bi-eye me-2"></i>View Resume &amp; Documents
+        </a>
+      } else {
+        @if(citizenDocs.Any()){
+          <div class="row g-3">
+          @foreach(var doc in citizenDocs){
+            <div class="col-md-4">
+              <div style="border:1px solid #e2e8f0;border-radius:10px;padding:16px;display:flex;align-items:center;gap:12px;">
+                <i class="bi bi-file-earmark-text" style="font-size:1.5rem;color:#6366f1;"></i>
+                <div>
+                  <div style="font-weight:600;font-size:.875rem;">@doc.DocumentType</div>
+                  <div style="font-size:.75rem;color:#64748b;">@doc.FileName</div>
+                  <span class="badge-status @(doc.VerificationStatus=="Verified"?"badge-success":"badge-warning")" style="font-size:.7rem;">@doc.VerificationStatus</span>
+                </div>
+                @if(!string.IsNullOrEmpty(doc.FilePath)){
+                  <a href="@doc.FilePath" target="_blank" class="btn btn-sm btn-outline-primary ms-auto"><i class="bi bi-download"></i></a>}
+              </div>
+            </div>}
+          </div>
+        } else {
+          <p class="text-muted">No documents uploaded by this candidate yet.</p>
+        }
+      }
+    </div>
+  </div>
+
+  <!-- Action Buttons (only after reviewing) -->
+  @if(Model.Status == "Pending" || Model.Status == "Reviewed"){
+    <div class="col-12">
+      <div class="table-card" style="padding:24px;">
+        <h6 style="font-weight:700;margin-bottom:16px;"><i class="bi bi-sliders me-2"></i>Update Application Status</h6>
+        @if(!reviewed){
+          <div class="alert alert-warning" style="border-radius:8px;">
+            <i class="bi bi-lock me-2"></i>Please view the resume above before taking action.
+          </div>
+        } else {
+          <div class="d-flex gap-3 flex-wrap">
+            <form method="post" asp-action="UpdateApplication" asp-route-id="@Model.Id">
+              @Html.AntiForgeryToken()
+              <input type="hidden" name="status" value="Shortlisted" />
+              <input type="hidden" name="notes" value="Candidate shortlisted after resume review." />
+              <button class="btn btn-accent"><i class="bi bi-star me-2"></i>Shortlist Candidate</button>
+            </form>
+            <form method="post" asp-action="UpdateApplication" asp-route-id="@Model.Id">
+              @Html.AntiForgeryToken()
+              <input type="hidden" name="status" value="Rejected" />
+              <input type="hidden" name="notes" value="Not selected." />
+              <button class="btn btn-outline-danger"><i class="bi bi-x-circle me-2"></i>Reject</button>
+            </form>
+          </div>
+        }
+      </div>
+    </div>
+  } else if(Model.Status == "Shortlisted") {
+    <div class="col-12">
+      <div class="table-card" style="padding:24px;">
+        <h6 style="font-weight:700;margin-bottom:16px;">Finalise Decision</h6>
+        <div class="d-flex gap-3 flex-wrap">
+          <form method="post" asp-action="UpdateApplication" asp-route-id="@Model.Id">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="status" value="Approved" />
+            <input type="hidden" name="notes" value="Candidate selected for the role." />
+            <button class="btn btn-success"><i class="bi bi-check-circle me-2"></i>Approve (Hire)</button>
+          </form>
+          <form method="post" asp-action="UpdateApplication" asp-route-id="@Model.Id">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="status" value="Rejected" />
+            <input type="hidden" name="notes" value="Not selected after shortlisting." />
+            <button class="btn btn-outline-danger"><i class="bi bi-x-circle me-2"></i>Reject</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  }
+</div>

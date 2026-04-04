@@ -1,0 +1,15 @@
+@model User
+@{ ViewData["Title"] = "Edit User"; }
+<div class="page-header"><h1>Edit User</h1></div>
+<div class="row"><div class="col-lg-6"><div class="table-card" style="padding:32px;">
+<form method="post" asp-action="EditUser" asp-controller="Admin" asp-route-id="@Model.Id">@Html.AntiForgeryToken()
+<div class="row g-3">
+    <div class="col-12"><label class="form-label">Full Name</label><input name="FullName" class="form-control" value="@Model.FullName" required /></div>
+    <div class="col-md-6"><label class="form-label">Email</label><input name="Email" class="form-control" value="@Model.Email" required /></div>
+    <div class="col-md-6"><label class="form-label">New Password (optional)</label><input type="password" name="Password" class="form-control" /></div>
+    <div class="col-md-6"><label class="form-label">Role</label><select name="Role" class="form-select"><option selected="@(Model.Role=="Citizen")" value="Citizen">Citizen</option><option selected="@(Model.Role=="Employer")" value="Employer">Employer</option><option selected="@(Model.Role=="LaborOfficer")" value="LaborOfficer">LaborOfficer</option><option selected="@(Model.Role=="ComplianceOfficer")" value="ComplianceOfficer">ComplianceOfficer</option><option selected="@(Model.Role=="GovernmentAuditor")" value="GovernmentAuditor">GovernmentAuditor</option><option selected="@(Model.Role=="ProgramManager")" value="ProgramManager">ProgramManager</option><option selected="@(Model.Role=="SystemAdmin")" value="SystemAdmin">SystemAdmin</option></select></div>
+    <div class="col-md-6"><label class="form-label">Status</label><select name="Status" class="form-select"><option selected="@(Model.Status=="Active")" value="Active">Active</option><option selected="@(Model.Status=="Inactive")" value="Inactive">Inactive</option></select></div>
+    <div class="col-md-6"><label class="form-label">Phone</label><input name="Phone" class="form-control" value="@Model.Phone" /></div>
+</div>
+<button type="submit" class="btn btn-accent mt-4">Save Changes</button>
+</form></div></div></div>

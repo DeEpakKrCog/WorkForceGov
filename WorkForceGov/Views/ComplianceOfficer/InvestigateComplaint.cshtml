@@ -1,0 +1,7 @@
+@model IEnumerable<Complaint>
+@{ ViewData["Title"] = "Complaints"; }
+<div class="page-header"><h1>Complaints Investigation</h1></div>
+<div class="table-card"><table class="table mb-0"><thead><tr><th>Complainant</th><th>Employer</th><th>Description</th><th>Status</th><th>Date</th></tr></thead><tbody>
+@foreach(var c in Model){<tr><td>@c.User?.FullName</td><td>@c.Employer?.CompanyName</td><td>@c.ComplaintDescription</td><td><span class="badge-status @(c.Status=="Resolved"?"badge-success":"badge-warning")">@c.Status</span></td><td>@c.SubmittedDate.ToString("MMM dd")</td></tr>}
+@if(!Model.Any()){<tr><td colspan="5" class="text-center text-muted py-4">No complaints filed.</td></tr>}
+</tbody></table></div>

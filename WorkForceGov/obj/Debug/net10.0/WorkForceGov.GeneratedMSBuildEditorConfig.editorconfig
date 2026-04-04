@@ -1,0 +1,259 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.RootNamespace = WorkForceGov
+build_property.RootNamespace = WorkForceGov
+build_property.ProjectDir = C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Admin/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Admin/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Admin/ManageUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Admin/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Admin/SystemMonitoring.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3lzdGVtTW9uaXRvcmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/Benefits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxCZW5lZml0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/Documents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxEb2N1bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/JobApplications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxKb2JBcHBsaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/JobSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxKb2JTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxOb3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ComplianceOfficer/ComplianceReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxpYW5jZU9mZmljZXJcQ29tcGxpYW5jZVJlcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ComplianceOfficer/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxpYW5jZU9mZmljZXJcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ComplianceOfficer/EmployerReview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxpYW5jZU9mZmljZXJcRW1wbG95ZXJSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ComplianceOfficer/InvestigateComplaint.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxpYW5jZU9mZmljZXJcSW52ZXN0aWdhdGVDb21wbGFpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/ApplicationDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcQXBwbGljYXRpb25EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/Applications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcQXBwbGljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/CreateJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcQ3JlYXRlSm9iLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/EditJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcRWRpdEpvYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/ManageJobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcTWFuYWdlSm9icy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcTm90aWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Employer/UploadDocuments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZXJcVXBsb2FkRG9jdW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/GovernmentAuditor/AlertsAndNotifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR292ZXJubWVudEF1ZGl0b3JcQWxlcnRzQW5kTm90aWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/GovernmentAuditor/AuditReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR292ZXJubWVudEF1ZGl0b3JcQXVkaXRSZXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/GovernmentAuditor/ComplianceMonitoring.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR292ZXJubWVudEF1ZGl0b3JcQ29tcGxpYW5jZU1vbml0b3JpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/GovernmentAuditor/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR292ZXJubWVudEF1ZGl0b3JcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/GovernmentAuditor/WorkforcePrograms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR292ZXJubWVudEF1ZGl0b3JcV29ya2ZvcmNlUHJvZ3JhbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/LaborOfficer/Applications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JPZmZpY2VyXEFwcGxpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/LaborOfficer/Audits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JPZmZpY2VyXEF1ZGl0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/LaborOfficer/Compliance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JPZmZpY2VyXENvbXBsaWFuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/LaborOfficer/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JPZmZpY2VyXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/LaborOfficer/DocumentVerifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JPZmZpY2VyXERvY3VtZW50VmVyaWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/LaborOfficer/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JPZmZpY2VyXFJlcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/BudgetMonitoring.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcQnVkZ2V0TW9uaXRvcmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/CreateProgram.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcQ3JlYXRlUHJvZ3JhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/CreateTraining.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcQ3JlYXRlVHJhaW5pbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/EditProgram.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcRWRpdFByb2dyYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/EditTraining.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcRWRpdFRyYWluaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/PerformanceTracking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcUGVyZm9ybWFuY2VUcmFja2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/ProgramManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcUHJvZ3JhbU1hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/ResourceManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcUmVzb3VyY2VNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/TrainingManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcVHJhaW5pbmdNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
