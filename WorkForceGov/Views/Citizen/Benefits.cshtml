@@ -1,21 +1,88 @@
 @model IEnumerable<Benefit>
-@{ ViewData["Title"] = "Benefits"; }
+@using WorkForceGovProject.Models
+@{
+    ViewData["Title"] = "Benefits";
+    var activePrograms = ViewBag.ActivePrograms as List<EmploymentProgram> ?? new List<EmploymentProgram>();
+    var enrolledIds = ViewBag.EnrolledProgramIds as HashSet<int> ?? new HashSet<int>();
+}
+
 <div class="page-header"><h1>My Benefits</h1><p>Track government program benefits</p></div>
-<div class="table-card">
+
+<div class="table-card mb-4">
+    <div class="card-header-custom"><span><i class="bi bi-gift me-2"></i>Allocated Benefits</span></div>
     <table class="table mb-0">
         <thead><tr><th>Program</th><th>Type</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
         <tbody>
-        @foreach (var b in Model)
-        {
-            <tr>
-                <td><strong>@b.Program?.ProgramName</strong></td>
-                <td>@b.BenefitType</td>
-                <td style="font-weight:700;color:#16a34a;">$@b.Amount.ToString("N2")</td>
-                <td>@b.BenefitDate.ToString("MMM dd, yyyy")</td>
-                <td><span class="badge-status @(b.Status == "Active" ? "badge-success" : "badge-secondary")">@b.Status</span></td>
-            </tr>
-        }
-        @if (!Model.Any()) { <tr><td colspan="5" class="text-center text-muted py-4">No benefits allocated yet.</td></tr> }
+            @foreach (var b in Model)
+            {
+                <tr>
+                    <td><strong>@b.Program?.ProgramName</strong></td>
+                    <td>@b.BenefitType</td>
+                    <td style="font-weight:700;color:#16a34a;">$@b.Amount.ToString("N2")</td>
+                    <td>@b.BenefitDate.ToString("MMM dd, yyyy")</td>
+                    <td><span class="badge-status @(b.Status == "Active" ? "badge-success" : "badge-secondary")">@b.Status</span></td>
+                </tr>
+            }
+            @if (!Model.Any())
+            {
+                <tr><td colspan="5" class="text-center text-muted py-4">No benefits allocated yet.</td></tr>
+            }
         </tbody>
     </table>
 </div>
+
+@if (activePrograms.Any())
+{
+    <div class="table-card">
+        <div class="card-header-custom"><span><i class="bi bi-kanban me-2"></i>Available Government Programs</span></div>
+        <div class="row g-3" style="padding:20px;">
+            @foreach (var prog in activePrograms)
+            {
+                <div class="col-md-6 col-lg-4">
+                    <div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;background:#fafbfc;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                            <div style="background:#dbeafe;color:#2563eb;border-radius:8px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;">
+                                <i class="bi bi-clipboard2-check"></i>
+                            </div>
+                            <strong style="font-size:.95rem;">@prog.ProgramName</strong>
+                        </div>
+                        @if (!string.IsNullOrEmpty(prog.Description))
+                        {
+                            <p style="font-size:.82rem;color:#64748b;margin-bottom:10px;">@prog.Description</p>
+                        }
+                        <div style="font-size:.78rem;color:#94a3b8;margin-bottom:6px;">
+                            <i class="bi bi-calendar me-1"></i>
+                            @prog.StartDate.ToString("MMM dd, yyyy")
+                            @if (prog.EndDate.HasValue)
+                            {
+                                <span> – @prog.EndDate.Value.ToString("MMM dd, yyyy")</span>
+                            }
+                        </div>
+                        @if (prog.TotalBudget > 0)
+                        {
+                            <div style="font-size:.78rem;color:#059669;"><i class="bi bi-currency-dollar me-1"></i>Budget: $@prog.TotalBudget.ToString("N0")</div>
+                        }
+                        <span class="badge-status badge-success" style="margin-top:8px;display:inline-block;">Active</span>
+                        <div style="margin-top:12px;">
+                            @if (enrolledIds.Contains(prog.Id))
+                            {
+                                <button class="btn btn-sm btn-secondary w-100" disabled>
+                                    <i class="bi bi-check2-circle me-1"></i>Applied
+                                </button>
+                            }
+                            else
+                            {
+                                <form method="post" asp-action="ApplyBenefit" asp-route-programId="@prog.Id">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-sm btn-accent w-100">
+                                        <i class="bi bi-send me-1"></i>Apply Now
+                                    </button>
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}

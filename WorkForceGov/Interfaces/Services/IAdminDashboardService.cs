@@ -4,6 +4,6 @@ namespace WorkForceGovProject.Interfaces.Services
 {
     public interface IAdminDashboardService
     {
-        Task<AdminDashboardViewModel> GetDashboardAsync();
+        Task<DashboardViewModel> GetDashboardAsync();
     }
 }

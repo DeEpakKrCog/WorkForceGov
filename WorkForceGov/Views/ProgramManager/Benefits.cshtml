@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WorkForceGovProject.Models.Benefit>
+@{
+    ViewData["Title"] = "Benefit Management";
+}
+
+<div class="page-header d-flex justify-content-between align-items-center">
+    <div><h1><i class="bi bi-gift me-2"></i>Benefit Management</h1><p>Review citizen benefit requests and assign benefits directly</p></div>
+    <a href="/ProgramManager/AssignBenefit" class="btn btn-accent"><i class="bi bi-plus-circle me-1"></i>Assign Benefit</a>
+</div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<div class="table-card">
+    <div class="card-header-custom">
+        <span><i class="bi bi-list-check me-2"></i>All Benefit Records</span>
+        <span class="badge bg-warning text-dark ms-2">@Model.Count(b => b.Status == "Pending") Pending</span>
+    </div>
+    <table class="table mb-0">
+        <thead>
+            <tr>
+                <th>Citizen</th>
+                <th>Program</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in Model.OrderByDescending(x => x.BenefitDate))
+            {
+                <tr>
+                    <td><strong>@(b.Citizen?.FullName ?? "—")</strong><br /><span style="font-size:.75rem;color:#64748b;">@(b.Citizen?.Email ?? "")</span></td>
+                    <td>@(b.Program?.ProgramName ?? "—")</td>
+                    <td>@b.BenefitType</td>
+                    <td style="font-weight:700;color:#16a34a;">$@b.Amount.ToString("N2")</td>
+                    <td>@b.BenefitDate.ToString("MMM dd, yyyy")</td>
+                    <td>
+                        <span class="badge-status @(b.Status == "Active" ? "badge-success" : b.Status == "Rejected" ? "badge-danger" : b.Status == "Paid" ? "badge-info" : "badge-warning")">
+                            @b.Status
+                        </span>
+                    </td>
+                    <td>
+                        @if (b.Status == "Pending")
+                        {
+                            <div style="display:flex;gap:8px;align-items:center;">
+                                <form method="post" asp-action="ApproveBenefit" asp-route-id="@b.Id" style="display:flex;gap:6px;align-items:center;">
+                                    @Html.AntiForgeryToken()
+                                    <input type="number" name="amount" class="form-control form-control-sm" style="width:100px;" placeholder="Amount $" step="0.01" min="0" required />
+                                    <button type="submit" class="btn btn-sm btn-success"><i class="bi bi-check-circle me-1"></i>Approve</button>
+                                </form>
+                                <form method="post" asp-action="RejectBenefit" asp-route-id="@b.Id">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-sm btn-outline-danger"><i class="bi bi-x-circle me-1"></i>Reject</button>
+                                </form>
+                            </div>
+                        }
+                        else
+                        {
+                            <span style="font-size:.8rem;color:#94a3b8;">—</span>
+                        }
+                    </td>
+                </tr>
+            }
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted py-5">
+                        <i class="bi bi-inbox" style="font-size:2rem;display:block;margin-bottom:8px;"></i>No benefit records yet.
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

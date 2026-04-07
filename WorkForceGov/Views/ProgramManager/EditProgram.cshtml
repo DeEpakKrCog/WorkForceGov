@@ -1,16 +1,24 @@
 @model EmploymentProgram
-@{ ViewData["Title"] = "Edit Program"; }
+@{
+    ViewData["Title"] = "Edit Program";
+}
 <div class="page-header"><h1>Edit Program</h1></div>
-<div class="row"><div class="col-lg-7"><div class="table-card" style="padding:32px;">
-<form method="post" asp-action="EditProgram" asp-controller="ProgramManager" asp-route-id="@Model.Id">@Html.AntiForgeryToken()
-<div class="row g-3">
-    <div class="col-12"><label class="form-label">Program Name</label><input name="ProgramName" class="form-control" value="@Model.ProgramName" required /></div>
-    <div class="col-12"><label class="form-label">Description</label><textarea name="Description" class="form-control" rows="3">@Model.Description</textarea></div>
-    <div class="col-md-4"><label class="form-label">Type</label><input name="ProgramType" class="form-control" value="@Model.ProgramType" /></div>
-    <div class="col-md-4"><label class="form-label">Budget</label><input type="number" name="TotalBudget" class="form-control" value="@Model.TotalBudget" step="0.01" /></div>
-    <div class="col-md-4"><label class="form-label">Status</label><select name="Status" class="form-select"><option selected="@(Model.Status=="Active")" value="Active">Active</option><option selected="@(Model.Status=="Paused")" value="Paused">Paused</option><option selected="@(Model.Status=="Closed")" value="Closed">Closed</option></select></div>
-    <div class="col-md-6"><label class="form-label">Start Date</label><input type="date" name="StartDate" class="form-control" value="@Model.StartDate.ToString("yyyy-MM-dd")" /></div>
-    <div class="col-md-6"><label class="form-label">End Date</label><input type="date" name="EndDate" class="form-control" value="@Model.EndDate?.ToString("yyyy-MM-dd")" /></div>
+<div class="row">
+    <div class="col-lg-7">
+        <div class="table-card" style="padding:32px;">
+            <form method="post" asp-action="EditProgram" asp-controller="ProgramManager" asp-route-id="@Model.Id">
+                @Html.AntiForgeryToken()
+                <div class="row g-3">
+                    <div class="col-12"><label class="form-label">Program Name</label><input name="ProgramName" class="form-control" value="@Model.ProgramName" required /></div>
+                    <div class="col-12"><label class="form-label">Description</label><textarea name="Description" class="form-control" rows="3">@Model.Description</textarea></div>
+                    <div class="col-md-4"><label class="form-label">Type</label><input name="ProgramType" class="form-control" value="@Model.ProgramType" /></div>
+                    <div class="col-md-4"><label class="form-label">Budget ($)</label><input type="number" name="TotalBudget" class="form-control" value="@Model.TotalBudget" step="0.01" min="0" required /></div>
+                    <div class="col-md-4"><label class="form-label">Status</label><select name="Status" class="form-select"><option selected="@(Model.Status == "Active")" value="Active">Active</option><option selected="@(Model.Status == "Paused")" value="Paused">Paused</option><option selected="@(Model.Status == "Closed")" value="Closed">Closed</option></select></div>
+                    <div class="col-md-6"><label class="form-label">Start Date</label><input type="date" name="StartDate" class="form-control" value="@Model.StartDate.ToString("yyyy-MM-dd")" /></div>
+                    <div class="col-md-6"><label class="form-label">End Date</label><input type="date" name="EndDate" class="form-control" value="@Model.EndDate?.ToString("yyyy-MM-dd")" /></div>
+                </div>
+                <button type="submit" class="btn btn-accent mt-4">Save Changes</button>
+            </form>
+        </div>
+    </div>
 </div>
-<button type="submit" class="btn btn-accent mt-4">Save Changes</button>
-</form></div></div></div>

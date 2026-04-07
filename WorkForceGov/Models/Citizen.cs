@@ -38,5 +38,6 @@ namespace WorkForceGovProject.Models
         public virtual ICollection<CitizenDocument> Documents { get; set; } = new List<CitizenDocument>();
         public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
         public virtual ICollection<Benefit> Benefits { get; set; } = new List<Benefit>();
+        public virtual ICollection<TrainingEnrollment> TrainingEnrollments { get; set; } = new List<TrainingEnrollment>();
     }
 }

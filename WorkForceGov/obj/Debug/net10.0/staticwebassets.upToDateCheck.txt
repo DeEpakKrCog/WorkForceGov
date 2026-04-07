@@ -61,6 +61,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\uploads\citizen-docs\1_Resume_20260405181828_Agile_Certificate.pdf
 C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov\wwwroot\css\site.css
 C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov\wwwroot\favicon.ico
 C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov\wwwroot\js\site.js

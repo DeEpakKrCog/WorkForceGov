@@ -29,6 +29,20 @@ namespace WorkForceGovProject.Repositories.Common
         public TrainingRepository(ApplicationDbContext ctx) : base(ctx) { }
     }
 
+    public class TrainingEnrollmentRepository : Repository<TrainingEnrollment>, ITrainingEnrollmentRepository
+    {
+        public TrainingEnrollmentRepository(ApplicationDbContext ctx) : base(ctx) { }
+
+        public async Task<IEnumerable<TrainingEnrollment>> GetByCitizenAsync(int citizenId) =>
+            await _set.Include(e => e.Training).ThenInclude(t => t.Program)
+                      .Where(e => e.CitizenId == citizenId)
+                      .OrderByDescending(e => e.EnrolledDate)
+                      .ToListAsync();
+
+        public async Task<TrainingEnrollment?> GetByCitizenAndTrainingAsync(int citizenId, int trainingId) =>
+            await _set.FirstOrDefaultAsync(e => e.CitizenId == citizenId && e.TrainingId == trainingId);
+    }
+
     public class ResourceRepository : Repository<Resource>, IResourceRepository
     {
         public ResourceRepository(ApplicationDbContext ctx) : base(ctx) { }

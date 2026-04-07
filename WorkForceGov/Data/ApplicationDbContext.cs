@@ -9,7 +9,7 @@ namespace WorkForceGovProject.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Citizen> Citizens { get; set; }
-        public DbSet<CitizenDocument> CitizenDocuments { get; set; }
+        public DbSet<CitizenDocument> CitizenDocuments { get; set; } 
         public DbSet<Employer> Employers { get; set; }
         public DbSet<EmployerDocument> EmployerDocuments { get; set; }
         public DbSet<JobOpening> JobOpenings { get; set; }
@@ -17,6 +17,7 @@ namespace WorkForceGovProject.Data
         public DbSet<Benefit> Benefits { get; set; }
         public DbSet<EmploymentProgram> EmploymentPrograms { get; set; }
         public DbSet<Training> Trainings { get; set; }
+        public DbSet<TrainingEnrollment> TrainingEnrollments { get; set; }
         public DbSet<Resource> Resources { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<ComplianceRecord> ComplianceRecords { get; set; }
@@ -85,6 +86,20 @@ namespace WorkForceGovProject.Data
                 .WithMany(p => p.Trainings)
                 .HasForeignKey(t => t.ProgramId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            // Training -> TrainingEnrollments
+            modelBuilder.Entity<TrainingEnrollment>()
+                .HasOne(e => e.Training)
+                .WithMany(t => t.Enrollments)
+                .HasForeignKey(e => e.TrainingId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Citizen -> TrainingEnrollments
+            modelBuilder.Entity<TrainingEnrollment>()
+                .HasOne(e => e.Citizen)
+                .WithMany(c => c.TrainingEnrollments)
+                .HasForeignKey(e => e.CitizenId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             // EmploymentProgram -> Resources
             modelBuilder.Entity<Resource>()
@@ -216,6 +231,13 @@ namespace WorkForceGovProject.Data
                 new EmploymentProgram { Id = 1, ProgramName = "Tech Skills Initiative", Description = "Technology training and certification program", ProgramType = "Training", TotalBudget = 500000, StartDate = new DateTime(2026, 1, 1), EndDate = new DateTime(2026, 12, 31), Status = "Active" },
                 new EmploymentProgram { Id = 2, ProgramName = "Healthcare Career Path", Description = "Medical assistant and healthcare training program", ProgramType = "Training", TotalBudget = 350000, StartDate = new DateTime(2026, 2, 1), EndDate = new DateTime(2026, 11, 30), Status = "Active" },
                 new EmploymentProgram { Id = 3, ProgramName = "Small Business Support", Description = "Entrepreneurship and small business development", ProgramType = "Subsidy", TotalBudget = 200000, StartDate = new DateTime(2026, 4, 1), EndDate = new DateTime(2026, 10, 31), Status = "Active" }
+            );
+
+            modelBuilder.Entity<Training>().HasData(
+                new Training { Id = 1, ProgramId = 1, Title = "Introduction to .NET Development", Description = "Hands-on .NET and C# fundamentals for beginners", StartDate = new DateTime(2026, 5, 1), EndDate = new DateTime(2026, 6, 30), Status = "Active" },
+                new Training { Id = 2, ProgramId = 1, Title = "Cloud Computing with Azure", Description = "Microsoft Azure fundamentals and cloud deployment", StartDate = new DateTime(2026, 6, 1), EndDate = new DateTime(2026, 7, 31), Status = "Active" },
+                new Training { Id = 3, ProgramId = 2, Title = "Medical Assistant Certification", Description = "Certified medical assistant preparation course", StartDate = new DateTime(2026, 5, 15), EndDate = new DateTime(2026, 8, 15), Status = "Active" },
+                new Training { Id = 4, ProgramId = 3, Title = "Business Plan Development", Description = "Create and present a fundable business plan", StartDate = new DateTime(2026, 4, 15), EndDate = new DateTime(2026, 5, 30), Status = "Active" }
             );
 
             modelBuilder.Entity<ComplianceRecord>().HasData(

@@ -22,14 +22,7 @@ namespace WorkForceGovProject.Controllers
         public async Task<IActionResult> Dashboard()
         {
             if (UserId == null) return RedirectToAction("Login", "Account");
-            var adminModel = await _dashboard.GetDashboardAsync();
-            var viewModel = new DashboardViewModel
-            {
-                TotalUsers = adminModel.TotalUsers,
-                RecentLogs = new List<SystemLog>(),
-                RecentJobs = new List<JobOpening>(),
-                Programs = new List<EmploymentProgram>()
-            };
+            var viewModel = await _dashboard.GetDashboardAsync();
             return View(viewModel);
         }
 
@@ -185,6 +178,24 @@ namespace WorkForceGovProject.Controllers
         {
             var apps = await _apps.GetAllWithDetailsAsync();
             return View(apps);
+        }
+
+        [HttpPost, Route("ApproveApplication/{id}")]
+        public async Task<IActionResult> ApproveApplication(int id)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var (success, msg) = await _apps.UpdateStatusAsync(id, "Approved", "Approved by Labor Officer.");
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = msg;
+            return RedirectToAction("Applications");
+        }
+
+        [HttpPost, Route("RejectApplication/{id}")]
+        public async Task<IActionResult> RejectApplication(int id, string? notes)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var (success, msg) = await _apps.UpdateStatusAsync(id, "Rejected", notes ?? "Rejected by Labor Officer.");
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = msg;
+            return RedirectToAction("Applications");
         }
 
         [Route("Compliance")]
@@ -436,6 +447,70 @@ namespace WorkForceGovProject.Controllers
         {
             var programs = await _programs.GetAllAsync();
             return View(programs);
+        }
+
+        // ── BENEFIT MANAGEMENT ──────────────────────────────────────────────────
+        [Route("Benefits")]
+        public async Task<IActionResult> Benefits()
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var allBenefits = await _benefits.GetAllBenefitsAsync();
+            ViewBag.Programs = await _programs.GetAllAsync();
+            return View(allBenefits);
+        }
+
+        [HttpPost, Route("ApproveBenefit/{id}")]
+        public async Task<IActionResult> ApproveBenefit(int id, decimal amount)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var benefit = await _benefits.GetBenefitByIdAsync(id);
+            if (benefit == null) { TempData["ErrorMessage"] = "Benefit not found."; return RedirectToAction("Benefits"); }
+            benefit.Status = "Active";
+            benefit.Amount = amount;
+            var (success, msg) = await _benefits.UpdateBenefitAsync(benefit);
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = success ? "Benefit approved successfully." : msg;
+            return RedirectToAction("Benefits");
+        }
+
+        [HttpPost, Route("RejectBenefit/{id}")]
+        public async Task<IActionResult> RejectBenefit(int id)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var benefit = await _benefits.GetBenefitByIdAsync(id);
+            if (benefit == null) { TempData["ErrorMessage"] = "Benefit not found."; return RedirectToAction("Benefits"); }
+            benefit.Status = "Rejected";
+            var (success, msg) = await _benefits.UpdateBenefitAsync(benefit);
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = success ? "Benefit request rejected." : msg;
+            return RedirectToAction("Benefits");
+        }
+
+        [HttpGet, Route("AssignBenefit")]
+        public async Task<IActionResult> AssignBenefit()
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            ViewBag.Programs = await _programs.GetAllAsync();
+            return View();
+        }
+
+        [HttpPost, Route("AssignBenefit")]
+        public async Task<IActionResult> AssignBenefit(int citizenId, int programId, string benefitType, decimal amount, string? description)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var program = await _programs.GetByIdAsync(programId);
+            if (program == null) { TempData["ErrorMessage"] = "Program not found."; return RedirectToAction("Benefits"); }
+            var benefit = new Benefit
+            {
+                CitizenId = citizenId,
+                ProgramId = programId,
+                BenefitType = benefitType,
+                Amount = amount,
+                Status = "Active",
+                BenefitDate = DateTime.Now,
+                Description = description
+            };
+            var (success, msg) = await _benefits.CreateBenefitAsync(benefit);
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = success ? "Benefit assigned to citizen successfully." : msg;
+            return RedirectToAction("Benefits");
         }
 
         [Route("PerformanceTracking")]

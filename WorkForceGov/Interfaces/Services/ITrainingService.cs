@@ -14,5 +14,11 @@ namespace WorkForceGovProject.Interfaces.Services
         Task<(bool Success, string Message)> UpdateAsync(object model);
         Task<(bool Success, string Message)> UpdateTrainingAsync(Training training);
         Task<(bool Success, string Message)> DeleteAsync(int id);
+
+        // Enrollment
+        Task<IEnumerable<TrainingEnrollment>> GetEnrollmentsByCitizenAsync(int citizenId);
+        Task<bool> IsEnrolledAsync(int citizenId, int trainingId);
+        Task<(bool Success, string Message)> EnrollAsync(int citizenId, int trainingId);
+        Task<(bool Success, string Message)> UnenrollAsync(int citizenId, int trainingId);
     }
 }

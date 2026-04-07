@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\citizen-docs\" />
+    <Folder Include="wwwroot\uploads\employer-docs\" />
+  </ItemGroup>
+
 </Project>

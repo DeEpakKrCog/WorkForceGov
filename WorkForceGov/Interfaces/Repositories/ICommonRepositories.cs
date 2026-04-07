@@ -32,6 +32,15 @@ namespace WorkForceGovProject.Interfaces.Repositories
     public interface ISystemLogRepository : IRepository<SystemLog> { }
 
     /// <summary>
+    /// Data access for training enrollments by citizens.
+    /// </summary>
+    public interface ITrainingEnrollmentRepository : IRepository<TrainingEnrollment>
+    {
+        Task<IEnumerable<TrainingEnrollment>> GetByCitizenAsync(int citizenId);
+        Task<TrainingEnrollment?> GetByCitizenAndTrainingAsync(int citizenId, int trainingId);
+    }
+
+    /// <summary>
     /// Data access for workforce employment programs.
     /// </summary>
     public interface IProgramRepository : IRepository<EmploymentProgram> { }

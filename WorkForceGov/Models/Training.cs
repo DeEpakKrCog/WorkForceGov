@@ -26,5 +26,8 @@ namespace WorkForceGovProject.Models
         public int ProgramId { get; set; }
         [ForeignKey("ProgramId")]
         public virtual EmploymentProgram Program { get; set; } = null!;
+
+        // Navigation
+        public virtual ICollection<TrainingEnrollment> Enrollments { get; set; } = new List<TrainingEnrollment>();
     }
 }

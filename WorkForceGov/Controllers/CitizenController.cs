@@ -14,12 +14,16 @@ namespace WorkForceGovProject.Controllers
         private readonly IDocumentService _docs;
         private readonly IBenefitService _benefits;
         private readonly INotificationService _notifications;
+        private readonly IProgramService _programs;
+        private readonly ITrainingService _trainings;
 
         public CitizenController(ICitizenService citizen, IJobService jobs, IApplicationService apps,
-            IDocumentService docs, IBenefitService benefits, INotificationService notifications)
+            IDocumentService docs, IBenefitService benefits, INotificationService notifications,
+            IProgramService programs, ITrainingService trainings)
         {
             _citizen = citizen; _jobs = jobs; _apps = apps;
             _docs = docs; _benefits = benefits; _notifications = notifications;
+            _programs = programs; _trainings = trainings;
         }
 
         private int? UserId => HttpContext.Session.GetInt32("UserId");
@@ -72,7 +76,9 @@ namespace WorkForceGovProject.Controllers
             var jobs = await _jobs.SearchAsync(keyword, location, category);
             var model = new JobSearchViewModel
             {
-                Keyword = keyword, Location = location, Category = category,
+                Keyword = keyword,
+                Location = location,
+                Category = category,
                 Jobs = jobs.ToList()
             };
             return View(model);
@@ -147,10 +153,22 @@ namespace WorkForceGovProject.Controllers
             var citizen = await _citizen.GetByUserIdAsync(UserId.Value);
             if (citizen == null || file == null) return RedirectToAction("Documents");
 
-            var fileName = file.FileName;
-            var filePath = Path.Combine("uploads", Guid.NewGuid() + Path.GetExtension(fileName));
+            if (file.Length == 0)
+            {
+                TempData["ErrorMessage"] = "Please select a file to upload.";
+                return RedirectToAction("Documents");
+            }
 
-            var (success, msg) = await _docs.UploadAsync(citizen.Id, documentType, fileName, filePath);
+            // Save file to wwwroot/uploads/citizen-docs/ so employers can download it
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "citizen-docs");
+            Directory.CreateDirectory(uploadsFolder);
+            var uniqueFileName = $"{citizen.Id}_{documentType}_{DateTime.Now:yyyyMMddHHmmss}_{Path.GetFileName(file.FileName)}";
+            var physicalPath = Path.Combine(uploadsFolder, uniqueFileName);
+            using (var stream = new FileStream(physicalPath, FileMode.Create))
+                await file.CopyToAsync(stream);
+
+            var fileUrl = $"/uploads/citizen-docs/{uniqueFileName}";
+            var (success, msg) = await _docs.UploadAsync(citizen.Id, documentType, file.FileName, fileUrl);
             TempData[success ? "SuccessMessage" : "ErrorMessage"] = msg;
             return RedirectToAction("Documents");
         }
@@ -162,7 +180,91 @@ namespace WorkForceGovProject.Controllers
             var citizen = await _citizen.GetByUserIdAsync(UserId.Value);
             if (citizen == null) return RedirectToAction("Dashboard");
             var benefits = await _benefits.GetByCitizenAsync(citizen.Id);
+            var allPrograms = await _programs.GetAllProgramsAsync();
+            var enrolledProgramIds = benefits.Select(b => b.ProgramId).ToHashSet();
+            ViewBag.ActivePrograms = allPrograms.Where(p => p.Status == "Active").ToList();
+            ViewBag.EnrolledProgramIds = enrolledProgramIds;
             return View(benefits);
+        }
+
+        [HttpPost, Route("ApplyBenefit/{programId}")]
+        public async Task<IActionResult> ApplyBenefit(int programId)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var citizen = await _citizen.GetByUserIdAsync(UserId.Value);
+            if (citizen == null) return RedirectToAction("Dashboard");
+
+            // Check not already enrolled
+            var existing = await _benefits.GetByCitizenAsync(citizen.Id);
+            if (existing.Any(b => b.ProgramId == programId))
+            {
+                TempData["ErrorMessage"] = "You have already applied for this program.";
+                return RedirectToAction("Benefits");
+            }
+
+            var program = await _programs.GetByIdAsync(programId);
+            if (program == null || program.Status != "Active")
+            {
+                TempData["ErrorMessage"] = "Program is not available.";
+                return RedirectToAction("Benefits");
+            }
+
+            var benefit = new Benefit
+            {
+                CitizenId = citizen.Id,
+                ProgramId = programId,
+                BenefitType = program.ProgramType ?? "General",
+                Amount = 0,
+                Status = "Pending",
+                BenefitDate = DateTime.Now,
+                Description = "Citizen enrollment request — awaiting Program Manager approval."
+            };
+
+            var (success, msg) = await _benefits.CreateBenefitAsync(benefit);
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = success
+                ? $"Successfully applied for '{program.ProgramName}'. Awaiting approval."
+                : msg;
+            return RedirectToAction("Benefits");
+        }
+
+        [Route("Trainings")]
+        public async Task<IActionResult> Trainings()
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var citizen = await _citizen.GetByUserIdAsync(UserId.Value);
+            if (citizen == null) return RedirectToAction("Dashboard");
+
+            var allTrainings = await _trainings.GetAllTrainingsAsync();
+            var myEnrollments = await _trainings.GetEnrollmentsByCitizenAsync(citizen.Id);
+            var enrolledIds = myEnrollments.Select(e => e.TrainingId).ToHashSet();
+
+            ViewBag.MyEnrollments = myEnrollments.ToList();
+            ViewBag.EnrolledIds = enrolledIds;
+            return View(allTrainings.Where(t => t.Status == "Active").ToList());
+        }
+
+        [HttpPost, Route("Enroll/{trainingId}")]
+        public async Task<IActionResult> Enroll(int trainingId)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var citizen = await _citizen.GetByUserIdAsync(UserId.Value);
+            if (citizen == null) return RedirectToAction("Dashboard");
+
+            var (success, msg) = await _trainings.EnrollAsync(citizen.Id, trainingId);
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = msg;
+            return RedirectToAction("Trainings");
+        }
+
+        [HttpPost, Route("Unenroll/{trainingId}")]
+        public async Task<IActionResult> Unenroll(int trainingId)
+        {
+            if (UserId == null) return RedirectToAction("Login", "Account");
+            var citizen = await _citizen.GetByUserIdAsync(UserId.Value);
+            if (citizen == null) return RedirectToAction("Dashboard");
+
+            var (success, msg) = await _trainings.UnenrollAsync(citizen.Id, trainingId);
+            TempData[success ? "SuccessMessage" : "ErrorMessage"] = msg;
+            return RedirectToAction("Trainings");
         }
 
         [Route("Notifications")]

@@ -17,8 +17,8 @@ namespace WorkForceGovProject.Services.Citizen
 
         public async Task<IEnumerable<CitizenDocument>> GetCitizenDocumentsAsync(int citizenId)
         {
-            var docs = await _citizenDocRepository.GetAllAsync();
-            return docs.Where(d => d.CitizenId == citizenId).ToList();
+            // Use the repository's targeted query instead of loading all documents into memory.
+            return await _citizenDocRepository.GetByCitizenAsync(citizenId);
         }
 
         public async Task<IEnumerable<EmployerDocument>> GetEmployerDocumentsAsync(int employerId)
@@ -39,8 +39,7 @@ namespace WorkForceGovProject.Services.Citizen
 
         public async Task<IEnumerable<CitizenDocument>> GetPendingAsync()
         {
-            var docs = await _citizenDocRepository.GetAllAsync();
-            return docs.Where(d => d.VerificationStatus == "Pending").ToList();
+            return await _citizenDocRepository.GetPendingVerificationsAsync();
         }
 
         public async Task<(bool Success, string Message)> VerifyAsync(int documentId, int verifiedByUserId)
@@ -85,7 +84,7 @@ namespace WorkForceGovProject.Services.Citizen
 
         public async Task<IEnumerable<CitizenDocument>> GetByCitizenAsync(int citizenId)
         {
-            return await GetCitizenDocumentsAsync(citizenId);
+            return await _citizenDocRepository.GetByCitizenAsync(citizenId);
         }
 
         public async Task<(bool Success, string Message)> UploadAsync(int citizenId, string documentType, string filePath)

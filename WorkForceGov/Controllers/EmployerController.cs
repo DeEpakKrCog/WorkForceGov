@@ -12,12 +12,14 @@ namespace WorkForceGovProject.Controllers
         private readonly IApplicationService _apps;
         private readonly INotificationService _notifications;
         private readonly ISystemLogService _logs;
+        private readonly IDocumentService _docs;
 
         public EmployerController(IEmployerService employer, IJobService jobs,
-            IApplicationService apps, INotificationService notifications, ISystemLogService logs)
+            IApplicationService apps, INotificationService notifications, ISystemLogService logs,
+            IDocumentService docs)
         {
             _employer = employer; _jobs = jobs; _apps = apps;
-            _notifications = notifications; _logs = logs;
+            _notifications = notifications; _logs = logs; _docs = docs;
         }
 
         private int? UserId => HttpContext.Session.GetInt32("UserId");
@@ -199,11 +201,13 @@ namespace WorkForceGovProject.Controllers
             var app = await _apps.GetWithDetailsAsync(id);
             if (app == null) return NotFound();
 
-            // Load citizen docs (resume)
+            // Fetch citizen documents directly via IDocumentService (same pattern as
+            // Labor module) to guarantee a fresh DB query regardless of EF Core
+            // navigation-property tracking state.
             if (app.Citizen != null)
-                ViewBag.CitizenDocuments = app.Citizen.Documents?
-                    .Where(d => d.DocumentType.ToLower().Contains("resume") || d.VerificationStatus == "Verified")
-                    .ToList() ?? new List<CitizenDocument>();
+                ViewBag.CitizenDocuments = (await _docs.GetByCitizenAsync(app.Citizen.Id)).ToList();
+            else
+                ViewBag.CitizenDocuments = new List<CitizenDocument>();
 
             ViewBag.Reviewed = reviewed;
             return View(app);

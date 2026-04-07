@@ -1,37 +1,74 @@
 @model IEnumerable<Application>
-@{ ViewData["Title"] = "Applications Review"; }
+@{
+    ViewData["Title"] = "Applications Review";
+}
 
 <div class="page-header">
-  <h1><i class="bi bi-file-text me-2"></i>Job Applications</h1>
-  <p>All job applications across the platform</p>
+    <h1><i class="bi bi-file-text me-2"></i>Job Applications</h1>
+    <p>All job applications across the platform</p>
 </div>
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
 <div class="table-card">
-  <table class="table mb-0">
-    <thead>
-      <tr><th>Applicant</th><th>Job Title</th><th>Company</th><th>Applied</th><th>Status</th></tr>
-    </thead>
-    <tbody>
-    @foreach(var a in Model){
-      <tr>
-        <td>
-          <strong>@(a.Citizen?.FullName ?? "—")</strong>
-          <br/><span style="font-size:.75rem;color:#64748b;">@(a.Citizen?.Email ?? "")</span>
-        </td>
-        <td>@(a.JobOpening?.JobTitle ?? "—")</td>
-        <td>@(a.JobOpening?.Employer?.CompanyName ?? "—")</td>
-        <td>@a.SubmittedDate.ToString("MMM dd, yyyy")</td>
-        <td>
-          <span class="badge-status @(a.Status=="Approved"?"badge-success":a.Status=="Rejected"?"badge-danger":a.Status=="Shortlisted"?"badge-info":"badge-warning")">
-            @a.Status
-          </span>
-        </td>
-      </tr>}
-    @if(!Model.Any()){
-      <tr><td colspan="5" class="text-center text-muted py-5">
-        <i class="bi bi-inbox" style="font-size:2rem;display:block;margin-bottom:8px;"></i>
-        No applications found.
-      </td></tr>}
-    </tbody>
-  </table>
+    <table class="table mb-0">
+        <thead>
+            <tr><th>Applicant</th><th>Job Title</th><th>Company</th><th>Applied</th><th>Status</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model)
+            {
+                <tr>
+                    <td>
+                        <strong>@(a.Citizen?.FullName ?? "—")</strong>
+                        <br /><span style="font-size:.75rem;color:#64748b;">@(a.Citizen?.Email ?? "")</span>
+                    </td>
+                    <td>@(a.JobOpening?.JobTitle ?? "—")</td>
+                    <td>@(a.JobOpening?.Employer?.CompanyName ?? "—")</td>
+                    <td>@a.SubmittedDate.ToString("MMM dd, yyyy")</td>
+                    <td>
+                        <span class="badge-status @(a.Status == "Approved" ? "badge-success" : a.Status == "Rejected" ? "badge-danger" : a.Status == "Shortlisted" ? "badge-info" : "badge-warning")">
+                            @a.Status
+                        </span>
+                    </td>
+                    <td>
+                        @if (a.Status == "Pending" || a.Status == "Shortlisted")
+                        {
+                            <div class="d-flex gap-2">
+                                <form method="post" asp-action="ApproveApplication" asp-route-id="@a.Id">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-sm btn-success"><i class="bi bi-check-circle me-1"></i>Approve</button>
+                                </form>
+                                <form method="post" asp-action="RejectApplication" asp-route-id="@a.Id">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="notes" value="Rejected by Labor Officer." />
+                                    <button type="submit" class="btn btn-sm btn-outline-danger"><i class="bi bi-x-circle me-1"></i>Reject</button>
+                                </form>
+                            </div>
+                        }
+                        else
+                        {
+                            <span style="font-size:.8rem;color:#94a3b8;">—</span>
+                        }
+                    </td>
+                </tr>
+            }
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted py-5">
+                        <i class="bi bi-inbox" style="font-size:2rem;display:block;margin-bottom:8px;"></i>
+                        No applications found.
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

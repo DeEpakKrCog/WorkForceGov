@@ -90,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/Citizen/Trainings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxUcmFpbmluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ComplianceOfficer/ComplianceReports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxpYW5jZU9mZmljZXJcQ29tcGxpYW5jZVJlcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -196,6 +200,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/LaborOfficer/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JPZmZpY2VyXFJlcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/AssignBenefit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcQXNzaWduQmVuZWZpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/Benefits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbU1hbmFnZXJcQmVuZWZpdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/2481439/OneDrive - Cognizant/Documents/Project/WorkForceGov/WorkForceGov/Views/ProgramManager/BudgetMonitoring.cshtml]
