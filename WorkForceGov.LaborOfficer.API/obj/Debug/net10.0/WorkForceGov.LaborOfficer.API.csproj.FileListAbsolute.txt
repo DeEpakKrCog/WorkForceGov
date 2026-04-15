@@ -1,0 +1,17 @@
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.csproj.AssemblyReference.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.AssemblyInfoInputs.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.AssemblyInfo.cs
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.csproj.CoreCompileInputs.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov-Combined\WorkForceGov-Combined\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.csproj.AssemblyReference.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.AssemblyInfoInputs.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.AssemblyInfo.cs
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.csproj.CoreCompileInputs.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.LaborOfficer.API\obj\Debug\net10.0\WorkForceGov.LaborOfficer.API.sourcelink.json
