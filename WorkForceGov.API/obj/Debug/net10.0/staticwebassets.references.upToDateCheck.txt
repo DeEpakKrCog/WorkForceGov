@@ -1,5 +1,0 @@
-C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov\obj\Debug\net10.0\staticwebassets.build.json
