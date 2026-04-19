@@ -1,5 +1,6 @@
+using Microsoft.AspNetCore.OpenApi;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using WorkForceGovProject.Data;
 using WorkForceGovProject.Interfaces.Repositories;
 using WorkForceGovProject.Interfaces.Services;
@@ -19,12 +20,12 @@ builder.Services.AddControllers().AddJsonOptions(o => {
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "WorkForceGov — Compliance Officer API", Version = "v1",
+    c.SwaggerDoc("v1", new() { Title = "WorkForceGov — Compliance Officer API", Version = "v1",
         Description = "Compliance Officer microservice: employer document verification, non-compliance flagging, complaint investigation & violation management." });
-    c.AddSecurityDefinition("UserIdHeader", new OpenApiSecurityScheme {
-        Name = "X-User-Id", Type = SecuritySchemeType.ApiKey, In = ParameterLocation.Header, Description = "Compliance Officer User ID. Example: 5" });
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement {{ new OpenApiSecurityScheme {
-        Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "UserIdHeader" }}, Array.Empty<string>() }});
+    //c.AddSecurityDefinition("UserIdHeader", new() {
+    //    Name = "X-User-Id", Type = (object)0, In = (object)0, Description = "Compliance Officer User ID. Example: 5" });
+    //c.AddSecurityRequirement(new() {{ new() {
+    //    Reference = new() { Type = (object)0, Id = "UserIdHeader" }}, Array.Empty<string>() }});
     c.EnableAnnotations();
 });
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));

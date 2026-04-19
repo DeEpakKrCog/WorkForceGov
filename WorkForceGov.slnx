@@ -1,3 +1,10 @@
 <Solution>
+  <Project Path="WorkForceGov.Admin.API/WorkForceGov.Admin.API.csproj" />
+  <Project Path="WorkForceGov.Citizen.API/WorkForceGov.Citizen.API.csproj" />
+  <Project Path="WorkForceGov.ComplianceOfficer.API/WorkForceGov.ComplianceOfficer.API.csproj" />
+  <Project Path="WorkForceGov.Employer.API/WorkForceGov.Employer.API.csproj" />
+  <Project Path="WorkForceGov.GovernmentAuditor.API/WorkForceGov.GovernmentAuditor.API.csproj" />
+  <Project Path="WorkForceGov.LaborOfficer.API/WorkForceGov.LaborOfficer.API.csproj" />
+  <Project Path="WorkForceGov.ProgramManager.API/WorkForceGov.ProgramManager.API.csproj" />
   <Project Path="WorkForceGov/WorkForceGov.csproj" />
 </Solution>

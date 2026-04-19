@@ -28,6 +28,7 @@ namespace WorkForceGovProject.Controllers
         private int GetUserId() {
             var c = User.FindFirst(ClaimTypes.NameIdentifier);
             if (c != null && int.TryParse(c.Value, out int j)) return j;
+            //return 0;
             if (Request.Headers.TryGetValue("X-User-Id", out var h) && int.TryParse(h, out int p)) return p;
             throw new UnauthorizedAccessException("Provide X-User-Id header.");
         }
@@ -37,7 +38,7 @@ namespace WorkForceGovProject.Controllers
         public async Task<IActionResult> GetDashboard() {
             var userId = GetUserId();
             if (await _citizen.GetByUserIdAsync(userId) == null)
-                await _citizen.CreateProfileAsync(userId, "New User", "");
+                await _citizen.CreateProfileAsync(userId, "New User", "");  
             return Ok(await _citizen.GetDashboardAsync(userId));
         }
 

@@ -1,0 +1,262 @@
+[
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetComplaints",
+    "RelativePath": "api/compliance-officer/complaints",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "ResolveComplaint",
+    "RelativePath": "api/compliance-officer/complaints/{id}/resolve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "resolution",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetRecords",
+    "RelativePath": "api/compliance-officer/compliance-records",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "CreateRecord",
+    "RelativePath": "api/compliance-officer/compliance-records",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "WorkForceGovProject.Models.ComplianceRecord",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "UpdateResult",
+    "RelativePath": "api/compliance-officer/compliance-records/{id}/result",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "result",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "notes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetDashboard",
+    "RelativePath": "api/compliance-officer/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "Approve",
+    "RelativePath": "api/compliance-officer/documents/{id}/approve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "Reject",
+    "RelativePath": "api/compliance-officer/documents/{id}/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reason",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetPending",
+    "RelativePath": "api/compliance-officer/documents/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetEmployers",
+    "RelativePath": "api/compliance-officer/employers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetEmployerDetails",
+    "RelativePath": "api/compliance-officer/employers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "ClearFlag",
+    "RelativePath": "api/compliance-officer/employers/{id}/clear-flag",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "notes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "FlagNonCompliant",
+    "RelativePath": "api/compliance-officer/employers/{id}/flag",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reason",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetByStatus",
+    "RelativePath": "api/compliance-officer/employers/by-status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/compliance-officer/notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "GetViolations",
+    "RelativePath": "api/compliance-officer/violations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ComplianceOfficerController",
+    "Method": "RecordViolation",
+    "RelativePath": "api/compliance-officer/violations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "violation",
+        "Type": "WorkForceGovProject.Models.Violation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,5 +1,6 @@
+using Microsoft.AspNetCore.OpenApi;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using WorkForceGovProject.Data;
 using WorkForceGovProject.Interfaces.Repositories;
 using WorkForceGovProject.Interfaces.Services;
@@ -9,6 +10,7 @@ using WorkForceGovProject.Repositories.Employer;
 using WorkForceGovProject.Repositories.LaborOfficer;
 using WorkForceGovProject.Services.Common;
 using WorkForceGovProject.Services.Citizen;
+using WorkForceGovProject.Services.Employer;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(o =>
@@ -19,12 +21,12 @@ builder.Services.AddControllers().AddJsonOptions(o => {
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "WorkForceGov — Citizen API", Version = "v1",
+    c.SwaggerDoc("v1", new() { Title = "WorkForceGov — Citizen API", Version = "v1",
         Description = "Citizen microservice: profile, job search, applications, documents, benefits, trainings, complaints & notifications." });
-    c.AddSecurityDefinition("UserIdHeader", new OpenApiSecurityScheme {
-        Name = "X-User-Id", Type = SecuritySchemeType.ApiKey, In = ParameterLocation.Header, Description = "Citizen User ID. Example: 2" });
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement {{ new OpenApiSecurityScheme {
-        Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "UserIdHeader" }}, Array.Empty<string>() }});
+    //c.AddSecurityDefinition("UserIdHeader", new() {
+    //    Name = "X-User-Id", Type = (object)0, In = (object)0, Description = "Citizen User ID. Example: 2" });
+    //c.AddSecurityRequirement(new() {{ new() {
+    //    Reference = new() { Type = (object)0, Id = "UserIdHeader" }}, Array.Empty<string>() }});
     c.EnableAnnotations();
 });
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -36,6 +38,7 @@ builder.Services.AddScoped<ITrainingEnrollmentRepository, TrainingEnrollmentRepo
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<ICitizenRepository, CitizenRepository>();
 builder.Services.AddScoped<ICitizenDocumentRepository, CitizenDocumentRepository>();
+builder.Services.AddScoped<IEmployerDocumentRepository, EmployerDocumentRepository>();
 builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
 builder.Services.AddScoped<IComplaintRepository, ComplaintRepository>();
 builder.Services.AddScoped<IBenefitRepository, BenefitRepository>();

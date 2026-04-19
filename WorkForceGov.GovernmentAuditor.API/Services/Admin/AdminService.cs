@@ -48,7 +48,7 @@ namespace WorkForceGovProject.Services.Admin
 
         // ── EMPLOYER OVERSIGHT ───────────────────────────────────────────────
 
-        public async Task<IEnumerable<Employer>> GetAllEmployersAsync(string? status = null)
+        public async Task<IEnumerable<WorkForceGovProject.Models.Employer>> GetAllEmployersAsync(string? status = null)
             => await _adminRepo.GetAllEmployersAsync(status);
 
         public async Task<(bool Success, string Message)> SuspendEmployerAsync(int employerId, string reason)

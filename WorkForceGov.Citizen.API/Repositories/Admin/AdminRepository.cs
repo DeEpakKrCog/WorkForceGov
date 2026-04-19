@@ -19,7 +19,7 @@ namespace WorkForceGovProject.Repositories.Admin
 
         // ── EMPLOYER ────────────────────────────────────────────────────────
 
-        public async Task<IEnumerable<Employer>> GetAllEmployersAsync(string? status = null)
+        public async Task<IEnumerable<WorkForceGovProject.Models.Employer>> GetAllEmployersAsync(string? status = null)
         {
             var q = _ctx.Employers.Include(e => e.User).AsQueryable();
             if (!string.IsNullOrWhiteSpace(status))
@@ -27,10 +27,10 @@ namespace WorkForceGovProject.Repositories.Admin
             return await q.OrderBy(e => e.CompanyName).ToListAsync();
         }
 
-        public async Task<Employer?> GetEmployerByIdAsync(int id) =>
+        public async Task<WorkForceGovProject.Models.Employer?> GetEmployerByIdAsync(int id) =>
             await _ctx.Employers.Include(e => e.User).FirstOrDefaultAsync(e => e.Id == id);
 
-        public async Task UpdateEmployerAsync(Employer employer)
+        public async Task UpdateEmployerAsync(WorkForceGovProject.Models.Employer employer)
         {
             _ctx.Employers.Update(employer);
             await _ctx.SaveChangesAsync();

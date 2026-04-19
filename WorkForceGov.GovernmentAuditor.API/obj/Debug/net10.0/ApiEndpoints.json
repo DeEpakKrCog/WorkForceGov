@@ -1,0 +1,224 @@
+[
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetAudits",
+    "RelativePath": "api/auditor/audits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "CreateAudit",
+    "RelativePath": "api/auditor/audits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scope",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "findings",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetAudit",
+    "RelativePath": "api/auditor/audits/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "RecordFindings",
+    "RelativePath": "api/auditor/audits/{id}/findings",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "findings",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/auditor/audits/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetCompliance",
+    "RelativePath": "api/auditor/compliance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "Escalate",
+    "RelativePath": "api/auditor/compliance/escalate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entityId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entityType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "notes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetDashboard",
+    "RelativePath": "api/auditor/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetEmployers",
+    "RelativePath": "api/auditor/employers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/auditor/notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetPrograms",
+    "RelativePath": "api/auditor/programs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "FlagProgram",
+    "RelativePath": "api/auditor/programs/{id}/flag",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reason",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GetReports",
+    "RelativePath": "api/auditor/reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.GovernmentAuditorController",
+    "Method": "GenerateReport",
+    "RelativePath": "api/auditor/reports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "reportType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "content",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

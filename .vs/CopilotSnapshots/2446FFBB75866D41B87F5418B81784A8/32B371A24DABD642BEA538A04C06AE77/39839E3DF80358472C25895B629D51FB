@@ -1,0 +1,49 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using WorkForceGovProject.Data;
+using WorkForceGovProject.Interfaces.Repositories;
+using WorkForceGovProject.Interfaces.Services;
+using WorkForceGovProject.Repositories.Common;
+using WorkForceGovProject.Repositories.Employer;
+using WorkForceGovProject.Repositories.LaborOfficer;
+using WorkForceGovProject.Repositories.GovernmentAuditor;
+using WorkForceGovProject.Services.Common;
+using WorkForceGovProject.Services.GovernmentAuditor;
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ApplicationDbContext>(o =>
+    o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddControllers().AddJsonOptions(o => {
+    o.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    o.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+});
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c => {
+    c.SwaggerDoc("v1", new global::Microsoft.OpenApi.Models.OpenApiInfo { Title = "WorkForceGov — Government Auditor API", Version = "v1",
+        Description = "Government Auditor microservice: audit management, compliance escalation, program oversight & report generation." });
+    c.AddSecurityDefinition("UserIdHeader", new global::Microsoft.OpenApi.Models.OpenApiSecurityScheme {
+        Name = "X-User-Id", Type = global::Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey, In = global::Microsoft.OpenApi.Models.ParameterLocation.Header, Description = "Auditor User ID. Example: 6" });
+    c.AddSecurityRequirement(new global::Microsoft.OpenApi.Models.OpenApiSecurityRequirement {{ new global::Microsoft.OpenApi.Models.OpenApiSecurityScheme {
+        Reference = new global::Microsoft.OpenApi.Models.OpenApiReference { Type = global::Microsoft.OpenApi.Models.ReferenceType.SecurityScheme, Id = "UserIdHeader" }}, Array.Empty<string>() }});
+    c.EnableAnnotations();
+});
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ISystemLogRepository, SystemLogRepository>();
+builder.Services.AddScoped<IProgramRepository, ProgramRepository>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+builder.Services.AddScoped<IEmployerRepository, EmployerRepository>();
+builder.Services.AddScoped<IComplianceRecordRepository, ComplianceRecordRepository>();
+builder.Services.AddScoped<IAuditRepository, AuditRepository>();
+builder.Services.AddScoped<IReportRepository, ReportRepository>();
+builder.Services.AddScoped<INotificationService, NotificationService>();
+builder.Services.AddScoped<IProgramService, ProgramService>();
+builder.Services.AddScoped<IGovernmentAuditorService, GovernmentAuditorService>();
+builder.Services.AddScoped<IAuditService, AuditService>();
+builder.Services.AddScoped<IReportService, ReportService>();
+builder.Services.AddCors(o => o.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
+var app = builder.Build();
+app.UseCors("AllowAll");
+app.UseSwagger();
+app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Government Auditor API v1"); c.RoutePrefix = string.Empty; c.DocumentTitle = "WorkForceGov — Government Auditor API"; });
+app.UseHttpsRedirection(); app.UseAuthorization(); app.MapControllers(); app.Run();
