@@ -169,3 +169,4 @@ C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGo
 C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.Citizen.API\obj\Debug\net10.0\WorkForceGov.Citizen.API.pdb
 C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.Citizen.API\obj\Debug\net10.0\WorkForceGov.Citizen.API.genruntimeconfig.cache
 C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.Citizen.API\obj\Debug\net10.0\ref\WorkForceGov.Citizen.API.dll
+C:\Users\2481439\OneDrive - Cognizant\Documents\Project\WorkForceGov\WorkForceGov.Citizen.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

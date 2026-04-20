@@ -1,5 +1,36 @@
 [
   {
+    "ContainingType": "WorkForceGovProject.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WorkForceGovProject.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WorkForceGovProject.Controllers.LoginResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
     "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
     "Method": "GetApplications",
     "RelativePath": "api/citizen/applications",
@@ -12,8 +43,8 @@
   {
     "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
     "Method": "WithdrawApplication",
-    "RelativePath": "api/citizen/applications/{id}/withdraw",
-    "HttpMethod": "PUT",
+    "RelativePath": "api/citizen/applications/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -37,53 +68,6 @@
   },
   {
     "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
-    "Method": "ApplyBenefit",
-    "RelativePath": "api/citizen/benefits/{programId}/apply",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "programId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
-    "Method": "GetComplaints",
-    "RelativePath": "api/citizen/complaints",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
-    "Method": "RaiseComplaint",
-    "RelativePath": "api/citizen/complaints",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "employerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "description",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
     "Method": "GetDashboard",
     "RelativePath": "api/citizen/dashboard",
     "HttpMethod": "GET",
@@ -100,27 +84,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
-    "Method": "UploadDocument",
-    "RelativePath": "api/citizen/documents",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "documentType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "file",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
     "ReturnTypes": []
   },
   {
@@ -214,38 +177,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
-    "Method": "EnrollTraining",
-    "RelativePath": "api/citizen/trainings/{trainingId}/enroll",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "trainingId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
-    "Method": "UnenrollTraining",
-    "RelativePath": "api/citizen/trainings/{trainingId}/unenroll",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "trainingId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": []
   }
 ]

@@ -2,10 +2,59 @@
   "openapi": "3.0.4",
   "info": {
     "title": "WorkForceGov — Citizen API",
-    "description": "Citizen microservice: profile, job search, applications, documents, benefits, trainings, complaints & notifications.",
+    "description": "Citizen Services - Job Search, Applications, Benefits, Trainings, Documents, Notifications",
     "version": "v1"
   },
   "paths": {
+    "/api/auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Login → get JWT token",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/citizen/dashboard": {
       "get": {
         "tags": [
@@ -146,7 +195,7 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get my applications",
+        "summary": "Get my job applications",
         "responses": {
           "200": {
             "description": "OK"
@@ -154,12 +203,12 @@
         }
       }
     },
-    "/api/citizen/applications/{id}/withdraw": {
-      "put": {
+    "/api/citizen/applications/{id}": {
+      "delete": {
         "tags": [
           "Applications"
         ],
-        "summary": "Withdraw an application",
+        "summary": "Withdraw a job application",
         "parameters": [
           {
             "name": "id",
@@ -189,43 +238,6 @@
             "description": "OK"
           }
         }
-      },
-      "post": {
-        "tags": [
-          "Documents"
-        ],
-        "summary": "Upload a document (Resume, ID, etc.)",
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "documentType": {
-                    "type": "string"
-                  },
-                  "file": {
-                    "type": "string",
-                    "format": "binary"
-                  }
-                }
-              },
-              "encoding": {
-                "documentType": {
-                  "style": "form"
-                },
-                "file": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
     "/api/citizen/benefits": {
@@ -233,31 +245,7 @@
         "tags": [
           "Benefits"
         ],
-        "summary": "Get benefits & available programs",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/citizen/benefits/{programId}/apply": {
-      "post": {
-        "tags": [
-          "Benefits"
-        ],
-        "summary": "Apply for a benefit program",
-        "parameters": [
-          {
-            "name": "programId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
+        "summary": "Get my benefits",
         "responses": {
           "200": {
             "description": "OK"
@@ -270,108 +258,7 @@
         "tags": [
           "Trainings"
         ],
-        "summary": "Get available trainings & my enrollments",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/citizen/trainings/{trainingId}/enroll": {
-      "post": {
-        "tags": [
-          "Trainings"
-        ],
-        "summary": "Enroll in a training",
-        "parameters": [
-          {
-            "name": "trainingId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/citizen/trainings/{trainingId}/unenroll": {
-      "post": {
-        "tags": [
-          "Trainings"
-        ],
-        "summary": "Unenroll from a training",
-        "parameters": [
-          {
-            "name": "trainingId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/citizen/complaints": {
-      "get": {
-        "tags": [
-          "Complaints"
-        ],
-        "summary": "Get my complaints",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Complaints"
-        ],
-        "summary": "Raise a complaint against an employer",
-        "parameters": [
-          {
-            "name": "employerId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
-              }
-            }
-          }
-        },
+        "summary": "Get available trainings + my enrollments",
         "responses": {
           "200": {
             "description": "OK"
@@ -384,7 +271,7 @@
         "tags": [
           "Notifications"
         ],
-        "summary": "Get notifications (marks all read)",
+        "summary": "Get my notifications",
         "responses": {
           "200": {
             "description": "OK"
@@ -965,6 +852,50 @@
         },
         "additionalProperties": false
       },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginResponse": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiresAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "Notification": {
         "required": [
           "message",
@@ -1019,6 +950,33 @@
           }
         },
         "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
       },
       "Report": {
         "required": [
@@ -1324,6 +1282,9 @@
     }
   },
   "tags": [
+    {
+      "name": "Auth"
+    },
     {
       "name": "Citizen"
     }
