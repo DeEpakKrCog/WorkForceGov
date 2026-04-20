@@ -1,0 +1,143 @@
+﻿using WorkForceGovProject.Interfaces.Services;
+using WorkForceGovProject.Models;
+using WorkForceGovProject.Models.ViewModels;
+using WorkForceGovProject.Repositories.Admin;
+
+// ── Repository Interfaces ──
+using WorkForceGovProject.Interfaces.Repositories;
+
+namespace WorkForceGovProject.Services.Admin
+{
+    /// <summary>
+    /// Implements IAdminService: employer oversight, notification broadcasting,
+    /// and full platform dashboard stats.
+    /// </summary>
+    public class AdminService : IAdminService
+    {
+        private readonly AdminRepository           _adminRepo;
+        private readonly IUserRepository           _userRepo;
+        private readonly IJobOpeningRepository     _jobRepo;
+        private readonly IProgramRepository        _programRepo;
+        private readonly ICitizenRepository        _citizenRepo;
+        private readonly IApplicationRepository    _applicationRepo;
+        private readonly IAuditRepository          _auditRepo;
+        private readonly IBenefitRepository        _benefitRepo;
+        private readonly ISystemLogRepository      _logRepo;
+
+        public AdminService(
+            AdminRepository        adminRepo,
+            IUserRepository        userRepo,
+            IJobOpeningRepository  jobRepo,
+            IProgramRepository     programRepo,
+            ICitizenRepository     citizenRepo,
+            IApplicationRepository applicationRepo,
+            IAuditRepository       auditRepo,
+            IBenefitRepository     benefitRepo,
+            ISystemLogRepository   logRepo)
+        {
+            _adminRepo       = adminRepo;
+            _userRepo        = userRepo;
+            _jobRepo         = jobRepo;
+            _programRepo     = programRepo;
+            _citizenRepo     = citizenRepo;
+            _applicationRepo = applicationRepo;
+            _auditRepo       = auditRepo;
+            _benefitRepo     = benefitRepo;
+            _logRepo         = logRepo;
+        }
+
+        // ── EMPLOYER OVERSIGHT ───────────────────────────────────────────────
+
+        public async Task<IEnumerable<WorkForceGovProject.Models.Employer>> GetAllEmployersAsync(string? status = null)
+            => await _adminRepo.GetAllEmployersAsync(status);
+
+        public async Task<(bool Success, string Message)> SuspendEmployerAsync(int employerId, string reason)
+        {
+            var employer = await _adminRepo.GetEmployerByIdAsync(employerId);
+            if (employer == null) return (false, "Employer not found.");
+            if (employer.Status == "Suspended") return (false, "Employer is already suspended.");
+
+            employer.Status = "Suspended";
+            employer.Description = $"[SUSPENDED] {reason} — {DateTime.Now:yyyy-MM-dd HH:mm}";
+            await _adminRepo.UpdateEmployerAsync(employer);
+            return (true, $"Employer '{employer.CompanyName}' has been suspended.");
+        }
+
+        public async Task<(bool Success, string Message)> ReinstateEmployerAsync(int employerId)
+        {
+            var employer = await _adminRepo.GetEmployerByIdAsync(employerId);
+            if (employer == null) return (false, "Employer not found.");
+            if (employer.Status != "Suspended") return (false, "Employer is not currently suspended.");
+
+            employer.Status = "Active";
+            employer.Description = employer.Description?
+                .Replace("[SUSPENDED] ", string.Empty)
+                .Split("—")[0].Trim();
+            await _adminRepo.UpdateEmployerAsync(employer);
+            return (true, $"Employer '{employer.CompanyName}' has been reinstated.");
+        }
+
+        // ── NOTIFICATIONS ────────────────────────────────────────────────────
+
+        public async Task<(bool Success, string Message)> BroadcastNotificationAsync(
+            string targetRole, string message, INotificationService notificationService)
+        {
+            try
+            {
+                IEnumerable<User> targets;
+                if (targetRole.Equals("All", StringComparison.OrdinalIgnoreCase))
+                    targets = await _userRepo.GetAllAsync();
+                else
+                    targets = await _userRepo.GetByRoleAsync(targetRole);
+
+                var recipients = targets.Where(u => u.Status == "Active").ToList();
+                if (!recipients.Any()) return (false, $"No active users found for role '{targetRole}'.");
+
+                foreach (var user in recipients)
+                    await notificationService.CreateAsync(user.Id, message, "Admin", null, "Broadcast");
+
+                return (true, $"Notification sent to {recipients.Count} user(s) with role '{targetRole}'.");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Broadcast failed: {ex.Message}");
+            }
+        }
+
+        // ── FULL DASHBOARD ───────────────────────────────────────────────────
+
+        public async Task<DashboardViewModel> GetFullDashboardAsync()
+        {
+            var users        = await _userRepo.GetAllAsync();
+            var jobs         = await _jobRepo.GetAllAsync();
+            var programs     = await _programRepo.GetAllAsync();
+            var citizens     = await _citizenRepo.GetAllAsync();
+            var employers    = await _adminRepo.GetAllEmployersAsync();
+            var applications = await _applicationRepo.GetAllAsync();
+            var audits       = await _auditRepo.GetAllAsync();
+            var benefits     = await _benefitRepo.GetAllAsync();
+            var logs         = await _adminRepo.GetRecentLogsAsync(10);
+
+            return new DashboardViewModel
+            {
+                TotalUsers          = users.Count(),
+                ActiveUsers         = users.Count(u => u.Status == "Active"),
+                TotalCitizens       = citizens.Count(),
+                TotalEmployers      = employers.Count(),
+                TotalJobs           = jobs.Count(),
+                OpenJobs            = jobs.Count(j => j.Status == "Open"),
+                TotalApplications   = applications.Count(),
+                PendingApplications = applications.Count(a => a.Status == "Pending"),
+                TotalPrograms       = programs.Count(),
+                ActivePrograms      = programs.Count(p => p.Status == "Active"),
+                TotalAudits         = audits.Count(),
+                OpenAudits          = audits.Count(a => a.Status == "Open"),
+                TotalBudget         = benefits.Sum(b => b.Amount),
+                TotalBenefitsPaid   = benefits.Where(b => b.Status == "Paid").Sum(b => b.Amount),
+                RecentJobs          = jobs.OrderByDescending(j => j.PostedDate).Take(5).ToList(),
+                RecentLogs          = logs.ToList(),
+                Programs            = programs.OrderByDescending(p => p.Id).Take(5).ToList(),
+            };
+        }
+    }
+}

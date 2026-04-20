@@ -1,0 +1,208 @@
+[
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetApplications",
+    "RelativePath": "api/labor-officer/applications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "FlagApplication",
+    "RelativePath": "api/labor-officer/applications/{id}/flag",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "notes",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetComplaints",
+    "RelativePath": "api/labor-officer/complaints",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "InvestigateComplaint",
+    "RelativePath": "api/labor-officer/complaints/{id}/investigate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "resolution",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetPendingComplaints",
+    "RelativePath": "api/labor-officer/complaints/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetComplianceRecords",
+    "RelativePath": "api/labor-officer/compliance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "CreateComplianceRecord",
+    "RelativePath": "api/labor-officer/compliance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "record",
+        "Type": "WorkForceGovProject.Models.ComplianceRecord",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetDashboard",
+    "RelativePath": "api/labor-officer/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "RejectDocument",
+    "RelativePath": "api/labor-officer/documents/citizen/{id}/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reason",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "VerifyDocument",
+    "RelativePath": "api/labor-officer/documents/citizen/{id}/verify",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetPendingCitizenDocs",
+    "RelativePath": "api/labor-officer/documents/citizen/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetPendingEmployerDocs",
+    "RelativePath": "api/labor-officer/documents/employer/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/labor-officer/notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "GetViolations",
+    "RelativePath": "api/labor-officer/violations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.LaborOfficerController",
+    "Method": "RecordViolation",
+    "RelativePath": "api/labor-officer/violations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "violation",
+        "Type": "WorkForceGovProject.Models.Violation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

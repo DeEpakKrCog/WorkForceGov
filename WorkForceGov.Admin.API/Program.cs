@@ -1,5 +1,6 @@
+using Microsoft.AspNetCore.OpenApi;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using WorkForceGovProject.Data;
 using WorkForceGovProject.Interfaces.Repositories;
 using WorkForceGovProject.Interfaces.Services;
@@ -25,14 +26,14 @@ builder.Services.AddControllers().AddJsonOptions(o => {
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "WorkForceGov — Admin API", Version = "v1",
+    c.SwaggerDoc("v1", new() { Title = "WorkForceGov — Admin API", Version = "v1",
         Description = "Admin microservice: user management (create/edit/activate/deactivate/delete), employer oversight, broadcast notifications, reports & system monitoring." });
-    c.AddSecurityDefinition("UserIdHeader", new OpenApiSecurityScheme {
-        Name = "X-User-Id", Type = SecuritySchemeType.ApiKey, In = ParameterLocation.Header,
-        Description = "Admin User ID for testing. Example: 1" });
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement {{
-        new OpenApiSecurityScheme { Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "UserIdHeader" } },
-        Array.Empty<string>() }});
+    //c.AddSecurityDefinition("UserIdHeader", new() {
+    //    Name = "X-User-Id", Type = (object)0, In = (object)0,
+    //    Description = "Admin User ID for testing. Example: 1" });
+    //c.AddSecurityRequirement(new() {{
+    //    new() { Reference = new() { Type = (object)0, Id = "UserIdHeader" } },
+    //    Array.Empty<string>() }});
     c.EnableAnnotations();
 });
 

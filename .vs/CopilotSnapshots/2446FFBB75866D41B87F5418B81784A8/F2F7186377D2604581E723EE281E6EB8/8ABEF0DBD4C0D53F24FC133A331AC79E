@@ -1,0 +1,59 @@
+﻿using Microsoft.EntityFrameworkCore;
+using WorkForceGovProject.Data;
+using WorkForceGovProject.Models;
+
+namespace WorkForceGovProject.Repositories.Admin
+{
+    /// <summary>
+    /// Low-level data access for Admin-specific cross-table operations.
+    /// Uses DbContext directly to avoid loading unnecessary navigation properties.
+    /// </summary>
+    public class AdminRepository
+    {
+        private readonly ApplicationDbContext _ctx;
+
+        public AdminRepository(ApplicationDbContext ctx)
+        {
+            _ctx = ctx;
+        }
+
+        // ── EMPLOYER ────────────────────────────────────────────────────────
+
+        public async Task<IEnumerable<WorkForceGovProject.Models.Employer>> GetAllEmployersAsync(string? status = null)
+        {
+            var q = _ctx.Employers.Include(e => e.User).AsQueryable();
+            if (!string.IsNullOrWhiteSpace(status))
+                q = q.Where(e => e.Status == status);
+            return await q.OrderBy(e => e.CompanyName).ToListAsync();
+        }
+
+        public async Task<WorkForceGovProject.Models.Employer?> GetEmployerByIdAsync(int id) =>
+            await _ctx.Employers.Include(e => e.User).FirstOrDefaultAsync(e => e.Id == id);
+
+        public async Task UpdateEmployerAsync(WorkForceGovProject.Models.Employer employer)
+        {
+            _ctx.Employers.Update(employer);
+            await _ctx.SaveChangesAsync();
+        }
+
+        // ── USERS ────────────────────────────────────────────────────────────
+
+        public async Task<IEnumerable<User>> GetAllUsersAsync() =>
+            await _ctx.Users.OrderBy(u => u.FullName).ToListAsync();
+
+        public async Task<IEnumerable<User>> GetUsersByRoleAsync(string role) =>
+            await _ctx.Users.Where(u => u.Role == role).ToListAsync();
+
+        // ── STATS ────────────────────────────────────────────────────────────
+
+        public async Task<int> CountByTableAsync<T>() where T : class =>
+            await _ctx.Set<T>().CountAsync();
+
+        public async Task<IEnumerable<SystemLog>> GetRecentLogsAsync(int count = 100) =>
+            await _ctx.SystemLogs
+                      .Include(l => l.User)
+                      .OrderByDescending(l => l.Timestamp)
+                      .Take(count)
+                      .ToListAsync();
+    }
+}

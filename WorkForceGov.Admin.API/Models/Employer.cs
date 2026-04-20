@@ -20,6 +20,15 @@ namespace WorkForceGovProject.Models
         [StringLength(100)]
         public string? ContactInfo { get; set; }
 
+        [StringLength(20)]
+        public string? PhoneNumber { get; set; }
+
+        [StringLength(200)]
+        public string? Website { get; set; }
+
+        [StringLength(1000)]
+        public string? Description { get; set; }
+
         public DateTime RegistrationDate { get; set; } = DateTime.Now;
 
         [StringLength(30)]

@@ -1,5 +1,6 @@
+using Microsoft.AspNetCore.OpenApi;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using WorkForceGovProject.Data;
 using WorkForceGovProject.Interfaces.Repositories;
 using WorkForceGovProject.Interfaces.Services;
@@ -18,12 +19,12 @@ builder.Services.AddControllers().AddJsonOptions(o => {
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "WorkForceGov — Program Manager API", Version = "v1",
+    c.SwaggerDoc("v1", new() { Title = "WorkForceGov — Program Manager API", Version = "v1",
         Description = "Program Manager microservice: benefit approval workflow, program management, training oversight & budget tracking." });
-    c.AddSecurityDefinition("UserIdHeader", new OpenApiSecurityScheme {
-        Name = "X-User-Id", Type = SecuritySchemeType.ApiKey, In = ParameterLocation.Header, Description = "Program Manager User ID. Example: 7" });
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement {{ new OpenApiSecurityScheme {
-        Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "UserIdHeader" }}, Array.Empty<string>() }});
+    //c.AddSecurityDefinition("UserIdHeader", new() {
+    //    Name = "X-User-Id", Type = (object)0, In = (object)0, Description = "Program Manager User ID. Example: 7" });
+    //c.AddSecurityRequirement(new() {{ new() {
+    //    Reference = new() { Type = (object)0, Id = "UserIdHeader" }}, Array.Empty<string>() }});
     c.EnableAnnotations();
 });
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -33,7 +34,7 @@ builder.Services.AddScoped<IProgramRepository, ProgramRepository>();
 builder.Services.AddScoped<ITrainingRepository, TrainingRepository>();
 builder.Services.AddScoped<ITrainingEnrollmentRepository, TrainingEnrollmentRepository>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
-builder.Services.AddScoped<IBenefitRepository, BenefitRepository>();
+//builder.Services.AddScoped<IBenefitRepository, BenefitRepository>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddScoped<ProgramManagerRepository>();
 builder.Services.AddScoped<INotificationService, NotificationService>();

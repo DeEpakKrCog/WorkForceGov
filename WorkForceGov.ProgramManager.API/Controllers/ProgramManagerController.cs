@@ -108,7 +108,7 @@ namespace WorkForceGovProject.Controllers
         // ── RESOURCES ───────────────────────────────────────────────────────
         [HttpGet("resources")]
         [SwaggerOperation(Summary="Get all resources",Tags=new[]{"Resources"})]
-        public async Task<IActionResult> GetResources() => Ok(await _resources.GetAllAsync());
+        public async Task<IActionResult> GetResources() => Ok(await _resources.GetAllResourcesAsync());
 
         [HttpPost("resources")]
         [SwaggerOperation(Summary="Create a resource",Tags=new[]{"Resources"})]
