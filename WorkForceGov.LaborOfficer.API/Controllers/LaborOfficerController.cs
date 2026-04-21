@@ -20,16 +20,22 @@ namespace WorkForceGovProject.Controllers
             IComplianceOfficerService complianceOfficer, INotificationService notifications)
         { _labor=labor; _compliance=compliance; _complianceOfficer=complianceOfficer; _notifications=notifications; }
 
-        private int GetUserId() {
-            var c = User.FindFirst(ClaimTypes.NameIdentifier);
-            if (c!=null&&int.TryParse(c.Value,out int j)) return j;
-            if (Request.Headers.TryGetValue("X-User-Id",out var h)&&int.TryParse(h,out int p)) return p;
-            throw new UnauthorizedAccessException("Provide X-User-Id header.");
+        private int? TryGetUserId()
+        {
+            var c = User?.FindFirst(ClaimTypes.NameIdentifier) ?? User?.FindFirst("sub");
+            if (c != null && int.TryParse(c.Value, out int j)) return j;
+            if (Request?.Headers?.TryGetValue("X-User-Id", out var h) == true && int.TryParse(h, out int p)) return p;
+            return null;
         }
 
         [HttpGet("dashboard")]
         [SwaggerOperation(Summary="Get Labor Officer dashboard",Tags=new[]{"Dashboard"})]
-        public async Task<IActionResult> GetDashboard() => Ok(await _labor.GetDashboardAsync(GetUserId()));
+        public async Task<IActionResult> GetDashboard()
+        {
+            var uid = TryGetUserId();
+            if (uid == null) return Unauthorized(new { Message = "Provide X-User-Id header or authenticate." });
+            return Ok(await _labor.GetDashboardAsync(uid.Value));
+        }
 
         // ── CITIZEN DOCUMENT VERIFICATION ──────────────────────────────────
         [HttpGet("documents/citizen/pending")]
@@ -39,14 +45,18 @@ namespace WorkForceGovProject.Controllers
         [HttpPut("documents/citizen/{id}/verify")]
         [SwaggerOperation(Summary="Verify a citizen document",Tags=new[]{"Document Verification"})]
         public async Task<IActionResult> VerifyDocument(int id) {
-            var (ok,msg) = await _labor.VerifyCitizenDocumentAsync(id,GetUserId());
+            var uid = TryGetUserId();
+            if (uid == null) return Unauthorized(new { Message = "Provide X-User-Id header or authenticate." });
+            var (ok,msg) = await _labor.VerifyCitizenDocumentAsync(id, uid.Value);
             return ok ? Ok(new{Message=msg}) : BadRequest(new{Message=msg});
         }
 
         [HttpPut("documents/citizen/{id}/reject")]
         [SwaggerOperation(Summary="Reject a citizen document",Tags=new[]{"Document Verification"})]
         public async Task<IActionResult> RejectDocument(int id,[FromBody]string reason) {
-            var (ok,msg) = await _labor.RejectCitizenDocumentAsync(id,GetUserId(),reason);
+            var uid = TryGetUserId();
+            if (uid == null) return Unauthorized(new { Message = "Provide X-User-Id header or authenticate." });
+            var (ok,msg) = await _labor.RejectCitizenDocumentAsync(id, uid.Value, reason);
             return ok ? Ok(new{Message=msg}) : BadRequest(new{Message=msg});
         }
 
@@ -110,9 +120,10 @@ namespace WorkForceGovProject.Controllers
         [HttpGet("notifications")]
         [SwaggerOperation(Summary="Get notifications",Tags=new[]{"Notifications"})]
         public async Task<IActionResult> GetNotifications() {
-            var uid = GetUserId();
-            var n = await _notifications.GetByUserAsync(uid);
-            await _notifications.MarkAllReadAsync(uid);
+            var uid = TryGetUserId();
+            if (uid == null) return Unauthorized(new { Message = "Provide X-User-Id header or authenticate." });
+            var n = await _notifications.GetByUserAsync(uid.Value);
+            await _notifications.MarkAllReadAsync(uid.Value);
             return Ok(n);
         }
     }

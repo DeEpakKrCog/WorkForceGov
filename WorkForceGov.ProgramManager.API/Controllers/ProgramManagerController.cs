@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Security.Claims;
@@ -9,6 +10,7 @@ namespace WorkForceGovProject.Controllers
     [Route("api/program-manager")]
     [ApiController]
     [Produces("application/json")]
+    [Authorize]
     public class ProgramManagerController : ControllerBase
     {
         private readonly IProgramManagerService _pm;
@@ -24,19 +26,35 @@ namespace WorkForceGovProject.Controllers
         private int GetUserId() {
             var c=User.FindFirst(ClaimTypes.NameIdentifier);
             if(c!=null&&int.TryParse(c.Value,out int j)) return j;
-            if(Request.Headers.TryGetValue("X-User-Id",out var h)&&int.TryParse(h,out int p)) return p;
-            throw new UnauthorizedAccessException("Provide X-User-Id header.");
+            throw new UnauthorizedAccessException("User ID not found in token.");
         }
 
         [HttpGet("dashboard")]
         [SwaggerOperation(Summary="Get Program Manager dashboard",Tags=new[]{"Dashboard"})]
-        public async Task<IActionResult> GetDashboard() => Ok(await _pm.GetEnrichedDashboardAsync(GetUserId()));
+        public async Task<IActionResult> GetDashboard()
+        {
+            try
+            {
+                var userId = GetUserId();
+                var dashboard = await _pm.GetEnrichedDashboardAsync(userId);
+                return Ok(dashboard);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = $"Error fetching dashboard: {ex.Message}" });
+            }
+        }
 
         // ── BENEFIT APPROVAL WORKFLOW ───────────────────────────────────────
         [HttpGet("benefits/pending")]
         [SwaggerOperation(Summary="Get pending benefit applications",Tags=new[]{"Benefit Approval"})]
         public async Task<IActionResult> GetPendingBenefits() => Ok(await _pm.GetPendingBenefitsAsync());
 
+        [Authorize]
         [HttpPut("benefits/{id}/approve")]
         [SwaggerOperation(Summary="Approve a benefit — set amount and notify citizen",Tags=new[]{"Benefit Approval"})]
         public async Task<IActionResult> ApproveBenefit(int id,[FromQuery]decimal amount) {
@@ -44,6 +62,7 @@ namespace WorkForceGovProject.Controllers
             return ok?Ok(new{Message=msg}):BadRequest(new{Message=msg});
         }
 
+        [Authorize]
         [HttpPut("benefits/{id}/reject")]
         [SwaggerOperation(Summary="Reject a benefit application and notify citizen",Tags=new[]{"Benefit Approval"})]
         public async Task<IActionResult> RejectBenefit(int id,[FromBody]string reason) {
@@ -117,6 +136,7 @@ namespace WorkForceGovProject.Controllers
             return ok?Ok(new{Message=msg,Resource=resource}):BadRequest(new{Message=msg});
         }
 
+        [Authorize]
         [HttpGet("notifications")]
         [SwaggerOperation(Summary="Get notifications",Tags=new[]{"Notifications"})]
         public async Task<IActionResult> GetNotifications() {

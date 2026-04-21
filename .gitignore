@@ -1,0 +1,10 @@
+# Visual Studio artifacts
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.slnx
+
+# Environment settings
+launchSettings.json

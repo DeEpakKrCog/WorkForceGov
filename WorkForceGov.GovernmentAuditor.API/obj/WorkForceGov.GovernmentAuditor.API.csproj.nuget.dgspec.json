@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj": {}
+    "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj": {
+    "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
+        "projectUniqueName": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
         "projectName": "WorkForceGov.GovernmentAuditor.API",
-        "projectPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
+        "projectPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
         "packagesPath": "C:\\Users\\2481439\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\obj\\",
+        "outputPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,6 +52,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.5, )"
@@ -64,6 +68,10 @@
               "target": "Package",
               "version": "[10.0.5, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.9.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[10.1.7, )"
@@ -71,6 +79,10 @@
             "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[10.1.7, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.9.0, )"
             }
           },
           "imports": [
