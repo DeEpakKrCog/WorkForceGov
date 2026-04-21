@@ -61,8 +61,11 @@ builder.Services.AddControllers().AddJsonOptions(o => {
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new() { Title = "WorkForceGov — Admin API", Version = "v1",
-        Description = "Admin microservice: user management (create/edit/activate/deactivate/delete), employer oversight, broadcast notifications, reports & system monitoring." });
+    c.SwaggerDoc("v1", new() {
+        Title = "WorkForceGov — Admin API",
+        Version = "v1",
+        Description = "Admin microservice: user management (create/edit/activate/deactivate/delete), employer oversight, broadcast notifications, reports & system monitoring."
+    });
     c.EnableAnnotations();
 });
 

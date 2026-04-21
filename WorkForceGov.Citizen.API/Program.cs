@@ -66,7 +66,7 @@ builder.Services.AddSwaggerGen(c => {
     {
         Title = "WorkForceGov — Citizen API",
         Version = "v1",
-        Description = "Citizen Services - Job Search, Applications, Benefits, Trainings, Documents, Notifications"
+        Description = "Citizen Services - Job Search, Applications, Benefits, Trainings, Documents, Notifications."
     });
     c.EnableAnnotations();
 });
@@ -111,12 +111,6 @@ app.UseSwaggerUI(c => {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Citizen API v1");
     c.RoutePrefix = string.Empty;
     c.DocumentTitle = "WorkForceGov — Citizen API";
-
-    // Add Bearer token input for Swagger
-    c.OAuthClientId("swagger-ui");
-    c.OAuthClientSecret("swagger-ui-secret");
-
-    // Add Authorize button with persistent auth
     c.DefaultModelsExpandDepth(-1);
 });
 

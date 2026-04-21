@@ -56,19 +56,15 @@ builder.Services.AddControllers().AddJsonOptions(o => {
         System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
 });
 
-// ── Swagger (no OpenApi model usage to avoid package conflicts) ──────────────
+// ── Swagger with JWT Authorize Button ───────────────────────────────────────
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
     c.SwaggerDoc("v1", new()
     {
         Title = "WorkForceGov — Employer API",
         Version = "v1",
-        Description = "Step 1: POST /api/auth/login with email+password to get a JWT token.<br/>" +
-                      "Step 2: Click Authorize and enter:  Bearer {your token}"
+        Description = "Employer microservice: job postings, applications, employer profile & documents."
     });
-
-    // Note: intentionally not adding the Swagger 'Authorize' input here to avoid
-    // direct Microsoft.OpenApi model references which caused package resolution errors.
     c.EnableAnnotations();
 });
 
@@ -113,7 +109,6 @@ IF NOT EXISTS (SELECT * FROM sys.columns WHERE [object_id]=OBJECT_ID(N'[dbo].[Em
     }
     catch (Exception ex)
     {
-        // If automatic alteration fails, continue startup but surface the error in logs
         Console.WriteLine($"Warning: failed to ensure Employer columns exist: {ex.Message}");
     }
 }

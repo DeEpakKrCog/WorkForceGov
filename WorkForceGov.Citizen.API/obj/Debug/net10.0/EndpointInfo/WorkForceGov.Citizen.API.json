@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "WorkForceGov — Citizen API",
-    "description": "Citizen Services - Job Search, Applications, Benefits, Trainings, Documents, Notifications",
+    "description": "Citizen Services - Job Search, Applications, Benefits, Trainings, Documents, Notifications.",
     "version": "v1"
   },
   "paths": {

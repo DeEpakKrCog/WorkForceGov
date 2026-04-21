@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "WorkForceGov — Employer API",
-    "description": "Step 1: POST /api/auth/login with email+password to get a JWT token.<br/>Step 2: Click Authorize and enter:  Bearer {your token}",
+    "description": "Employer microservice: job postings, applications, employer profile & documents.",
     "version": "v1"
   },
   "paths": {

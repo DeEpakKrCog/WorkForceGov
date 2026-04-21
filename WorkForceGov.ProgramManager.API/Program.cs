@@ -60,8 +60,11 @@ builder.Services.AddControllers().AddJsonOptions(o => {
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new() { Title = "WorkForceGov — Program Manager API", Version = "v1",
-        Description = "Program Manager microservice: manage employment programs, trainings, resources, track program performance & manage citizen enrollments." });
+    c.SwaggerDoc("v1", new() {
+        Title = "WorkForceGov — Program Manager API",
+        Version = "v1",
+        Description = "Program Manager microservice: manage employment programs, trainings, resources, track program performance & manage citizen enrollments."
+    });
     c.EnableAnnotations();
 });
 

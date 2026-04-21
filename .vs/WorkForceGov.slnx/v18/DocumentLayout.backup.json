@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E887FC02-B18F-7FCD-18E8-016D6BC5B3EE}|WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.programmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E887FC02-B18F-7FCD-18E8-016D6BC5B3EE}|WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj|solutionrelative:workforcegov.programmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.citizen.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|solutionrelative:workforcegov.citizen.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E887FC02-B18F-7FCD-18E8-016D6BC5B3EE}|WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.programmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E887FC02-B18F-7FCD-18E8-016D6BC5B3EE}|WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj|solutionrelative:workforcegov.programmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.citizen.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -101,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9C01FEDF-5E36-3418-2559-38898A653BB1}|WorkForceGov.LaborOfficer.API\\WorkForceGov.LaborOfficer.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.laborofficer.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9C01FEDF-5E36-3418-2559-38898A653BB1}|WorkForceGov.LaborOfficer.API\\WorkForceGov.LaborOfficer.API.csproj|solutionrelative:workforcegov.laborofficer.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\JWT_IMPLEMENTATION_SUMMARY.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JWT_IMPLEMENTATION_SUMMARY.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,50 +110,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "JWT_IMPLEMENTATION_SUMMARY.txt",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\JWT_IMPLEMENTATION_SUMMARY.txt",
-              "RelativeDocumentMoniker": "JWT_IMPLEMENTATION_SUMMARY.txt",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\JWT_IMPLEMENTATION_SUMMARY.txt",
-              "RelativeToolTip": "JWT_IMPLEMENTATION_SUMMARY.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-04-21T10:23:40.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.LaborOfficer.API\\appsettings.json",
-              "RelativeDocumentMoniker": "WorkForceGov.LaborOfficer.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.LaborOfficer.API\\appsettings.json",
-              "RelativeToolTip": "WorkForceGov.LaborOfficer.API\\appsettings.json",
-              "ViewState": "AgIAAAoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-21T10:15:13.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\appsettings.json",
-              "RelativeDocumentMoniker": "WorkForceGov.GovernmentAuditor.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\appsettings.json",
-              "RelativeToolTip": "WorkForceGov.GovernmentAuditor.API\\appsettings.json",
-              "ViewState": "AgIAAA4AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-21T10:15:05.204Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -167,7 +124,7 @@
               "RelativeDocumentMoniker": "WorkForceGov.LaborOfficer.API\\Program.cs",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.LaborOfficer.API\\Program.cs",
               "RelativeToolTip": "WorkForceGov.LaborOfficer.API\\Program.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAABBwAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-21T10:14:31.684Z",
               "EditorCaption": ""
@@ -180,88 +137,132 @@
               "RelativeDocumentMoniker": "WorkForceGov.GovernmentAuditor.API\\Program.cs",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\Program.cs",
               "RelativeToolTip": "WorkForceGov.GovernmentAuditor.API\\Program.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAABBwAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-21T10:14:07.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ProgramManager.API\\Program.cs",
+              "RelativeDocumentMoniker": "WorkForceGov.ProgramManager.API\\Program.cs",
+              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ProgramManager.API\\Program.cs",
+              "RelativeToolTip": "WorkForceGov.ProgramManager.API\\Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAIBJwA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:55:41.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Citizen.API\\Program.cs",
+              "RelativeDocumentMoniker": "WorkForceGov.Citizen.API\\Program.cs",
+              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Citizen.API\\Program.cs",
+              "RelativeToolTip": "WorkForceGov.Citizen.API\\Program.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAASwA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T03:42:11.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\appsettings.json",
+              "RelativeDocumentMoniker": "WorkForceGov.GovernmentAuditor.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\appsettings.json",
+              "RelativeToolTip": "WorkForceGov.GovernmentAuditor.API\\appsettings.json",
+              "ViewState": "AgIAAA4AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T10:15:05.204Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "WorkForceGov.Employer.API",
+              "Title": "WorkForceGov.Employer.API.csproj",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj",
               "RelativeDocumentMoniker": "WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj",
               "RelativeToolTip": "WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj",
               "ViewState": "AgIAAA0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-21T10:13:55.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T10:13:55.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.LaborOfficer.API\\appsettings.json",
+              "RelativeDocumentMoniker": "WorkForceGov.LaborOfficer.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.LaborOfficer.API\\appsettings.json",
+              "RelativeToolTip": "WorkForceGov.LaborOfficer.API\\appsettings.json",
+              "ViewState": "AgIAAAoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T10:15:13.019Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "WorkForceGov.LaborOfficer.API",
+              "Title": "WorkForceGov.LaborOfficer.API.csproj",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.LaborOfficer.API\\WorkForceGov.LaborOfficer.API.csproj",
               "RelativeDocumentMoniker": "WorkForceGov.LaborOfficer.API\\WorkForceGov.LaborOfficer.API.csproj",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.LaborOfficer.API\\WorkForceGov.LaborOfficer.API.csproj",
               "RelativeToolTip": "WorkForceGov.LaborOfficer.API\\WorkForceGov.LaborOfficer.API.csproj",
               "ViewState": "AgIAAA0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-21T10:13:44.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T10:13:44.726Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "WorkForceGov.GovernmentAuditor.API",
+              "Title": "WorkForceGov.GovernmentAuditor.API.csproj",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
               "RelativeDocumentMoniker": "WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
               "RelativeToolTip": "WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
               "ViewState": "AgIAABAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-21T10:13:37.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T10:13:37.859Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "WorkForceGov.ProgramManager.API",
+              "Title": "WorkForceGov.ProgramManager.API.csproj",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj",
               "RelativeDocumentMoniker": "WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj",
               "RelativeToolTip": "WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj",
               "ViewState": "AgIAAAsAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-21T10:13:31.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T10:13:31.327Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "WorkForceGov.ComplianceOfficer.API",
+              "Title": "WorkForceGov.ComplianceOfficer.API.csproj",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ComplianceOfficer.API\\WorkForceGov.ComplianceOfficer.API.csproj",
               "RelativeDocumentMoniker": "WorkForceGov.ComplianceOfficer.API\\WorkForceGov.ComplianceOfficer.API.csproj",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ComplianceOfficer.API\\WorkForceGov.ComplianceOfficer.API.csproj",
               "RelativeToolTip": "WorkForceGov.ComplianceOfficer.API\\WorkForceGov.ComplianceOfficer.API.csproj",
               "ViewState": "AgIAABAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-21T10:13:16.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T10:13:16.614Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "WorkForceGov.Admin.API",
+              "Title": "WorkForceGov.Admin.API.csproj",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj",
               "RelativeDocumentMoniker": "WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj",
               "RelativeToolTip": "WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj",
               "ViewState": "AgIAABAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-21T10:13:06.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T10:13:06.995Z"
             },
             {
               "$type": "Document",
@@ -289,28 +290,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ProgramManager.API\\Program.cs",
-              "RelativeDocumentMoniker": "WorkForceGov.ProgramManager.API\\Program.cs",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ProgramManager.API\\Program.cs",
-              "RelativeToolTip": "WorkForceGov.ProgramManager.API\\Program.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAhwA0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T12:55:41.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\Program.cs",
               "RelativeDocumentMoniker": "WorkForceGov.Employer.API\\Program.cs",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\Program.cs",
               "RelativeToolTip": "WorkForceGov.Employer.API\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T06:15:20.89Z"
+              "WhenOpened": "2026-04-21T06:15:20.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -332,7 +321,7 @@
               "RelativeDocumentMoniker": "WorkForceGov.ComplianceOfficer.API\\Program.cs",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.ComplianceOfficer.API\\Program.cs",
               "RelativeToolTip": "WorkForceGov.ComplianceOfficer.API\\Program.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-21T06:14:43.202Z",
               "EditorCaption": ""
@@ -405,9 +394,10 @@
               "RelativeDocumentMoniker": "WorkForceGov.Admin.API\\Program.cs",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Admin.API\\Program.cs",
               "RelativeToolTip": "WorkForceGov.Admin.API\\Program.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAABBwAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T06:13:45.937Z"
+              "WhenOpened": "2026-04-21T06:13:45.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -420,18 +410,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-21T06:11:53.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Citizen.API\\Program.cs",
-              "RelativeDocumentMoniker": "WorkForceGov.Citizen.API\\Program.cs",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Citizen.API\\Program.cs",
-              "RelativeToolTip": "WorkForceGov.Citizen.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T03:42:11.61Z"
             },
             {
               "$type": "Document",

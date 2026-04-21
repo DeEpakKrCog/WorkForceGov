@@ -57,8 +57,11 @@ builder.Services.AddControllers().AddJsonOptions(o => {
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new() { Title = "WorkForceGov — Labor Officer API", Version = "v1",
-        Description = "Labor Officer microservice: citizen document verification, complaint investigation, compliance records & violation tracking." });
+    c.SwaggerDoc("v1", new() {
+        Title = "WorkForceGov — Labor Officer API",
+        Version = "v1",
+        Description = "Labor Officer microservice: citizen document verification, complaint investigation, compliance records & violation tracking."
+    });
     c.EnableAnnotations();
 });
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -81,7 +84,12 @@ builder.Services.AddCors(o => o.AddPolicy("AllowAll", p => p.AllowAnyOrigin().Al
 var app = builder.Build();
 app.UseCors("AllowAll");
 app.UseSwagger();
-app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Labor Officer API v1"); c.RoutePrefix = string.Empty; c.DocumentTitle = "WorkForceGov — Labor Officer API"; c.DefaultModelsExpandDepth(-1); });
+app.UseSwaggerUI(c => {
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Labor Officer API v1");
+    c.RoutePrefix = string.Empty;
+    c.DocumentTitle = "WorkForceGov — Labor Officer API";
+    c.DefaultModelsExpandDepth(-1);
+});
 app.UseHttpsRedirection();
 app.UseAuthentication();   // ← must come before UseAuthorization
 app.UseAuthorization();
@@ -95,4 +103,3 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
-
