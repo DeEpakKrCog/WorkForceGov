@@ -1,0 +1,7 @@
+2026-04-24 10:44:54.544 +05:30 [INF] [Citizen.API] TraceId=32e4580326263ae806dc0e105efc505a HTTP GET /index.html responded 304 in 116.0320 ms
+2026-04-24 10:44:54.740 +05:30 [INF] [Citizen.API] TraceId=d5a2cefe99db2a42bd8014436e067d11 HTTP GET /index.js responded 304 in 5.3305 ms
+2026-04-24 10:44:54.875 +05:30 [INF] [Citizen.API] TraceId=e6e731a8c3eea039e1e1f1dc5d339289 HTTP GET /index.css responded 304 in 147.4223 ms
+2026-04-24 10:44:54.875 +05:30 [INF] [Citizen.API] TraceId=90b47c0a6b1db79c8d7e729d9a220043 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 141.7862 ms
+2026-04-24 10:44:54.875 +05:30 [INF] [Citizen.API] TraceId=105dcb92c936b7b4f86a255e6068fd3d HTTP GET /swagger-ui-bundle.js responded 304 in 147.4802 ms
+2026-04-24 10:44:54.875 +05:30 [INF] [Citizen.API] TraceId=29bdb70e66a892aebb3cd48daf2b90c5 HTTP GET /swagger-ui.css responded 304 in 172.9304 ms
+2026-04-24 10:44:55.092 +05:30 [INF] [Citizen.API] TraceId=5ae10e8869352a57cc39bf1fe58a5e47 HTTP GET /swagger/v1/swagger.json responded 200 in 68.4277 ms

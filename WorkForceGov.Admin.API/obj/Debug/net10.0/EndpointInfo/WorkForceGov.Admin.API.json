@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "WorkForceGov — Admin API",
-    "description": "Admin microservice: user management (create/edit/activate/deactivate/delete), employer oversight, broadcast notifications, reports & system monitoring.",
+    "description": "Admin microservice: user management, employer oversight, notifications, reports & monitoring.",
     "version": "v1"
   },
   "paths": {

@@ -9,26 +9,6 @@
       {
         "Path": "WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj",
         "Action": "Start"
-      },
-      {
-        "Path": "WorkForceGov.ComplianceOfficer.API\\WorkForceGov.ComplianceOfficer.API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "WorkForceGov.GovernmentAuditor.API\\WorkForceGov.GovernmentAuditor.API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "WorkForceGov.LaborOfficer.API\\WorkForceGov.LaborOfficer.API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj",
-        "Action": "Start"
       }
     ]
   }

@@ -1,0 +1,25 @@
+2026-04-24 10:45:07.325 +05:30 [INF] [Admin.API] TraceId=b079786093142647a60eee9554a1dae9 HTTP GET /index.html responded 304 in 73.9078 ms
+2026-04-24 10:45:07.451 +05:30 [INF] [Admin.API] TraceId=38a9887d253b2d23cda0904eeccbe280 HTTP GET /index.js responded 304 in 15.1960 ms
+2026-04-24 10:45:07.521 +05:30 [INF] [Admin.API] TraceId=ac704ca31467715d424abb1abac59ce6 HTTP GET /swagger-ui.css responded 304 in 89.6919 ms
+2026-04-24 10:45:07.521 +05:30 [INF] [Admin.API] TraceId=93e61a644e02687d695f5bb8326351c1 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 86.4669 ms
+2026-04-24 10:45:07.521 +05:30 [INF] [Admin.API] TraceId=b78569ef95c08548b234ec7595697e01 HTTP GET /swagger-ui-bundle.js responded 304 in 86.4315 ms
+2026-04-24 10:45:07.521 +05:30 [INF] [Admin.API] TraceId=ee2a15f44861ab18ee42cb91386fc672 HTTP GET /index.css responded 304 in 86.4675 ms
+2026-04-24 10:45:07.699 +05:30 [INF] [Admin.API] TraceId=cb7d536fc67e791d15e6679399658df8 HTTP GET /swagger/v1/swagger.json responded 200 in 39.2344 ms
+2026-04-24 10:46:12.193 +05:30 [ERR] [Admin.API] TraceId=aaa9f185754072d5a33d49b103acec68 An error has occurred while processing the request. TraceId 0HNL1O1PC231S:00000013
+System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
+   at WorkForceGovProject.Controllers.AdminController.GetUserId() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 35
+   at WorkForceGovProject.Controllers.AdminController.GetNotifications() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 182
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-04-24 10:46:12.307 +05:30 [INF] [Admin.API] TraceId=aaa9f185754072d5a33d49b103acec68 HTTP GET /api/admin/notifications responded 401 in 45976.1932 ms
