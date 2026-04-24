@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="WorkForceGov.Admin.API/WorkForceGov.Admin.API.csproj" />
   <Project Path="WorkForceGov.Citizen.API/WorkForceGov.Citizen.API.csproj" />
+  <Project Path="WorkForceGov.Citizen.Tests/WorkForceGov.Citizen.Tests.csproj" Id="099f657a-a8d0-42ba-8252-827c56e4d63e" />
   <Project Path="WorkForceGov.ComplianceOfficer.API/WorkForceGov.ComplianceOfficer.API.csproj" />
   <Project Path="WorkForceGov.Employer.API/WorkForceGov.Employer.API.csproj" />
   <Project Path="WorkForceGov.GovernmentAuditor.API/WorkForceGov.GovernmentAuditor.API.csproj" />
