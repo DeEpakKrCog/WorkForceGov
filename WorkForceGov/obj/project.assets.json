@@ -3087,11 +3087,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov\\WorkForceGov.csproj",
+      "projectUniqueName": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov\\WorkForceGov.csproj",
       "projectName": "WorkForceGov",
-      "projectPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov\\WorkForceGov.csproj",
+      "projectPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov\\WorkForceGov.csproj",
       "packagesPath": "C:\\Users\\2481439\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov\\obj\\",
+      "outputPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

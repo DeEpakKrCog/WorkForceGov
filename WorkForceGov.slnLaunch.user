@@ -3,11 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "WorkForceGov\\WorkForceGov.csproj",
+        "Path": "WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj",
         "Action": "Start"
       },
       {
-        "Path": "WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj",
+        "Path": "WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj",
         "Action": "Start"
       }
     ]

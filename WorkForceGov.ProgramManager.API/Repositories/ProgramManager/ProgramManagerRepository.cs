@@ -52,7 +52,7 @@ namespace WorkForceGovProject.Repositories.ProgramManager
         public async Task<IEnumerable<EmploymentProgram>> GetAllProgramsAsync() =>
             await _ctx.EmploymentPrograms
                       .Include(p => p.Trainings)
-                      .Include(p => p.Benefits)
+                      .AsNoTracking()
                       .OrderByDescending(p => p.StartDate)
                       .ToListAsync();
 
@@ -61,8 +61,8 @@ namespace WorkForceGovProject.Repositories.ProgramManager
         public async Task<IEnumerable<Training>> GetActiveTrainingsAsync() =>
             await _ctx.Trainings
                       .Include(t => t.Program)
-                      .Include(t => t.Enrollments)
                       .Where(t => t.Status == "Active")
+                      .AsNoTracking()
                       .OrderBy(t => t.StartDate)
                       .ToListAsync();
 

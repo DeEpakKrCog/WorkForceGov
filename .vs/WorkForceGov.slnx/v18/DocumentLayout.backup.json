@@ -1,24 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\project\\workforcegov\\workforcegov.citizen.api\\authentication\\xuseridauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|solutionrelative:workforcegov.citizen.api\\authentication\\xuseridauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\project\\workforcegov\\workforcegov.citizen.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|solutionrelative:workforcegov.citizen.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\project\\workforcegov\\workforcegov.citizen.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8241DDE2-B29A-8D9E-D694-A349A3CABE52}|WorkForceGov.Citizen.API\\WorkForceGov.Citizen.API.csproj|solutionrelative:workforcegov.citizen.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\API_TESTING_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API_TESTING_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,63 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "API_TESTING_GUIDE.md",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\API_TESTING_GUIDE.md",
-              "RelativeDocumentMoniker": "API_TESTING_GUIDE.md",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\API_TESTING_GUIDE.md",
-              "RelativeToolTip": "API_TESTING_GUIDE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-04-20T04:06:46.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "XUserIdAuthenticationHandler.cs",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.Citizen.API\\Authentication\\XUserIdAuthenticationHandler.cs",
-              "RelativeDocumentMoniker": "WorkForceGov.Citizen.API\\Authentication\\XUserIdAuthenticationHandler.cs",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.Citizen.API\\Authentication\\XUserIdAuthenticationHandler.cs",
-              "RelativeToolTip": "WorkForceGov.Citizen.API\\Authentication\\XUserIdAuthenticationHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T03:46:20.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.Citizen.API\\Program.cs",
-              "RelativeDocumentMoniker": "WorkForceGov.Citizen.API\\Program.cs",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.Citizen.API\\Program.cs",
-              "RelativeToolTip": "WorkForceGov.Citizen.API\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAhwAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T03:42:11.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.Citizen.API\\appsettings.json",
-              "RelativeDocumentMoniker": "WorkForceGov.Citizen.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Project\\WorkForceGov\\WorkForceGov.Citizen.API\\appsettings.json",
-              "RelativeToolTip": "WorkForceGov.Citizen.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-20T03:41:45.501Z",
-              "EditorCaption": ""
             }
           ]
         }
