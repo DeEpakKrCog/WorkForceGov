@@ -23,3 +23,17 @@ System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
 2026-04-24 10:46:12.307 +05:30 [INF] [Admin.API] TraceId=aaa9f185754072d5a33d49b103acec68 HTTP GET /api/admin/notifications responded 401 in 45976.1932 ms
+2026-04-24 11:54:40.053 +05:30 [INF] [Admin.API] TraceId=3406f587bb72a4b57b38a28acbfa5c29 HTTP GET /index.html responded 304 in 57.5034 ms
+2026-04-24 11:54:40.207 +05:30 [INF] [Admin.API] TraceId=91715eb1d29fe6faff300e0590df0568 HTTP GET /index.js responded 304 in 9.3850 ms
+2026-04-24 11:54:40.248 +05:30 [INF] [Admin.API] TraceId=9f967c560415cd14cdb13af2e83777ba HTTP GET /swagger-ui.css responded 304 in 63.7052 ms
+2026-04-24 11:54:40.248 +05:30 [INF] [Admin.API] TraceId=a5f22ec964bbf9a679541d4b0ab3ab46 HTTP GET /swagger-ui-bundle.js responded 304 in 50.5677 ms
+2026-04-24 11:54:40.248 +05:30 [INF] [Admin.API] TraceId=745bcb716dd1470127d6387ba9b4aa28 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 50.5679 ms
+2026-04-24 11:54:40.248 +05:30 [INF] [Admin.API] TraceId=213727e557f4558bf3d1a9debe4cc7ad HTTP GET /index.css responded 304 in 50.1834 ms
+2026-04-24 11:55:34.043 +05:30 [INF] [Admin.API] TraceId=d8d0bf49dff100d448e5220a1d5017eb HTTP GET /index.html responded 304 in 0.9241 ms
+2026-04-24 11:55:34.233 +05:30 [INF] [Admin.API] TraceId=d16f712138f6afdddd6ade8aa905698d HTTP GET /index.css responded 304 in 0.3255 ms
+2026-04-24 11:55:34.233 +05:30 [INF] [Admin.API] TraceId=a763e3fddbe5417ad4cb7c4db9cb6b4c HTTP GET /index.js responded 304 in 0.6804 ms
+2026-04-24 11:55:34.262 +05:30 [INF] [Admin.API] TraceId=abb0b3813aa15aa95b8fd3986bfbfae8 HTTP GET /swagger-ui.css responded 200 in 111.8757 ms
+2026-04-24 11:55:34.262 +05:30 [INF] [Admin.API] TraceId=dafeb49e3e286a5009c68840a5456ad1 HTTP GET /swagger-ui-standalone-preset.js responded 200 in 111.8379 ms
+2026-04-24 11:55:34.268 +05:30 [INF] [Admin.API] TraceId=b94828eee26e2ca427ffc40f686c8a7b HTTP GET /swagger-ui-bundle.js responded 200 in 118.1721 ms
+2026-04-24 11:55:34.519 +05:30 [INF] [Admin.API] TraceId=46ba96028f503859cae6f1282c0baa57 HTTP GET /favicon-32x32.png responded 200 in 3.4776 ms
+2026-04-24 11:55:34.533 +05:30 [INF] [Admin.API] TraceId=a918772b15729daca72b1fded02cec02 HTTP GET /swagger/v1/swagger.json responded 200 in 56.1555 ms

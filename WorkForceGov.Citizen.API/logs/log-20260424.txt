@@ -5,3 +5,17 @@
 2026-04-24 10:44:54.875 +05:30 [INF] [Citizen.API] TraceId=105dcb92c936b7b4f86a255e6068fd3d HTTP GET /swagger-ui-bundle.js responded 304 in 147.4802 ms
 2026-04-24 10:44:54.875 +05:30 [INF] [Citizen.API] TraceId=29bdb70e66a892aebb3cd48daf2b90c5 HTTP GET /swagger-ui.css responded 304 in 172.9304 ms
 2026-04-24 10:44:55.092 +05:30 [INF] [Citizen.API] TraceId=5ae10e8869352a57cc39bf1fe58a5e47 HTTP GET /swagger/v1/swagger.json responded 200 in 68.4277 ms
+2026-04-24 11:54:29.006 +05:30 [INF] [Citizen.API] TraceId=e204d807f24c0c19755a3dca082a6986 HTTP GET /index.html responded 304 in 66.0044 ms
+2026-04-24 11:54:29.187 +05:30 [INF] [Citizen.API] TraceId=15ca10e35a40dd0d7a0bb298a5aa78f1 HTTP GET /index.js responded 304 in 0.6285 ms
+2026-04-24 11:54:29.224 +05:30 [INF] [Citizen.API] TraceId=b14bbe6307b0f08066c4588a384024a5 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 102.5948 ms
+2026-04-24 11:54:29.224 +05:30 [INF] [Citizen.API] TraceId=d2658a4fae88598e4bcf2e4e6cd0a220 HTTP GET /swagger-ui.css responded 304 in 105.7346 ms
+2026-04-24 11:54:29.224 +05:30 [INF] [Citizen.API] TraceId=ad900ca24ea787eb007be5bc17bd7be5 HTTP GET /index.css responded 304 in 103.2049 ms
+2026-04-24 11:54:29.224 +05:30 [INF] [Citizen.API] TraceId=00b65c8d30e62fb8d54589d4909d233d HTTP GET /swagger-ui-bundle.js responded 304 in 103.2049 ms
+2026-04-24 11:55:24.783 +05:30 [INF] [Citizen.API] TraceId=9cae0dbcba935336f01c6ee8e2b77f1f HTTP GET /index.html responded 304 in 0.5876 ms
+2026-04-24 11:55:24.877 +05:30 [INF] [Citizen.API] TraceId=bb2f67d7f3975993d2a476ece8cc61aa HTTP GET /index.css responded 304 in 4.1148 ms
+2026-04-24 11:55:24.917 +05:30 [INF] [Citizen.API] TraceId=02f2f2c84cfb475c49cac515b63e04fc HTTP GET /swagger-ui-standalone-preset.js responded 200 in 60.2237 ms
+2026-04-24 11:55:24.914 +05:30 [INF] [Citizen.API] TraceId=18696ae0e9d1bfd48886b16818dd4359 HTTP GET /swagger-ui.css responded 200 in 73.6540 ms
+2026-04-24 11:55:24.913 +05:30 [INF] [Citizen.API] TraceId=626ba2e46e4394b6bccc15d66cadb79e HTTP GET /index.js responded 304 in 0.5838 ms
+2026-04-24 11:55:25.002 +05:30 [INF] [Citizen.API] TraceId=32ee10ce5920981e7b0af59003520987 HTTP GET /swagger-ui-bundle.js responded 200 in 145.1329 ms
+2026-04-24 11:55:25.269 +05:30 [INF] [Citizen.API] TraceId=4e06b823142893eb340341ad1e7948f4 HTTP GET /swagger/v1/swagger.json responded 200 in 33.2429 ms
+2026-04-24 11:55:25.294 +05:30 [INF] [Citizen.API] TraceId=d139f0002f2ff2e33f711cac973b9117 HTTP GET /favicon-32x32.png responded 200 in 4.2109 ms
