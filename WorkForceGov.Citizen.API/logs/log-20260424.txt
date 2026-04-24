@@ -19,3 +19,14 @@
 2026-04-24 11:55:25.002 +05:30 [INF] [Citizen.API] TraceId=32ee10ce5920981e7b0af59003520987 HTTP GET /swagger-ui-bundle.js responded 200 in 145.1329 ms
 2026-04-24 11:55:25.269 +05:30 [INF] [Citizen.API] TraceId=4e06b823142893eb340341ad1e7948f4 HTTP GET /swagger/v1/swagger.json responded 200 in 33.2429 ms
 2026-04-24 11:55:25.294 +05:30 [INF] [Citizen.API] TraceId=d139f0002f2ff2e33f711cac973b9117 HTTP GET /favicon-32x32.png responded 200 in 4.2109 ms
+2026-04-24 17:48:02.424 +05:30 [INF] [Citizen.API] TraceId=a7145c244c3130662e59020dc0868302 HTTP GET / responded 301 in 8.1869 ms
+2026-04-24 17:48:02.733 +05:30 [INF] [Citizen.API] TraceId=5c22ba0081877bb3686adb03287ba6bd HTTP GET /index.html responded 200 in 167.0408 ms
+2026-04-24 17:48:02.896 +05:30 [INF] [Citizen.API] TraceId=dda2eb02e87bf98a4e7de0a5a95ed3a0 HTTP GET /index.js responded 200 in 78.0940 ms
+2026-04-24 17:48:02.980 +05:30 [INF] [Citizen.API] TraceId=b9a44f87a15a6480b2e60ecac35bb983 HTTP GET /index.css responded 200 in 196.0914 ms
+2026-04-24 17:48:02.994 +05:30 [INF] [Citizen.API] TraceId=ee4aab8997fe7f3a97b0200555492360 HTTP GET /swagger-ui-standalone-preset.js responded 200 in 175.9839 ms
+2026-04-24 17:48:02.994 +05:30 [INF] [Citizen.API] TraceId=eb7df93b7dc477bd9cdf80c976b8cde9 HTTP GET /swagger-ui.css responded 200 in 218.6934 ms
+2026-04-24 17:48:03.002 +05:30 [INF] [Citizen.API] TraceId=b2a9ab4ea713836f1caf14622bdfc877 HTTP GET /swagger-ui-bundle.js responded 200 in 217.9016 ms
+2026-04-24 17:48:03.246 +05:30 [INF] [Citizen.API] TraceId=04c17f45ee2d13e2644ecab4a736d401 HTTP GET /swagger/v1/swagger.json responded 200 in 43.2792 ms
+2026-04-24 17:49:15.118 +05:30 [INF] [Citizen.API] TraceId=bd2406a41ae3ebb09c682bd3def7a3ef HTTP POST /api/auth/login responded 200 in 4753.4226 ms
+2026-04-24 17:50:23.456 +05:30 [INF] [Citizen.API] TraceId=60a180c7be3f46931b98dff299a73f36 HTTP GET /api/citizen/profile responded 200 in 626.4119 ms
+2026-04-24 17:50:31.321 +05:30 [INF] [Citizen.API] TraceId=68f822dbd268b26fc2baa68f0f2b893c HTTP GET /api/citizen/profile responded 401 in 16.0606 ms

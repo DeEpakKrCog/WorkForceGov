@@ -37,3 +37,14 @@ System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
 2026-04-24 11:55:34.268 +05:30 [INF] [Admin.API] TraceId=b94828eee26e2ca427ffc40f686c8a7b HTTP GET /swagger-ui-bundle.js responded 200 in 118.1721 ms
 2026-04-24 11:55:34.519 +05:30 [INF] [Admin.API] TraceId=46ba96028f503859cae6f1282c0baa57 HTTP GET /favicon-32x32.png responded 200 in 3.4776 ms
 2026-04-24 11:55:34.533 +05:30 [INF] [Admin.API] TraceId=a918772b15729daca72b1fded02cec02 HTTP GET /swagger/v1/swagger.json responded 200 in 56.1555 ms
+2026-04-24 17:40:08.126 +05:30 [INF] [Admin.API] TraceId=5bd6de49ccc7761fe60ddc7bba5e70a1 HTTP GET / responded 301 in 11.9681 ms
+2026-04-24 17:40:08.378 +05:30 [INF] [Admin.API] TraceId=6d2edb688e80ab9e081137043975c104 HTTP GET /index.html responded 200 in 149.6710 ms
+2026-04-24 17:40:08.455 +05:30 [INF] [Admin.API] TraceId=894666e87362b06f7c6d501802f1e031 HTTP GET /index.css responded 200 in 6.6141 ms
+2026-04-24 17:40:08.490 +05:30 [INF] [Admin.API] TraceId=31e35a741311ade34cd65c6703297952 HTTP GET /index.js responded 200 in 28.3507 ms
+2026-04-24 17:40:08.574 +05:30 [INF] [Admin.API] TraceId=d20639aa993648274b175301e0500d6c HTTP GET /swagger-ui.css responded 200 in 155.7373 ms
+2026-04-24 17:40:08.599 +05:30 [INF] [Admin.API] TraceId=a684a5fce95579a9225cc6023b3c8d30 HTTP GET /swagger-ui-standalone-preset.js responded 200 in 137.6127 ms
+2026-04-24 17:40:08.614 +05:30 [INF] [Admin.API] TraceId=6fd3adf7d0a64c3cab6a3bb7d308446b HTTP GET /swagger-ui-bundle.js responded 200 in 161.9460 ms
+2026-04-24 17:40:08.971 +05:30 [INF] [Admin.API] TraceId=a2e005ced85af372d4884bb7835ea3b0 HTTP GET /swagger/v1/swagger.json responded 200 in 68.1014 ms
+2026-04-24 17:45:17.199 +05:30 [INF] [Admin.API] TraceId=b63e318d8399bca3161fe91c40fdb790 HTTP POST /api/auth/login responded 200 in 4870.3122 ms
+2026-04-24 17:46:08.096 +05:30 [INF] [Admin.API] TraceId=15502de896569382ce693d1743fa4436 HTTP GET /api/citizen/profile responded 404 in 8.8272 ms
+2026-04-24 17:46:23.768 +05:30 [INF] [Admin.API] TraceId=65d30d191c4a9ed73c4660234be946c0 HTTP GET /api/citizen/profile responded 404 in 39.1598 ms

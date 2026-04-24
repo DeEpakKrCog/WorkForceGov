@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj",
+        "Path": "WorkForceGov.Citizen.API.Tests\\WorkForceGov.Citizen.API.Tests.csproj",
         "Action": "Start"
       }
     ]

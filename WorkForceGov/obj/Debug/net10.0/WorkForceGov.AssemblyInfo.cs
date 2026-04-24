@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkForceGov")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c10f0dcc8ebc8d80e83a03d8f189a518fa81fa42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f97e7416d6a70e31200ea7517e06b54da24e729")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkForceGov")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkForceGov")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
