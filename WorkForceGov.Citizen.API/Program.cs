@@ -109,6 +109,7 @@ try
     builder.Services.AddScoped<IApplicationService, ApplicationService>();
     builder.Services.AddScoped<IBenefitService, BenefitService>();
     builder.Services.AddScoped<IJobService, JobService>();
+    
 
     builder.Services.AddCors(o =>
         o.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));

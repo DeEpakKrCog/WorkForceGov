@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkForceGov.GovernmentAuditor.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebf3955890bb78caa824b887f0a8fda1e9d9a795")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9e57ff83d874ac10865a9e98064c43cbdd468bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkForceGov.GovernmentAuditor.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkForceGov.GovernmentAuditor.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
