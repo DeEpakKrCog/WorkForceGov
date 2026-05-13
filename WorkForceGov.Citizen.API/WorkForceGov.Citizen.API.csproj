@@ -31,4 +31,8 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.9.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.9.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logs\uploads\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
 </Project>

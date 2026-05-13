@@ -129,11 +129,13 @@ try
         c.DefaultModelsExpandDepth(-1);
     });
 
-    app.UseExceptionHandler();
+
     app.UseHttpsRedirection();
+    app.UseStaticFiles(); // Place it here
     app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();
+
 
     app.Run();
 }

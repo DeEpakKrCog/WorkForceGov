@@ -240,6 +240,58 @@
         }
       }
     },
+    "/api/citizen/documents/upload": {
+      "post": {
+        "tags": [
+          "Documents"
+        ],
+        "summary": "Upload a document",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "File": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "DocumentType": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "File": {
+                  "style": "form"
+                },
+                "DocumentType": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizen/programs": {
+      "get": {
+        "tags": [
+          "Programs"
+        ],
+        "summary": "Get available programs",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/citizen/benefits": {
       "get": {
         "tags": [
@@ -253,12 +305,84 @@
         }
       }
     },
+    "/api/citizen/benefits/apply/{programId}": {
+      "post": {
+        "tags": [
+          "Benefits"
+        ],
+        "summary": "Apply for a benefit program",
+        "parameters": [
+          {
+            "name": "programId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/citizen/trainings": {
       "get": {
         "tags": [
           "Trainings"
         ],
         "summary": "Get available trainings + my enrollments",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizen/enroll/{id}": {
+      "post": {
+        "tags": [
+          "Trainings"
+        ],
+        "summary": "Enroll in a training",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizen/unenroll/{id}": {
+      "post": {
+        "tags": [
+          "Trainings"
+        ],
+        "summary": "Unenroll from a training",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -390,7 +514,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "program": {
+          "employmentProgram": {
             "$ref": "#/components/schemas/EmploymentProgram"
           },
           "citizenId": {

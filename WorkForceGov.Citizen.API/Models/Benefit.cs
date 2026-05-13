@@ -10,8 +10,10 @@ namespace WorkForceGovProject.Models
 
         [Required]
         public int ProgramId { get; set; }
+
+        // FIXED: Renamed from 'Program' to 'EmploymentProgram' 
         [ForeignKey("ProgramId")]
-        public virtual EmploymentProgram Program { get; set; } = null!;
+        public virtual EmploymentProgram EmploymentProgram { get; set; } = null!;
 
         [Required]
         public int CitizenId { get; set; }
@@ -24,7 +26,7 @@ namespace WorkForceGovProject.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
 
-        public DateTime BenefitDate { get; set; } = DateTime.Now;
+        public DateTime BenefitDate { get; set; } = DateTime.UtcNow;
 
         [StringLength(30)]
         public string Status { get; set; } = "Active";

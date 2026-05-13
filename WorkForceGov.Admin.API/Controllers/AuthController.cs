@@ -22,6 +22,9 @@ namespace WorkForceGovProject.Controllers
 
         public AuthController(IAccountService account, IConfiguration config)
         {
+            
+            
+            
             _account = account;
             _config  = config;
         }

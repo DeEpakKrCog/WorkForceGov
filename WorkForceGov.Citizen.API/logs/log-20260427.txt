@@ -1,0 +1,16 @@
+2026-04-27 14:33:05.788 +05:30 [INF] [Citizen.API] TraceId=f235d1437f6542ac5926524d581a7992 HTTP GET /index.html responded 304 in 134.9378 ms
+2026-04-27 14:33:05.941 +05:30 [INF] [Citizen.API] TraceId=df13f0a460898f21f85bf3ed9d957314 HTTP GET /index.js responded 304 in 31.7464 ms
+2026-04-27 14:33:05.993 +05:30 [INF] [Citizen.API] TraceId=8d81a64a4eb6d362198455cec4fe6194 HTTP GET /swagger-ui-bundle.js responded 304 in 83.9652 ms
+2026-04-27 14:33:05.993 +05:30 [INF] [Citizen.API] TraceId=9159d3ba7aa78c18322320a845809b22 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 83.9768 ms
+2026-04-27 14:33:05.993 +05:30 [INF] [Citizen.API] TraceId=18f2ca8ee48e3226647718695d9eaac2 HTTP GET /index.css responded 304 in 83.8929 ms
+2026-04-27 14:33:05.993 +05:30 [INF] [Citizen.API] TraceId=11bc49e1ea5bc1c4f2507eca0b57fa3a HTTP GET /swagger-ui.css responded 304 in 100.0220 ms
+2026-04-27 14:33:06.448 +05:30 [INF] [Citizen.API] TraceId=77fcacdeec09ac6a4fa02d2570a299c3 HTTP GET /swagger/v1/swagger.json responded 200 in 55.8458 ms
+2026-04-27 14:34:56.123 +05:30 [INF] [Citizen.API] TraceId=e85b2f9442e587d77271c1f991afd159 HTTP GET /index.html responded 304 in 60.3915 ms
+2026-04-27 14:34:56.238 +05:30 [INF] [Citizen.API] TraceId=3b4eaf82abd941334601dbb5a26e32fe HTTP GET /index.js responded 304 in 4.3688 ms
+2026-04-27 14:34:56.298 +05:30 [INF] [Citizen.API] TraceId=60564749fba3806a96c791c8e26d3635 HTTP GET /index.css responded 304 in 76.3098 ms
+2026-04-27 14:34:56.298 +05:30 [INF] [Citizen.API] TraceId=395c8d53502fe1f63626c2fd61b92243 HTTP GET /swagger-ui.css responded 304 in 80.3117 ms
+2026-04-27 14:34:56.298 +05:30 [INF] [Citizen.API] TraceId=abda0b05917c68a544976f9b4da9442b HTTP GET /swagger-ui-bundle.js responded 304 in 76.4705 ms
+2026-04-27 14:34:56.298 +05:30 [INF] [Citizen.API] TraceId=ffc88790883416630a24a4e8bf91c767 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 64.8389 ms
+2026-04-27 14:34:56.541 +05:30 [INF] [Citizen.API] TraceId=f48307c5fee7d798bb426944df70c9ee HTTP GET /swagger/v1/swagger.json responded 200 in 31.5364 ms
+2026-04-27 14:35:45.547 +05:30 [INF] [Citizen.API] TraceId=f31a981c38efbb8a72edcb28d327457c HTTP POST /api/auth/login responded 401 in 4461.9330 ms
+2026-04-27 14:36:26.517 +05:30 [INF] [Citizen.API] TraceId=1d56b83971fabe6350c60edc4f66985d HTTP POST /api/auth/login responded 401 in 159.3968 ms

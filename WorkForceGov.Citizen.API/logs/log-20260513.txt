@@ -1,0 +1,885 @@
+2026-05-13 09:40:56.745 +05:30 [INF] [Citizen.API] TraceId=7a7846d31840c633ba3e26b30e2be914 HTTP GET /index.html responded 304 in 146.2091 ms
+2026-05-13 09:40:57.009 +05:30 [INF] [Citizen.API] TraceId=e245d7dddb972831d59aba585d2e84d2 HTTP GET /swagger-ui.css responded 304 in 43.2613 ms
+2026-05-13 09:40:57.018 +05:30 [INF] [Citizen.API] TraceId=03e7afb2973cdcd83296aa568f7b6bb3 HTTP GET /swagger-ui-bundle.js responded 304 in 29.9425 ms
+2026-05-13 09:40:57.018 +05:30 [INF] [Citizen.API] TraceId=253211c6e6ef038c8f337391365f4db9 HTTP GET /index.css responded 304 in 49.5498 ms
+2026-05-13 09:40:57.046 +05:30 [INF] [Citizen.API] TraceId=842d0830f8d78cc4bed77fe070bd41b4 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 1.9016 ms
+2026-05-13 09:40:57.122 +05:30 [INF] [Citizen.API] TraceId=cbc0b9da672674157a2cda47040696fa HTTP GET /index.js responded 304 in 1.4572 ms
+2026-05-13 09:41:00.313 +05:30 [INF] [Citizen.API] TraceId=ec96b641bb837a8b9b28a35e3701738c HTTP GET /swagger/v1/swagger.json responded 200 in 44.3164 ms
+2026-05-13 09:41:39.454 +05:30 [INF] [Citizen.API] TraceId=afef6383abb74fb381622bce3a81fea1 HTTP GET /api/citizen/jobs responded 404 in 129.1503 ms
+2026-05-13 09:42:39.385 +05:30 [INF] [Citizen.API] TraceId=78997708703b9f56460ff407fc3a2a6e HTTP OPTIONS /api/citizen/dashboard responded 204 in 2.0859 ms
+2026-05-13 09:42:42.000 +05:30 [INF] [Citizen.API] TraceId=5e12d8b0a4aa537bb2ea29309261c99e HTTP GET /api/citizen/dashboard responded 200 in 2603.7183 ms
+2026-05-13 09:42:47.967 +05:30 [INF] [Citizen.API] TraceId=a86619a376096dae62b24bd7c1931fb4 HTTP OPTIONS /api/citizen/jobs/search responded 204 in 0.3687 ms
+2026-05-13 09:42:48.064 +05:30 [INF] [Citizen.API] TraceId=11c883b060517934c11dac997c822997 HTTP GET /api/citizen/jobs/search responded 200 in 89.1829 ms
+2026-05-13 09:42:51.191 +05:30 [INF] [Citizen.API] TraceId=9c51b1c00f448cbe7cc6ce64257017be HTTP OPTIONS /api/citizen/applications responded 204 in 0.1004 ms
+2026-05-13 09:42:51.253 +05:30 [INF] [Citizen.API] TraceId=2710afb62b1820c9ebc9c75d1f7d7333 HTTP GET /api/citizen/applications responded 200 in 48.6298 ms
+2026-05-13 09:42:53.062 +05:30 [INF] [Citizen.API] TraceId=170fed504f3a83c3eb855d174f711272 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0725 ms
+2026-05-13 09:42:53.063 +05:30 [INF] [Citizen.API] TraceId=44833f8923dd1267310d7b80dd856d0f HTTP OPTIONS /api/citizen/programs responded 204 in 0.0356 ms
+2026-05-13 09:42:53.074 +05:30 [INF] [Citizen.API] TraceId=f6051277f9041a79754c7d09e7ce38d0 HTTP GET /api/citizen/programs responded 404 in 0.4062 ms
+2026-05-13 09:42:53.090 +05:30 [INF] [Citizen.API] TraceId=8efab43edb1f7b6d1bdf6557beccbbab HTTP GET /api/citizen/benefits responded 200 in 19.4515 ms
+2026-05-13 09:42:55.563 +05:30 [INF] [Citizen.API] TraceId=a563adb80b925bf8de288382ffc244fb HTTP OPTIONS /api/citizen/trainings responded 204 in 0.1019 ms
+2026-05-13 09:42:55.653 +05:30 [INF] [Citizen.API] TraceId=adc2a98c6344fb791325840a6e1c37bb HTTP GET /api/citizen/trainings responded 200 in 80.4643 ms
+2026-05-13 09:43:03.302 +05:30 [INF] [Citizen.API] TraceId=676bfdefc4bbb1c47f48dbb5cefc1ea0 HTTP OPTIONS /api/citizen/unenroll/2 responded 204 in 0.0718 ms
+2026-05-13 09:43:03.473 +05:30 [INF] [Citizen.API] TraceId=4e10b29c4090619675707857b7e5a4d7 HTTP POST /api/citizen/unenroll/2 responded 200 in 164.3271 ms
+2026-05-13 09:43:03.479 +05:30 [INF] [Citizen.API] TraceId=df8d21eec1b3ebab7e0d41ab8d96737b HTTP OPTIONS /api/citizen/trainings responded 204 in 0.0683 ms
+2026-05-13 09:43:03.496 +05:30 [INF] [Citizen.API] TraceId=f5c6d499648c09de880e7f5cf6c3ea97 HTTP GET /api/citizen/trainings responded 200 in 11.3405 ms
+2026-05-13 09:43:07.842 +05:30 [INF] [Citizen.API] TraceId=610d313a13c227b6a050cfdd9aa6a9d7 HTTP OPTIONS /api/citizen/documents responded 204 in 0.0769 ms
+2026-05-13 09:43:07.881 +05:30 [INF] [Citizen.API] TraceId=98a205911bc9a879529f3d6fe01f0557 HTTP GET /api/citizen/documents responded 200 in 21.8373 ms
+2026-05-13 09:43:26.274 +05:30 [INF] [Citizen.API] TraceId=dbe3c762c6f15f101872d53285a6d5ab HTTP OPTIONS /api/citizen/documents/upload responded 204 in 0.0582 ms
+2026-05-13 09:43:26.285 +05:30 [INF] [Citizen.API] TraceId=2c7f675dd01c4fd470d242fbc4c10f31 HTTP POST /api/citizen/documents/upload responded 404 in 0.3152 ms
+2026-05-13 09:43:46.866 +05:30 [INF] [Citizen.API] TraceId=19e98481ca520b2b89f572d5c5f2b1f8 HTTP OPTIONS /api/citizen/profile responded 204 in 0.1315 ms
+2026-05-13 09:43:46.888 +05:30 [INF] [Citizen.API] TraceId=f237715ad0168b7fd68e9efe79162904 HTTP GET /api/citizen/profile responded 200 in 18.4829 ms
+2026-05-13 09:43:57.168 +05:30 [INF] [Citizen.API] TraceId=6ec6b306d991195c66653a13cc5d1421 HTTP OPTIONS /api/citizen/profile responded 204 in 0.2002 ms
+2026-05-13 09:43:57.228 +05:30 [INF] [Citizen.API] TraceId=4663306a5a8725c21b7304032d9b4cc7 HTTP PUT /api/citizen/profile responded 400 in 55.7156 ms
+2026-05-13 09:44:02.390 +05:30 [INF] [Citizen.API] TraceId=685fc5a4fef9591e2599573b0b88531c HTTP OPTIONS /api/citizen/profile responded 204 in 0.0760 ms
+2026-05-13 09:44:02.401 +05:30 [INF] [Citizen.API] TraceId=1bbee77af5e990a27cd44774676affe9 HTTP PUT /api/citizen/profile responded 400 in 2.5600 ms
+2026-05-13 09:44:04.058 +05:30 [INF] [Citizen.API] TraceId=5683ea5f921a7b9d6453c74e326ce050 HTTP OPTIONS /api/citizen/documents responded 204 in 0.0628 ms
+2026-05-13 09:44:04.098 +05:30 [INF] [Citizen.API] TraceId=e1c7e1302514d37a5d6c2fe7ce6921ee HTTP GET /api/citizen/documents responded 200 in 8.2837 ms
+2026-05-13 09:44:04.976 +05:30 [INF] [Citizen.API] TraceId=20cd9c444aa4f4246e7630e1fe411ad1 HTTP GET /api/citizen/profile responded 200 in 7.0980 ms
+2026-05-13 09:44:53.061 +05:30 [INF] [Citizen.API] TraceId=b207fed3f554b14b5e6ef273ba792639 HTTP POST /api/auth/login responded 200 in 44.9531 ms
+2026-05-13 09:44:55.035 +05:30 [INF] [Citizen.API] TraceId=83a343b1b9c47f75e5d2c3909e38b767 HTTP POST /api/auth/login responded 200 in 7.5519 ms
+2026-05-13 09:45:14.473 +05:30 [INF] [Citizen.API] TraceId=34f1edadcb4d266b4924ee709660d98e HTTP GET /api/citizen/benefits responded 200 in 13.1952 ms
+2026-05-13 09:45:25.279 +05:30 [INF] [Citizen.API] TraceId=8de726575e1bc5af61af60c6f7f9ae23 HTTP GET /api/citizen/profile responded 200 in 8.6472 ms
+2026-05-13 09:45:58.180 +05:30 [INF] [Citizen.API] TraceId=f1c2e03b34ac2040c8fa2a6659dfccba HTTP OPTIONS /api/citizen/profile responded 204 in 0.0776 ms
+2026-05-13 09:45:58.186 +05:30 [INF] [Citizen.API] TraceId=3cfc450c61151bdc410c148a63552738 HTTP PUT /api/citizen/profile responded 400 in 1.5009 ms
+2026-05-13 09:46:02.594 +05:30 [INF] [Citizen.API] TraceId=5f10892d9ef744ae53ca50de58e345a8 HTTP GET /api/citizen/profile responded 200 in 5.5419 ms
+2026-05-13 09:46:10.827 +05:30 [INF] [Citizen.API] TraceId=af8ba5c2218c50dea356a86ced152f09 HTTP OPTIONS /api/citizen/trainings responded 204 in 0.2072 ms
+2026-05-13 09:46:10.865 +05:30 [INF] [Citizen.API] TraceId=ac142907495892e4765deeddeb2c88ef HTTP GET /api/citizen/trainings responded 200 in 22.0299 ms
+2026-05-13 09:46:12.158 +05:30 [INF] [Citizen.API] TraceId=d6ca815c25ac05479a5cc4b681de130e HTTP OPTIONS /api/citizen/documents responded 204 in 0.0589 ms
+2026-05-13 09:46:12.178 +05:30 [INF] [Citizen.API] TraceId=2e5dee9ff1d311a74f25d2fd0fec7e5e HTTP GET /api/citizen/documents responded 200 in 11.4776 ms
+2026-05-13 09:47:06.894 +05:30 [INF] [Citizen.API] TraceId=5556a55272b46fe5d7adcec13050ca34 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.1704 ms
+2026-05-13 09:47:06.894 +05:30 [INF] [Citizen.API] TraceId=d80fab34f3b91eab1563004855e38a83 HTTP OPTIONS /api/citizen/programs responded 204 in 0.0347 ms
+2026-05-13 09:47:06.907 +05:30 [INF] [Citizen.API] TraceId=80ad81ad350ad2689a214a595d008aef HTTP GET /api/citizen/programs responded 404 in 0.4111 ms
+2026-05-13 09:47:06.914 +05:30 [INF] [Citizen.API] TraceId=00795ce9369f4226fe72235c41f0e88a HTTP GET /api/citizen/benefits responded 200 in 9.9561 ms
+2026-05-13 10:01:21.836 +05:30 [INF] [Citizen.API] TraceId=1a1fb5522148bf146863e0536d9d2b36 HTTP GET /index.html responded 304 in 111.3332 ms
+2026-05-13 10:01:22.180 +05:30 [INF] [Citizen.API] TraceId=70a40ea33e455ffa95cf1fd12f9a0278 HTTP GET /swagger-ui.css responded 304 in 34.5315 ms
+2026-05-13 10:01:22.201 +05:30 [INF] [Citizen.API] TraceId=439f01bacc4ec27f0ced6c99b96edcd6 HTTP GET /index.css responded 304 in 1.3360 ms
+2026-05-13 10:01:22.202 +05:30 [INF] [Citizen.API] TraceId=16bb4b82d0a6f01a863f4126f7468660 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 1.6344 ms
+2026-05-13 10:01:22.270 +05:30 [INF] [Citizen.API] TraceId=0a24e667faf9ed9ae4dc081cbcb40cfa HTTP GET /swagger-ui-bundle.js responded 304 in 86.0428 ms
+2026-05-13 10:01:22.270 +05:30 [INF] [Citizen.API] TraceId=24d977c5d5e556c78f3996754b0a7025 HTTP GET /index.js responded 304 in 0.8291 ms
+2026-05-13 10:01:22.723 +05:30 [ERR] [Citizen.API] TraceId=58708506b9cb7198c83cf90c60529a43 HTTP GET /swagger/v1/swagger.json responded 500 in 136.3678 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 10:01:22.824 +05:30 [ERR] [Citizen.API] TraceId=58708506b9cb7198c83cf90c60529a43 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 10:02:45.291 +05:30 [INF] [Citizen.API] TraceId=0589aa8101ba93b02176ccc014727b56 HTTP OPTIONS /api/citizen/jobs responded 204 in 3.1049 ms
+2026-05-13 10:02:45.531 +05:30 [INF] [Citizen.API] TraceId=faa55d05629ebdb806cf0bbe77f543d4 HTTP GET /api/citizen/jobs responded 404 in 228.1256 ms
+2026-05-13 10:02:47.697 +05:30 [INF] [Citizen.API] TraceId=f92206955e3f39662da3c2cc07f2bc22 HTTP OPTIONS /api/citizen/dashboard responded 204 in 0.2266 ms
+2026-05-13 10:02:49.948 +05:30 [INF] [Citizen.API] TraceId=4e9f962e090c2faa2e631d5fccbf78b7 HTTP GET /api/citizen/dashboard responded 200 in 2245.2432 ms
+2026-05-13 10:02:52.919 +05:30 [INF] [Citizen.API] TraceId=bb34c026972f34e06e450bbfdf249728 HTTP OPTIONS /api/citizen/jobs/search responded 204 in 0.1505 ms
+2026-05-13 10:02:53.028 +05:30 [INF] [Citizen.API] TraceId=65b479f38292c23b1741d9ae911eb9ef HTTP GET /api/citizen/jobs/search responded 200 in 103.1581 ms
+2026-05-13 10:02:55.288 +05:30 [INF] [Citizen.API] TraceId=deaabbc51baa5e8ebcd3dca7a2bce8eb HTTP OPTIONS /api/citizen/jobs/1/apply responded 204 in 0.0840 ms
+2026-05-13 10:02:55.387 +05:30 [INF] [Citizen.API] TraceId=e19c3f15057d9136e3ee76f855b77420 HTTP POST /api/citizen/jobs/1/apply responded 400 in 91.3972 ms
+2026-05-13 10:02:57.061 +05:30 [INF] [Citizen.API] TraceId=4a0c7897055b00d79556e073accb41a3 HTTP OPTIONS /api/citizen/applications responded 204 in 0.3291 ms
+2026-05-13 10:02:57.103 +05:30 [INF] [Citizen.API] TraceId=23bf1850c4778f0d3d5cb2002e08b644 HTTP GET /api/citizen/applications responded 200 in 28.0660 ms
+2026-05-13 10:02:58.782 +05:30 [INF] [Citizen.API] TraceId=7b315a556cdd446cdcf6ee0e4102bb68 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0887 ms
+2026-05-13 10:02:58.782 +05:30 [INF] [Citizen.API] TraceId=e10f0eae2100cbb6c38f3a12c34d6252 HTTP OPTIONS /api/citizen/programs responded 204 in 0.0276 ms
+2026-05-13 10:02:58.791 +05:30 [INF] [Citizen.API] TraceId=4750ef4a48d65e814bd89807ff41c743 HTTP GET /api/citizen/benefits responded 404 in 0.4998 ms
+2026-05-13 10:02:58.796 +05:30 [INF] [Citizen.API] TraceId=dfd7f4de2fb81813c9b4faa83393947d HTTP GET /api/citizen/programs responded 404 in 0.7185 ms
+2026-05-13 10:03:02.443 +05:30 [INF] [Citizen.API] TraceId=111f9083c7a0fe2990e39a5a9c48d38f HTTP OPTIONS /api/citizen/trainings responded 204 in 0.0914 ms
+2026-05-13 10:03:02.454 +05:30 [INF] [Citizen.API] TraceId=6798c6b67c215212fbc18e529e5380ac HTTP GET /api/citizen/trainings responded 404 in 0.4780 ms
+2026-05-13 10:03:06.866 +05:30 [INF] [Citizen.API] TraceId=351545d8e3ab1a875423aa2e10be6a12 HTTP OPTIONS /api/citizen/documents responded 204 in 0.0538 ms
+2026-05-13 10:03:06.871 +05:30 [INF] [Citizen.API] TraceId=eed0871202a712a784ad1dbe6190fcfc HTTP GET /api/citizen/documents responded 404 in 0.4075 ms
+2026-05-13 10:03:18.627 +05:30 [INF] [Citizen.API] TraceId=e825a36720d77553a7bef5cb26ec20ad HTTP OPTIONS /api/citizen/documents/upload responded 204 in 0.2487 ms
+2026-05-13 10:03:18.902 +05:30 [INF] [Citizen.API] TraceId=7599c101a52e9ce9563676914dbdfcb4 HTTP POST /api/citizen/documents/upload responded 200 in 263.8271 ms
+2026-05-13 10:03:18.908 +05:30 [INF] [Citizen.API] TraceId=515a1f7a1dcfb96ba6122d618b31c80f HTTP OPTIONS /api/citizen/documents responded 204 in 0.2303 ms
+2026-05-13 10:03:18.916 +05:30 [INF] [Citizen.API] TraceId=c1e0049bebecdc0f93d61835fae2544e HTTP GET /api/citizen/documents responded 404 in 0.3970 ms
+2026-05-13 10:03:27.466 +05:30 [INF] [Citizen.API] TraceId=94ec6c6e4f3840f8567a33898270a9b5 HTTP OPTIONS /api/citizen/profile responded 204 in 0.0778 ms
+2026-05-13 10:03:27.512 +05:30 [INF] [Citizen.API] TraceId=b0331ca8510eabbc09138a5576e08587 HTTP GET /api/citizen/profile responded 200 in 33.5847 ms
+2026-05-13 10:03:33.282 +05:30 [INF] [Citizen.API] TraceId=8601fe8622449c94fb616e3960bb801e HTTP OPTIONS /api/citizen/profile responded 204 in 0.0732 ms
+2026-05-13 10:03:33.326 +05:30 [INF] [Citizen.API] TraceId=c36991408ab0a8da01c5e7f9fa1cc2e6 HTTP PUT /api/citizen/profile responded 400 in 38.4104 ms
+2026-05-13 10:03:34.593 +05:30 [INF] [Citizen.API] TraceId=bee2b640feb926fa2a6cb03e83b63421 HTTP PUT /api/citizen/profile responded 400 in 3.5691 ms
+2026-05-13 10:03:36.100 +05:30 [INF] [Citizen.API] TraceId=407536814e36e33058baf1c8ad1b6a52 HTTP OPTIONS /api/citizen/notifications responded 204 in 0.0666 ms
+2026-05-13 10:03:36.112 +05:30 [INF] [Citizen.API] TraceId=27e3a23f7e689b902c5e097bd47ba618 HTTP GET /api/citizen/notifications responded 404 in 0.5315 ms
+2026-05-13 10:03:38.028 +05:30 [INF] [Citizen.API] TraceId=5136959aa4491b8d75e0eb2a5f72f8e8 HTTP GET /api/citizen/profile responded 200 in 17.3262 ms
+2026-05-13 10:03:53.754 +05:30 [INF] [Citizen.API] TraceId=b6998dd8474ce60b9549ca6f0a57f697 HTTP GET /api/citizen/profile responded 200 in 7.4275 ms
+2026-05-13 10:05:25.180 +05:30 [INF] [Citizen.API] TraceId=cee31fc2ae95261b3766d354c273b432 HTTP GET /index.html responded 304 in 113.0593 ms
+2026-05-13 10:05:25.368 +05:30 [INF] [Citizen.API] TraceId=84ab117888ad94487a22c2e5d9369c49 HTTP GET /index.js responded 304 in 45.2085 ms
+2026-05-13 10:05:25.419 +05:30 [INF] [Citizen.API] TraceId=26e5efaf060f59f85db8a13d628a3a1d HTTP GET /swagger-ui-standalone-preset.js responded 304 in 96.8201 ms
+2026-05-13 10:05:25.419 +05:30 [INF] [Citizen.API] TraceId=fe51ece01afb92cfa7968a0ffa4f6a09 HTTP GET /index.css responded 304 in 96.8201 ms
+2026-05-13 10:05:25.419 +05:30 [INF] [Citizen.API] TraceId=5e02022e3375267447ee554663b0124f HTTP GET /swagger-ui-bundle.js responded 304 in 96.8965 ms
+2026-05-13 10:05:25.419 +05:30 [INF] [Citizen.API] TraceId=c5f6da5bfeb7139e95087f4017c535b0 HTTP GET /swagger-ui.css responded 304 in 96.8202 ms
+2026-05-13 10:05:25.648 +05:30 [INF] [Citizen.API] TraceId=e29f68bfc506dbbfbd1b33752970bc4b HTTP GET /swagger/v1/swagger.json responded 200 in 56.4549 ms
+2026-05-13 10:05:37.098 +05:30 [INF] [Citizen.API] TraceId=5449caa2b576bad44b4f97dc9533e66d HTTP OPTIONS /api/citizen/trainings responded 204 in 2.1369 ms
+2026-05-13 10:05:41.250 +05:30 [INF] [Citizen.API] TraceId=81376473232e93fc25147e69b1ac894f HTTP GET /api/citizen/trainings responded 200 in 4144.9501 ms
+2026-05-13 10:05:44.490 +05:30 [INF] [Citizen.API] TraceId=cee8ea00da58bb084381c27d9254b9cd HTTP OPTIONS /api/citizen/benefits responded 204 in 0.6250 ms
+2026-05-13 10:05:44.490 +05:30 [INF] [Citizen.API] TraceId=d7c01f6cfafc9c135bbbe2c51f24e54f HTTP OPTIONS /api/citizen/programs responded 204 in 1.4168 ms
+2026-05-13 10:05:44.507 +05:30 [INF] [Citizen.API] TraceId=88b08e0f729c6677daa7b5085ca7ef0b HTTP GET /api/citizen/programs responded 404 in 6.7882 ms
+2026-05-13 10:05:44.691 +05:30 [INF] [Citizen.API] TraceId=0e59c13f7cb4659be21fa76f1eb7d305 HTTP GET /api/citizen/benefits responded 200 in 193.4900 ms
+2026-05-13 10:05:46.488 +05:30 [INF] [Citizen.API] TraceId=5973bec0b3e093a3ab42f141dacf0a54 HTTP OPTIONS /api/citizen/applications responded 204 in 0.1494 ms
+2026-05-13 10:05:46.724 +05:30 [INF] [Citizen.API] TraceId=011816e2bc518a39a7760b27e8b41bcd HTTP GET /api/citizen/applications responded 200 in 224.0229 ms
+2026-05-13 10:05:47.974 +05:30 [INF] [Citizen.API] TraceId=4b26785a6d0f0c42d7eab8d8e5e87dec HTTP OPTIONS /api/citizen/jobs/search responded 204 in 0.1713 ms
+2026-05-13 10:05:48.058 +05:30 [INF] [Citizen.API] TraceId=507e51839bf50332a1370a7a0d446dbc HTTP GET /api/citizen/jobs/search responded 200 in 73.4087 ms
+2026-05-13 10:05:49.322 +05:30 [INF] [Citizen.API] TraceId=77b8d97a6d84869e08f30d356118294d HTTP OPTIONS /api/citizen/dashboard responded 204 in 0.0825 ms
+2026-05-13 10:05:49.540 +05:30 [INF] [Citizen.API] TraceId=952e76b6208b506659a29d53f41d9601 HTTP GET /api/citizen/dashboard responded 200 in 210.3568 ms
+2026-05-13 10:05:50.558 +05:30 [INF] [Citizen.API] TraceId=c22dbe4088c13955c0927a34b84046ae HTTP OPTIONS /api/citizen/documents responded 204 in 0.1212 ms
+2026-05-13 10:05:50.596 +05:30 [INF] [Citizen.API] TraceId=fc814673a57dd1071b1489dd34bc02c5 HTTP GET /api/citizen/documents responded 200 in 26.0182 ms
+2026-05-13 10:06:07.773 +05:30 [INF] [Citizen.API] TraceId=f22ecc722bb5ebbf6f5ebc73cfb12694 HTTP OPTIONS /api/citizen/documents/upload responded 204 in 0.0570 ms
+2026-05-13 10:06:07.787 +05:30 [INF] [Citizen.API] TraceId=07764ff98efabafeceb418d5c4676d80 HTTP POST /api/citizen/documents/upload responded 404 in 0.5336 ms
+2026-05-13 10:06:11.985 +05:30 [INF] [Citizen.API] TraceId=f8013639fe3d7c3ca5886da320ecac4a HTTP OPTIONS /api/citizen/profile responded 204 in 0.3596 ms
+2026-05-13 10:06:12.016 +05:30 [INF] [Citizen.API] TraceId=d0bd4eefd0e454214fb08015a6f51965 HTTP GET /api/citizen/profile responded 200 in 15.2398 ms
+2026-05-13 10:06:13.806 +05:30 [INF] [Citizen.API] TraceId=59035f5328f699791e067597c2cad4a6 HTTP OPTIONS /api/citizen/notifications responded 204 in 0.1239 ms
+2026-05-13 10:06:13.933 +05:30 [INF] [Citizen.API] TraceId=2c90e82294ba7c9c62b541e8eedd9369 HTTP GET /api/citizen/notifications responded 200 in 117.6947 ms
+2026-05-13 10:06:15.286 +05:30 [INF] [Citizen.API] TraceId=5066377555f93d68d589fb57a4ff11f3 HTTP GET /api/citizen/profile responded 200 in 8.0606 ms
+2026-05-13 10:06:19.011 +05:30 [INF] [Citizen.API] TraceId=60ad9e388eae3bfb2c7849b14d8071d2 HTTP OPTIONS /api/citizen/documents responded 204 in 1.4792 ms
+2026-05-13 10:06:19.032 +05:30 [INF] [Citizen.API] TraceId=e71ac62b4b057a4fc232e2a4175118a2 HTTP GET /api/citizen/documents responded 200 in 6.2481 ms
+2026-05-13 10:06:23.244 +05:30 [INF] [Citizen.API] TraceId=0348208e5ed23865cc59d1a70b0fc1a5 HTTP OPTIONS /api/citizen/trainings responded 204 in 0.0675 ms
+2026-05-13 10:06:23.275 +05:30 [INF] [Citizen.API] TraceId=3cdad761121dd7f9b5c113d74c7e2326 HTTP GET /api/citizen/trainings responded 200 in 17.0745 ms
+2026-05-13 10:06:24.963 +05:30 [INF] [Citizen.API] TraceId=d7fe2b1c9b2bf695e85be5c679d0a5d0 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.1058 ms
+2026-05-13 10:06:24.964 +05:30 [INF] [Citizen.API] TraceId=e16a2794c89af94da6f57104c3c07b57 HTTP OPTIONS /api/citizen/programs responded 204 in 0.0474 ms
+2026-05-13 10:06:24.980 +05:30 [INF] [Citizen.API] TraceId=83f18c01960557a54a2df3cfad8adaed HTTP GET /api/citizen/programs responded 404 in 0.7738 ms
+2026-05-13 10:06:24.980 +05:30 [INF] [Citizen.API] TraceId=3248ec00ae6329e0e29aec4c3c2a942e HTTP GET /api/citizen/benefits responded 200 in 9.3291 ms
+2026-05-13 10:06:43.181 +05:30 [INF] [Citizen.API] TraceId=107fab8ad55505e0a28366fe9ed78220 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0926 ms
+2026-05-13 10:06:43.184 +05:30 [INF] [Citizen.API] TraceId=a2ff215c4fb22ca7f65d980520c3a6ff HTTP OPTIONS /api/citizen/programs responded 204 in 0.1133 ms
+2026-05-13 10:06:43.196 +05:30 [INF] [Citizen.API] TraceId=f2de7af98a48b0ea3971d740195518a5 HTTP GET /api/citizen/programs responded 404 in 0.9928 ms
+2026-05-13 10:06:43.204 +05:30 [INF] [Citizen.API] TraceId=aefeb3bffeb60c9676a3de39fccab4ae HTTP GET /api/citizen/benefits responded 200 in 14.3665 ms
+2026-05-13 10:08:07.878 +05:30 [INF] [Citizen.API] TraceId=fdccf3e6ac381a9a640d7a0d91ec9c4c HTTP OPTIONS /api/citizen/benefits responded 204 in 0.1793 ms
+2026-05-13 10:08:07.883 +05:30 [INF] [Citizen.API] TraceId=95b237da5c98f573283f00829de1b168 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0490 ms
+2026-05-13 10:08:07.898 +05:30 [INF] [Citizen.API] TraceId=7b7a07fb20e0400f7bbcfc24b0d2603c HTTP GET /api/citizen/benefits responded 200 in 12.8129 ms
+2026-05-13 10:08:07.905 +05:30 [INF] [Citizen.API] TraceId=5eea152e04f64d0d68184f65dc45e3f1 HTTP GET /api/citizen/benefits responded 200 in 4.9893 ms
+2026-05-13 10:08:23.791 +05:30 [INF] [Citizen.API] TraceId=5a2add4e42f51aa678e37517cbc1e83b HTTP OPTIONS /api/citizen/benefits/apply/1 responded 204 in 0.0606 ms
+2026-05-13 10:08:23.795 +05:30 [INF] [Citizen.API] TraceId=82580f75717c1d79ef89c6ff5b5fa06c HTTP POST /api/citizen/benefits/apply/1 responded 404 in 0.3406 ms
+2026-05-13 10:08:25.626 +05:30 [INF] [Citizen.API] TraceId=c89b6e8b1f0ec23db292f25e70f5aab0 HTTP POST /api/citizen/benefits/apply/1 responded 404 in 0.3616 ms
+2026-05-13 10:09:57.101 +05:30 [INF] [Citizen.API] TraceId=cd191a6e3f408ff22d3d4573fcd982e0 HTTP GET /api/citizen/benefits responded 200 in 11.0308 ms
+2026-05-13 10:11:00.259 +05:30 [INF] [Citizen.API] TraceId=26c7d6f002fc2cf8cae5d2736b9900e5 HTTP POST /api/auth/login responded 200 in 101.8089 ms
+2026-05-13 10:11:15.673 +05:30 [INF] [Citizen.API] TraceId=4b7edafb53c6df5060ce4267b7ca2be2 HTTP GET /api/citizen/benefits responded 200 in 9.2344 ms
+2026-05-13 10:13:54.236 +05:30 [INF] [Citizen.API] TraceId=c1bb54697d14cd6bf2e653d078a9d5b7 HTTP OPTIONS /api/citizen/benefits/apply/1 responded 204 in 0.0785 ms
+2026-05-13 10:13:54.241 +05:30 [INF] [Citizen.API] TraceId=749ab0075a06e26505454983e72bc228 HTTP POST /api/citizen/benefits/apply/1 responded 404 in 0.4430 ms
+2026-05-13 10:13:55.370 +05:30 [INF] [Citizen.API] TraceId=569ce24af7a0d5084068874139a91b26 HTTP POST /api/citizen/benefits/apply/1 responded 404 in 0.5445 ms
+2026-05-13 10:13:56.567 +05:30 [INF] [Citizen.API] TraceId=1e4867efb421d8caeba818c4ec7a9a05 HTTP POST /api/citizen/benefits/apply/1 responded 404 in 0.4118 ms
+2026-05-13 10:14:01.435 +05:30 [INF] [Citizen.API] TraceId=ee8748fa70627713027fb2518dd21391 HTTP OPTIONS /api/citizen/benefits/apply/1 responded 204 in 0.0305 ms
+2026-05-13 10:14:01.439 +05:30 [INF] [Citizen.API] TraceId=1c83a6c1b70c5951b4ad7b0807572a81 HTTP POST /api/citizen/benefits/apply/1 responded 404 in 0.2589 ms
+2026-05-13 10:14:03.017 +05:30 [INF] [Citizen.API] TraceId=fa75d6bcb1d17512c3c80c6e031652ab HTTP OPTIONS /api/citizen/trainings responded 204 in 0.0547 ms
+2026-05-13 10:14:03.045 +05:30 [INF] [Citizen.API] TraceId=c59c4f34111e55bda1b06aa7e31747ce HTTP GET /api/citizen/trainings responded 200 in 21.7824 ms
+2026-05-13 10:14:04.886 +05:30 [INF] [Citizen.API] TraceId=c82b0ff1e17c1ceec0670a9e581d8e31 HTTP OPTIONS /api/citizen/documents responded 204 in 0.0436 ms
+2026-05-13 10:14:04.901 +05:30 [INF] [Citizen.API] TraceId=d5d2aadf9d1cea473eb1712b60c6de1f HTTP GET /api/citizen/documents responded 200 in 7.2067 ms
+2026-05-13 10:14:14.494 +05:30 [INF] [Citizen.API] TraceId=8aafc46e911506f0c6e3671697d1d775 HTTP OPTIONS /api/citizen/profile responded 204 in 0.0809 ms
+2026-05-13 10:14:14.510 +05:30 [INF] [Citizen.API] TraceId=21d22e69ecc1fbdad06a49cd7e2cefac HTTP GET /api/citizen/profile responded 200 in 2.6700 ms
+2026-05-13 10:14:18.050 +05:30 [INF] [Citizen.API] TraceId=6acc60d4c27ca51a120d86487f6fa97b HTTP OPTIONS /api/citizen/applications responded 204 in 0.0368 ms
+2026-05-13 10:14:18.072 +05:30 [INF] [Citizen.API] TraceId=efdaf6c046a57ab93fb72e619fbeacf4 HTTP GET /api/citizen/applications responded 200 in 14.0002 ms
+2026-05-13 10:14:18.901 +05:30 [INF] [Citizen.API] TraceId=79aa7bcfe5889c01090036f4db745b38 HTTP OPTIONS /api/citizen/jobs/search responded 204 in 0.0436 ms
+2026-05-13 10:14:18.913 +05:30 [INF] [Citizen.API] TraceId=b4bbe047dded101b6c598110b0000c76 HTTP GET /api/citizen/jobs/search responded 200 in 3.6804 ms
+2026-05-13 10:14:19.998 +05:30 [INF] [Citizen.API] TraceId=25be76c01bac270cca11d0c28c73483c HTTP OPTIONS /api/citizen/dashboard responded 204 in 0.0424 ms
+2026-05-13 10:14:20.033 +05:30 [INF] [Citizen.API] TraceId=2a97a975fe30a659c82cb41e54477bf3 HTTP GET /api/citizen/dashboard responded 200 in 28.6160 ms
+2026-05-13 10:14:30.004 +05:30 [INF] [Citizen.API] TraceId=d044e1fd3c41318c732e42e3d8a50894 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0559 ms
+2026-05-13 10:14:30.004 +05:30 [INF] [Citizen.API] TraceId=543058aa4b229d6ffbc165e105905b14 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0250 ms
+2026-05-13 10:14:30.032 +05:30 [INF] [Citizen.API] TraceId=c3e3c69b98270d24537841912c0862b5 HTTP GET /api/citizen/benefits responded 200 in 5.2427 ms
+2026-05-13 10:14:30.036 +05:30 [INF] [Citizen.API] TraceId=fac43ef6e8c0eae7702ba93098668dd9 HTTP GET /api/citizen/benefits responded 200 in 3.3963 ms
+2026-05-13 10:17:32.585 +05:30 [INF] [Citizen.API] TraceId=a000ceac4cbedd9978b52c9984f37809 HTTP OPTIONS /api/citizen/trainings responded 204 in 0.0621 ms
+2026-05-13 10:17:32.626 +05:30 [INF] [Citizen.API] TraceId=7bcc7d6eb9ecc4f25ba25285c30f8a6b HTTP GET /api/citizen/trainings responded 200 in 18.1902 ms
+2026-05-13 10:17:48.472 +05:30 [INF] [Citizen.API] TraceId=8bff6ad8382a2421b33c1668375474a7 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0780 ms
+2026-05-13 10:17:48.474 +05:30 [INF] [Citizen.API] TraceId=7f4baf0eb6fcd7470c1b19f664c8524a HTTP OPTIONS /api/citizen/benefits responded 204 in 0.1516 ms
+2026-05-13 10:17:48.508 +05:30 [INF] [Citizen.API] TraceId=7ddbe2eb9f421acd9b18d6915961a9d3 HTTP GET /api/citizen/benefits responded 200 in 17.2747 ms
+2026-05-13 10:17:48.515 +05:30 [INF] [Citizen.API] TraceId=a7354825af451fc259afb5e5a33bdea5 HTTP GET /api/citizen/benefits responded 200 in 4.4738 ms
+2026-05-13 10:21:24.217 +05:30 [INF] [Citizen.API] TraceId=9431207e1fa56067bbde7db262288f64 HTTP OPTIONS /api/citizen/documents responded 204 in 0.0380 ms
+2026-05-13 10:21:24.238 +05:30 [INF] [Citizen.API] TraceId=a0e9ce5f8d2b1490d2b1871180a28e5b HTTP GET /api/citizen/documents responded 200 in 11.6288 ms
+2026-05-13 10:22:19.458 +05:30 [INF] [Citizen.API] TraceId=ae2222e96d3e5cfdd9248fc257b7c12f HTTP OPTIONS /api/citizen/notifications responded 204 in 0.0353 ms
+2026-05-13 10:22:19.490 +05:30 [INF] [Citizen.API] TraceId=b18ba7cc61f7b750f9ce456b60ae01e3 HTTP GET /api/citizen/notifications responded 200 in 10.1432 ms
+2026-05-13 10:22:20.511 +05:30 [INF] [Citizen.API] TraceId=1979fce9328ff7ce2f4de9b84865e079 HTTP OPTIONS /api/citizen/profile responded 204 in 0.0309 ms
+2026-05-13 10:22:20.529 +05:30 [INF] [Citizen.API] TraceId=779105bd7f9e52b6cd2acaf3734b31cb HTTP GET /api/citizen/profile responded 200 in 6.1334 ms
+2026-05-13 10:25:21.047 +05:30 [INF] [Citizen.API] TraceId=be833d48c7631c0e543e37c40bca3ae8 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0402 ms
+2026-05-13 10:25:21.049 +05:30 [INF] [Citizen.API] TraceId=2d901c50a2f20c8f228451d36a34db1e HTTP OPTIONS /api/citizen/benefits responded 204 in 0.0354 ms
+2026-05-13 10:25:21.070 +05:30 [INF] [Citizen.API] TraceId=ede07113c14475e5e8d42608c7bc1f14 HTTP GET /api/citizen/benefits responded 200 in 8.6956 ms
+2026-05-13 10:25:21.077 +05:30 [INF] [Citizen.API] TraceId=e89b6196af749e5b3049b3b2b992cba0 HTTP GET /api/citizen/benefits responded 200 in 3.8448 ms
+2026-05-13 10:25:23.769 +05:30 [INF] [Citizen.API] TraceId=516d87b557dc269527bffa83f2ec13aa HTTP OPTIONS /api/citizen/trainings responded 204 in 0.0301 ms
+2026-05-13 10:25:23.786 +05:30 [INF] [Citizen.API] TraceId=ceda5fd0e42c481b8cb95c8c44f4f2f2 HTTP GET /api/citizen/trainings responded 200 in 10.1669 ms
+2026-05-13 11:03:09.539 +05:30 [INF] [Citizen.API] TraceId=bac46740ecf028033e768564347c0b97 HTTP GET /index.html responded 304 in 153.6422 ms
+2026-05-13 11:03:09.820 +05:30 [INF] [Citizen.API] TraceId=578f928c073441b1fd2d03bb44b6107c HTTP GET /index.js responded 304 in 7.1466 ms
+2026-05-13 11:03:09.858 +05:30 [INF] [Citizen.API] TraceId=1a6a15144628ea6ab1c89d71af58777d HTTP GET /index.css responded 304 in 71.9363 ms
+2026-05-13 11:03:09.860 +05:30 [INF] [Citizen.API] TraceId=c1574d87fbbad4933184010708452518 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 70.1956 ms
+2026-05-13 11:03:09.867 +05:30 [INF] [Citizen.API] TraceId=939f89ae968a67cc9e52c40d6e8a17c2 HTTP GET /swagger-ui-bundle.js responded 304 in 37.6105 ms
+2026-05-13 11:03:09.860 +05:30 [INF] [Citizen.API] TraceId=8c1ce65b46caf6a6509ac4b821ebcf86 HTTP GET /swagger-ui.css responded 304 in 119.2644 ms
+2026-05-13 11:03:10.119 +05:30 [INF] [Citizen.API] TraceId=f02eeaa4b6abc695b509cfc5d47ae86f HTTP GET /swagger/v1/swagger.json responded 200 in 74.9954 ms
+2026-05-13 11:22:18.792 +05:30 [INF] [Citizen.API] TraceId=517bab1a2e1c0310d26b005a693df658 HTTP GET /api/citizen/jobs responded 404 in 204.1965 ms
+2026-05-13 11:22:48.259 +05:30 [INF] [Citizen.API] TraceId=b0528b8c6745d1f93eb91b711c190228 HTTP GET /api/citizen/jobs responded 404 in 1.4581 ms
+2026-05-13 11:22:57.171 +05:30 [INF] [Citizen.API] TraceId=1a7324815624b4ede5f2bcb9fea189fa HTTP OPTIONS /api/citizen/jobs responded 204 in 2.2299 ms
+2026-05-13 11:22:57.324 +05:30 [INF] [Citizen.API] TraceId=e12ba4ac18f5190aa7493269645ee508 HTTP GET /api/citizen/jobs responded 404 in 139.5273 ms
+2026-05-13 11:23:02.364 +05:30 [INF] [Citizen.API] TraceId=6e2f544d566c39ecc8751652cbae70ff HTTP OPTIONS /api/citizen/dashboard responded 204 in 0.5417 ms
+2026-05-13 11:23:06.688 +05:30 [INF] [Citizen.API] TraceId=c9199b17127278c93b0eba8381fdebf1 HTTP GET /api/citizen/dashboard responded 200 in 4314.4205 ms
+2026-05-13 11:23:08.886 +05:30 [INF] [Citizen.API] TraceId=1714f6f8cacf5db3686fc17101d878da HTTP OPTIONS /api/citizen/jobs/search responded 204 in 0.5365 ms
+2026-05-13 11:23:09.145 +05:30 [INF] [Citizen.API] TraceId=1dcdbc271da611f0157ea4a6ec345c11 HTTP GET /api/citizen/jobs/search responded 200 in 241.2493 ms
+2026-05-13 11:23:10.494 +05:30 [INF] [Citizen.API] TraceId=51a09352a8a4a35a48ee4b3deae89877 HTTP OPTIONS /api/citizen/applications responded 204 in 0.1997 ms
+2026-05-13 11:23:10.671 +05:30 [INF] [Citizen.API] TraceId=4a4f75a6d20fb59d44b2b38318f17916 HTTP GET /api/citizen/applications responded 200 in 156.7172 ms
+2026-05-13 11:23:12.120 +05:30 [INF] [Citizen.API] TraceId=9fa3eda3c86c3268a5286abbaf204c11 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.1799 ms
+2026-05-13 11:23:12.121 +05:30 [INF] [Citizen.API] TraceId=b2f848a94665c39d2fe07557aea563cd HTTP OPTIONS /api/citizen/programs responded 204 in 0.0674 ms
+2026-05-13 11:23:12.320 +05:30 [INF] [Citizen.API] TraceId=dfa2ffa06f03d1a9bb195335a1741d5f HTTP GET /api/citizen/programs responded 200 in 156.4849 ms
+2026-05-13 11:23:12.338 +05:30 [INF] [Citizen.API] TraceId=371886e0ca195e41c6a3ca053cf8510a HTTP GET /api/citizen/benefits responded 200 in 174.7844 ms
+2026-05-13 11:23:18.180 +05:30 [INF] [Citizen.API] TraceId=c288ec1e9064c1ff35932d390b3ad7fb HTTP OPTIONS /api/citizen/benefits/apply/1 responded 204 in 0.1422 ms
+2026-05-13 11:23:18.255 +05:30 [INF] [Citizen.API] TraceId=6907a57d7c17efc35484ab48ffa416b1 HTTP POST /api/citizen/benefits/apply/1 responded 400 in 60.6126 ms
+2026-05-13 11:23:20.833 +05:30 [INF] [Citizen.API] TraceId=1100d14f7c4c5642217e73f4d0c9b13b HTTP OPTIONS /api/citizen/benefits/apply/2 responded 204 in 0.1183 ms
+2026-05-13 11:23:21.220 +05:30 [INF] [Citizen.API] TraceId=fc52774863a6fb4ec1a7baa4c441e425 HTTP POST /api/citizen/benefits/apply/2 responded 200 in 380.0868 ms
+2026-05-13 11:23:24.640 +05:30 [INF] [Citizen.API] TraceId=08417e9b0db386d641b913c8fbedda8e HTTP OPTIONS /api/citizen/trainings responded 204 in 0.1194 ms
+2026-05-13 11:23:24.856 +05:30 [INF] [Citizen.API] TraceId=9623455a505a8b6bf5193a437b9f75e6 HTTP GET /api/citizen/trainings responded 200 in 174.8528 ms
+2026-05-13 11:23:26.870 +05:30 [INF] [Citizen.API] TraceId=e0f589195ab28605bfc7ac2a3f854a17 HTTP OPTIONS /api/citizen/enroll/2 responded 204 in 0.1272 ms
+2026-05-13 11:23:26.989 +05:30 [INF] [Citizen.API] TraceId=e9945cf22be5fa7babdecb7d28781230 HTTP POST /api/citizen/enroll/2 responded 200 in 114.4060 ms
+2026-05-13 11:23:27.009 +05:30 [INF] [Citizen.API] TraceId=47466e43536d51e4c171220a8098b38b HTTP GET /api/citizen/trainings responded 200 in 12.1016 ms
+2026-05-13 11:23:29.717 +05:30 [INF] [Citizen.API] TraceId=def11ff5df1ab026ea8e19704fa31860 HTTP OPTIONS /api/citizen/documents responded 204 in 0.1631 ms
+2026-05-13 11:23:29.765 +05:30 [INF] [Citizen.API] TraceId=73dff90aff9f4b4497bd23b567f62d7f HTTP GET /api/citizen/documents responded 200 in 36.0852 ms
+2026-05-13 11:23:40.106 +05:30 [INF] [Citizen.API] TraceId=3d3f5dd1ecd41acff96cca492493b66f HTTP OPTIONS /api/citizen/documents/upload responded 204 in 0.0920 ms
+2026-05-13 11:23:40.121 +05:30 [INF] [Citizen.API] TraceId=39a62e14880779584a5f0a7d8d5d0a9f HTTP POST /api/citizen/documents/upload responded 404 in 0.6211 ms
+2026-05-13 11:23:44.877 +05:30 [INF] [Citizen.API] TraceId=d9b49cf3b0619cd6f207216b7badd4fd HTTP OPTIONS /api/citizen/profile responded 204 in 0.1322 ms
+2026-05-13 11:23:44.914 +05:30 [INF] [Citizen.API] TraceId=86e8228acdbe2aaad20821b62ed7c563 HTTP GET /api/citizen/profile responded 200 in 27.9109 ms
+2026-05-13 11:23:49.765 +05:30 [INF] [Citizen.API] TraceId=ae9f813c66d2d05853aa54bde195395c HTTP OPTIONS /api/citizen/profile responded 204 in 0.1127 ms
+2026-05-13 11:23:49.910 +05:30 [INF] [Citizen.API] TraceId=156771bbb958ba66ac19902c0230eb42 HTTP PUT /api/citizen/profile responded 200 in 137.8386 ms
+2026-05-13 11:24:40.121 +05:30 [INF] [Citizen.API] TraceId=1e2cd3767e509a9957b51a68712d2d07 HTTP POST /api/auth/login responded 200 in 77.7481 ms
+2026-05-13 11:24:57.020 +05:30 [INF] [Citizen.API] TraceId=d3f7d585c0cbd319b1f9fa98af639b94 HTTP GET /api/citizen/benefits responded 200 in 15.9979 ms
+2026-05-13 11:25:05.757 +05:30 [INF] [Citizen.API] TraceId=9f753b93df89f7cde3dcb9a523832113 HTTP GET /api/citizen/profile responded 200 in 4.5509 ms
+2026-05-13 11:25:13.219 +05:30 [INF] [Citizen.API] TraceId=6dffee7434e1b524b275c095fc6ae19e HTTP OPTIONS /api/citizen/notifications responded 204 in 0.1346 ms
+2026-05-13 11:25:13.318 +05:30 [INF] [Citizen.API] TraceId=eca8d798241e0526a9391dd6d2c8c5b5 HTTP GET /api/citizen/notifications responded 200 in 93.4282 ms
+2026-05-13 11:25:14.726 +05:30 [INF] [Citizen.API] TraceId=588aa02609b2fbcec131b4d520f8e63a HTTP OPTIONS /api/citizen/profile responded 204 in 0.1221 ms
+2026-05-13 11:25:14.755 +05:30 [INF] [Citizen.API] TraceId=2c79cdbade0dae83107cc28201f067bc HTTP GET /api/citizen/profile responded 200 in 13.6549 ms
+2026-05-13 11:25:15.659 +05:30 [INF] [Citizen.API] TraceId=6c39a270053ec622fe621aba33a3ee19 HTTP OPTIONS /api/citizen/documents responded 204 in 0.0831 ms
+2026-05-13 11:25:15.687 +05:30 [INF] [Citizen.API] TraceId=ba790ad592ecd47b3916d7636e51073c HTTP GET /api/citizen/documents responded 200 in 16.6541 ms
+2026-05-13 11:25:51.533 +05:30 [INF] [Citizen.API] TraceId=8a31588b4e8d6603dcb9c75d9365c00b HTTP OPTIONS /api/citizen/documents/upload responded 204 in 0.1708 ms
+2026-05-13 11:25:51.550 +05:30 [INF] [Citizen.API] TraceId=14ffa8fc78f3a99c268c0872e70c3b6f HTTP POST /api/citizen/documents/upload responded 404 in 1.6640 ms
+2026-05-13 11:33:09.029 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:33:12.158 +05:30 [INF] [Citizen.API] TraceId=b701c78dd570e1456bc629bf982e76f0 HTTP GET /index.html responded 304 in 191.1528 ms
+2026-05-13 11:33:12.613 +05:30 [INF] [Citizen.API] TraceId=0e2af7ac311358ce76ae2e4f7e5ef108 HTTP GET /index.js responded 304 in 0.6906 ms
+2026-05-13 11:33:12.651 +05:30 [INF] [Citizen.API] TraceId=1a471c19f57908e6baaa6380f8b40a22 HTTP GET /swagger-ui.css responded 304 in 235.1213 ms
+2026-05-13 11:33:12.651 +05:30 [INF] [Citizen.API] TraceId=607b666597eadc58a0b5ba58e2b467c3 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 112.0178 ms
+2026-05-13 11:33:12.651 +05:30 [INF] [Citizen.API] TraceId=e5eeb9a919a09349e7fb98dd1df6767a HTTP GET /index.css responded 304 in 168.6320 ms
+2026-05-13 11:33:12.688 +05:30 [INF] [Citizen.API] TraceId=4bc8efbe3f0a220d55a3e8b2e0001eff HTTP GET /swagger-ui-bundle.js responded 304 in 43.1234 ms
+2026-05-13 11:33:13.105 +05:30 [ERR] [Citizen.API] TraceId=25ff9206f81aa53af8ccc4f8cfba604e HTTP GET /swagger/v1/swagger.json responded 500 in 67.4792 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:33:13.206 +05:30 [ERR] [Citizen.API] TraceId=25ff9206f81aa53af8ccc4f8cfba604e An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:34:48.200 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:34:50.801 +05:30 [INF] [Citizen.API] TraceId=9f9ef70009f698d91fd4426418f3b13a HTTP GET /index.html responded 304 in 147.4529 ms
+2026-05-13 11:34:50.942 +05:30 [INF] [Citizen.API] TraceId=6f4ede500e1497b644796fa5b6415ffd HTTP GET /index.js responded 304 in 0.9361 ms
+2026-05-13 11:34:51.054 +05:30 [INF] [Citizen.API] TraceId=f6a670c0d09ae1839aa0753171c52bc4 HTTP GET /swagger-ui.css responded 304 in 141.4351 ms
+2026-05-13 11:34:51.054 +05:30 [INF] [Citizen.API] TraceId=503b05ad015db8668e5a601a3bdc5069 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 141.0554 ms
+2026-05-13 11:34:51.054 +05:30 [INF] [Citizen.API] TraceId=2e7b59bd5dd27b5dd92bb0f80534d8c0 HTTP GET /index.css responded 304 in 142.7174 ms
+2026-05-13 11:34:51.060 +05:30 [INF] [Citizen.API] TraceId=437a7a8b5f4e16b8d99708eb9f669f58 HTTP GET /swagger-ui-bundle.js responded 304 in 147.8041 ms
+2026-05-13 11:34:51.560 +05:30 [ERR] [Citizen.API] TraceId=e64dd849d854070fa2206d94acd4ceb1 HTTP GET /swagger/v1/swagger.json responded 500 in 79.3684 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:34:51.582 +05:30 [ERR] [Citizen.API] TraceId=e64dd849d854070fa2206d94acd4ceb1 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:35:37.248 +05:30 [INF] [Citizen.API] TraceId=6f669c66e2735c3c9180a1c7933955dd HTTP GET /index.html responded 304 in 126.7464 ms
+2026-05-13 11:35:37.645 +05:30 [INF] [Citizen.API] TraceId=f0c814762dd070013c51d63596b9d055 HTTP GET /index.js responded 304 in 1.2628 ms
+2026-05-13 11:35:37.747 +05:30 [INF] [Citizen.API] TraceId=d0541cfac11d60b6cafb8ad270ada395 HTTP GET /index.css responded 304 in 165.1745 ms
+2026-05-13 11:35:37.747 +05:30 [INF] [Citizen.API] TraceId=9a1bde4d500e782fc20f5345fd1049c4 HTTP GET /swagger-ui.css responded 304 in 166.9650 ms
+2026-05-13 11:35:37.747 +05:30 [INF] [Citizen.API] TraceId=2bcbb2e331442d6502ce7753caa9bd9e HTTP GET /swagger-ui-standalone-preset.js responded 304 in 114.1145 ms
+2026-05-13 11:35:37.747 +05:30 [INF] [Citizen.API] TraceId=b53e1c7c9f9716c7238b025d7ca7129f HTTP GET /swagger-ui-bundle.js responded 304 in 114.2706 ms
+2026-05-13 11:35:38.215 +05:30 [ERR] [Citizen.API] TraceId=62955f4e2d11ae22f79007195a425efb HTTP GET /swagger/v1/swagger.json responded 500 in 63.6951 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:35:38.262 +05:30 [ERR] [Citizen.API] TraceId=62955f4e2d11ae22f79007195a425efb An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:36:21.658 +05:30 [INF] [Citizen.API] TraceId=01f517d0bdb65a0ccda10ef0e43cab6c HTTP GET /index.html responded 304 in 139.2674 ms
+2026-05-13 11:36:21.846 +05:30 [INF] [Citizen.API] TraceId=86a6f6340f33306040cfe27abb31520f HTTP GET /index.js responded 304 in 0.8227 ms
+2026-05-13 11:36:21.909 +05:30 [INF] [Citizen.API] TraceId=b63796e05d23243cd3fbb26e286d2d5e HTTP GET /swagger-ui-standalone-preset.js responded 304 in 82.1655 ms
+2026-05-13 11:36:21.909 +05:30 [INF] [Citizen.API] TraceId=0acbdc9c1447a1d5dd2faa20a7ea98ce HTTP GET /swagger-ui.css responded 304 in 132.7941 ms
+2026-05-13 11:36:21.909 +05:30 [INF] [Citizen.API] TraceId=a06064e9cd8ac317ce6a3b1058e5c040 HTTP GET /index.css responded 304 in 125.6667 ms
+2026-05-13 11:36:21.909 +05:30 [INF] [Citizen.API] TraceId=72758e27596e5b589e0587672e29ee55 HTTP GET /swagger-ui-bundle.js responded 304 in 85.4276 ms
+2026-05-13 11:36:22.434 +05:30 [ERR] [Citizen.API] TraceId=f2c72a332e5b54751cbd0aa2ed7ae749 HTTP GET /swagger/v1/swagger.json responded 500 in 60.9047 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:36:22.490 +05:30 [ERR] [Citizen.API] TraceId=f2c72a332e5b54751cbd0aa2ed7ae749 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:38:10.389 +05:30 [INF] [Citizen.API] TraceId=8939feae8ff7c42a2d4d0ea812866db8 HTTP GET /index.html responded 304 in 125.0862 ms
+2026-05-13 11:38:10.689 +05:30 [INF] [Citizen.API] TraceId=a37715abf74f7e37d322342a2b91de00 HTTP GET /index.js responded 304 in 42.1772 ms
+2026-05-13 11:38:10.721 +05:30 [INF] [Citizen.API] TraceId=f187daffe2c0599bd0edacad1ea5619e HTTP GET /swagger-ui.css responded 304 in 151.3824 ms
+2026-05-13 11:38:10.721 +05:30 [INF] [Citizen.API] TraceId=b213783e4871896e8aad1e3b375853a0 HTTP GET /swagger-ui-bundle.js responded 304 in 146.5262 ms
+2026-05-13 11:38:10.721 +05:30 [INF] [Citizen.API] TraceId=3f568fb6ecbb80d90dfbda8b0183632c HTTP GET /index.css responded 304 in 151.2135 ms
+2026-05-13 11:38:10.769 +05:30 [INF] [Citizen.API] TraceId=3a83d65fd5f97030d38f1533b05a5e1f HTTP GET /swagger-ui-standalone-preset.js responded 304 in 161.1966 ms
+2026-05-13 11:38:11.062 +05:30 [ERR] [Citizen.API] TraceId=b2c61e0749a15c6ae94461e625585ec7 HTTP GET /swagger/v1/swagger.json responded 500 in 89.5501 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:38:11.114 +05:30 [ERR] [Citizen.API] TraceId=b2c61e0749a15c6ae94461e625585ec7 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:40:26.240 +05:30 [INF] [Citizen.API] TraceId=24492d8fce7f25eacaffe50d082fae7b HTTP GET /index.html responded 304 in 133.9220 ms
+2026-05-13 11:40:26.419 +05:30 [INF] [Citizen.API] TraceId=63701694c856bccf6a32fd6b8a938ee4 HTTP GET /index.js responded 304 in 1.2575 ms
+2026-05-13 11:40:26.482 +05:30 [INF] [Citizen.API] TraceId=5fb21221924cdc2b5a17eb49e4a3f16d HTTP GET /swagger-ui-bundle.js responded 304 in 64.0428 ms
+2026-05-13 11:40:26.482 +05:30 [INF] [Citizen.API] TraceId=317de48c8e8f68303b17dbb3d6686002 HTTP GET /swagger-ui.css responded 304 in 63.9695 ms
+2026-05-13 11:40:26.482 +05:30 [INF] [Citizen.API] TraceId=3fd72670b595844cfed5156524573a43 HTTP GET /index.css responded 304 in 64.1801 ms
+2026-05-13 11:40:26.482 +05:30 [INF] [Citizen.API] TraceId=64c612a1d866e26bd5c070925e311d46 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 64.5025 ms
+2026-05-13 11:40:26.790 +05:30 [ERR] [Citizen.API] TraceId=a14c402adc21d466ac21f95d437cb118 HTTP GET /swagger/v1/swagger.json responded 500 in 112.9013 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:40:26.868 +05:30 [ERR] [Citizen.API] TraceId=a14c402adc21d466ac21f95d437cb118 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:43:40.622 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:43:43.508 +05:30 [INF] [Citizen.API] TraceId=e237d6a9dc79cb04329aa6784b31c30c HTTP GET /index.html responded 304 in 201.2483 ms
+2026-05-13 11:43:43.859 +05:30 [INF] [Citizen.API] TraceId=007235352ce8f3679aa7d55737fe101a HTTP GET /index.js responded 304 in 0.9256 ms
+2026-05-13 11:43:43.985 +05:30 [INF] [Citizen.API] TraceId=0b60b39ffd23129783fe73d3fffd1186 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 207.0945 ms
+2026-05-13 11:43:43.985 +05:30 [INF] [Citizen.API] TraceId=fbc4c7d2c856d7cb44a9ac349a31f6d1 HTTP GET /index.css responded 304 in 229.1564 ms
+2026-05-13 11:43:43.985 +05:30 [INF] [Citizen.API] TraceId=2094392284f3c816a6ccc5a8e517c7a5 HTTP GET /swagger-ui.css responded 304 in 58.9942 ms
+2026-05-13 11:43:43.985 +05:30 [INF] [Citizen.API] TraceId=632f293039e2bfaf2261e9a7cd67a77e HTTP GET /swagger-ui-bundle.js responded 304 in 223.1888 ms
+2026-05-13 11:43:44.378 +05:30 [ERR] [Citizen.API] TraceId=86b0b8ba6fb893aa2f3bf77d76493d2b HTTP GET /swagger/v1/swagger.json responded 500 in 52.4190 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:43:44.396 +05:30 [ERR] [Citizen.API] TraceId=86b0b8ba6fb893aa2f3bf77d76493d2b An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:45:50.629 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:45:54.167 +05:30 [INF] [Citizen.API] TraceId=23c4d7c92743eb8c62111dfa3d361caf HTTP GET /index.html responded 304 in 291.6090 ms
+2026-05-13 11:45:54.508 +05:30 [INF] [Citizen.API] TraceId=725b721b4a5decb0e88cbdb9243a4345 HTTP GET /index.js responded 304 in 0.5433 ms
+2026-05-13 11:45:54.522 +05:30 [INF] [Citizen.API] TraceId=52a39fe00575798f4355669f176f76d6 HTTP GET /swagger-ui.css responded 304 in 103.4998 ms
+2026-05-13 11:45:54.522 +05:30 [INF] [Citizen.API] TraceId=cce7c4b73984eb4cb44ea172b540e372 HTTP GET /index.css responded 304 in 103.4997 ms
+2026-05-13 11:45:54.522 +05:30 [INF] [Citizen.API] TraceId=855bca9b528f2ca98b5320a0a9910672 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 99.6623 ms
+2026-05-13 11:45:54.555 +05:30 [INF] [Citizen.API] TraceId=0121ed831c100b2c356f776ddbfded20 HTTP GET /swagger-ui-bundle.js responded 304 in 105.9601 ms
+2026-05-13 11:45:54.817 +05:30 [ERR] [Citizen.API] TraceId=3b74525a854e5c380467635d8c786145 HTTP GET /swagger/v1/swagger.json responded 500 in 30.5573 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:45:54.838 +05:30 [ERR] [Citizen.API] TraceId=3b74525a854e5c380467635d8c786145 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:47:50.817 +05:30 [INF] [Citizen.API] TraceId=cf7341c55e9cd69a300d798098791ffc HTTP GET /swagger-ui.css responded 304 in 4.5832 ms
+2026-05-13 11:47:50.817 +05:30 [INF] [Citizen.API] TraceId=3f9545154f1732273559df70e9c2c74d HTTP GET /index.css responded 304 in 4.4399 ms
+2026-05-13 11:47:50.993 +05:30 [INF] [Citizen.API] TraceId=9ed769534a27e636f195afa157d6d625 HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 404 in 144.1141 ms
+2026-05-13 11:49:17.155 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:49:18.660 +05:30 [INF] [Citizen.API] TraceId=7099078a5aa285351339892c30e00f06 HTTP GET /index.html responded 304 in 79.5801 ms
+2026-05-13 11:49:18.729 +05:30 [INF] [Citizen.API] TraceId=503dc864aae6b1b1e2b255b9669d2716 HTTP GET /index.js responded 304 in 8.0920 ms
+2026-05-13 11:49:18.813 +05:30 [INF] [Citizen.API] TraceId=e04eac56a33ea5d2d8053ed39a174b71 HTTP GET /index.css responded 304 in 91.9005 ms
+2026-05-13 11:49:18.813 +05:30 [INF] [Citizen.API] TraceId=262bc038c1bc768c79122c57476a18a7 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 91.5008 ms
+2026-05-13 11:49:18.813 +05:30 [INF] [Citizen.API] TraceId=e6550b704d56cf211432dde8777045b8 HTTP GET /swagger-ui.css responded 304 in 107.0086 ms
+2026-05-13 11:49:18.813 +05:30 [INF] [Citizen.API] TraceId=585618f6cb986e09fbb6430d264192c3 HTTP GET /swagger-ui-bundle.js responded 304 in 92.0411 ms
+2026-05-13 11:49:18.957 +05:30 [ERR] [Citizen.API] TraceId=35d142ab24ffb30340591d171709b685 HTTP GET /swagger/v1/swagger.json responded 500 in 28.9838 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:49:18.971 +05:30 [ERR] [Citizen.API] TraceId=35d142ab24ffb30340591d171709b685 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:49:54.245 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:49:55.794 +05:30 [INF] [Citizen.API] TraceId=aef3b689d5e57fa8e8a3cb83d5f4d289 HTTP GET /index.html responded 304 in 116.0657 ms
+2026-05-13 11:49:55.919 +05:30 [INF] [Citizen.API] TraceId=9a702d78da226b4b2c95569291afaf37 HTTP GET /index.js responded 304 in 31.6803 ms
+2026-05-13 11:49:55.995 +05:30 [INF] [Citizen.API] TraceId=dc4a0c99061e022a44a8bb43d175b6da HTTP GET /swagger-ui-standalone-preset.js responded 304 in 144.5003 ms
+2026-05-13 11:49:55.995 +05:30 [INF] [Citizen.API] TraceId=c71dab622bf368b72e3883d6fe96f3dc HTTP GET /index.css responded 304 in 144.6581 ms
+2026-05-13 11:49:55.995 +05:30 [INF] [Citizen.API] TraceId=ac051663a143cd8bbc96079bcfe54b8b HTTP GET /swagger-ui.css responded 304 in 150.0218 ms
+2026-05-13 11:49:55.995 +05:30 [INF] [Citizen.API] TraceId=3a80efc7f484043e7e2caa1e34068fd1 HTTP GET /swagger-ui-bundle.js responded 304 in 144.8883 ms
+2026-05-13 11:49:56.143 +05:30 [ERR] [Citizen.API] TraceId=9f852315ea8f9c600495022eb5016be3 HTTP GET /swagger/v1/swagger.json responded 500 in 38.5445 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:49:56.158 +05:30 [ERR] [Citizen.API] TraceId=9f852315ea8f9c600495022eb5016be3 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:50:18.279 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:50:19.763 +05:30 [INF] [Citizen.API] TraceId=b9c8e9a66ea9c08bd91d46787f41ed7c HTTP GET /index.html responded 304 in 108.7880 ms
+2026-05-13 11:50:19.828 +05:30 [INF] [Citizen.API] TraceId=132e0120fb066bfefc6e8d32601ba0ea HTTP GET /index.js responded 304 in 4.2969 ms
+2026-05-13 11:50:19.867 +05:30 [INF] [Citizen.API] TraceId=63cfdfa09af9adb7ceb7a8a4fd04db33 HTTP GET /swagger-ui-bundle.js responded 304 in 53.3731 ms
+2026-05-13 11:50:19.867 +05:30 [INF] [Citizen.API] TraceId=cfcb5a0b354d4724f40ce67b72b7d65e HTTP GET /index.css responded 304 in 53.3159 ms
+2026-05-13 11:50:19.867 +05:30 [INF] [Citizen.API] TraceId=f2863be8fa25d36a9f439705e1a6b2b1 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 53.2589 ms
+2026-05-13 11:50:19.867 +05:30 [INF] [Citizen.API] TraceId=e6d869f5f1b5d7ac750a923aa1617dcd HTTP GET /swagger-ui.css responded 304 in 53.3303 ms
+2026-05-13 11:50:20.010 +05:30 [ERR] [Citizen.API] TraceId=cf4915773de2264743aac1bb398711cc HTTP GET /swagger/v1/swagger.json responded 500 in 31.0286 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:50:20.025 +05:30 [ERR] [Citizen.API] TraceId=cf4915773de2264743aac1bb398711cc An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 11:51:29.625 +05:30 [INF] [Citizen.API] TraceId=7af69645671d57a999542b0fde4da0f5 HTTP GET / responded 301 in 1.3532 ms
+2026-05-13 11:51:29.668 +05:30 [INF] [Citizen.API] TraceId=3db15f2e16ed5eda8b802ef76b8e50da HTTP GET /index.html responded 200 in 7.0127 ms
+2026-05-13 11:54:52.674 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:54:54.090 +05:30 [INF] [Citizen.API] TraceId=8f04a17fba00dc1214ef80f62b1fa84f HTTP GET /index.html responded 404 in 129.5238 ms
+2026-05-13 11:55:51.981 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:55:53.544 +05:30 [INF] [Citizen.API] TraceId=bc886d83bf6d58937c44848358524d4c HTTP GET /index.html responded 404 in 128.4608 ms
+2026-05-13 11:58:22.824 +05:30 [WRN] [Citizen.API] TraceId= The WebRootPath was not found: C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\wwwroot. Static files may be unavailable.
+2026-05-13 11:58:24.876 +05:30 [INF] [Citizen.API] TraceId=adbfd7fefdcca25df9f9a8204d110dd3 HTTP GET /index.html responded 404 in 103.3941 ms
+2026-05-13 11:59:02.279 +05:30 [INF] [Citizen.API] TraceId=585204c195a30d1704dd3c4e917034bd HTTP GET /index.html responded 404 in 133.1709 ms
+2026-05-13 11:59:32.421 +05:30 [INF] [Citizen.API] TraceId=879e6986f0aee53ca4881aa7fc3002c7 HTTP GET /index.html responded 404 in 142.6054 ms
+2026-05-13 11:59:59.791 +05:30 [INF] [Citizen.API] TraceId=b01dd0efe5523ec3d0603464ae68a2c6 HTTP GET /index.html responded 200 in 89.2975 ms
+2026-05-13 11:59:59.859 +05:30 [INF] [Citizen.API] TraceId=d132902c8746e341c5c21e7c9caeb215 HTTP GET /index.js responded 304 in 0.6951 ms
+2026-05-13 11:59:59.878 +05:30 [INF] [Citizen.API] TraceId=24f300d963e338bd3ce5c8b085622124 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 20.0820 ms
+2026-05-13 11:59:59.878 +05:30 [INF] [Citizen.API] TraceId=853aeea3f0f24bbea508f446fd174f03 HTTP GET /index.css responded 304 in 64.9246 ms
+2026-05-13 11:59:59.878 +05:30 [INF] [Citizen.API] TraceId=d4b973870a99dc3f446439b6948b43db HTTP GET /swagger-ui-bundle.js responded 304 in 65.0671 ms
+2026-05-13 11:59:59.878 +05:30 [INF] [Citizen.API] TraceId=a8234055e0eae846bc31ba8a4a22a82e HTTP GET /swagger-ui.css responded 304 in 71.9422 ms
+2026-05-13 12:00:00.102 +05:30 [ERR] [Citizen.API] TraceId=1bf581989231c5aa08deaeb1119f8d9e HTTP GET /swagger/v1/swagger.json responded 500 in 26.9324 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 12:00:00.122 +05:30 [ERR] [Citizen.API] TraceId=1bf581989231c5aa08deaeb1119f8d9e An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 12:02:15.917 +05:30 [INF] [Citizen.API] TraceId=6db274204d12460df7f662996f7e1ef0 HTTP GET /index.html responded 304 in 64.5909 ms
+2026-05-13 12:02:16.017 +05:30 [INF] [Citizen.API] TraceId=e9c5e17ddfaceec72bd529014f582884 HTTP GET /index.js responded 304 in 4.4442 ms
+2026-05-13 12:02:16.068 +05:30 [INF] [Citizen.API] TraceId=99a73ff20ddc9a94641e3565d7f6d5ed HTTP GET /swagger-ui-standalone-preset.js responded 304 in 55.3952 ms
+2026-05-13 12:02:16.068 +05:30 [INF] [Citizen.API] TraceId=64ee530810b7c32ab21a645442306030 HTTP GET /index.css responded 304 in 55.3952 ms
+2026-05-13 12:02:16.068 +05:30 [INF] [Citizen.API] TraceId=0c512f17680fc599eb511617b6419de2 HTTP GET /swagger-ui.css responded 304 in 69.7207 ms
+2026-05-13 12:02:16.068 +05:30 [INF] [Citizen.API] TraceId=ddf6ac53ef1a54dd322aff1ec61cd5ff HTTP GET /swagger-ui-bundle.js responded 304 in 55.5688 ms
+2026-05-13 12:02:16.203 +05:30 [ERR] [Citizen.API] TraceId=c7dafe47e03f2ee326ff451106bea923 HTTP GET /swagger/v1/swagger.json responded 500 in 26.5631 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 12:02:16.218 +05:30 [ERR] [Citizen.API] TraceId=c7dafe47e03f2ee326ff451106bea923 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 12:06:41.421 +05:30 [INF] [Citizen.API] TraceId=c27e5537ae9c2a2b660256170204d75e HTTP GET /index.html responded 304 in 157.8831 ms
+2026-05-13 12:06:41.627 +05:30 [INF] [Citizen.API] TraceId=48817283c90786f81a224c7507bf5825 HTTP GET /index.js responded 304 in 1.3508 ms
+2026-05-13 12:06:41.811 +05:30 [INF] [Citizen.API] TraceId=cd6ae33373e322546c8b54c957f60181 HTTP GET /index.css responded 304 in 218.2591 ms
+2026-05-13 12:06:41.811 +05:30 [INF] [Citizen.API] TraceId=0d801e927aa03350d79e8a0aa40afe2f HTTP GET /swagger-ui-bundle.js responded 304 in 218.2589 ms
+2026-05-13 12:06:41.811 +05:30 [INF] [Citizen.API] TraceId=098db1e706952eb16e5cf875b9c3d0e6 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 218.2510 ms
+2026-05-13 12:06:41.811 +05:30 [INF] [Citizen.API] TraceId=fabd4ac9b7a2e12cfee52e0de3664e98 HTTP GET /swagger-ui.css responded 304 in 218.4245 ms
+2026-05-13 12:06:42.076 +05:30 [ERR] [Citizen.API] TraceId=5348b38ad786c2d8fe11f41f44dbc69a HTTP GET /swagger/v1/swagger.json responded 500 in 72.4936 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 12:06:42.110 +05:30 [ERR] [Citizen.API] TraceId=5348b38ad786c2d8fe11f41f44dbc69a An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action WorkForceGovProject.Controllers.CitizenController.UploadDocument (WorkForceGov.Citizen.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/master/docs/configure-and-customize-swaggergen.md#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document, Func`4 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, OpenApiDocument document)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`4 parametersGenerator, Func`4 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-13 12:10:22.683 +05:30 [INF] [Citizen.API] TraceId=afc3a4cf9922571ee58b160f3d7f50e2 HTTP GET /index.html responded 304 in 117.0400 ms
+2026-05-13 12:10:22.870 +05:30 [INF] [Citizen.API] TraceId=91469de7c685a7a2d82ba7076c6fc94d HTTP GET /index.js responded 304 in 22.6956 ms
+2026-05-13 12:10:22.939 +05:30 [INF] [Citizen.API] TraceId=33b56ccbe9ffa08479edf46786805a8d HTTP GET /swagger-ui-standalone-preset.js responded 304 in 92.3103 ms
+2026-05-13 12:10:22.939 +05:30 [INF] [Citizen.API] TraceId=6548bbd99b61de43811f17184c1cb3e1 HTTP GET /index.css responded 304 in 97.1957 ms
+2026-05-13 12:10:22.939 +05:30 [INF] [Citizen.API] TraceId=67a781d189e9b1cd35334ff6bc56c217 HTTP GET /swagger-ui.css responded 304 in 136.9213 ms
+2026-05-13 12:10:22.939 +05:30 [INF] [Citizen.API] TraceId=eb82872d6497ee70592ad926f3452247 HTTP GET /swagger-ui-bundle.js responded 304 in 92.3645 ms
+2026-05-13 12:10:23.160 +05:30 [INF] [Citizen.API] TraceId=2ea2c7031c0430191ab45d417fd6f177 HTTP GET /swagger/v1/swagger.json responded 200 in 52.2345 ms
+2026-05-13 12:13:04.226 +05:30 [INF] [Citizen.API] TraceId=a8f7c1203a4f1d36dcd7a0fa17436aac HTTP GET /index.html responded 304 in 107.7938 ms
+2026-05-13 12:13:04.464 +05:30 [INF] [Citizen.API] TraceId=7e1119919cf34d7606ff92e154237702 HTTP GET /index.js responded 304 in 5.7014 ms
+2026-05-13 12:13:04.509 +05:30 [INF] [Citizen.API] TraceId=e347261265bf7fcbfe100dcd4523ff92 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 122.1161 ms
+2026-05-13 12:13:04.509 +05:30 [INF] [Citizen.API] TraceId=f268b2bc9a436ac320f35dab6e6a227b HTTP GET /index.css responded 304 in 122.1906 ms
+2026-05-13 12:13:04.509 +05:30 [INF] [Citizen.API] TraceId=658fa13f2fe5cfc9a51b69969571d206 HTTP GET /swagger-ui.css responded 304 in 127.6490 ms
+2026-05-13 12:13:04.509 +05:30 [INF] [Citizen.API] TraceId=c0a9454ead7eaa140f1fafeafef1885e HTTP GET /swagger-ui-bundle.js responded 304 in 122.2793 ms
+2026-05-13 12:13:04.775 +05:30 [INF] [Citizen.API] TraceId=c89421499a7aaf52bb045da7b650569e HTTP GET /swagger/v1/swagger.json responded 200 in 59.3192 ms
+2026-05-13 12:13:49.738 +05:30 [INF] [Citizen.API] TraceId=9d1f465e71b114b7e3266c9827d0c1ed HTTP GET /index.html responded 304 in 131.7596 ms
+2026-05-13 12:13:50.021 +05:30 [INF] [Citizen.API] TraceId=cc5f20fb83883c6f3b0749d484217c05 HTTP GET /index.js responded 304 in 0.5736 ms
+2026-05-13 12:13:50.049 +05:30 [INF] [Citizen.API] TraceId=d93ad3a905190384bbf563b0f9bd76a0 HTTP GET /swagger-ui.css responded 304 in 131.1210 ms
+2026-05-13 12:13:50.049 +05:30 [INF] [Citizen.API] TraceId=0f2f4054132a10b5ff70930ceb9516c8 HTTP GET /index.css responded 304 in 126.0334 ms
+2026-05-13 12:13:50.050 +05:30 [INF] [Citizen.API] TraceId=c4e3988bdab387226bdd783a88b45581 HTTP GET /swagger-ui-bundle.js responded 304 in 126.9263 ms
+2026-05-13 12:13:50.057 +05:30 [INF] [Citizen.API] TraceId=e0ec9f4d9b55315d9dc696e33b3d0f6a HTTP GET /swagger-ui-standalone-preset.js responded 304 in 37.0397 ms
+2026-05-13 12:13:50.414 +05:30 [INF] [Citizen.API] TraceId=3cb0c5846b75a6ef15dc573058344208 HTTP GET /swagger/v1/swagger.json responded 200 in 79.4502 ms
+2026-05-13 12:14:20.462 +05:30 [INF] [Citizen.API] TraceId=1f0410f3b319ec2136d557058b2c1b2e HTTP OPTIONS /api/citizen/dashboard responded 204 in 3.6699 ms
+2026-05-13 12:26:42.260 +05:30 [INF] [Citizen.API] TraceId=b029953675feccce506ac2c1dfe5feb8 HTTP GET /index.html responded 304 in 144.7635 ms
+2026-05-13 12:26:42.447 +05:30 [INF] [Citizen.API] TraceId=1f569b43e72ec863ff749f7700980813 HTTP GET /index.js responded 304 in 1.0560 ms
+2026-05-13 12:26:42.580 +05:30 [INF] [Citizen.API] TraceId=3324d5ad14db2d72d524050f5f31c956 HTTP GET /swagger-ui.css responded 304 in 133.7565 ms
+2026-05-13 12:26:42.580 +05:30 [INF] [Citizen.API] TraceId=5d720093305ed96d66ffacdb01f01a98 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 94.7444 ms
+2026-05-13 12:26:42.580 +05:30 [INF] [Citizen.API] TraceId=ca717d189a97ad0da18be5fbfb9042c9 HTTP GET /index.css responded 304 in 135.0014 ms
+2026-05-13 12:26:42.581 +05:30 [INF] [Citizen.API] TraceId=4af78175ff5feba3a2283b2568deea50 HTTP GET /swagger-ui-bundle.js responded 304 in 95.4081 ms
+2026-05-13 12:26:42.934 +05:30 [INF] [Citizen.API] TraceId=0bc31d29c23f712d7d4432fc02fe534f HTTP GET /swagger/v1/swagger.json responded 200 in 109.2129 ms
+2026-05-13 12:27:44.834 +05:30 [INF] [Citizen.API] TraceId=09130ad9939d821b62f593ddeeec4ce2 HTTP GET /api/citizen/jobs responded 404 in 202.4574 ms
+2026-05-13 12:27:53.728 +05:30 [INF] [Citizen.API] TraceId=93e8e060854ad4e6b26917c480f000bc HTTP GET /api/citizen/jobs responded 404 in 1.2822 ms
+2026-05-13 13:31:45.879 +05:30 [INF] [Citizen.API] TraceId=86aababe74302c593f25072f8bb29ded HTTP GET /index.html responded 304 in 166.0712 ms
+2026-05-13 13:31:48.115 +05:30 [INF] [Citizen.API] TraceId=2c43cc161125077f1ddd940d4dac8853 HTTP GET /index.css responded 304 in 75.1480 ms
+2026-05-13 13:31:48.115 +05:30 [INF] [Citizen.API] TraceId=bed4a4399632bc3e4028d9cb1b61b312 HTTP GET /swagger-ui.css responded 304 in 73.7161 ms
+2026-05-13 13:31:48.127 +05:30 [INF] [Citizen.API] TraceId=7f0753a6b1cc55ea7a8c747f4bfbaf1b HTTP GET /swagger-ui-bundle.js responded 304 in 80.1319 ms
+2026-05-13 13:31:48.196 +05:30 [INF] [Citizen.API] TraceId=4eec2ee5844776f3b981c579c124be4c HTTP GET /index.js responded 304 in 23.6042 ms
+2026-05-13 13:31:48.201 +05:30 [INF] [Citizen.API] TraceId=41908a470add4c7d79f0ee795a9d4252 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 21.8301 ms
+2026-05-13 13:31:50.254 +05:30 [INF] [Citizen.API] TraceId=b011f0ff3eceb147d9eb2ad51e8deefb HTTP GET /swagger/v1/swagger.json responded 200 in 98.6949 ms
+2026-05-13 13:32:00.711 +05:30 [INF] [Citizen.API] TraceId=06bff160f752020b83d6e5bd7302d341 HTTP OPTIONS /api/citizen/dashboard responded 204 in 5.1921 ms
+2026-05-13 13:32:05.172 +05:30 [INF] [Citizen.API] TraceId=2a5ea51c8588543380d12111cf53f3a7 HTTP GET /api/citizen/dashboard responded 200 in 4450.0425 ms
+2026-05-13 13:32:07.984 +05:30 [INF] [Citizen.API] TraceId=c6655d95d4dcdada3908ae35ce9a7699 HTTP OPTIONS /api/citizen/jobs/search responded 204 in 2.7956 ms
+2026-05-13 13:32:08.180 +05:30 [INF] [Citizen.API] TraceId=f77368002f3b62d786b42a8316c111e8 HTTP GET /api/citizen/jobs/search responded 200 in 184.7235 ms
+2026-05-13 13:32:09.315 +05:30 [INF] [Citizen.API] TraceId=5000db6f7e352d2d33678f4734985b27 HTTP OPTIONS /api/citizen/applications responded 204 in 0.1234 ms
+2026-05-13 13:32:09.418 +05:30 [INF] [Citizen.API] TraceId=9e021b082a69eec2743efa0e929c91b1 HTTP GET /api/citizen/applications responded 200 in 89.9820 ms
+2026-05-13 13:32:10.395 +05:30 [INF] [Citizen.API] TraceId=9685013ef1666973f6e0ae159f6baa84 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.1234 ms
+2026-05-13 13:32:10.396 +05:30 [INF] [Citizen.API] TraceId=88f7f522be63dc0b0e56675b6406d57c HTTP OPTIONS /api/citizen/programs responded 204 in 0.0676 ms
+2026-05-13 13:32:10.483 +05:30 [INF] [Citizen.API] TraceId=abe99b571ee68d1f5af73077f6055796 HTTP GET /api/citizen/programs responded 200 in 70.1085 ms
+2026-05-13 13:32:10.484 +05:30 [INF] [Citizen.API] TraceId=19f6ebae116762cea706a1b72805033a HTTP GET /api/citizen/benefits responded 200 in 75.2199 ms
+2026-05-13 13:32:14.970 +05:30 [INF] [Citizen.API] TraceId=49b583f250d3dda95bd32d1695d0fb24 HTTP OPTIONS /api/citizen/trainings responded 204 in 0.1811 ms
+2026-05-13 13:32:15.121 +05:30 [INF] [Citizen.API] TraceId=f634b575f37677818a2f5328a375ce2c HTTP GET /api/citizen/trainings responded 200 in 122.9057 ms
+2026-05-13 13:32:18.181 +05:30 [INF] [Citizen.API] TraceId=db52c68ddd9728f0fdf9493f8d456fad HTTP OPTIONS /api/citizen/documents responded 204 in 0.4057 ms
+2026-05-13 13:32:18.214 +05:30 [INF] [Citizen.API] TraceId=c852b4245624d1a131f9b547bd663b12 HTTP GET /api/citizen/documents responded 200 in 24.1772 ms
+2026-05-13 13:32:19.748 +05:30 [INF] [Citizen.API] TraceId=f08fc82389a9ce53bae5e72d9976d560 HTTP OPTIONS /api/citizen/profile responded 204 in 0.1041 ms
+2026-05-13 13:32:19.772 +05:30 [INF] [Citizen.API] TraceId=a247d17b3e5ede4be2db8b35683ee9ab HTTP GET /api/citizen/profile responded 200 in 18.2073 ms
+2026-05-13 13:32:21.046 +05:30 [INF] [Citizen.API] TraceId=d93cde9e9a10d9d6262fe65454a38049 HTTP OPTIONS /api/citizen/notifications responded 204 in 0.0837 ms
+2026-05-13 13:32:21.156 +05:30 [INF] [Citizen.API] TraceId=f9aa0e01cdf62aa08175d7ab9959498b HTTP GET /api/citizen/notifications responded 200 in 105.3897 ms
+2026-05-13 13:32:22.870 +05:30 [INF] [Citizen.API] TraceId=970972e8a4e02d40acce932846361c14 HTTP GET /api/citizen/documents responded 200 in 18.7068 ms
+2026-05-13 13:32:34.830 +05:30 [INF] [Citizen.API] TraceId=58c0fd63f18cea8c6363d3509ae71b0d HTTP OPTIONS /api/citizen/documents/upload responded 204 in 0.1222 ms
+2026-05-13 13:32:34.851 +05:30 [INF] [Citizen.API] TraceId=450354045fb27f6a2ff0722add68c053 HTTP POST /api/citizen/documents/upload responded 404 in 1.0983 ms
+2026-05-13 13:40:44.273 +05:30 [INF] [Citizen.API] TraceId=40b740e28c0766e3d0fc7065161543e2 HTTP GET /index.html responded 304 in 106.6933 ms
+2026-05-13 13:40:44.548 +05:30 [INF] [Citizen.API] TraceId=7cb037ee9adafefed67ca8611bc38660 HTTP GET /swagger-ui.css responded 304 in 76.1435 ms
+2026-05-13 13:40:44.549 +05:30 [INF] [Citizen.API] TraceId=2b20f55e044cebdb186863c59cb0d24b HTTP GET /index.css responded 304 in 76.9011 ms
+2026-05-13 13:40:44.551 +05:30 [INF] [Citizen.API] TraceId=d4d713435fe58f4e8b9c11c7d0a0533a HTTP GET /swagger-ui-bundle.js responded 304 in 79.2367 ms
+2026-05-13 13:40:44.656 +05:30 [INF] [Citizen.API] TraceId=04b4a559a9b9319dd6f137366d38cf2c HTTP GET /index.js responded 304 in 0.7688 ms
+2026-05-13 13:40:44.656 +05:30 [INF] [Citizen.API] TraceId=33c3f54ee8f5f8f21f404d1f676ae14d HTTP GET /swagger-ui-standalone-preset.js responded 304 in 13.2578 ms
+2026-05-13 13:40:45.242 +05:30 [INF] [Citizen.API] TraceId=9e48defd2bb9ab6cf5895b97757ab66a HTTP GET /swagger/v1/swagger.json responded 200 in 67.2556 ms
+2026-05-13 13:41:10.608 +05:30 [INF] [Citizen.API] TraceId=a7b64a2afab3ac0bba68db42aaa7e41a HTTP OPTIONS /api/citizen/documents/upload responded 204 in 21.2278 ms
+2026-05-13 13:41:15.210 +05:30 [INF] [Citizen.API] TraceId=5f911c0e4887c7dbea8f9561a857b601 HTTP POST /api/citizen/documents/upload responded 200 in 4587.7504 ms
+2026-05-13 13:41:15.220 +05:30 [INF] [Citizen.API] TraceId=3a0016597ed901be77f21ab329d0807c HTTP OPTIONS /api/citizen/documents responded 204 in 0.1510 ms
+2026-05-13 13:41:15.408 +05:30 [INF] [Citizen.API] TraceId=b14a5edfb9a547ec22fc1f6e51aa4c6d HTTP GET /api/citizen/documents responded 200 in 178.4373 ms
+2026-05-13 13:42:04.735 +05:30 [INF] [Citizen.API] TraceId=132451fcd6e036429e0a0ba76a99d8fa HTTP OPTIONS /api/citizen/dashboard responded 204 in 0.4112 ms
+2026-05-13 13:42:05.223 +05:30 [INF] [Citizen.API] TraceId=210d58e1b19e1a28a4aa93233ec25385 HTTP GET /api/citizen/dashboard responded 200 in 472.9218 ms
+2026-05-13 13:42:08.619 +05:30 [INF] [Citizen.API] TraceId=b42a1f9f583eaf7e9a55b8ecb020c51f HTTP OPTIONS /api/citizen/jobs/search responded 204 in 0.6895 ms
+2026-05-13 13:42:08.675 +05:30 [INF] [Citizen.API] TraceId=1a34432c1d8f40df35a70dfb55fe00c8 HTTP GET /api/citizen/jobs/search responded 200 in 34.0353 ms
+2026-05-13 13:42:10.334 +05:30 [INF] [Citizen.API] TraceId=febc293be443b58fa6d356d28c25d1ee HTTP OPTIONS /api/citizen/applications responded 204 in 0.1810 ms
+2026-05-13 13:42:10.363 +05:30 [INF] [Citizen.API] TraceId=6bf5f272408d0943fcce0575eceacf13 HTTP GET /api/citizen/applications responded 200 in 22.7268 ms
+2026-05-13 13:42:11.401 +05:30 [INF] [Citizen.API] TraceId=23336e3c06543462f88d52ad9ebbe389 HTTP OPTIONS /api/citizen/benefits responded 204 in 0.1616 ms
+2026-05-13 13:42:11.401 +05:30 [INF] [Citizen.API] TraceId=1f62cc522a93623fff5a138dd2c97c58 HTTP OPTIONS /api/citizen/programs responded 204 in 0.1612 ms
+2026-05-13 13:42:11.515 +05:30 [INF] [Citizen.API] TraceId=156424bc39367b32b645f8e4b560c3d0 HTTP GET /api/citizen/benefits responded 200 in 100.3194 ms
+2026-05-13 13:42:11.515 +05:30 [INF] [Citizen.API] TraceId=d3b919f6edad448a7fdf7e08ae4b1297 HTTP GET /api/citizen/programs responded 200 in 96.1788 ms
+2026-05-13 13:42:13.739 +05:30 [INF] [Citizen.API] TraceId=2559718eaa6c366bf4db4ecdef608bd2 HTTP OPTIONS /api/citizen/trainings responded 204 in 0.0756 ms
+2026-05-13 13:42:13.863 +05:30 [INF] [Citizen.API] TraceId=1e9be054d36181a08f7cf0af709cbe3a HTTP GET /api/citizen/trainings responded 200 in 113.1835 ms
+2026-05-13 13:42:16.066 +05:30 [INF] [Citizen.API] TraceId=a1851c9615f26996dabada0981ffdc74 HTTP OPTIONS /api/citizen/documents responded 204 in 0.0938 ms
+2026-05-13 13:42:16.077 +05:30 [INF] [Citizen.API] TraceId=69f178d9c3e38983360955b4997228f7 HTTP GET /api/citizen/documents responded 200 in 5.7857 ms
+2026-05-13 13:42:19.067 +05:30 [INF] [Citizen.API] TraceId=21f135e5b58eb96c05aa220679e268c4 HTTP OPTIONS /api/citizen/profile responded 204 in 0.0949 ms
+2026-05-13 13:42:19.090 +05:30 [INF] [Citizen.API] TraceId=9fb05ec99b807aa37154b6457fb4d61c HTTP GET /api/citizen/profile responded 200 in 14.9126 ms
+2026-05-13 13:42:21.620 +05:30 [INF] [Citizen.API] TraceId=ce754bdd2bf0699b6487866c2644bd8f HTTP OPTIONS /api/citizen/notifications responded 204 in 0.3795 ms
+2026-05-13 13:42:21.684 +05:30 [INF] [Citizen.API] TraceId=288f38475dee187924336ba3b602f723 HTTP GET /api/citizen/notifications responded 200 in 55.8039 ms

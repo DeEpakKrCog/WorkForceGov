@@ -1,0 +1,14 @@
+2026-05-11 10:42:44.660 +05:30 [INF] [ComplianceOfficer.API] TraceId=1d621bb6f194670f7ae8f478bffd2d1c HTTP GET /index.html responded 304 in 120.8414 ms
+2026-05-11 10:42:46.272 +05:30 [INF] [ComplianceOfficer.API] TraceId=78ae5a05bc2083227e11cba3cdd5a1dc HTTP GET /index.js responded 304 in 1.2551 ms
+2026-05-11 10:42:46.342 +05:30 [INF] [ComplianceOfficer.API] TraceId=692f4809fa0f00f37c4df85d6a719d49 HTTP GET /index.css responded 304 in 135.4207 ms
+2026-05-11 10:42:46.342 +05:30 [INF] [ComplianceOfficer.API] TraceId=af89640469e366d1cec89c89997f6d31 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 89.2289 ms
+2026-05-11 10:42:46.342 +05:30 [INF] [ComplianceOfficer.API] TraceId=e993b303031f4d7ab42555d6259cb328 HTTP GET /swagger-ui.css responded 304 in 140.8133 ms
+2026-05-11 10:42:46.342 +05:30 [INF] [ComplianceOfficer.API] TraceId=64d2f1b30eb88f3e403a007852a5a5a6 HTTP GET /swagger-ui-bundle.js responded 304 in 89.6591 ms
+2026-05-11 10:42:46.701 +05:30 [INF] [ComplianceOfficer.API] TraceId=794a051038bf13602d9b4694c5041a9a HTTP GET /swagger/v1/swagger.json responded 200 in 98.3447 ms
+2026-05-11 16:51:10.666 +05:30 [INF] [ComplianceOfficer.API] TraceId=f16bceff3c9c77e9649ee7e47982e0ad HTTP GET /index.html responded 304 in 191.9608 ms
+2026-05-11 16:51:11.111 +05:30 [INF] [ComplianceOfficer.API] TraceId=52f5c7f1ca407297a61d3a57339455af HTTP GET /index.js responded 304 in 1.6578 ms
+2026-05-11 16:51:11.154 +05:30 [INF] [ComplianceOfficer.API] TraceId=aa21671a8596e59def27b4a47702f724 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 2.8469 ms
+2026-05-11 16:51:11.154 +05:30 [INF] [ComplianceOfficer.API] TraceId=e0860460b055f186d06a8c4085990722 HTTP GET /index.css responded 304 in 44.3080 ms
+2026-05-11 16:51:11.154 +05:30 [INF] [ComplianceOfficer.API] TraceId=459c8870977852e3a0c3c1bbededb533 HTTP GET /swagger-ui.css responded 304 in 100.0586 ms
+2026-05-11 16:51:11.159 +05:30 [INF] [ComplianceOfficer.API] TraceId=c0ea702b1838f13e5cd613174a593a4e HTTP GET /swagger-ui-bundle.js responded 304 in 7.0526 ms
+2026-05-11 16:51:11.673 +05:30 [INF] [ComplianceOfficer.API] TraceId=4221ad4891838029ca6642e6df6d00e4 HTTP GET /swagger/v1/swagger.json responded 200 in 55.9290 ms

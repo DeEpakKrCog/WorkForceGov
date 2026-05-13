@@ -44,7 +44,7 @@ namespace WorkForceGovProject.Services.ProgramManager
                 // Notify the citizen
                 await notificationService.CreateAsync(
                     benefit.Citizen.UserId,
-                    $"Your benefit application for program '{benefit.Program.ProgramName}' has been approved. Amount: ${amount:N2}.",
+                    $"Your benefit application for program '{benefit.EmploymentProgram.ProgramName}' has been approved. Amount: ${amount:N2}.",
                     "Benefit", benefit.Id, "Benefit");
 
                 return (true, $"Benefit #{benefitId} approved with amount ${amount:N2}.");
@@ -73,7 +73,7 @@ namespace WorkForceGovProject.Services.ProgramManager
                 // Notify the citizen
                 await notificationService.CreateAsync(
                     benefit.Citizen.UserId,
-                    $"Your benefit application for program '{benefit.Program.ProgramName}' was rejected. Reason: {reason}",
+                    $"Your benefit application for program '{benefit.EmploymentProgram.ProgramName}' was rejected. Reason: {reason}",
                     "Benefit", benefit.Id, "Benefit");
 
                 return (true, $"Benefit #{benefitId} has been rejected.");

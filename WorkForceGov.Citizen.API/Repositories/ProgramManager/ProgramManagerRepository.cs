@@ -23,7 +23,7 @@ namespace WorkForceGovProject.Repositories.ProgramManager
         public async Task<IEnumerable<Benefit>> GetPendingBenefitsAsync() =>
             await _ctx.Benefits
                       .Include(b => b.Citizen).ThenInclude(c => c.User)
-                      .Include(b => b.Program)
+                      .Include(b => b.EmploymentProgram)
                       .Where(b => b.Status == "Pending")
                       .OrderBy(b => b.BenefitDate)
                       .ToListAsync();
@@ -31,14 +31,14 @@ namespace WorkForceGovProject.Repositories.ProgramManager
         public async Task<IEnumerable<Benefit>> GetAllBenefitsAsync() =>
             await _ctx.Benefits
                       .Include(b => b.Citizen).ThenInclude(c => c.User)
-                      .Include(b => b.Program)
+                      .Include(b => b.EmploymentProgram)
                       .OrderByDescending(b => b.BenefitDate)
                       .ToListAsync();
 
         public async Task<Benefit?> GetBenefitByIdAsync(int id) =>
             await _ctx.Benefits
                       .Include(b => b.Citizen).ThenInclude(c => c.User)
-                      .Include(b => b.Program)
+                      .Include(b => b.EmploymentProgram)
                       .FirstOrDefaultAsync(b => b.Id == id);
 
         public async Task UpdateBenefitAsync(Benefit benefit)

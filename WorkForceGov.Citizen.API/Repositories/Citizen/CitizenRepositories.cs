@@ -21,7 +21,9 @@ namespace WorkForceGovProject.Repositories.Citizen
                       .ThenInclude(j => j.Employer).FirstOrDefaultAsync(c => c.Id == citizenId);
 
         public async Task<Models.Citizen?> GetWithBenefitsAsync(int citizenId) =>
-            await _set.Include(c => c.Benefits).ThenInclude(b => b.Program)
+            await _set.Include(c => c.Benefits)
+                      // FIXED: Changed b.Program to b.EmploymentProgram
+                      .ThenInclude(b => b.EmploymentProgram)
                       .FirstOrDefaultAsync(c => c.Id == citizenId);
     }
 
@@ -89,5 +91,17 @@ namespace WorkForceGovProject.Repositories.Citizen
     public class BenefitRepository : Repository<Benefit>, IBenefitRepository
     {
         public BenefitRepository(ApplicationDbContext ctx) : base(ctx) { }
+
+        public async Task<IEnumerable<Benefit>> GetByCitizenWithProgramAsync(int citizenId)
+        {
+            return await _set.Include(b => b.EmploymentProgram)
+                             .Where(b => b.CitizenId == citizenId)
+                             .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Benefit>> GetByProgramAsync(int programId)
+        {
+            return await _set.Where(b => b.ProgramId == programId).ToListAsync();
+        }
     }
 }

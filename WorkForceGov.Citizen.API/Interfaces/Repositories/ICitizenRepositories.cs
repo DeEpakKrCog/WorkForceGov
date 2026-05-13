@@ -50,5 +50,9 @@ namespace WorkForceGovProject.Interfaces.Repositories
     /// <summary>
     /// Data access for benefits allocated to citizens.
     /// </summary>
-    public interface IBenefitRepository : IRepository<Benefit> { }
+    public interface IBenefitRepository : IRepository<Benefit>
+    {
+        Task<IEnumerable<Benefit>> GetByCitizenWithProgramAsync(int citizenId);
+        Task<IEnumerable<Benefit>> GetByProgramAsync(int programId);
+    }
 }

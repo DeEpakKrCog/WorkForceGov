@@ -345,3 +345,4 @@ C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkFo
 C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\obj\Debug\net10.0\WorkForceGov.Citizen.API.pdb
 C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\obj\Debug\net10.0\WorkForceGov.Citizen.API.genruntimeconfig.cache
 C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\obj\Debug\net10.0\ref\WorkForceGov.Citizen.API.dll
+C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Citizen.API\bin\Debug\net10.0\WorkForceGov.Citizen.API.staticwebassets.runtime.json

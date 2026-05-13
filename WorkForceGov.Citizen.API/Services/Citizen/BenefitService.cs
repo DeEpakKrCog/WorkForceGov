@@ -23,16 +23,16 @@ namespace WorkForceGovProject.Services.Citizen
             return await _benefitRepository.GetByIdAsync(id);
         }
 
+        // FIXED: Now uses the efficient database query that includes EmploymentProgram
         public async Task<IEnumerable<Benefit>> GetBenefitsByCitizenAsync(int citizenId)
         {
-            var benefits = await _benefitRepository.GetAllAsync();
-            return benefits.Where(b => b.CitizenId == citizenId).ToList();
+            return await _benefitRepository.GetByCitizenWithProgramAsync(citizenId);
         }
 
+        // FIXED: Now uses the efficient database query
         public async Task<IEnumerable<Benefit>> GetBenefitsByProgramAsync(int programId)
         {
-            var benefits = await _benefitRepository.GetAllAsync();
-            return benefits.Where(b => b.ProgramId == programId).ToList();
+            return await _benefitRepository.GetByProgramAsync(programId);
         }
 
         public async Task<(bool Success, string Message)> CreateBenefitAsync(Benefit benefit)
@@ -66,6 +66,37 @@ namespace WorkForceGovProject.Services.Citizen
         public async Task<IEnumerable<Benefit>> GetByCitizenAsync(int citizenId)
         {
             return await GetBenefitsByCitizenAsync(citizenId);
+        }
+
+        // ADDED: The missing Apply Logic
+        public async Task<(bool Success, string Message)> ApplyAsync(int citizenId, int programId)
+        {
+            try
+            {
+                var existing = await _benefitRepository.GetByCitizenWithProgramAsync(citizenId);
+                if (existing.Any(b => b.ProgramId == programId))
+                {
+                    return (false, "You have already applied for this program.");
+                }
+
+                var newBenefit = new Benefit
+                {
+                    CitizenId = citizenId,
+                    ProgramId = programId,
+                    Status = "Pending",
+                    BenefitDate = DateTime.UtcNow,
+                    BenefitType = "Application",
+                    Amount = 0
+                };
+
+                await _benefitRepository.AddAsync(newBenefit);
+                await _benefitRepository.SaveAsync();
+                return (true, "Application submitted successfully.");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error applying for program: {ex.Message}");
+            }
         }
     }
 }

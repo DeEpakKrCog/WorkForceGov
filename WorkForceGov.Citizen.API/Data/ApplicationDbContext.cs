@@ -110,7 +110,7 @@ namespace WorkForceGovProject.Data
 
             // EmploymentProgram -> Benefits
             modelBuilder.Entity<Benefit>()
-                .HasOne(b => b.Program)
+                .HasOne(b => b.EmploymentProgram)
                 .WithMany(p => p.Benefits)
                 .HasForeignKey(b => b.ProgramId)
                 .OnDelete(DeleteBehavior.Restrict);

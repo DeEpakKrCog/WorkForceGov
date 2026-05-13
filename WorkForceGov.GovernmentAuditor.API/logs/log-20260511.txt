@@ -1,0 +1,14 @@
+2026-05-11 10:42:44.436 +05:30 [INF] [GovernmentAuditor.API] TraceId=6d0de03e1f3e4cd43bb06d1e98c6b285 HTTP GET /index.html responded 304 in 208.9892 ms
+2026-05-11 10:42:44.899 +05:30 [INF] [GovernmentAuditor.API] TraceId=88aebf1246936541146dc1d7622ebb83 HTTP GET /swagger-ui.css responded 304 in 73.8342 ms
+2026-05-11 10:42:44.899 +05:30 [INF] [GovernmentAuditor.API] TraceId=90f28bac3dfa88715b032d09c39f0083 HTTP GET /index.css responded 304 in 70.1822 ms
+2026-05-11 10:42:44.902 +05:30 [INF] [GovernmentAuditor.API] TraceId=86382034eb61c3dfc3f3f1bed133a260 HTTP GET /swagger-ui-bundle.js responded 304 in 69.6310 ms
+2026-05-11 10:42:44.925 +05:30 [INF] [GovernmentAuditor.API] TraceId=9977e12af1babf8ab345dae251e3ff10 HTTP GET /index.js responded 304 in 0.7397 ms
+2026-05-11 10:42:44.931 +05:30 [INF] [GovernmentAuditor.API] TraceId=dfc53e15635da9dd58eca89ee5fb7f82 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 11.5213 ms
+2026-05-11 10:42:47.097 +05:30 [INF] [GovernmentAuditor.API] TraceId=502c3eca8a4010492050f5992c23dca8 HTTP GET /swagger/v1/swagger.json responded 200 in 46.6839 ms
+2026-05-11 16:51:10.629 +05:30 [INF] [GovernmentAuditor.API] TraceId=e58d3de4853012ba3f3804bbbf235f8d HTTP GET /index.html responded 304 in 197.1967 ms
+2026-05-11 16:51:10.955 +05:30 [INF] [GovernmentAuditor.API] TraceId=41723a3605026312c75aab8d38d2b7f3 HTTP GET /index.js responded 304 in 1.5114 ms
+2026-05-11 16:51:10.980 +05:30 [INF] [GovernmentAuditor.API] TraceId=a89c6293921a2b41512175ecd8a5ea97 HTTP GET /swagger-ui.css responded 304 in 108.1340 ms
+2026-05-11 16:51:10.982 +05:30 [INF] [GovernmentAuditor.API] TraceId=6eba90839b6fcde47388ed72cf070914 HTTP GET /index.css responded 304 in 47.2142 ms
+2026-05-11 16:51:11.043 +05:30 [INF] [GovernmentAuditor.API] TraceId=15a889ee14e63c2ba8815f6f5cb63779 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 4.1546 ms
+2026-05-11 16:51:11.049 +05:30 [INF] [GovernmentAuditor.API] TraceId=f228714cf28735e80857ec1803cc6c58 HTTP GET /swagger-ui-bundle.js responded 304 in 10.8359 ms
+2026-05-11 16:51:11.447 +05:30 [INF] [GovernmentAuditor.API] TraceId=3bb244dac6f43620e7f73841b47a73e8 HTTP GET /swagger/v1/swagger.json responded 200 in 76.9339 ms

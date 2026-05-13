@@ -68,6 +68,22 @@
   },
   {
     "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
+    "Method": "ApplyBenefit",
+    "RelativePath": "api/citizen/benefits/apply/{programId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
     "Method": "GetDashboard",
     "RelativePath": "api/citizen/dashboard",
     "HttpMethod": "GET",
@@ -84,6 +100,43 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
+    "Method": "UploadDocument",
+    "RelativePath": "api/citizen/documents/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
+    "Method": "Enroll",
+    "RelativePath": "api/citizen/enroll/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -171,12 +224,38 @@
   },
   {
     "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
+    "Method": "GetPrograms",
+    "RelativePath": "api/citizen/programs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
     "Method": "GetTrainings",
     "RelativePath": "api/citizen/trainings",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.CitizenController",
+    "Method": "Unenroll",
+    "RelativePath": "api/citizen/unenroll/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

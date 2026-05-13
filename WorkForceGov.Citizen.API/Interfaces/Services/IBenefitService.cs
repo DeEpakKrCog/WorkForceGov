@@ -11,5 +11,6 @@ namespace WorkForceGovProject.Interfaces.Services
         Task<(bool Success, string Message)> CreateBenefitAsync(Benefit benefit);
         Task<(bool Success, string Message)> UpdateBenefitAsync(Benefit benefit);
         Task<IEnumerable<Benefit>> GetByCitizenAsync(int citizenId);
+        Task<(bool Success, string Message)> ApplyAsync(int citizenId, int programId);
     }
 }
