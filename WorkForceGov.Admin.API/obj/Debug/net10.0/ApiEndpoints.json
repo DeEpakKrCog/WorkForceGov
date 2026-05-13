@@ -112,14 +112,25 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "reportName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
+        "Name": "request",
+        "Type": "WorkForceGovProject.Controllers.AdminController\u002BGenerateReportRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.AdminController",
+    "Method": "DownloadReport",
+    "RelativePath": "api/admin/reports/{id}/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "reportType",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -265,20 +276,23 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "WorkForceGovProject.Controllers.LoginResponse",
+        "Type": "WorkForceGovProject.Controllers.LogoutResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 401
       }
     ]
   }

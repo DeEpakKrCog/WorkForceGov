@@ -164,3 +164,649 @@
 2026-05-13 14:55:22.144 +05:30 [INF] [Admin.API] TraceId=5086df577f98829269baeb5504eaacd2 HTTP POST /api/admin/users responded 200 in 1738.0881 ms
 2026-05-13 14:56:02.797 +05:30 [INF] [Admin.API] TraceId=e277b925ad2c685e4f2c83fed507dcec HTTP OPTIONS /api/auth/login responded 204 in 0.2574 ms
 2026-05-13 14:56:02.960 +05:30 [INF] [Admin.API] TraceId=b9dafd6b702fdd789e600575cdf1d4ae HTTP POST /api/auth/login responded 200 in 156.4641 ms
+2026-05-13 17:55:36.338 +05:30 [INF] [Admin.API] TraceId=01195a938751be4ca544ebbd6f099e6a HTTP GET /index.html responded 304 in 94.6629 ms
+2026-05-13 17:55:36.545 +05:30 [INF] [Admin.API] TraceId=9ede7a3819ed339acdb5a8d0d927624b HTTP GET /index.js responded 304 in 5.1842 ms
+2026-05-13 17:55:36.622 +05:30 [INF] [Admin.API] TraceId=d4c55e00f3c6ae2400bb5d77853775dd HTTP GET /swagger-ui.css responded 304 in 152.5907 ms
+2026-05-13 17:55:36.622 +05:30 [INF] [Admin.API] TraceId=b2f34fb8c276ce5020b7c3fa55dfcc3f HTTP GET /swagger-ui-standalone-preset.js responded 304 in 82.7193 ms
+2026-05-13 17:55:36.622 +05:30 [INF] [Admin.API] TraceId=7d549865409dd8f7fff0e0da1038a527 HTTP GET /index.css responded 304 in 112.4445 ms
+2026-05-13 17:55:36.622 +05:30 [INF] [Admin.API] TraceId=64e19fb25cf7d09a45e93697666dd8d7 HTTP GET /swagger-ui-bundle.js responded 304 in 152.2154 ms
+2026-05-13 17:55:36.846 +05:30 [INF] [Admin.API] TraceId=0f4df90d171bf7ab682caf4da4c6f9d5 HTTP GET /swagger/v1/swagger.json responded 200 in 56.7030 ms
+2026-05-13 17:56:18.925 +05:30 [INF] [Admin.API] TraceId=94a933b39b522fc1bd4a4d1f2c4fb680 HTTP OPTIONS /api/auth/login responded 204 in 2.1344 ms
+2026-05-13 17:56:22.646 +05:30 [INF] [Admin.API] TraceId=0ac34772a8c87c3a1ace7dc31f072c01 HTTP POST /api/auth/login responded 200 in 3714.2269 ms
+2026-05-13 17:59:46.334 +05:30 [INF] [Admin.API] TraceId=ec0710043a44359393dc1fd279739d23 HTTP GET /index.html responded 304 in 94.5872 ms
+2026-05-13 17:59:46.474 +05:30 [INF] [Admin.API] TraceId=6ad89783128fcd533204081ef2fa5d21 HTTP GET /swagger-ui.css responded 304 in 44.9633 ms
+2026-05-13 17:59:46.474 +05:30 [INF] [Admin.API] TraceId=3e4780cdfa617fc311d034eb7a1b2f25 HTTP GET /index.css responded 304 in 18.5859 ms
+2026-05-13 17:59:46.474 +05:30 [INF] [Admin.API] TraceId=0ad25a54338ee4fa3d224ec4a8b96a92 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 1.3925 ms
+2026-05-13 17:59:46.508 +05:30 [INF] [Admin.API] TraceId=244cf0afdde86a59ba6dcfa1f5362da9 HTTP GET /index.js responded 304 in 7.5417 ms
+2026-05-13 17:59:46.479 +05:30 [INF] [Admin.API] TraceId=24a91a444a47d7f3c6726d6ac07ac771 HTTP GET /swagger-ui-bundle.js responded 304 in 7.0601 ms
+2026-05-13 17:59:46.792 +05:30 [INF] [Admin.API] TraceId=f616616dfe8e44b5d6109e1ea9263d0c HTTP GET /swagger/v1/swagger.json responded 200 in 53.6820 ms
+2026-05-13 21:27:43.758 +05:30 [INF] [Admin.API] TraceId=f4e1709613eefbf43aa894a0faf84a3c HTTP GET /index.html responded 304 in 118.9660 ms
+2026-05-13 21:27:44.506 +05:30 [INF] [Admin.API] TraceId=3ce34c8dbd4f6d5323fa7f72be0e0422 HTTP GET /swagger-ui.css responded 304 in 52.7241 ms
+2026-05-13 21:27:44.506 +05:30 [INF] [Admin.API] TraceId=0d0f13e916d754d23def8aac57b86ad7 HTTP GET /index.css responded 304 in 33.7443 ms
+2026-05-13 21:27:44.508 +05:30 [INF] [Admin.API] TraceId=eb230cedd1e2a4382df23efefb3d4b1f HTTP GET /swagger-ui-bundle.js responded 304 in 34.5535 ms
+2026-05-13 21:27:44.547 +05:30 [INF] [Admin.API] TraceId=c4679d32abb2868bce81933c5eb08217 HTTP GET /index.js responded 304 in 0.5958 ms
+2026-05-13 21:27:44.547 +05:30 [INF] [Admin.API] TraceId=381cfcc6102a079adb6bc2c19374e4e7 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 1.2218 ms
+2026-05-13 21:27:45.952 +05:30 [INF] [Admin.API] TraceId=42ebc353d6849758f95936ba9fbee445 HTTP GET /swagger/v1/swagger.json responded 200 in 60.9995 ms
+2026-05-13 21:28:51.626 +05:30 [INF] [Admin.API] TraceId=ac681a68798ecd2014dff9bcc46f7f18 HTTP OPTIONS /api/auth/login responded 204 in 3.9597 ms
+2026-05-13 21:28:56.159 +05:30 [INF] [Admin.API] TraceId=d2ba3c4a5436dffc6e67d0f5fc4fbcd3 HTTP POST /api/auth/login responded 200 in 4525.0669 ms
+2026-05-13 21:28:56.250 +05:30 [INF] [Admin.API] TraceId=a30dc13e1174bf6bc4e4d049f831547c HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1674 ms
+2026-05-13 21:28:56.901 +05:30 [INF] [Admin.API] TraceId=205bc3dc20d958e3cd548ecb515fb7c3 HTTP GET /api/admin/dashboard responded 200 in 641.0405 ms
+2026-05-13 21:29:01.546 +05:30 [INF] [Admin.API] TraceId=d4bff88476c0b146b8e158b2d570c43d HTTP GET /api/admin/users responded 200 in 60.3981 ms
+2026-05-13 21:29:02.979 +05:30 [INF] [Admin.API] TraceId=68d53b182482346ab767b0dadcddf4df HTTP OPTIONS /api/admin/reports responded 204 in 0.2226 ms
+2026-05-13 21:29:03.053 +05:30 [INF] [Admin.API] TraceId=9505c522ed89e96649ea91bf62138599 HTTP GET /api/admin/reports responded 200 in 64.9778 ms
+2026-05-13 21:29:04.929 +05:30 [INF] [Admin.API] TraceId=edf6d2544cf65ffd8a1a1b4aff0d642f HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1647 ms
+2026-05-13 21:29:04.981 +05:30 [INF] [Admin.API] TraceId=f7ea0c181eb804636daddd8e20f6c8fc HTTP GET /api/admin/system-logs responded 200 in 39.8226 ms
+2026-05-13 21:29:08.000 +05:30 [INF] [Admin.API] TraceId=192e709d5e8580f81e20d3a5d8b1a684 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1766 ms
+2026-05-13 21:29:08.085 +05:30 [INF] [Admin.API] TraceId=c483983e17910dc704969af6d9790c94 HTTP GET /api/admin/dashboard responded 200 in 75.4361 ms
+2026-05-13 21:29:28.240 +05:30 [INF] [Admin.API] TraceId=d6da708c7b1900d20739945bd103b65a HTTP GET /api/admin/users responded 200 in 9.0444 ms
+2026-05-13 21:29:50.296 +05:30 [INF] [Admin.API] TraceId=315dab34ce68b1b59b21c6183f3ba012 HTTP OPTIONS /api/admin/reports responded 204 in 0.1239 ms
+2026-05-13 21:29:50.319 +05:30 [INF] [Admin.API] TraceId=073e32e078254a97941bd96f5b4c3ecd HTTP GET /api/admin/reports responded 200 in 15.5630 ms
+2026-05-13 21:37:58.629 +05:30 [INF] [Admin.API] TraceId=10bf3362784afac0eec5b6fe23b9c65f HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1671 ms
+2026-05-13 21:37:58.985 +05:30 [INF] [Admin.API] TraceId=9edae81349e3e176e5c16d7d4dae4baa HTTP GET /api/admin/dashboard responded 200 in 341.4681 ms
+2026-05-13 21:38:00.980 +05:30 [INF] [Admin.API] TraceId=82d7d9bfa41dd22b78ee2a520fe900d2 HTTP GET /api/admin/users responded 200 in 4.0987 ms
+2026-05-13 21:38:02.486 +05:30 [INF] [Admin.API] TraceId=6a3ca3aa8c89edb5f1a400bd084770c6 HTTP GET /api/admin/dashboard responded 200 in 28.1499 ms
+2026-05-13 21:38:10.391 +05:30 [INF] [Admin.API] TraceId=34c53f536876a6d435b915938c08ab07 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1216 ms
+2026-05-13 21:38:10.410 +05:30 [INF] [Admin.API] TraceId=be584a238ee300e4b000786dcefea222 HTTP GET /api/admin/system-logs responded 200 in 8.6481 ms
+2026-05-13 21:45:34.134 +05:30 [INF] [Admin.API] TraceId=90a08788e60e00a9243c1eb0fea2f268 HTTP GET /index.html responded 304 in 101.9616 ms
+2026-05-13 21:45:34.357 +05:30 [INF] [Admin.API] TraceId=9f187b4c3186c50cf851b2b76cff1b6a HTTP GET /index.js responded 304 in 0.9378 ms
+2026-05-13 21:45:34.396 +05:30 [INF] [Admin.API] TraceId=5aeb5f003f3144029b74f41d8ebb3b84 HTTP GET /swagger-ui.css responded 304 in 75.2300 ms
+2026-05-13 21:45:34.396 +05:30 [INF] [Admin.API] TraceId=31c63361607816fa4f2e1e396cdd8b53 HTTP GET /swagger-ui-bundle.js responded 304 in 38.7983 ms
+2026-05-13 21:45:34.396 +05:30 [INF] [Admin.API] TraceId=1902c953f4e4001eb9304747e1e46e87 HTTP GET /index.css responded 304 in 75.2303 ms
+2026-05-13 21:45:34.632 +05:30 [INF] [Admin.API] TraceId=63d7d01e2da5a0b449e3c309b69ce2c2 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 16.4002 ms
+2026-05-13 21:45:34.972 +05:30 [INF] [Admin.API] TraceId=441d43f2624f4f69804a540b9ffdee92 HTTP GET /swagger/v1/swagger.json responded 200 in 69.4903 ms
+2026-05-13 21:47:08.055 +05:30 [INF] [Admin.API] TraceId=1aa6f2a01cc5a74836396d5a6adc020c HTTP OPTIONS /api/auth/login responded 204 in 2.0769 ms
+2026-05-13 21:47:10.084 +05:30 [INF] [Admin.API] TraceId=3d5002f8557b5cd9bd9c61075eada7b1 HTTP POST /api/auth/login responded 200 in 2020.8496 ms
+2026-05-13 21:47:10.159 +05:30 [INF] [Admin.API] TraceId=3ec12af03481fa81325df587d65ce029 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1779 ms
+2026-05-13 21:47:10.763 +05:30 [INF] [Admin.API] TraceId=ac88c662155d771ac89eb0bce817f45a HTTP GET /api/admin/dashboard responded 200 in 562.9708 ms
+2026-05-13 21:47:14.257 +05:30 [INF] [Admin.API] TraceId=1085221310b089b0c7193a8bd5f12b7e HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1724 ms
+2026-05-13 21:47:14.312 +05:30 [INF] [Admin.API] TraceId=9ba78866740386c6aebea6f3087b58d1 HTTP GET /api/admin/system-logs responded 200 in 42.2704 ms
+2026-05-13 21:48:23.520 +05:30 [INF] [Admin.API] TraceId=4330eef5815f7c5e4a1b0a90aaa8294a HTTP OPTIONS /api/admin/reports responded 204 in 0.1518 ms
+2026-05-13 21:48:23.614 +05:30 [INF] [Admin.API] TraceId=de9b9eea53a2c628dd08fafce2f9b089 HTTP GET /api/admin/reports responded 200 in 83.6205 ms
+2026-05-13 21:48:24.947 +05:30 [INF] [Admin.API] TraceId=0b2b0ef994b59e1e50fed3f96670b7cc HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1094 ms
+2026-05-13 21:48:24.970 +05:30 [INF] [Admin.API] TraceId=efb98d0d94454c2ad5510824769cbb11 HTTP GET /api/admin/system-logs responded 200 in 10.2402 ms
+2026-05-13 21:51:57.190 +05:30 [INF] [Admin.API] TraceId=bf16d0e54bf617896152901f3a16c400 HTTP GET /index.html responded 304 in 170.3563 ms
+2026-05-13 21:51:57.495 +05:30 [INF] [Admin.API] TraceId=07b13773e9617dfcb2455d3869f179b7 HTTP GET /index.js responded 304 in 0.8060 ms
+2026-05-13 21:51:57.572 +05:30 [INF] [Admin.API] TraceId=30b052751bbee8e1567d370e2c45e296 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 11.0820 ms
+2026-05-13 21:51:57.520 +05:30 [INF] [Admin.API] TraceId=3a2e8ccecafa9b2a07ed6530f413d413 HTTP GET /swagger-ui.css responded 304 in 18.3216 ms
+2026-05-13 21:51:57.520 +05:30 [INF] [Admin.API] TraceId=2d323fee57a904d9d84917f98b69bae1 HTTP GET /index.css responded 304 in 64.5920 ms
+2026-05-13 21:51:57.577 +05:30 [INF] [Admin.API] TraceId=c376e048c9dceaf6cb35490e4312d7d0 HTTP GET /swagger-ui-bundle.js responded 304 in 21.4641 ms
+2026-05-13 21:51:58.874 +05:30 [INF] [Admin.API] TraceId=367df0c5aa4f427afadd5cc6d32f6e80 HTTP GET /swagger/v1/swagger.json responded 200 in 99.8442 ms
+2026-05-13 21:52:14.366 +05:30 [INF] [Admin.API] TraceId=603e98d9f79a33735b9d1ff963e54af9 HTTP OPTIONS /api/admin/system-logs responded 204 in 4.5249 ms
+2026-05-13 21:52:16.545 +05:30 [INF] [Admin.API] TraceId=a8a9164a26493e34118300909069347a HTTP GET /api/admin/system-logs responded 200 in 2161.4352 ms
+2026-05-13 21:52:47.170 +05:30 [INF] [Admin.API] TraceId=3ba50997ef3c45af7f6cb2f54e3e1fe7 HTTP OPTIONS /api/auth/login responded 204 in 0.4018 ms
+2026-05-13 21:52:47.617 +05:30 [INF] [Admin.API] TraceId=87d375a22409f0771b6a6204847ba8c8 HTTP POST /api/auth/login responded 200 in 442.2538 ms
+2026-05-13 21:52:47.666 +05:30 [INF] [Admin.API] TraceId=3b9a520706ff70880e011490afb7a483 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1170 ms
+2026-05-13 21:52:48.069 +05:30 [INF] [Admin.API] TraceId=39dcdb86fbd466f2b849d8a012b74525 HTTP GET /api/admin/dashboard responded 200 in 388.8448 ms
+2026-05-13 21:52:51.092 +05:30 [INF] [Admin.API] TraceId=b2b9a2fa3bea2f0aec18fe7d59511cd2 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.3307 ms
+2026-05-13 21:52:51.144 +05:30 [INF] [Admin.API] TraceId=8b5fcaad3fce47ae0ad5cdaf3683ca81 HTTP GET /api/admin/system-logs responded 200 in 44.8111 ms
+2026-05-13 21:53:19.011 +05:30 [INF] [Admin.API] TraceId=40006fddae6fc4d6a951818291ec6628 HTTP OPTIONS /api/auth/login responded 204 in 0.1003 ms
+2026-05-13 21:53:19.046 +05:30 [INF] [Admin.API] TraceId=deaa1d797a40e6d4224730c72e13136e HTTP POST /api/auth/login responded 200 in 28.0165 ms
+2026-05-13 21:53:44.311 +05:30 [INF] [Admin.API] TraceId=ad164654fd6daa035b1c6aa15715f6b4 HTTP OPTIONS /api/auth/login responded 204 in 0.2035 ms
+2026-05-13 21:53:44.327 +05:30 [INF] [Admin.API] TraceId=37e896295423846fd0fd457e9a782562 HTTP POST /api/auth/login responded 200 in 10.1532 ms
+2026-05-13 21:53:44.341 +05:30 [INF] [Admin.API] TraceId=95e1256568d0ed1ef70a9f4ae06dcce1 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1520 ms
+2026-05-13 21:53:44.402 +05:30 [INF] [Admin.API] TraceId=956d4c4123ca3d19bf079e4eb151177e HTTP GET /api/admin/dashboard responded 200 in 49.3343 ms
+2026-05-13 21:53:47.757 +05:30 [INF] [Admin.API] TraceId=47cd63c8065675bea9101944d75db233 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1315 ms
+2026-05-13 21:53:47.779 +05:30 [INF] [Admin.API] TraceId=657c1118f92dd308e16fee06bf811539 HTTP GET /api/admin/system-logs responded 200 in 7.3011 ms
+2026-05-13 21:57:43.894 +05:30 [INF] [Admin.API] TraceId=36890a01329137f68041edaf2c0bd5d6 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.0826 ms
+2026-05-13 21:57:43.911 +05:30 [INF] [Admin.API] TraceId=050cb1edb3bd61a23d77f34c1e1c4ca2 HTTP GET /api/admin/system-logs responded 200 in 9.6379 ms
+2026-05-13 21:58:46.789 +05:30 [INF] [Admin.API] TraceId=b618e527b52cb14ed4ba0de7dbbebccc HTTP GET /index.html responded 304 in 167.5462 ms
+2026-05-13 21:58:47.245 +05:30 [INF] [Admin.API] TraceId=01e1abace76206ad0deae16d62e5874a HTTP GET /index.js responded 304 in 0.8391 ms
+2026-05-13 21:58:47.460 +05:30 [INF] [Admin.API] TraceId=39168a5bf09f4261f36710fbb76244d8 HTTP GET /swagger-ui-bundle.js responded 304 in 222.7710 ms
+2026-05-13 21:58:47.429 +05:30 [INF] [Admin.API] TraceId=af9a03140fb5610bdd5c23ddc27fbbfc HTTP GET /swagger-ui-standalone-preset.js responded 304 in 184.2984 ms
+2026-05-13 21:58:47.429 +05:30 [INF] [Admin.API] TraceId=19dd3afb49e75e4fc2cd3ed231a80e6a HTTP GET /swagger-ui.css responded 304 in 253.2511 ms
+2026-05-13 21:58:47.433 +05:30 [INF] [Admin.API] TraceId=a11b72c188d84fe4883a2f2fe77d3db4 HTTP GET /index.css responded 304 in 256.5381 ms
+2026-05-13 21:58:48.124 +05:30 [INF] [Admin.API] TraceId=0b0e5e52ade82278229d9312f5a0e78b HTTP GET /swagger/v1/swagger.json responded 200 in 97.3856 ms
+2026-05-13 21:59:14.134 +05:30 [INF] [Admin.API] TraceId=c7010fd51547b27f90e265684ff4d124 HTTP OPTIONS /api/auth/login responded 204 in 2.3768 ms
+2026-05-13 21:59:16.239 +05:30 [INF] [Admin.API] TraceId=35ba153e7a2dc08f5fa335e5813327f1 HTTP POST /api/auth/login responded 200 in 2100.0247 ms
+2026-05-13 21:59:16.274 +05:30 [INF] [Admin.API] TraceId=ac5a97c05bc2aafa8dd8a7934fc5ea55 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.5865 ms
+2026-05-13 21:59:16.857 +05:30 [INF] [Admin.API] TraceId=0cea3f2a50f60ecb20d8a0e4a15eee1e HTTP GET /api/admin/dashboard responded 200 in 556.0018 ms
+2026-05-13 21:59:19.050 +05:30 [INF] [Admin.API] TraceId=ff10e2551de1c0a880b62f6678d0909e HTTP OPTIONS /api/admin/system-logs responded 204 in 0.7683 ms
+2026-05-13 21:59:19.113 +05:30 [INF] [Admin.API] TraceId=a5ae870911072710977907274e3e1c83 HTTP GET /api/admin/system-logs responded 200 in 50.5305 ms
+2026-05-13 21:59:39.467 +05:30 [INF] [Admin.API] TraceId=62f800f65a98465ec4731ea8dea60732 HTTP OPTIONS /api/auth/login responded 204 in 0.1295 ms
+2026-05-13 21:59:39.498 +05:30 [INF] [Admin.API] TraceId=25e7fc478e9e3f4b89b93b35b135a406 HTTP POST /api/auth/login responded 401 in 25.9584 ms
+2026-05-13 21:59:46.039 +05:30 [INF] [Admin.API] TraceId=6500db939f804f4b659ab596660b7e46 HTTP OPTIONS /api/auth/login responded 204 in 0.1976 ms
+2026-05-13 21:59:46.062 +05:30 [INF] [Admin.API] TraceId=e541f1814a68684a8dbd82cfe11dd447 HTTP POST /api/auth/login responded 200 in 15.7822 ms
+2026-05-13 21:59:46.079 +05:30 [INF] [Admin.API] TraceId=7005e0e24b72f783d3335aaa19f32a9a HTTP OPTIONS /api/admin/dashboard responded 204 in 0.2136 ms
+2026-05-13 21:59:46.167 +05:30 [INF] [Admin.API] TraceId=2da6c397cfe0e09db3da81710f239c4b HTTP GET /api/admin/dashboard responded 200 in 60.9408 ms
+2026-05-13 21:59:49.967 +05:30 [INF] [Admin.API] TraceId=9bf075cfef86c325963591502929046c HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1705 ms
+2026-05-13 21:59:49.983 +05:30 [INF] [Admin.API] TraceId=4acd371b4918ce633c2fb05b2e846df2 HTTP GET /api/admin/system-logs responded 200 in 7.3433 ms
+2026-05-13 22:04:11.339 +05:30 [INF] [Admin.API] TraceId=55f67e619466b49f272e6f884f3a8ed5 HTTP GET /index.html responded 304 in 142.1997 ms
+2026-05-13 22:04:12.217 +05:30 [INF] [Admin.API] TraceId=ec94f21aa84664bbba2fb3eb0582352b HTTP GET /swagger-ui-bundle.js responded 304 in 34.0195 ms
+2026-05-13 22:04:12.217 +05:30 [INF] [Admin.API] TraceId=a1b11490b6aa4e66b8d1bab9d3c0c95c HTTP GET /index.css responded 304 in 34.3763 ms
+2026-05-13 22:04:12.223 +05:30 [INF] [Admin.API] TraceId=9033e3ce0b0e3e7db9f22e4703be4428 HTTP GET /swagger-ui.css responded 304 in 69.0164 ms
+2026-05-13 22:04:12.339 +05:30 [INF] [Admin.API] TraceId=9b1b9f601aef7352de6b994589b540ee HTTP GET /swagger-ui-standalone-preset.js responded 304 in 14.3389 ms
+2026-05-13 22:04:12.342 +05:30 [INF] [Admin.API] TraceId=6aac38ca571cefe41c2a9bfe8c96c5c2 HTTP GET /index.js responded 304 in 1.8245 ms
+2026-05-13 22:04:14.936 +05:30 [INF] [Admin.API] TraceId=143144618c44c0a89d9b0cc8d11b1dcc HTTP GET /swagger/v1/swagger.json responded 200 in 68.8819 ms
+2026-05-13 22:05:05.162 +05:30 [INF] [Admin.API] TraceId=f3d0a3921fd6910018e8f498d0b522d8 HTTP OPTIONS /api/admin/system-logs responded 204 in 5.1257 ms
+2026-05-13 22:05:07.633 +05:30 [INF] [Admin.API] TraceId=094b14311556796004b4102db780f54d HTTP GET /api/admin/system-logs responded 200 in 2455.4978 ms
+2026-05-13 22:05:27.312 +05:30 [INF] [Admin.API] TraceId=85d67870186cf026d48b4f457550d706 HTTP OPTIONS /api/auth/login responded 204 in 0.2404 ms
+2026-05-13 22:05:27.791 +05:30 [INF] [Admin.API] TraceId=a50152fed018729331d729ce6765551b HTTP POST /api/auth/login responded 200 in 473.4494 ms
+2026-05-13 22:05:27.821 +05:30 [INF] [Admin.API] TraceId=06a06a6e80db58f35d3332a34f56ba8e HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1133 ms
+2026-05-13 22:05:28.236 +05:30 [INF] [Admin.API] TraceId=906e2f6a78d86fcf9ea9da3d4be0529d HTTP GET /api/admin/dashboard responded 200 in 399.8840 ms
+2026-05-13 22:05:30.899 +05:30 [INF] [Admin.API] TraceId=6d1af63b96394ae5da6dd4fe499bcd0a HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1616 ms
+2026-05-13 22:05:30.930 +05:30 [INF] [Admin.API] TraceId=5cfff00f0ab0708b995b69a3604c38f8 HTTP GET /api/admin/system-logs responded 200 in 19.4465 ms
+2026-05-13 22:05:41.713 +05:30 [INF] [Admin.API] TraceId=f5b0c975eda065ba3138dc62a1e02b35 HTTP OPTIONS /api/auth/login responded 204 in 0.0823 ms
+2026-05-13 22:05:41.736 +05:30 [INF] [Admin.API] TraceId=01349a71ad51fe75dad1c74ce566f65c HTTP POST /api/auth/login responded 200 in 18.8167 ms
+2026-05-13 22:05:41.752 +05:30 [INF] [Admin.API] TraceId=d29fc62a037c6e30feb10de71880ba31 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1020 ms
+2026-05-13 22:05:41.809 +05:30 [INF] [Admin.API] TraceId=2a3b46047461537fa12fdd28560978ee HTTP GET /api/admin/dashboard responded 200 in 46.2930 ms
+2026-05-13 22:05:44.648 +05:30 [INF] [Admin.API] TraceId=8d2424bb0a31c4a8f6ccaf2d82218c21 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1222 ms
+2026-05-13 22:05:44.666 +05:30 [INF] [Admin.API] TraceId=a0c511f88f4512b0f0604ba954a50e61 HTTP GET /api/admin/system-logs responded 200 in 6.2938 ms
+2026-05-13 22:14:03.926 +05:30 [INF] [Admin.API] TraceId=84f664c68633f06230e3c81ae4cc415f HTTP OPTIONS /api/admin/system-logs responded 204 in 0.0899 ms
+2026-05-13 22:14:03.960 +05:30 [INF] [Admin.API] TraceId=b01807434b77a5a11f67ad5a92556ffe HTTP GET /api/admin/system-logs responded 200 in 28.4658 ms
+2026-05-13 22:14:22.457 +05:30 [INF] [Admin.API] TraceId=5116f1f6bd47776f56d299c0576b043a HTTP OPTIONS /api/auth/login responded 204 in 0.1019 ms
+2026-05-13 22:14:22.547 +05:30 [INF] [Admin.API] TraceId=2a71291533fe9a199d789e69fde4364a HTTP POST /api/auth/login responded 200 in 83.5189 ms
+2026-05-13 22:14:22.596 +05:30 [INF] [Admin.API] TraceId=bf136ed9817841298bc4b255d398d10a HTTP OPTIONS /api/admin/dashboard responded 204 in 0.2422 ms
+2026-05-13 22:14:22.659 +05:30 [INF] [Admin.API] TraceId=395808477def8fe4565f1056948671d0 HTTP GET /api/admin/dashboard responded 200 in 50.9487 ms
+2026-05-13 22:14:29.306 +05:30 [INF] [Admin.API] TraceId=4142d5afb5fae6c0db8bc7e06e203e91 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1103 ms
+2026-05-13 22:14:29.327 +05:30 [INF] [Admin.API] TraceId=492495b0b7a8034707a3dee84cea2f8e HTTP GET /api/admin/system-logs responded 200 in 6.2102 ms
+2026-05-13 22:14:42.488 +05:30 [INF] [Admin.API] TraceId=d0931c9c4d4148f2e7fff4dd02e4a9f4 HTTP OPTIONS /api/auth/login responded 204 in 0.1323 ms
+2026-05-13 22:14:42.506 +05:30 [INF] [Admin.API] TraceId=b087999e6719d6de04a1d5de3830ddc7 HTTP POST /api/auth/login responded 200 in 10.5003 ms
+2026-05-13 22:14:42.525 +05:30 [INF] [Admin.API] TraceId=90c75118c3116c5e690deff1721c139e HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1034 ms
+2026-05-13 22:14:42.566 +05:30 [INF] [Admin.API] TraceId=d1107bc67fff3e30ce2efeb9250716e3 HTTP GET /api/admin/dashboard responded 200 in 22.0718 ms
+2026-05-13 22:14:45.904 +05:30 [INF] [Admin.API] TraceId=228746fdb19a8176c8054b9be557235f HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1142 ms
+2026-05-13 22:14:45.922 +05:30 [INF] [Admin.API] TraceId=261ce05dc07227142b54a3c283e3a493 HTTP GET /api/admin/system-logs responded 200 in 7.8374 ms
+2026-05-13 22:19:32.529 +05:30 [INF] [Admin.API] TraceId=6620ad6b2fadd1b96626bbfe7a159a83 HTTP GET /index.html responded 304 in 116.5974 ms
+2026-05-13 22:19:32.861 +05:30 [INF] [Admin.API] TraceId=6cdfffad63570ceea0ad056d6137d107 HTTP GET /index.js responded 304 in 18.4158 ms
+2026-05-13 22:19:32.896 +05:30 [INF] [Admin.API] TraceId=5bcc1a699b34b6091348503d2201e2b8 HTTP GET /swagger-ui.css responded 304 in 148.7162 ms
+2026-05-13 22:19:32.896 +05:30 [INF] [Admin.API] TraceId=971edc15495412a205bbbf0102858d5e HTTP GET /index.css responded 304 in 147.3463 ms
+2026-05-13 22:19:32.896 +05:30 [INF] [Admin.API] TraceId=583900e3d6d9ca7ebb68e05fe88f9f7a HTTP GET /swagger-ui-standalone-preset.js responded 304 in 144.9989 ms
+2026-05-13 22:19:32.907 +05:30 [INF] [Admin.API] TraceId=99eedbc30a349220d9fb7c805dcee06f HTTP GET /swagger-ui-bundle.js responded 304 in 156.8048 ms
+2026-05-13 22:19:33.393 +05:30 [INF] [Admin.API] TraceId=2179c82eecb960da48f1203cb1161721 HTTP GET /swagger/v1/swagger.json responded 200 in 70.2151 ms
+2026-05-13 22:19:55.316 +05:30 [INF] [Admin.API] TraceId=254bbd6745216e0f8c55d6e7c31d65b8 HTTP OPTIONS /api/auth/login responded 204 in 3.9117 ms
+2026-05-13 22:19:57.995 +05:30 [INF] [Admin.API] TraceId=edc28fd71347ffd04a16ce8db37d5462 HTTP POST /api/auth/login responded 200 in 2671.7292 ms
+2026-05-13 22:19:58.009 +05:30 [INF] [Admin.API] TraceId=708b7e7a7b6b7dd27f0b264ea8db7512 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1913 ms
+2026-05-13 22:19:58.499 +05:30 [INF] [Admin.API] TraceId=e7af1ae9705a6af55c141a762a68c3ca HTTP GET /api/admin/dashboard responded 200 in 465.8268 ms
+2026-05-13 22:20:01.103 +05:30 [INF] [Admin.API] TraceId=4d54ab60253a4acf137a859b4fd91701 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1616 ms
+2026-05-13 22:20:01.154 +05:30 [INF] [Admin.API] TraceId=d2d081f536fdafb6d6b3f6476fd6d4c3 HTTP GET /api/admin/system-logs responded 200 in 38.6864 ms
+2026-05-13 22:20:15.955 +05:30 [INF] [Admin.API] TraceId=09d08e233f412e80c3e3b19e53fe1e2c HTTP OPTIONS /api/auth/login responded 204 in 0.1493 ms
+2026-05-13 22:20:16.024 +05:30 [INF] [Admin.API] TraceId=41b5485ad5c6bb85becfb0070266e3c9 HTTP POST /api/auth/login responded 200 in 62.6406 ms
+2026-05-13 22:20:16.042 +05:30 [INF] [Admin.API] TraceId=0ac081b14a534f8a90511fa2c411e950 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.4003 ms
+2026-05-13 22:20:16.088 +05:30 [INF] [Admin.API] TraceId=ed1721cd562e48116f09fc8a66fc970f HTTP GET /api/admin/dashboard responded 200 in 33.6140 ms
+2026-05-13 22:20:18.791 +05:30 [INF] [Admin.API] TraceId=124b064d3aae5dce20c7e9cd7c76585a HTTP OPTIONS /api/admin/system-logs responded 204 in 0.0901 ms
+2026-05-13 22:20:18.810 +05:30 [INF] [Admin.API] TraceId=001d8b5c9ab4ce5d53729383f6a924a0 HTTP GET /api/admin/system-logs responded 200 in 7.0083 ms
+2026-05-13 22:22:31.928 +05:30 [INF] [Admin.API] TraceId=d68d71acd285675aadbfe0e7daf517bc HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1078 ms
+2026-05-13 22:22:31.946 +05:30 [INF] [Admin.API] TraceId=7de80a332ebdbdaa38761f2b6a99b143 HTTP GET /api/admin/system-logs responded 200 in 12.5165 ms
+2026-05-13 22:23:36.720 +05:30 [INF] [Admin.API] TraceId=6831432a917079d4539776fd3f0d6a87 HTTP GET /index.html responded 304 in 108.6222 ms
+2026-05-13 22:23:36.968 +05:30 [INF] [Admin.API] TraceId=9138fcdd692179783934bc40634a5f6a HTTP GET /swagger-ui.css responded 304 in 74.5720 ms
+2026-05-13 22:23:36.968 +05:30 [INF] [Admin.API] TraceId=9be78c0574ab15a799d0276852d81c57 HTTP GET /swagger-ui-bundle.js responded 304 in 55.1582 ms
+2026-05-13 22:23:36.968 +05:30 [INF] [Admin.API] TraceId=67e5ac676cee66f412797b940accae04 HTTP GET /index.css responded 304 in 71.2363 ms
+2026-05-13 22:23:36.987 +05:30 [INF] [Admin.API] TraceId=6a90116e05580b4e53ea4568b369b91c HTTP GET /index.js responded 304 in 0.8857 ms
+2026-05-13 22:23:36.983 +05:30 [INF] [Admin.API] TraceId=c745c87d65abab901ea7b7c2666e398c HTTP GET /swagger-ui-standalone-preset.js responded 304 in 70.4771 ms
+2026-05-13 22:23:39.098 +05:30 [INF] [Admin.API] TraceId=15fe4248298169f35dc5a5d88612f815 HTTP GET /swagger/v1/swagger.json responded 200 in 54.7966 ms
+2026-05-13 22:23:58.916 +05:30 [INF] [Admin.API] TraceId=a7c6349e8199700b207332a00310bebb HTTP OPTIONS /api/auth/login responded 204 in 2.2875 ms
+2026-05-13 22:24:01.081 +05:30 [INF] [Admin.API] TraceId=3dddda150d65f750eba3276f9f0511db HTTP POST /api/auth/login responded 200 in 2150.4817 ms
+2026-05-13 22:24:01.116 +05:30 [INF] [Admin.API] TraceId=1bcb83991eb12d295bdffdab4c449f59 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.2465 ms
+2026-05-13 22:24:01.624 +05:30 [INF] [Admin.API] TraceId=2eae8fba819a4c60ea3cccd631b413a6 HTTP GET /api/admin/dashboard responded 200 in 481.5915 ms
+2026-05-13 22:24:04.243 +05:30 [INF] [Admin.API] TraceId=b09f6b81692eb821830f777bb0605612 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1792 ms
+2026-05-13 22:24:04.296 +05:30 [INF] [Admin.API] TraceId=d8ca12a24ad645bbe14e804ddbbc626c HTTP GET /api/admin/system-logs responded 200 in 43.2609 ms
+2026-05-13 22:24:15.449 +05:30 [INF] [Admin.API] TraceId=46f4425eacfb5e6c6e26952bedf28e0e HTTP OPTIONS /api/auth/login responded 204 in 0.0887 ms
+2026-05-13 22:24:15.470 +05:30 [INF] [Admin.API] TraceId=3f119495258918fbc521b06103fd3252 HTTP POST /api/auth/login responded 200 in 15.6549 ms
+2026-05-13 22:24:15.487 +05:30 [INF] [Admin.API] TraceId=c51bc0459f0c0de7449aa34207a940b1 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1346 ms
+2026-05-13 22:24:15.549 +05:30 [INF] [Admin.API] TraceId=0249f6db0430f450dc975ccfc661b951 HTTP GET /api/admin/dashboard responded 200 in 36.4847 ms
+2026-05-13 22:24:18.086 +05:30 [INF] [Admin.API] TraceId=31278e9c4845e597a7cbd9961f935cf7 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1386 ms
+2026-05-13 22:24:18.110 +05:30 [INF] [Admin.API] TraceId=73a5eab1d25043019453a8931ecf445b HTTP GET /api/admin/system-logs responded 200 in 9.0716 ms
+2026-05-13 22:24:38.591 +05:30 [INF] [Admin.API] TraceId=dff91e539a105c60752efdb3ba53bbd8 HTTP OPTIONS /api/auth/login responded 204 in 0.0885 ms
+2026-05-13 22:24:38.607 +05:30 [INF] [Admin.API] TraceId=94db30ee0a0caa2620e10518c3b0dc13 HTTP POST /api/auth/login responded 200 in 10.1064 ms
+2026-05-13 22:24:38.621 +05:30 [INF] [Admin.API] TraceId=26b3ace0da9abdf2c065144631d700b0 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1071 ms
+2026-05-13 22:24:38.666 +05:30 [INF] [Admin.API] TraceId=a8a4149b8bad511cd0c92abcec878c70 HTTP GET /api/admin/dashboard responded 200 in 15.5174 ms
+2026-05-13 22:24:42.468 +05:30 [INF] [Admin.API] TraceId=0ba48a01978b5334d61ea6077acad62f HTTP OPTIONS /api/admin/system-logs responded 204 in 0.6996 ms
+2026-05-13 22:24:42.488 +05:30 [INF] [Admin.API] TraceId=f8a1464a7b38501def2a65b3111b2cd2 HTTP GET /api/admin/system-logs responded 200 in 4.1576 ms
+2026-05-13 22:25:15.440 +05:30 [INF] [Admin.API] TraceId=aa6737fab2c295f5f9712e819d500ac3 HTTP OPTIONS /api/admin/reports responded 204 in 0.1621 ms
+2026-05-13 22:25:15.518 +05:30 [INF] [Admin.API] TraceId=7cf129c8da88bb199eedaece9c7c0b55 HTTP GET /api/admin/reports responded 200 in 59.4504 ms
+2026-05-13 22:25:30.473 +05:30 [INF] [Admin.API] TraceId=8ff922a6f3d5e2fbea5f928f98923e16 HTTP OPTIONS /api/admin/reports responded 204 in 0.4951 ms
+2026-05-13 22:25:30.508 +05:30 [INF] [Admin.API] TraceId=8a20a286bea31ef7a1e3569fedfd7fb5 HTTP POST /api/admin/reports responded 400 in 26.4788 ms
+2026-05-13 22:32:07.013 +05:30 [INF] [Admin.API] TraceId=6223e762d778f210273cf3b2b4106123 HTTP OPTIONS /api/admin/reports responded 204 in 0.1188 ms
+2026-05-13 22:32:07.126 +05:30 [INF] [Admin.API] TraceId=ac0bf034c488cd399dfea286db225834 HTTP GET /api/admin/reports responded 200 in 104.2539 ms
+2026-05-13 22:32:20.860 +05:30 [INF] [Admin.API] TraceId=028ac6a57f165db8c41262c1f1a84356 HTTP OPTIONS /api/admin/reports responded 204 in 0.1383 ms
+2026-05-13 22:32:20.873 +05:30 [INF] [Admin.API] TraceId=f6e02c7c384856777b06843303abdc78 HTTP GET /api/admin/reports responded 200 in 4.7748 ms
+2026-05-13 22:32:57.075 +05:30 [INF] [Admin.API] TraceId=991627df0dad7ca2552520421c1cea4a HTTP GET /index.html responded 304 in 117.8829 ms
+2026-05-13 22:32:57.993 +05:30 [INF] [Admin.API] TraceId=c8678fc752d1947e671cc5369a173f93 HTTP GET /index.js responded 304 in 65.0509 ms
+2026-05-13 22:32:58.029 +05:30 [INF] [Admin.API] TraceId=96628ad65580d6e99b78268adb9d7b2a HTTP GET /swagger-ui.css responded 304 in 273.3095 ms
+2026-05-13 22:32:58.029 +05:30 [INF] [Admin.API] TraceId=d47fdd8a2a8a8c223ca4b6db4c581406 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 62.6465 ms
+2026-05-13 22:32:58.034 +05:30 [INF] [Admin.API] TraceId=cb96d2be92968e3e530ee4a50c2daa73 HTTP GET /swagger-ui-bundle.js responded 304 in 151.8501 ms
+2026-05-13 22:32:58.042 +05:30 [INF] [Admin.API] TraceId=21962e79355e0cc2fb41e041da68a7ed HTTP GET /index.css responded 304 in 36.0969 ms
+2026-05-13 22:32:58.435 +05:30 [INF] [Admin.API] TraceId=2aafb7c6bf5984c7c29f0fafbfacf02c HTTP GET /swagger/v1/swagger.json responded 200 in 71.0103 ms
+2026-05-13 22:33:12.003 +05:30 [INF] [Admin.API] TraceId=e4daf381bae27d46348e87fb02209cdc HTTP OPTIONS /api/admin/reports responded 204 in 3.3200 ms
+2026-05-13 22:33:14.146 +05:30 [INF] [Admin.API] TraceId=3b15155c9925c84f2bc9f3528cd036bf HTTP GET /api/admin/reports responded 200 in 117.0565 ms
+2026-05-13 22:33:14.146 +05:30 [INF] [Admin.API] TraceId=1f8954077d24d8e194f93b03485e2c84 HTTP GET /api/admin/reports responded 200 in 2135.6008 ms
+2026-05-13 22:33:19.801 +05:30 [INF] [Admin.API] TraceId=2b06b4f63c61bbc11b647a412f82faf0 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.3010 ms
+2026-05-13 22:33:19.915 +05:30 [INF] [Admin.API] TraceId=8851122275a6f2590981778e30bcfc94 HTTP GET /api/admin/system-logs responded 200 in 105.6505 ms
+2026-05-13 22:33:21.750 +05:30 [INF] [Admin.API] TraceId=a1d64f5f8e01399ecf63b799766c79bb HTTP OPTIONS /api/admin/reports responded 204 in 0.1939 ms
+2026-05-13 22:33:21.770 +05:30 [INF] [Admin.API] TraceId=1069efab7cf9961266afebde2abb47de HTTP GET /api/admin/reports responded 200 in 8.0338 ms
+2026-05-13 22:33:23.595 +05:30 [INF] [Admin.API] TraceId=2993cd0059445ff98c0ad11b490c42df HTTP OPTIONS /api/admin/reports/1/download responded 204 in 0.1793 ms
+2026-05-13 22:33:23.637 +05:30 [INF] [Admin.API] TraceId=0071170a17c5a70fbd3abfed05742ecd HTTP GET /api/admin/reports/1/download responded 200 in 32.5748 ms
+2026-05-13 22:33:57.811 +05:30 [INF] [Admin.API] TraceId=cb260d79157e6ff8d9a8094427c10093 HTTP OPTIONS /api/admin/reports responded 204 in 0.1052 ms
+2026-05-13 22:33:58.086 +05:30 [INF] [Admin.API] TraceId=e4e0c8c04d8ec92a25ab3c84c24b961d HTTP POST /api/admin/reports responded 200 in 266.6873 ms
+2026-05-13 22:33:58.097 +05:30 [INF] [Admin.API] TraceId=cf34bb0ce14342a35961f523c7bb4f26 HTTP GET /api/admin/reports responded 200 in 3.6972 ms
+2026-05-13 22:39:12.920 +05:30 [INF] [Admin.API] TraceId=540f0e0a2bcde94fc6a07645c82a7d21 HTTP OPTIONS /api/admin/reports responded 204 in 0.1064 ms
+2026-05-13 22:39:12.937 +05:30 [INF] [Admin.API] TraceId=ee997bdd96af73025d0e9e8912d8b929 HTTP GET /api/admin/reports responded 200 in 9.9615 ms
+2026-05-13 22:39:29.861 +05:30 [INF] [Admin.API] TraceId=9390aa1bf1eb388748ebb744d07de3ca HTTP OPTIONS /api/admin/reports responded 204 in 0.1163 ms
+2026-05-13 22:39:29.870 +05:30 [INF] [Admin.API] TraceId=9a2ea2269d0f362539e1e1aa69a15750 HTTP GET /api/admin/reports responded 200 in 3.6218 ms
+2026-05-13 22:43:41.531 +05:30 [INF] [Admin.API] TraceId=d747ab76eafe6ee65b9e54be92e05e3c HTTP GET /index.html responded 304 in 168.5573 ms
+2026-05-13 22:43:41.917 +05:30 [INF] [Admin.API] TraceId=972e866ebb84a061b72d67a979d4b6f2 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 68.6575 ms
+2026-05-13 22:43:41.917 +05:30 [INF] [Admin.API] TraceId=d54221a6144ad3402ae44a90a7fbf3ab HTTP GET /swagger-ui.css responded 304 in 125.9791 ms
+2026-05-13 22:43:41.917 +05:30 [INF] [Admin.API] TraceId=1b9e67ba907c88dec1c68c6941f71173 HTTP GET /index.css responded 304 in 125.3584 ms
+2026-05-13 22:43:42.095 +05:30 [INF] [Admin.API] TraceId=973ebc0e4ed32c6c0092a02cbe264897 HTTP GET /swagger-ui-bundle.js responded 304 in 250.0728 ms
+2026-05-13 22:43:42.066 +05:30 [INF] [Admin.API] TraceId=a34c9575bd6277cf941b33f74a3352dd HTTP GET /index.js responded 304 in 0.6834 ms
+2026-05-13 22:43:42.596 +05:30 [INF] [Admin.API] TraceId=6526b1e8d16c60b9ff595ea20067beb5 HTTP GET /swagger/v1/swagger.json responded 200 in 98.5917 ms
+2026-05-13 22:43:53.602 +05:30 [INF] [Admin.API] TraceId=648ae839eb85561723814414f2ed0516 HTTP OPTIONS /api/admin/reports responded 204 in 2.2505 ms
+2026-05-13 22:43:55.752 +05:30 [INF] [Admin.API] TraceId=b4077c9cf8167117c44fcf812346d489 HTTP GET /api/admin/reports responded 200 in 2142.9263 ms
+2026-05-13 22:44:19.059 +05:30 [INF] [Admin.API] TraceId=3e117656db8410770a8f256bce285e8b HTTP OPTIONS /api/admin/reports responded 204 in 0.2584 ms
+2026-05-13 22:44:19.818 +05:30 [INF] [Admin.API] TraceId=987a67fd757b97628810d443908ec7b1 HTTP POST /api/admin/reports responded 200 in 753.2263 ms
+2026-05-13 22:44:19.857 +05:30 [INF] [Admin.API] TraceId=dcf4cbc4dc9491e1d1fea8742e687752 HTTP GET /api/admin/reports responded 200 in 31.4599 ms
+2026-05-13 22:44:24.006 +05:30 [INF] [Admin.API] TraceId=ac3f9bee18239327e11af20cb176cc2d HTTP OPTIONS /api/admin/reports/3/download responded 204 in 0.1468 ms
+2026-05-13 22:44:24.065 +05:30 [INF] [Admin.API] TraceId=260ef94eb044f24af8c4b8a38ecd1024 HTTP GET /api/admin/reports/3/download responded 200 in 54.0731 ms
+2026-05-13 22:44:54.945 +05:30 [INF] [Admin.API] TraceId=13477ae4ccafb569f264234956422a4c HTTP OPTIONS /api/admin/reports responded 204 in 0.1645 ms
+2026-05-13 22:44:55.030 +05:30 [INF] [Admin.API] TraceId=219594493688d15adae22f615631fab7 HTTP POST /api/admin/reports responded 200 in 79.5690 ms
+2026-05-13 22:44:55.044 +05:30 [INF] [Admin.API] TraceId=a84170eb133a9b6902cff3938f4a1085 HTTP GET /api/admin/reports responded 200 in 5.8671 ms
+2026-05-13 22:44:57.317 +05:30 [INF] [Admin.API] TraceId=54bd1429611a8a2542e267966fa8d258 HTTP OPTIONS /api/admin/reports/4/download responded 204 in 0.1951 ms
+2026-05-13 22:44:57.331 +05:30 [INF] [Admin.API] TraceId=92d5b1283e8c7570a1b542975a1c1e0c HTTP GET /api/admin/reports/4/download responded 200 in 4.7149 ms
+2026-05-13 22:45:28.516 +05:30 [INF] [Admin.API] TraceId=5bb91b1b4db00116253b3c7a8bf96930 HTTP GET /api/admin/users responded 200 in 29.6633 ms
+2026-05-13 22:46:39.496 +05:30 [INF] [Admin.API] TraceId=a31c260dd86ab64431354c16a35c29ce HTTP OPTIONS /api/admin/users responded 204 in 0.0833 ms
+2026-05-13 22:46:47.025 +05:30 [ERR] [Admin.API] TraceId=38b2d931c3fcaaa9472abc3d34ee0f9c An error has occurred while processing the request. TraceId 0HNLH2BSJG6G4:0000001D
+System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
+   at WorkForceGovProject.Controllers.AdminController.GetUserId() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 35
+   at WorkForceGovProject.Controllers.AdminController.CreateUser(CreateUserViewModel model) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-13 22:46:47.106 +05:30 [INF] [Admin.API] TraceId=38b2d931c3fcaaa9472abc3d34ee0f9c HTTP POST /api/admin/users responded 401 in 7605.4787 ms
+2026-05-13 22:46:47.432 +05:30 [INF] [Admin.API] TraceId=9f5f4d309279444f2070adfe3c5bf3a4 HTTP GET /api/admin/dashboard responded 200 in 284.8541 ms
+2026-05-13 22:46:52.660 +05:30 [INF] [Admin.API] TraceId=3aeab968c2b5a3f5eed3431118efff61 HTTP GET /api/admin/users responded 200 in 5.2385 ms
+2026-05-13 22:47:06.566 +05:30 [INF] [Admin.API] TraceId=edeb4c5fddd4c38e0f2a3a3241c66fe6 HTTP GET /api/admin/users/1 responded 200 in 80.5900 ms
+2026-05-13 22:47:10.504 +05:30 [INF] [Admin.API] TraceId=11d4bc9c961308783c700cbd83ec9a05 HTTP OPTIONS /api/admin/users/1 responded 204 in 0.1158 ms
+2026-05-13 22:47:17.069 +05:30 [ERR] [Admin.API] TraceId=89b328ce7564dfe66577d7b63f0bdf4d An error has occurred while processing the request. TraceId 0HNLH2BSJG6G4:00000027
+System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
+   at WorkForceGovProject.Controllers.AdminController.GetUserId() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 35
+   at WorkForceGovProject.Controllers.AdminController.UpdateUser(Int32 id, User model) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-13 22:47:17.075 +05:30 [INF] [Admin.API] TraceId=89b328ce7564dfe66577d7b63f0bdf4d HTTP PUT /api/admin/users/1 responded 401 in 6565.1788 ms
+2026-05-13 22:47:17.193 +05:30 [INF] [Admin.API] TraceId=dec267fe55da0af357df3e37c4e9e4a9 HTTP GET /api/admin/dashboard responded 200 in 63.0235 ms
+2026-05-13 22:47:20.248 +05:30 [INF] [Admin.API] TraceId=1cf62e626b260dd30fe6b91d4772cc5c HTTP GET /api/admin/users responded 200 in 8.3650 ms
+2026-05-13 22:47:28.477 +05:30 [INF] [Admin.API] TraceId=5909d7a32f6b6ce3d05417689bed70e8 HTTP GET /api/admin/users/1 responded 200 in 17.3842 ms
+2026-05-13 22:47:32.080 +05:30 [INF] [Admin.API] TraceId=81e2df53079e20e587cb7554a6f669f3 HTTP OPTIONS /api/admin/users/1 responded 204 in 0.0892 ms
+2026-05-13 22:47:51.619 +05:30 [ERR] [Admin.API] TraceId=d5a1f30506c505e31629eb333e87f4a5 An error has occurred while processing the request. TraceId 0HNLH2BSJG6G4:00000031
+System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
+   at WorkForceGovProject.Controllers.AdminController.GetUserId() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 35
+   at WorkForceGovProject.Controllers.AdminController.UpdateUser(Int32 id, User model) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-13 22:47:51.624 +05:30 [INF] [Admin.API] TraceId=d5a1f30506c505e31629eb333e87f4a5 HTTP PUT /api/admin/users/1 responded 401 in 19536.2222 ms
+2026-05-13 22:47:51.713 +05:30 [INF] [Admin.API] TraceId=b97ee3207892f0a051d843f77553b18d HTTP GET /api/admin/dashboard responded 200 in 35.6934 ms
+2026-05-13 22:47:54.776 +05:30 [INF] [Admin.API] TraceId=506d273bea5b35811d72a719970912d6 HTTP GET /api/admin/users responded 200 in 11.1607 ms
+2026-05-13 22:47:59.492 +05:30 [INF] [Admin.API] TraceId=d737be3c21fa4e704c12efbc51bfffcd HTTP OPTIONS /api/admin/users/12 responded 204 in 0.0650 ms
+2026-05-13 22:47:59.600 +05:30 [ERR] [Admin.API] TraceId=93d5c0a48194e3169882e9a924b6bda2 An exception occurred in the database while saving changes for context type 'WorkForceGovProject.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Citizens_Users_UserId". The conflict occurred in database "WorkForceGov", table "dbo.Citizens", column 'UserId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:658ec70e-a421-4c30-8d6b-61165e47aebe
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Citizens_Users_UserId". The conflict occurred in database "WorkForceGov", table "dbo.Citizens", column 'UserId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:658ec70e-a421-4c30-8d6b-61165e47aebe
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-05-13 22:48:04.205 +05:30 [ERR] [Admin.API] TraceId=93d5c0a48194e3169882e9a924b6bda2 An error has occurred while processing the request. TraceId 0HNLH2BSJG6G4:00000039
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Citizens_Users_UserId". The conflict occurred in database "WorkForceGov", table "dbo.Citizens", column 'UserId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:658ec70e-a421-4c30-8d6b-61165e47aebe
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at WorkForceGovProject.Repositories.Common.Repository`1.SaveAsync() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Repositories\Common\Repository.cs:line 33
+   at WorkForceGovProject.Services.Common.AccountService.DeleteUserAsync(Int32 id) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Services\Common\CommonServices.cs:line 106
+   at WorkForceGovProject.Controllers.AdminController.DeleteUser(Int32 id) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-13 22:48:04.223 +05:30 [ERR] [Admin.API] TraceId=93d5c0a48194e3169882e9a924b6bda2 HTTP DELETE /api/admin/users/12 responded 500 in 4726.0902 ms
+2026-05-13 22:51:27.769 +05:30 [INF] [Admin.API] TraceId=1e155ed474a626dbfecc692a6e1b4e80 HTTP OPTIONS /api/admin/users/13 responded 204 in 0.0910 ms
+2026-05-13 22:51:30.574 +05:30 [ERR] [Admin.API] TraceId=ac3296de4c1ec59109e54c58442406d8 An error has occurred while processing the request. TraceId 0HNLH2BSJG6G4:0000003D
+System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
+   at WorkForceGovProject.Controllers.AdminController.GetUserId() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 35
+   at WorkForceGovProject.Controllers.AdminController.DeleteUser(Int32 id) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 145
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-13 22:51:30.588 +05:30 [INF] [Admin.API] TraceId=ac3296de4c1ec59109e54c58442406d8 HTTP DELETE /api/admin/users/13 responded 401 in 2814.1316 ms
+2026-05-13 22:51:30.709 +05:30 [INF] [Admin.API] TraceId=64781056e6802d5c96cc6dda6615fabb HTTP GET /api/admin/dashboard responded 200 in 85.3715 ms
+2026-05-13 22:51:33.734 +05:30 [INF] [Admin.API] TraceId=e769165e9742479df2e4dc583bfa6f92 HTTP GET /api/admin/users responded 200 in 3.0128 ms
+2026-05-13 22:51:36.659 +05:30 [INF] [Admin.API] TraceId=47dd9f452ea1636c763f62808ccaf3e7 HTTP GET /api/admin/users/12 responded 200 in 9.0337 ms
+2026-05-13 22:51:42.909 +05:30 [INF] [Admin.API] TraceId=a9f7de77b95f37120eea88db675a2049 HTTP OPTIONS /api/admin/users/12 responded 204 in 0.2437 ms
+2026-05-13 22:51:45.514 +05:30 [ERR] [Admin.API] TraceId=4b15ba734d6aeedb4e524c8ea4cec1d8 An error has occurred while processing the request. TraceId 0HNLH2BSJG6G4:00000047
+System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
+   at WorkForceGovProject.Controllers.AdminController.GetUserId() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 35
+   at WorkForceGovProject.Controllers.AdminController.UpdateUser(Int32 id, User model) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-13 22:51:45.520 +05:30 [INF] [Admin.API] TraceId=4b15ba734d6aeedb4e524c8ea4cec1d8 HTTP PUT /api/admin/users/12 responded 401 in 2559.0087 ms
+2026-05-13 22:51:45.567 +05:30 [INF] [Admin.API] TraceId=6f1c637626e52362e7636ec52ef62d11 HTTP GET /api/admin/dashboard responded 200 in 31.0685 ms
+2026-05-13 22:51:49.916 +05:30 [INF] [Admin.API] TraceId=d91e83dee0a321d0a63ceea73467a9fc HTTP GET /api/admin/users responded 200 in 7.5850 ms
+2026-05-13 22:51:56.212 +05:30 [INF] [Admin.API] TraceId=3e86229af96ebe37fab08f8502f53c75 HTTP GET /api/admin/users/12 responded 200 in 5.3415 ms
+2026-05-13 22:51:59.593 +05:30 [INF] [Admin.API] TraceId=e36483049a5464a9a294345d9e935117 HTTP OPTIONS /api/admin/users/12 responded 204 in 0.0795 ms
+2026-05-13 22:52:02.097 +05:30 [ERR] [Admin.API] TraceId=fe28e458cda259247a97e0921c2cf13d An error has occurred while processing the request. TraceId 0HNLH2BSJG6G4:00000051
+System.UnauthorizedAccessException: Provide a valid JWT or X-User-Id header.
+   at WorkForceGovProject.Controllers.AdminController.GetUserId() in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 35
+   at WorkForceGovProject.Controllers.AdminController.UpdateUser(Int32 id, User model) in C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Admin.API\Controllers\AdminController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-13 22:52:02.106 +05:30 [INF] [Admin.API] TraceId=fe28e458cda259247a97e0921c2cf13d HTTP PUT /api/admin/users/12 responded 401 in 2503.5887 ms
+2026-05-13 22:52:02.153 +05:30 [INF] [Admin.API] TraceId=6aebbdfa9493973bbaca6dbfbda608c2 HTTP GET /api/admin/dashboard responded 200 in 30.5771 ms
+2026-05-13 22:52:32.519 +05:30 [INF] [Admin.API] TraceId=d969056ff001913540e41ac7b35f03ab HTTP GET /api/admin/reports responded 200 in 16.9584 ms
+2026-05-13 22:55:24.036 +05:30 [INF] [Admin.API] TraceId=a28e0ee58e658eea8d5592bb11efb0b5 HTTP GET /index.html responded 304 in 127.3138 ms
+2026-05-13 22:55:24.400 +05:30 [INF] [Admin.API] TraceId=c6c2350b10c99e658a6e14023f1b0b36 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 15.6726 ms
+2026-05-13 22:55:24.454 +05:30 [INF] [Admin.API] TraceId=bbf436dd50d27823157add1e6c1397ac HTTP GET /index.js responded 304 in 45.8557 ms
+2026-05-13 22:55:24.400 +05:30 [INF] [Admin.API] TraceId=9226426671f7e49a86399244e3c7c139 HTTP GET /index.css responded 304 in 29.4052 ms
+2026-05-13 22:55:24.400 +05:30 [INF] [Admin.API] TraceId=52069d545bd9d73c8792cae1b98fc86f HTTP GET /swagger-ui.css responded 304 in 87.4816 ms
+2026-05-13 22:55:24.456 +05:30 [INF] [Admin.API] TraceId=cd2da22c745cefc7181485b2412a415e HTTP GET /swagger-ui-bundle.js responded 304 in 80.1022 ms
+2026-05-13 22:55:25.390 +05:30 [INF] [Admin.API] TraceId=cf1f311097bfeefcf04abfb7aa0b31a8 HTTP GET /swagger/v1/swagger.json responded 200 in 87.4803 ms
+2026-05-13 22:58:26.421 +05:30 [INF] [Admin.API] TraceId=ee9c87b7c125d9caca6347a5d89fdac6 HTTP OPTIONS /api/auth/login responded 204 in 1.7005 ms
+2026-05-13 22:58:28.852 +05:30 [INF] [Admin.API] TraceId=57d5165737c69f0fe702a9d79735bf2d HTTP POST /api/auth/login responded 200 in 2417.1960 ms
+2026-05-13 22:58:28.924 +05:30 [INF] [Admin.API] TraceId=89dc2a11b927d485227b23060a2a3ac8 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.5397 ms
+2026-05-13 22:58:29.458 +05:30 [INF] [Admin.API] TraceId=6aa12325ff145d9cca1878a541b3db7e HTTP GET /api/admin/dashboard responded 200 in 522.4767 ms
+2026-05-13 22:58:32.021 +05:30 [INF] [Admin.API] TraceId=6900876c6a0cffd5c1372811648a8858 HTTP GET /api/admin/users responded 401 in 26.5909 ms
+2026-05-13 22:58:32.044 +05:30 [INF] [Admin.API] TraceId=ab296a125965b624488c02e0d646fca6 HTTP GET /api/admin/dashboard responded 401 in 2.3739 ms
+2026-05-13 22:58:32.823 +05:30 [INF] [Admin.API] TraceId=d4413b6c7eeaae3fcb3a49cfdc6e925b HTTP GET /api/admin/reports responded 401 in 0.5523 ms
+2026-05-13 22:58:32.841 +05:30 [INF] [Admin.API] TraceId=74bdc3e4a36ebdc34059020c8e8b0962 HTTP GET /api/admin/dashboard responded 401 in 0.4259 ms
+2026-05-13 22:58:35.579 +05:30 [INF] [Admin.API] TraceId=3941e590d28a62309d4b3298b77d5b8d HTTP GET /api/admin/reports responded 401 in 0.7244 ms
+2026-05-13 22:58:35.604 +05:30 [INF] [Admin.API] TraceId=e3227d798716451491bc4a7dc6d2a495 HTTP GET /api/admin/dashboard responded 401 in 0.2909 ms
+2026-05-13 22:58:37.296 +05:30 [INF] [Admin.API] TraceId=2dde2144a7299e1f06a0efb25d744d7f HTTP GET /api/admin/reports responded 401 in 0.6095 ms
+2026-05-13 22:58:37.321 +05:30 [INF] [Admin.API] TraceId=af1cc0c7a8e53b22f81d98af4009e6ba HTTP GET /api/admin/dashboard responded 401 in 0.2629 ms
+2026-05-13 22:58:38.115 +05:30 [INF] [Admin.API] TraceId=27bb6fa2ac48063c63e57f1decf11312 HTTP GET /api/admin/reports responded 401 in 0.6001 ms
+2026-05-13 22:58:38.149 +05:30 [INF] [Admin.API] TraceId=5c451bcd63ef1bb8bea16306b3eb68e2 HTTP GET /api/admin/dashboard responded 401 in 0.5675 ms
+2026-05-13 22:58:39.189 +05:30 [INF] [Admin.API] TraceId=c3be0824d1c7987ae7af0eb3deeaaed2 HTTP GET /api/admin/system-logs responded 401 in 0.5744 ms
+2026-05-13 22:58:39.220 +05:30 [INF] [Admin.API] TraceId=a2ea9c9067c085dfa362aefc1cb8922b HTTP GET /api/admin/dashboard responded 401 in 0.2227 ms
+2026-05-13 22:58:40.799 +05:30 [INF] [Admin.API] TraceId=8eb65baaf225928f8473ca4678acbf8f HTTP GET /api/admin/users responded 401 in 0.5168 ms
+2026-05-13 22:58:40.831 +05:30 [INF] [Admin.API] TraceId=b739fdd90ef9348e89fa0170c9b5b2a9 HTTP GET /api/admin/dashboard responded 401 in 0.2712 ms
+2026-05-13 22:59:16.277 +05:30 [INF] [Admin.API] TraceId=dda20e1e06320db81ab311392edcc6dd HTTP GET /index.html responded 304 in 139.6850 ms
+2026-05-13 22:59:17.027 +05:30 [INF] [Admin.API] TraceId=9c52999f34487b4f0f4ea5d8b3158147 HTTP GET /index.js responded 304 in 0.9385 ms
+2026-05-13 22:59:17.035 +05:30 [INF] [Admin.API] TraceId=f8b8946838416748852aa2ea0bc197ff HTTP GET /swagger-ui-standalone-preset.js responded 304 in 41.0106 ms
+2026-05-13 22:59:17.035 +05:30 [INF] [Admin.API] TraceId=5fd294c75f9612a16e34fccacc59c759 HTTP GET /swagger-ui.css responded 304 in 98.4582 ms
+2026-05-13 22:59:17.036 +05:30 [INF] [Admin.API] TraceId=ad5786be87b57c55f203f042248bb2b0 HTTP GET /index.css responded 304 in 94.9871 ms
+2026-05-13 22:59:17.046 +05:30 [INF] [Admin.API] TraceId=13f7bab57f13fa2adaf71f77bfb52c3a HTTP GET /swagger-ui-bundle.js responded 304 in 58.0435 ms
+2026-05-13 22:59:17.471 +05:30 [INF] [Admin.API] TraceId=b49681ccb68a771d1eee3a3db82a9c32 HTTP GET /swagger/v1/swagger.json responded 200 in 81.3717 ms
+2026-05-13 22:59:59.353 +05:30 [INF] [Admin.API] TraceId=6f72e5fbb4f5633d58b88c249d9b720c HTTP OPTIONS /api/auth/login responded 204 in 2.0227 ms
+2026-05-13 23:00:02.173 +05:30 [INF] [Admin.API] TraceId=cd79447cdf16df1219626516d572d0d6 HTTP POST /api/auth/login responded 200 in 2804.2086 ms
+2026-05-13 23:00:02.260 +05:30 [INF] [Admin.API] TraceId=f00007c76f57b6cc873b98f73adc68c1 HTTP OPTIONS /api/admin/dashboard responded 204 in 1.8159 ms
+2026-05-13 23:00:02.900 +05:30 [INF] [Admin.API] TraceId=60967c2f1919109e788b66193e44b10a HTTP GET /api/admin/dashboard responded 200 in 601.2627 ms
+2026-05-13 23:00:04.657 +05:30 [INF] [Admin.API] TraceId=a2a7173efb3ce95d87706d839cde9a08 HTTP GET /api/admin/users responded 401 in 17.7459 ms
+2026-05-13 23:00:04.679 +05:30 [INF] [Admin.API] TraceId=65b95edad68a960ba26fd4adc475f371 HTTP GET /api/admin/dashboard responded 401 in 2.6375 ms
+2026-05-13 23:00:05.776 +05:30 [INF] [Admin.API] TraceId=026e25f12275c7f57160fc07a6241a4a HTTP GET /api/admin/users responded 401 in 0.3054 ms
+2026-05-13 23:00:05.801 +05:30 [INF] [Admin.API] TraceId=969f46965287d7d43ff06daf1ecaf53e HTTP GET /api/admin/dashboard responded 401 in 0.3270 ms
+2026-05-13 23:00:08.558 +05:30 [INF] [Admin.API] TraceId=cc2b0517affa3ccb7991a9ec1dddf9c1 HTTP GET /api/admin/users responded 401 in 0.7705 ms
+2026-05-13 23:00:08.585 +05:30 [INF] [Admin.API] TraceId=b63d7cb992879f4c1663b8d050de0df0 HTTP GET /api/admin/dashboard responded 401 in 0.2784 ms
+2026-05-13 23:00:09.419 +05:30 [INF] [Admin.API] TraceId=b519fec36b8950dce4f08d7703425107 HTTP GET /api/admin/reports responded 401 in 0.9487 ms
+2026-05-13 23:00:09.451 +05:30 [INF] [Admin.API] TraceId=a48a02d703a32fd0fc5d2786faaccc39 HTTP GET /api/admin/dashboard responded 401 in 0.3016 ms
+2026-05-13 23:00:10.746 +05:30 [INF] [Admin.API] TraceId=30a3fd888d2b30492de64d850e8b2b87 HTTP GET /api/admin/system-logs responded 401 in 0.4108 ms
+2026-05-13 23:00:10.773 +05:30 [INF] [Admin.API] TraceId=1bb298cfc410c132c39cb8011d5d920c HTTP GET /api/admin/dashboard responded 401 in 0.6025 ms
+2026-05-13 23:00:30.631 +05:30 [INF] [Admin.API] TraceId=650205d98594afc574a2b63f46e0006c HTTP GET /api/admin/users responded 401 in 0.4806 ms
+2026-05-13 23:00:30.701 +05:30 [INF] [Admin.API] TraceId=6987ee73cb5bcc12aebcf102c059cbae HTTP GET /api/admin/dashboard responded 401 in 0.8402 ms
+2026-05-13 23:00:33.049 +05:30 [INF] [Admin.API] TraceId=c91da3cce7604e6770612be49ac1ba6d HTTP GET /api/admin/reports responded 401 in 0.3348 ms
+2026-05-13 23:00:33.090 +05:30 [INF] [Admin.API] TraceId=3c5c15c763b732406a56dcb5ef2e69e7 HTTP GET /api/admin/dashboard responded 401 in 0.4400 ms
+2026-05-13 23:07:33.301 +05:30 [INF] [Admin.API] TraceId=d75919b98776f5a6035ecd7a8a6379fb HTTP OPTIONS /api/auth/login responded 204 in 0.5689 ms
+2026-05-13 23:07:33.428 +05:30 [INF] [Admin.API] TraceId=f17066b609a5ecc1f54514c170d5abf0 HTTP POST /api/auth/login responded 200 in 80.6858 ms
+2026-05-13 23:08:00.705 +05:30 [INF] [Admin.API] TraceId=e6947576a2344fbfe9c0e88bc3ad5431 HTTP OPTIONS /api/auth/login responded 204 in 0.1009 ms
+2026-05-13 23:08:00.779 +05:30 [INF] [Admin.API] TraceId=cf32c7354bc93a25cd98b56131078119 HTTP POST /api/auth/login responded 200 in 64.1891 ms
+2026-05-13 23:08:00.819 +05:30 [INF] [Admin.API] TraceId=e6ce981dee600bc8a42023bb52688172 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1316 ms
+2026-05-13 23:08:00.904 +05:30 [INF] [Admin.API] TraceId=a019e6e47ba905086d1c34e8cf021f73 HTTP GET /api/admin/dashboard responded 200 in 64.4188 ms
+2026-05-13 23:08:04.017 +05:30 [INF] [Admin.API] TraceId=6e4d3dbec56474ca01895cbc7525bf42 HTTP GET /api/admin/users responded 401 in 0.4339 ms
+2026-05-13 23:08:04.058 +05:30 [INF] [Admin.API] TraceId=8cd717778275b11f55a6b1ccd7a75256 HTTP GET /api/admin/dashboard responded 401 in 0.4406 ms
+2026-05-13 23:08:46.854 +05:30 [INF] [Admin.API] TraceId=8eb1fd84aee476cc3880027db57b70ab HTTP GET /api/admin/reports responded 401 in 0.2005 ms
+2026-05-13 23:08:46.881 +05:30 [INF] [Admin.API] TraceId=b7a1b55367eaf51266021bfa04bd3a94 HTTP GET /api/admin/dashboard responded 401 in 0.6190 ms
+2026-05-13 23:08:47.861 +05:30 [INF] [Admin.API] TraceId=119b02e236fdf7b4d374185204de01e6 HTTP GET /api/admin/system-logs responded 401 in 0.2581 ms
+2026-05-13 23:08:47.893 +05:30 [INF] [Admin.API] TraceId=31ef9bb07e0f1b67f268551d363c9087 HTTP GET /api/admin/dashboard responded 401 in 0.2600 ms
+2026-05-13 23:14:31.033 +05:30 [INF] [Admin.API] TraceId=faf2248d4bd4ab782015ad49a34d9309 HTTP OPTIONS /api/auth/login responded 204 in 0.2869 ms
+2026-05-13 23:14:31.109 +05:30 [INF] [Admin.API] TraceId=6eb9016f6de77f51755518cef9a5bcea HTTP POST /api/auth/login responded 200 in 64.4535 ms
+2026-05-13 23:14:31.180 +05:30 [INF] [Admin.API] TraceId=a5ae85f2b9874ea5abc176a00ae662ce HTTP OPTIONS /api/admin/dashboard responded 204 in 0.0702 ms
+2026-05-13 23:14:31.264 +05:30 [INF] [Admin.API] TraceId=7a06ca7658f6ffba72d9eec4e91ed7bb HTTP GET /api/admin/dashboard responded 200 in 59.9180 ms
+2026-05-13 23:14:41.423 +05:30 [INF] [Admin.API] TraceId=ae50c1b718be1392a4ca467be75f2986 HTTP OPTIONS /api/admin/users responded 204 in 0.1989 ms
+2026-05-13 23:14:41.507 +05:30 [INF] [Admin.API] TraceId=da6df5fdcfa656ef4965b94736f261f1 HTTP GET /api/admin/users responded 200 in 41.7677 ms
+2026-05-13 23:14:45.098 +05:30 [INF] [Admin.API] TraceId=678fec7a38b747cb50e20b840eb500ec HTTP OPTIONS /api/admin/reports responded 204 in 0.0775 ms
+2026-05-13 23:14:45.184 +05:30 [INF] [Admin.API] TraceId=d8a46abf5fe1e103b2fa7176b25f076a HTTP GET /api/admin/reports responded 200 in 63.1901 ms
+2026-05-13 23:14:47.060 +05:30 [INF] [Admin.API] TraceId=d4427f410310b0ff65a4b0f6e876ca85 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1223 ms
+2026-05-13 23:14:47.133 +05:30 [INF] [Admin.API] TraceId=d4c6abbdba7caf257abbff006e491899 HTTP GET /api/admin/system-logs responded 200 in 34.3084 ms
+2026-05-13 23:14:55.017 +05:30 [INF] [Admin.API] TraceId=7d5d22621d5f1a5d301b6512712ff8d0 HTTP OPTIONS /api/admin/reports responded 204 in 0.1344 ms
+2026-05-13 23:14:55.043 +05:30 [INF] [Admin.API] TraceId=d6bf72c831361d06a0238b2cc6f26a44 HTTP GET /api/admin/reports responded 200 in 3.7516 ms
+2026-05-13 23:14:56.843 +05:30 [INF] [Admin.API] TraceId=d6125967d349cca4b86c18b5c79571dd HTTP OPTIONS /api/admin/users responded 204 in 0.1066 ms
+2026-05-13 23:14:56.859 +05:30 [INF] [Admin.API] TraceId=fe375263b26833018d3ca6e9955f3ff4 HTTP GET /api/admin/users responded 200 in 3.8094 ms
+2026-05-13 23:14:58.758 +05:30 [INF] [Admin.API] TraceId=e218a758c487af83470ea2b3f75a5875 HTTP OPTIONS /api/admin/users/1 responded 204 in 0.0748 ms
+2026-05-13 23:14:58.811 +05:30 [INF] [Admin.API] TraceId=ce4d998e5c19727991ed8d227b4f9b08 HTTP GET /api/admin/users/1 responded 200 in 41.1011 ms
+2026-05-13 23:15:05.126 +05:30 [INF] [Admin.API] TraceId=0427bc4b3dc9e69bb1060272cc98113e HTTP OPTIONS /api/admin/users/1 responded 204 in 0.0482 ms
+2026-05-13 23:15:05.250 +05:30 [INF] [Admin.API] TraceId=4333ac1ba74e752e57e79f10587821b8 HTTP PUT /api/admin/users/1 responded 200 in 116.1628 ms
+2026-05-13 23:15:05.263 +05:30 [INF] [Admin.API] TraceId=8962da69972370a9b759f5f8a1a30ae0 HTTP OPTIONS /api/admin/users responded 204 in 0.0758 ms
+2026-05-13 23:15:05.292 +05:30 [INF] [Admin.API] TraceId=aae5cf2c94b01174d73d19f1841f4a6f HTTP GET /api/admin/users responded 200 in 3.8837 ms
+2026-05-13 23:15:08.813 +05:30 [INF] [Admin.API] TraceId=d747ee9bc85f2d17e06d30146f0ac262 HTTP OPTIONS /api/admin/users/12 responded 204 in 0.0938 ms
+2026-05-13 23:15:08.832 +05:30 [INF] [Admin.API] TraceId=91377b427fd9c479445c4e90439f61a2 HTTP GET /api/admin/users/12 responded 200 in 4.3691 ms
+2026-05-13 23:15:11.914 +05:30 [INF] [Admin.API] TraceId=ad770c5b021612c5ab555ceaf4451ddd HTTP OPTIONS /api/admin/users/12 responded 204 in 0.0501 ms
+2026-05-13 23:15:11.975 +05:30 [INF] [Admin.API] TraceId=81145292152ba9e81f2aed68f7c8a73f HTTP PUT /api/admin/users/12 responded 200 in 53.1201 ms
+2026-05-13 23:15:11.987 +05:30 [INF] [Admin.API] TraceId=52c443d6c910e62d833c2110e4b9fc48 HTTP OPTIONS /api/admin/users responded 204 in 0.0670 ms
+2026-05-13 23:15:12.003 +05:30 [INF] [Admin.API] TraceId=c243abcd5099a59f632f6924f7e218e9 HTTP GET /api/admin/users responded 200 in 3.2959 ms
+2026-05-13 23:15:19.196 +05:30 [INF] [Admin.API] TraceId=6a7223aba141551b70c9d9596e9a42b8 HTTP OPTIONS /api/admin/users/11 responded 204 in 0.0575 ms
+2026-05-13 23:15:19.322 +05:30 [ERR] [Admin.API] TraceId=aeab908a976c9fe2623f4d0dc70ac1cd An exception occurred in the database while saving changes for context type 'WorkForceGovProject.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Citizens_Users_UserId". The conflict occurred in database "WorkForceGov", table "dbo.Citizens", column 'UserId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:eb16e30b-7234-4c23-bcfd-005fae6d28c4
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Citizens_Users_UserId". The conflict occurred in database "WorkForceGov", table "dbo.Citizens", column 'UserId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:eb16e30b-7234-4c23-bcfd-005fae6d28c4
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-05-13 23:21:18.856 +05:30 [INF] [Admin.API] TraceId=c834ed8889122b960c03e59501d6f42f HTTP GET /index.html responded 304 in 157.2044 ms
+2026-05-13 23:21:19.303 +05:30 [INF] [Admin.API] TraceId=e928567913af722556566f86ef72ff4f HTTP GET /swagger-ui.css responded 304 in 71.3487 ms
+2026-05-13 23:21:19.303 +05:30 [INF] [Admin.API] TraceId=f2525570763a9c43cd56e1aa1cc74843 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 15.4195 ms
+2026-05-13 23:21:19.329 +05:30 [INF] [Admin.API] TraceId=a17f1f4c42e0488b082df1b7611d7cd5 HTTP GET /index.css responded 304 in 67.3276 ms
+2026-05-13 23:21:19.332 +05:30 [INF] [Admin.API] TraceId=90311921f43d27d029eebd8f81f9ad85 HTTP GET /swagger-ui-bundle.js responded 304 in 66.4962 ms
+2026-05-13 23:21:19.339 +05:30 [INF] [Admin.API] TraceId=850af8b71ad918ab3041f340b75c9095 HTTP GET /index.js responded 304 in 0.6310 ms
+2026-05-13 23:21:20.266 +05:30 [INF] [Admin.API] TraceId=7926c5b23c30495c9d8e4b96257ec178 HTTP GET /swagger/v1/swagger.json responded 200 in 96.1840 ms
+2026-05-13 23:21:32.293 +05:30 [INF] [Admin.API] TraceId=a27045901296e2eb23f0362027a546f0 HTTP OPTIONS /api/auth/login responded 204 in 4.2652 ms
+2026-05-13 23:21:35.043 +05:30 [INF] [Admin.API] TraceId=c910137d430604141740b9bcd6c2f25b HTTP POST /api/auth/login responded 200 in 2736.7848 ms
+2026-05-13 23:21:35.098 +05:30 [INF] [Admin.API] TraceId=301de1cb28c2d5133f40d6cda9644533 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.2918 ms
+2026-05-13 23:21:35.820 +05:30 [INF] [Admin.API] TraceId=c92c0201fc558e2481afc469b0726b0a HTTP GET /api/admin/dashboard responded 200 in 681.8213 ms
+2026-05-13 23:21:37.640 +05:30 [INF] [Admin.API] TraceId=e11c49e416fc04714f8f1487ff4093de HTTP OPTIONS /api/admin/users responded 204 in 0.2282 ms
+2026-05-13 23:21:37.712 +05:30 [INF] [Admin.API] TraceId=732901c41b034290368db5b18d051c49 HTTP GET /api/admin/users responded 200 in 53.5145 ms
+2026-05-13 23:21:41.748 +05:30 [INF] [Admin.API] TraceId=03e537a71ce71275a934e776ecd54943 HTTP OPTIONS /api/admin/users/11/deactivate responded 204 in 0.1593 ms
+2026-05-13 23:21:41.862 +05:30 [INF] [Admin.API] TraceId=b1f6441f504ff7c3ef0d3e1cc4e2fd8e HTTP PUT /api/admin/users/11/deactivate responded 200 in 104.1577 ms
+2026-05-13 23:21:41.878 +05:30 [INF] [Admin.API] TraceId=82e64dd833294ed846600cfff01cbff1 HTTP GET /api/admin/users responded 200 in 5.6954 ms
+2026-05-13 23:21:54.470 +05:30 [INF] [Admin.API] TraceId=d7fe9d6ded841bda48f724ba6fcbb03d HTTP OPTIONS /api/admin/users/11/deactivate responded 204 in 0.0972 ms
+2026-05-13 23:21:54.499 +05:30 [INF] [Admin.API] TraceId=41f1116fc6d05f27ca3fa86bd3e5abb8 HTTP PUT /api/admin/users/11/deactivate responded 200 in 21.2591 ms
+2026-05-13 23:21:54.510 +05:30 [INF] [Admin.API] TraceId=76eb42d12d351c16f43b1c2c0906de85 HTTP OPTIONS /api/admin/users responded 204 in 0.1105 ms
+2026-05-13 23:21:54.521 +05:30 [INF] [Admin.API] TraceId=970475ba866b8b6a257db3a2d972f46f HTTP GET /api/admin/users responded 200 in 5.5575 ms
+2026-05-13 23:22:00.492 +05:30 [INF] [Admin.API] TraceId=3dc9dc565d45922b354d6d456a50833f HTTP OPTIONS /api/admin/users/10/deactivate responded 204 in 0.1757 ms
+2026-05-13 23:22:00.515 +05:30 [INF] [Admin.API] TraceId=41884d39e6156d152a5abb835985d3b0 HTTP PUT /api/admin/users/10/deactivate responded 200 in 16.6970 ms
+2026-05-13 23:22:00.525 +05:30 [INF] [Admin.API] TraceId=7c385c76a3b68fbf685a0d851be51f3a HTTP OPTIONS /api/admin/users responded 204 in 0.0659 ms
+2026-05-13 23:22:00.536 +05:30 [INF] [Admin.API] TraceId=131d5aa478abbfe47753f53670b2cc29 HTTP GET /api/admin/users responded 200 in 5.1200 ms
+2026-05-13 23:22:04.708 +05:30 [INF] [Admin.API] TraceId=2b5b73e3f5cc2ca34ca9d1930237ec7a HTTP OPTIONS /api/admin/users/10 responded 204 in 0.1627 ms
+2026-05-13 23:22:04.750 +05:30 [INF] [Admin.API] TraceId=17c4ff54db42d7f99a65cbac11e2449f HTTP GET /api/admin/users/10 responded 200 in 18.7188 ms
+2026-05-13 23:22:07.426 +05:30 [INF] [Admin.API] TraceId=3fb490af76da93920e67f96f3d14fb6d HTTP OPTIONS /api/admin/users responded 204 in 0.1356 ms
+2026-05-13 23:22:07.445 +05:30 [INF] [Admin.API] TraceId=750ca10997230868a0c358a462827a69 HTTP GET /api/admin/users responded 200 in 5.1030 ms
+2026-05-13 23:22:11.061 +05:30 [INF] [Admin.API] TraceId=7617e6198d93bb23cb60f92f97c9ef19 HTTP OPTIONS /api/admin/reports responded 204 in 0.1025 ms
+2026-05-13 23:22:11.114 +05:30 [INF] [Admin.API] TraceId=df1e2e2d8c7843e31b54ff44d71880e5 HTTP GET /api/admin/reports responded 200 in 39.0426 ms
+2026-05-13 23:22:12.510 +05:30 [INF] [Admin.API] TraceId=7b989ff1ecf95146573ceaccfbedc6a6 HTTP OPTIONS /api/admin/system-logs responded 204 in 0.1706 ms
+2026-05-13 23:22:12.547 +05:30 [INF] [Admin.API] TraceId=ae2a5607a1654647b773495a807ec1f8 HTTP GET /api/admin/system-logs responded 200 in 25.8495 ms
+2026-05-13 23:22:20.177 +05:30 [INF] [Admin.API] TraceId=acc739324e9407f064a8ec13cd885b43 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1634 ms
+2026-05-13 23:22:20.261 +05:30 [INF] [Admin.API] TraceId=524fc58dc54cfed963530d2cd065f598 HTTP GET /api/admin/dashboard responded 200 in 60.9429 ms
