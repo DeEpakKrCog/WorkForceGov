@@ -68,49 +68,6 @@
         }
       }
     },
-    "/api/citizen/profile": {
-      "get": {
-        "tags": [
-          "Profile"
-        ],
-        "summary": "Get citizen profile",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Profile"
-        ],
-        "summary": "Update citizen profile",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Citizen"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Citizen"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Citizen"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/citizen/jobs/search": {
       "get": {
         "tags": [
@@ -190,6 +147,19 @@
         }
       }
     },
+    "/api/citizen/notifications": {
+      "get": {
+        "tags": [
+          "Notifications"
+        ],
+        "summary": "Get my notifications",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/citizen/applications": {
       "get": {
         "tags": [
@@ -220,6 +190,49 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizen/profile": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Get citizen profile",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Update citizen profile",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Citizen"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Citizen"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Citizen"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -282,9 +295,8 @@
     "/api/citizen/programs": {
       "get": {
         "tags": [
-          "Programs"
+          "Citizen"
         ],
-        "summary": "Get available programs",
         "responses": {
           "200": {
             "description": "OK"
@@ -295,9 +307,8 @@
     "/api/citizen/benefits": {
       "get": {
         "tags": [
-          "Benefits"
+          "Citizen"
         ],
-        "summary": "Get my benefits",
         "responses": {
           "200": {
             "description": "OK"
@@ -308,9 +319,8 @@
     "/api/citizen/benefits/apply/{programId}": {
       "post": {
         "tags": [
-          "Benefits"
+          "Citizen"
         ],
-        "summary": "Apply for a benefit program",
         "parameters": [
           {
             "name": "programId",
@@ -332,9 +342,8 @@
     "/api/citizen/trainings": {
       "get": {
         "tags": [
-          "Trainings"
+          "Citizen"
         ],
-        "summary": "Get available trainings + my enrollments",
         "responses": {
           "200": {
             "description": "OK"
@@ -345,9 +354,8 @@
     "/api/citizen/enroll/{id}": {
       "post": {
         "tags": [
-          "Trainings"
+          "Citizen"
         ],
-        "summary": "Enroll in a training",
         "parameters": [
           {
             "name": "id",
@@ -369,9 +377,8 @@
     "/api/citizen/unenroll/{id}": {
       "post": {
         "tags": [
-          "Trainings"
+          "Citizen"
         ],
-        "summary": "Unenroll from a training",
         "parameters": [
           {
             "name": "id",
@@ -383,19 +390,6 @@
             }
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/citizen/notifications": {
-      "get": {
-        "tags": [
-          "Notifications"
-        ],
-        "summary": "Get my notifications",
         "responses": {
           "200": {
             "description": "OK"

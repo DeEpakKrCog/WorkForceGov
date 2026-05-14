@@ -71,9 +71,8 @@
     "/api/employer/profile": {
       "get": {
         "tags": [
-          "Profile"
+          "Employer"
         ],
-        "summary": "Get employer profile",
         "responses": {
           "200": {
             "description": "OK"
@@ -82,9 +81,8 @@
       },
       "put": {
         "tags": [
-          "Profile"
+          "Employer"
         ],
-        "summary": "Update employer profile",
         "requestBody": {
           "content": {
             "application/json": {
@@ -114,9 +112,8 @@
     "/api/employer/profile/register": {
       "post": {
         "tags": [
-          "Profile"
+          "Employer"
         ],
-        "summary": "Register employer profile",
         "requestBody": {
           "content": {
             "application/json": {
@@ -146,9 +143,8 @@
     "/api/employer/documents": {
       "get": {
         "tags": [
-          "Documents"
+          "Employer"
         ],
-        "summary": "Get employer documents",
         "responses": {
           "200": {
             "description": "OK"
@@ -157,9 +153,8 @@
       },
       "post": {
         "tags": [
-          "Documents"
+          "Employer"
         ],
-        "summary": "Upload employer document",
         "requestBody": {
           "content": {
             "multipart/form-data": {
@@ -196,9 +191,8 @@
     "/api/employer/jobs": {
       "get": {
         "tags": [
-          "Jobs"
+          "Employer"
         ],
-        "summary": "Get my job postings",
         "responses": {
           "200": {
             "description": "OK"
@@ -207,9 +201,8 @@
       },
       "post": {
         "tags": [
-          "Jobs"
+          "Employer"
         ],
-        "summary": "Post a new job opening",
         "requestBody": {
           "content": {
             "application/json": {
@@ -236,15 +229,35 @@
         }
       }
     },
-    "/api/employer/jobs/{jobId}": {
-      "put": {
+    "/api/employer/jobs/{id}": {
+      "get": {
         "tags": [
-          "Jobs"
+          "Employer"
         ],
-        "summary": "Update a job posting",
         "parameters": [
           {
-            "name": "jobId",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Employer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -282,9 +295,8 @@
     "/api/employer/jobs/{jobId}/close": {
       "put": {
         "tags": [
-          "Jobs"
+          "Employer"
         ],
-        "summary": "Close a job posting",
         "parameters": [
           {
             "name": "jobId",
@@ -306,9 +318,8 @@
     "/api/employer/applications": {
       "get": {
         "tags": [
-          "Applications"
+          "Employer"
         ],
-        "summary": "Get received applications",
         "responses": {
           "200": {
             "description": "OK"
@@ -319,9 +330,8 @@
     "/api/employer/applications/{appId}": {
       "get": {
         "tags": [
-          "Applications"
+          "Employer"
         ],
-        "summary": "Get application details",
         "parameters": [
           {
             "name": "appId",
@@ -343,9 +353,8 @@
     "/api/employer/applications/{appId}/status": {
       "put": {
         "tags": [
-          "Applications"
+          "Employer"
         ],
-        "summary": "Update application status",
         "parameters": [
           {
             "name": "appId",
@@ -393,9 +402,8 @@
     "/api/employer/notifications": {
       "get": {
         "tags": [
-          "Notifications"
+          "Employer"
         ],
-        "summary": "Get notifications",
         "responses": {
           "200": {
             "description": "OK"
@@ -455,6 +463,10 @@
           "reviewNotes": {
             "maxLength": 1000,
             "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "resumeUrl": {
             "type": "string",
             "nullable": true
           }
@@ -962,9 +974,6 @@
           "employerId": {
             "type": "integer",
             "format": "int32"
-          },
-          "employer": {
-            "$ref": "#/components/schemas/Employer"
           },
           "applications": {
             "type": "array",

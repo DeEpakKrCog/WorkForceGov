@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization; // Added for protection
 
 namespace WorkForceGovProject.Models
 {
@@ -27,18 +28,22 @@ namespace WorkForceGovProject.Models
         public decimal SalaryMax { get; set; }
 
         public DateTime PostedDate { get; set; } = DateTime.Now;
+
         public DateTime? ClosingDate { get; set; }
 
         [StringLength(30)]
         public string Status { get; set; } = "Open";
 
-        // FK
+        // FK - Keep this required
         [Required]
         public int EmployerId { get; set; }
-        [ForeignKey("EmployerId")]
-        public virtual Employer Employer { get; set; } = null!;
 
-        // Navigation
+        // FIX: Make this nullable (?) and use JsonIgnore to prevent 
+        // the API from expecting a full object in the JSON payload.
+        [ForeignKey("EmployerId")]
+        [JsonIgnore]
+        public virtual Employer? Employer { get; set; }
+
         public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
     }
 }

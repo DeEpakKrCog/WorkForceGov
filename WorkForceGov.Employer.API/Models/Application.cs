@@ -30,5 +30,11 @@ namespace WorkForceGovProject.Models
 
         [StringLength(1000)]
         public string? ReviewNotes { get; set; }
+
+        // ════════ NEW PROPERTY ════════
+        // [NotMapped] ensures Entity Framework ignores this when updating the DB.
+        // It is strictly used to pass the Resume URL back to your Angular frontend.
+        [NotMapped]
+        public string? ResumeUrl { get; set; }
     }
 }

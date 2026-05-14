@@ -151,14 +151,30 @@
   },
   {
     "ContainingType": "WorkForceGovProject.Controllers.EmployerController",
+    "Method": "GetJobById",
+    "RelativePath": "api/employer/jobs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.EmployerController",
     "Method": "UpdateJob",
-    "RelativePath": "api/employer/jobs/{jobId}",
+    "RelativePath": "api/employer/jobs/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "jobId",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       },

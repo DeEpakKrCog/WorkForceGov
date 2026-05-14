@@ -810,3 +810,12 @@ Error Number:547,State:0,Class:16
 2026-05-13 23:22:12.547 +05:30 [INF] [Admin.API] TraceId=ae2a5607a1654647b773495a807ec1f8 HTTP GET /api/admin/system-logs responded 200 in 25.8495 ms
 2026-05-13 23:22:20.177 +05:30 [INF] [Admin.API] TraceId=acc739324e9407f064a8ec13cd885b43 HTTP OPTIONS /api/admin/dashboard responded 204 in 0.1634 ms
 2026-05-13 23:22:20.261 +05:30 [INF] [Admin.API] TraceId=524fc58dc54cfed963530d2cd065f598 HTTP GET /api/admin/dashboard responded 200 in 60.9429 ms
+2026-05-13 23:28:12.003 +05:30 [INF] [Admin.API] TraceId=336d270c10ee4f706b2c1c84ef01740a HTTP GET /index.html responded 304 in 186.2581 ms
+2026-05-13 23:28:12.453 +05:30 [INF] [Admin.API] TraceId=64964cf22e244e993ca3f81dd9867ecb HTTP GET /index.css responded 304 in 84.5230 ms
+2026-05-13 23:28:12.457 +05:30 [INF] [Admin.API] TraceId=f738bed8da0180f527571f7b184b8a8b HTTP GET /swagger-ui.css responded 304 in 88.6957 ms
+2026-05-13 23:28:12.460 +05:30 [INF] [Admin.API] TraceId=d99a43328578f2feecf1683b7f5b6278 HTTP GET /swagger-ui-bundle.js responded 304 in 91.5626 ms
+2026-05-13 23:28:12.484 +05:30 [INF] [Admin.API] TraceId=a75c8da3f6a5cc2fc9094b3b14cc11cd HTTP GET /swagger-ui-standalone-preset.js responded 304 in 13.4233 ms
+2026-05-13 23:28:12.586 +05:30 [INF] [Admin.API] TraceId=ef404b82464e33277ade2beeefe19ac8 HTTP GET /index.js responded 304 in 9.5346 ms
+2026-05-13 23:28:15.366 +05:30 [INF] [Admin.API] TraceId=a1d19eb5176679bcdc33a077d2eb2d99 HTTP GET /swagger/v1/swagger.json responded 200 in 62.8000 ms
+2026-05-13 23:43:39.710 +05:30 [INF] [Admin.API] TraceId=3d2a92e790f366623996e8258fcec0ea HTTP OPTIONS /api/auth/login responded 204 in 3.5282 ms
+2026-05-13 23:43:43.732 +05:30 [INF] [Admin.API] TraceId=e5b0681cced9a915601195d6c4ae564c HTTP POST /api/auth/login responded 200 in 4004.5493 ms

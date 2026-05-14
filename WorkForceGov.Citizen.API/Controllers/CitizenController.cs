@@ -22,7 +22,7 @@ namespace WorkForceGovProject.Controllers
         private readonly INotificationService _notifications;
         private readonly IProgramService _programs;
         private readonly ITrainingService _trainings;
-        private readonly IAccountService _account; // Corrected to use AccountService
+        private readonly IAccountService _account;
 
         public CitizenController(
             ICitizenService citizen, IJobService jobs, IApplicationService apps,
@@ -51,61 +51,35 @@ namespace WorkForceGovProject.Controllers
             var userId = GetUserId();
             var citizen = await _citizen.GetByUserIdAsync(userId);
 
-            // SYNC FIX: Fetch real name from Users table instead of hardcoding "New User"
             if (citizen == null)
             {
                 var user = await _account.GetByIdAsync(userId);
-                if (user != null)
-                {
-                    await _citizen.CreateProfileAsync(userId, user.FullName, user.Email);
-                }
-                else
-                {
-                    await _citizen.CreateProfileAsync(userId, "New User", "");
-                }
+                string name = user?.FullName ?? "New User";
+                string email = user?.Email ?? "";
+                await _citizen.CreateProfileAsync(userId, name, email);
             }
 
+            // Dashboard logic in CitizenService automatically filters open jobs
             return Ok(await _citizen.GetDashboardAsync(userId));
-        }
-
-        [HttpGet("profile")]
-        [SwaggerOperation(Summary = "Get citizen profile", Tags = new[] { "Profile" })]
-        public async Task<IActionResult> GetProfile()
-        {
-            var c = await _citizen.GetByUserIdAsync(GetUserId());
-            return c == null ? NotFound(new { Message = "Profile not found." }) : Ok(c);
-        }
-
-        [HttpPut("profile")]
-        [SwaggerOperation(Summary = "Update citizen profile", Tags = new[] { "Profile" })]
-        public async Task<IActionResult> UpdateProfile([FromBody] Citizen model)
-        {
-            var userId = GetUserId();
-            var existing = await _citizen.GetByUserIdAsync(userId);
-            if (existing == null) return NotFound(new { Message = "Profile not found." });
-
-            // 400 ERROR FIX: Manually map fields to the tracked entity
-            existing.FullName = model.FullName;
-            existing.DOB = model.DOB;
-            existing.Gender = model.Gender;
-            existing.Address = model.Address;
-            existing.PhoneNumber = model.PhoneNumber;
-
-            var (ok, msg) = await _citizen.UpdateProfileAsync(existing);
-            return ok ? Ok(new { Message = "Profile updated.", Citizen = existing }) : BadRequest(new { Message = msg });
         }
 
         [HttpGet("jobs/search")]
         [SwaggerOperation(Summary = "Search job openings", Tags = new[] { "Jobs" })]
         public async Task<IActionResult> SearchJobs(
             [FromQuery] string? keyword, [FromQuery] string? location, [FromQuery] string? category)
-            => Ok(new
+        {
+            // 🚨 VISIBILITY FIX: Filter search results to only show "Open" jobs
+            var allJobs = await _jobs.SearchAsync(keyword ?? "", location ?? "", category ?? "");
+            var openJobs = allJobs.Where(j => j.Status == "Open").ToList();
+
+            return Ok(new
             {
                 Keyword = keyword,
                 Location = location,
                 Category = category,
-                Jobs = await _jobs.SearchAsync(keyword ?? "", location ?? "", category ?? "")
+                Jobs = openJobs
             });
+        }
 
         [HttpPost("jobs/{jobId}/apply")]
         [SwaggerOperation(Summary = "Apply for a job", Tags = new[] { "Jobs" })]
@@ -115,12 +89,27 @@ namespace WorkForceGovProject.Controllers
             var c = await _citizen.GetByUserIdAsync(userId);
             if (c == null) return NotFound(new { Message = "Profile required." });
 
+            // 🚨 SECURITY FIX: Check if the job is still "Open" before allowing application
+            var job = await _jobs.GetByIdAsync(jobId);
+            if (job == null || job.Status != "Open")
+                return BadRequest(new { Message = "This job is closed and no longer accepting applications." });
+
             var docs = await _citizen.GetDocumentsAsync(c.Id);
             if (!docs.Any(d => d.DocumentType.ToLower().Contains("resume")))
                 return BadRequest(new { Message = "Upload a Resume before applying." });
 
             var (ok, msg) = await _citizen.ApplyForJobAsync(c.Id, jobId, coverLetter);
             return ok ? Ok(new { Message = "Application submitted!" }) : BadRequest(new { Message = msg });
+        }
+
+        [HttpGet("notifications")]
+        [SwaggerOperation(Summary = "Get my notifications", Tags = new[] { "Notifications" })]
+        public async Task<IActionResult> GetNotifications()
+        {
+            var userId = GetUserId();
+            var notifs = await _notifications.GetByUserAsync(userId);
+            await _notifications.MarkAllReadAsync(userId);
+            return Ok(notifs);
         }
 
         [HttpGet("applications")]
@@ -140,15 +129,59 @@ namespace WorkForceGovProject.Controllers
             return ok ? Ok(new { Message = msg }) : BadRequest(new { Message = msg });
         }
 
+        [HttpGet("profile")]
+        [SwaggerOperation(Summary = "Get citizen profile", Tags = new[] { "Profile" })]
+        public async Task<IActionResult> GetProfile()
+        {
+            var c = await _citizen.GetByUserIdAsync(GetUserId());
+            return c == null ? NotFound(new { Message = "Profile not found." }) : Ok(c);
+        }
+
+        [HttpPut("profile")]
+        [SwaggerOperation(Summary = "Update citizen profile", Tags = new[] { "Profile" })]
+        public async Task<IActionResult> UpdateProfile([FromBody] Citizen model)
+        {
+            var userId = GetUserId();
+            var existing = await _citizen.GetByUserIdAsync(userId);
+            if (existing == null) return NotFound(new { Message = "Profile not found." });
+
+            existing.FullName = model.FullName;
+            existing.DOB = model.DOB;
+            existing.Gender = model.Gender;
+            existing.Address = model.Address;
+            existing.PhoneNumber = model.PhoneNumber;
+
+            var (ok, msg) = await _citizen.UpdateProfileAsync(existing);
+            return ok ? Ok(new { Message = "Profile updated.", Citizen = existing }) : BadRequest(new { Message = msg });
+        }
+
+        // File: WorkForceGovProject.Controllers/CitizenController.cs
+
         [HttpGet("documents")]
         [SwaggerOperation(Summary = "Get my documents", Tags = new[] { "Documents" })]
         public async Task<IActionResult> GetDocuments()
         {
-            var c = await _citizen.GetByUserIdAsync(GetUserId());
+            var userId = GetUserId();
+            var c = await _citizen.GetByUserIdAsync(userId);
             if (c == null) return NotFound(new { Message = "Profile not found." });
-            return Ok(await _docs.GetByCitizenAsync(c.Id));
-        }
 
+            // 1. Fetch relative paths from DB (e.g., /uploads/documents/file.pdf)
+            var docs = await _citizen.GetDocumentsAsync(c.Id);
+
+            // 2. Construct the Base URL for the Citizen API (Port 7002)
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
+
+            // 3. Prepend the Base URL to each filePath
+            foreach (var doc in docs)
+            {
+                if (!string.IsNullOrEmpty(doc.FilePath) && doc.FilePath.StartsWith("/uploads"))
+                {
+                    doc.FilePath = $"{baseUrl}{doc.FilePath}";
+                }
+            }
+
+            return Ok(docs);
+        }
         [HttpPost("documents/upload")]
         [SwaggerOperation(Summary = "Upload a document", Tags = new[] { "Documents" })]
         [Consumes("multipart/form-data")]
@@ -163,107 +196,83 @@ namespace WorkForceGovProject.Controllers
 
             try
             {
+                // 1. Establish the physical storage path
                 var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "documents");
                 if (!Directory.Exists(uploadsFolder)) Directory.CreateDirectory(uploadsFolder);
 
-                var uniqueFileName = Guid.NewGuid().ToString() + "_" + request.File.FileName;
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                // 2. Generate a unique file name
+                var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(request.File.FileName)}";
+                var physicalPath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                // 3. Stream the file to the disk
+                using (var stream = new FileStream(physicalPath, FileMode.Create))
                 {
                     await request.File.CopyToAsync(stream);
                 }
 
+                // 4. Save the web-relative path to the database
                 var dbFilePath = $"/uploads/documents/{uniqueFileName}";
                 var (ok, msg) = await _docs.UploadAsync(c.Id, request.DocumentType, request.File.FileName, dbFilePath);
 
                 if (ok)
                 {
-                    var allDocs = await _docs.GetByCitizenAsync(c.Id);
-                    return Ok(allDocs.OrderByDescending(d => d.UploadedDate).FirstOrDefault());
+                    return Ok(new { Message = "Upload success", FilePath = dbFilePath });
                 }
 
                 return BadRequest(new { Message = msg });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Message = $"Upload failed: {ex.Message}" });
+                return StatusCode(500, new { Message = $"Internal Server Error: {ex.Message}" });
             }
         }
 
         [HttpGet("programs")]
-        [SwaggerOperation(Summary = "Get available programs", Tags = new[] { "Programs" })]
-        public async Task<IActionResult> GetPrograms()
-        {
-            return Ok(await _programs.GetAllAsync());
-        }
+        public async Task<IActionResult> GetPrograms() => Ok(await _programs.GetAllAsync());
 
         [HttpGet("benefits")]
-        [SwaggerOperation(Summary = "Get my benefits", Tags = new[] { "Benefits" })]
         public async Task<IActionResult> GetBenefits()
         {
             var c = await _citizen.GetByUserIdAsync(GetUserId());
-            if (c == null) return NotFound(new { Message = "Profile not found." });
+            if (c == null) return NotFound();
             return Ok(await _benefits.GetByCitizenAsync(c.Id));
         }
 
         [HttpPost("benefits/apply/{programId}")]
-        [SwaggerOperation(Summary = "Apply for a benefit program", Tags = new[] { "Benefits" })]
         public async Task<IActionResult> ApplyBenefit(int programId)
         {
             var c = await _citizen.GetByUserIdAsync(GetUserId());
-            if (c == null) return NotFound(new { Message = "Profile not found." });
-
+            if (c == null) return NotFound();
             var (ok, msg) = await _benefits.ApplyAsync(c.Id, programId);
             return ok ? Ok(new { Message = "Application submitted!" }) : BadRequest(new { Message = msg });
         }
 
         [HttpGet("trainings")]
-        [SwaggerOperation(Summary = "Get available trainings + my enrollments", Tags = new[] { "Trainings" })]
         public async Task<IActionResult> GetTrainings()
         {
             var c = await _citizen.GetByUserIdAsync(GetUserId());
-            if (c == null) return NotFound(new { Message = "Profile not found." });
-
+            if (c == null) return NotFound();
             var all = await _trainings.GetAllTrainingsAsync();
             var enrolled = await _trainings.GetEnrollmentsByCitizenAsync(c.Id);
-
-            return Ok(new
-            {
-                Available = all.Where(t => t.Status == "Active"),
-                Enrollments = enrolled
-            });
+            return Ok(new { Available = all.Where(t => t.Status == "Active"), Enrollments = enrolled });
         }
 
         [HttpPost("enroll/{id}")]
-        [SwaggerOperation(Summary = "Enroll in a training", Tags = new[] { "Trainings" })]
         public async Task<IActionResult> Enroll(int id)
         {
             var c = await _citizen.GetByUserIdAsync(GetUserId());
-            if (c == null) return NotFound(new { Message = "Profile not found." });
-
+            if (c == null) return NotFound();
             var (ok, msg) = await _trainings.EnrollAsync(c.Id, id);
             return ok ? Ok(new { Message = "Enrolled!" }) : BadRequest(new { Message = msg });
         }
 
         [HttpPost("unenroll/{id}")]
-        [SwaggerOperation(Summary = "Unenroll from a training", Tags = new[] { "Trainings" })]
         public async Task<IActionResult> Unenroll(int id)
         {
             var c = await _citizen.GetByUserIdAsync(GetUserId());
-            if (c == null) return NotFound(new { Message = "Profile not found." });
-
+            if (c == null) return NotFound();
             var (ok, msg) = await _trainings.UnenrollAsync(c.Id, id);
             return ok ? Ok(new { Message = "Unenrolled!" }) : BadRequest(new { Message = msg });
-        }
-
-        [HttpGet("notifications")]
-        [SwaggerOperation(Summary = "Get my notifications", Tags = new[] { "Notifications" })]
-        public async Task<IActionResult> GetNotifications()
-        {
-            var notifs = await _notifications.GetByUserAsync(GetUserId());
-            await _notifications.MarkAllReadAsync(GetUserId());
-            return Ok(notifs);
         }
     }
 }

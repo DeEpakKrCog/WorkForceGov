@@ -1248,3 +1248,11 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate 
 2026-05-13 23:21:23.204 +05:30 [INF] [Citizen.API] TraceId=03b418077c255bf7db605fdba25a25d9 HTTP GET /swagger-ui.css responded 304 in 161.2159 ms
 2026-05-13 23:21:23.184 +05:30 [INF] [Citizen.API] TraceId=973e3c8e286ac3a1b1ac403b327454ea HTTP GET /swagger-ui-bundle.js responded 304 in 140.8576 ms
 2026-05-13 23:21:23.908 +05:30 [INF] [Citizen.API] TraceId=67108a9f7aa1ec66ab6136fe5558f268 HTTP GET /swagger/v1/swagger.json responded 200 in 108.5375 ms
+2026-05-13 23:28:12.586 +05:30 [INF] [Citizen.API] TraceId=a74cbc4a40ca0cb4373f5b1daa8cddf1 HTTP GET /index.html responded 304 in 152.7094 ms
+2026-05-13 23:28:13.150 +05:30 [INF] [Citizen.API] TraceId=4117f8b9aedba988d25d65fb9384bfce HTTP GET /swagger-ui.css responded 304 in 97.1144 ms
+2026-05-13 23:28:13.150 +05:30 [INF] [Citizen.API] TraceId=8e476d9b2bbe2d8def25243c7c301181 HTTP GET /swagger-ui-bundle.js responded 304 in 31.1056 ms
+2026-05-13 23:28:13.150 +05:30 [INF] [Citizen.API] TraceId=99270d1106a328d18ee8008c3232808c HTTP GET /index.css responded 304 in 97.4618 ms
+2026-05-13 23:28:13.321 +05:30 [INF] [Citizen.API] TraceId=ba3f4a47fcb528819f5422708c644cda HTTP GET /index.js responded 304 in 0.6354 ms
+2026-05-13 23:28:13.322 +05:30 [INF] [Citizen.API] TraceId=42bc427ed2037b99368f32c811eee101 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 14.2468 ms
+2026-05-13 23:28:15.390 +05:30 [INF] [Citizen.API] TraceId=2396108baea72f1e8957e96a535023d6 HTTP GET /swagger/v1/swagger.json responded 200 in 78.0582 ms
+2026-05-13 23:43:13.532 +05:30 [INF] [Citizen.API] TraceId=6ce2ddb4ab0a0660625aada10956e7d6 HTTP GET /api/citizen/jobs responded 404 in 178.9364 ms

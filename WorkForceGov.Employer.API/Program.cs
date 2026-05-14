@@ -139,6 +139,7 @@ IF NOT EXISTS (SELECT * FROM sys.columns WHERE [object_id]=OBJECT_ID(N'[dbo].[Em
 
     app.UseExceptionHandler();
     app.UseHttpsRedirection();
+    app.UseStaticFiles();
     app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();

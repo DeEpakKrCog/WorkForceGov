@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Security.Claims;
+using WorkForceGovProject.Data; // Required for ApplicationDbContext
 using WorkForceGovProject.Interfaces.Services;
 using WorkForceGovProject.Models;
 
@@ -9,18 +11,27 @@ namespace WorkForceGovProject.Controllers
 {
     [Route("api/employer")]
     [ApiController]
-    [Authorize]                    // ← ADDED: requires valid JWT Bearer token
+    [Authorize]
     [Produces("application/json")]
     public class EmployerController : ControllerBase
     {
         private readonly IEmployerService _employer;
         private readonly IJobService _jobs;
         private readonly INotificationService _notifications;
+        private readonly ApplicationDbContext _context; // Required to query CitizenDocuments
 
-        public EmployerController(IEmployerService employer, IJobService jobs, INotificationService notifications)
-        { _employer = employer; _jobs = jobs; _notifications = notifications; }
+        public EmployerController(
+            IEmployerService employer,
+            IJobService jobs,
+            INotificationService notifications,
+            ApplicationDbContext context) // Inject context here
+        {
+            _employer = employer;
+            _jobs = jobs;
+            _notifications = notifications;
+            _context = context;
+        }
 
-        // Reads UserId from the JWT "sub" claim (set by AuthController on login)
         private int GetUserId()
         {
             var c = User.FindFirst(ClaimTypes.NameIdentifier);
@@ -34,7 +45,6 @@ namespace WorkForceGovProject.Controllers
             => Ok(await _employer.GetDashboardAsync(GetUserId()));
 
         [HttpGet("profile")]
-        [SwaggerOperation(Summary = "Get employer profile", Tags = new[] { "Profile" })]
         public async Task<IActionResult> GetProfile()
         {
             var e = await _employer.GetByUserIdAsync(GetUserId());
@@ -42,7 +52,6 @@ namespace WorkForceGovProject.Controllers
         }
 
         [HttpPost("profile/register")]
-        [SwaggerOperation(Summary = "Register employer profile", Tags = new[] { "Profile" })]
         public async Task<IActionResult> Register([FromBody] Employer model)
         {
             var (ok, msg) = await _employer.RegisterAsync(GetUserId(), model);
@@ -50,82 +59,109 @@ namespace WorkForceGovProject.Controllers
         }
 
         [HttpPut("profile")]
-        [SwaggerOperation(Summary = "Update employer profile", Tags = new[] { "Profile" })]
         public async Task<IActionResult> UpdateProfile([FromBody] Employer model)
         {
             var e = await _employer.GetByUserIdAsync(GetUserId());
             if (e == null) return NotFound(new { Message = "Profile not found." });
+
             e.CompanyName = model.CompanyName; e.Industry = model.Industry;
             e.Address = model.Address; e.PhoneNumber = model.PhoneNumber;
             e.Website = model.Website; e.Description = model.Description;
+
             var (ok, msg) = await _employer.UpdateProfileAsync(e);
             return ok ? Ok(new { Message = "Profile updated.", Employer = e }) : BadRequest(new { Message = msg });
         }
 
+        // ══════════════ DOCUMENT MANAGEMENT ══════════════
+
         [HttpGet("documents")]
-        [SwaggerOperation(Summary = "Get employer documents", Tags = new[] { "Documents" })]
         public async Task<IActionResult> GetDocuments()
         {
             var e = await _employer.GetByUserIdAsync(GetUserId());
             if (e == null) return NotFound(new { Message = "Profile not found." });
-            return Ok(await _employer.GetDocumentsAsync(e.Id));
+
+            // 1. Fetch documents from the database
+            var docs = await _employer.GetDocumentsAsync(e.Id);
+
+            // 2. Get the current backend URL (e.g., https://localhost:7003)
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
+
+            // 3. Prepend the backend URL to the relative file paths
+            foreach (var doc in docs)
+            {
+                if (!string.IsNullOrEmpty(doc.FileURL) && doc.FileURL.StartsWith("/uploads"))
+                {
+                    doc.FileURL = $"{baseUrl}{doc.FileURL}";
+                }
+            }
+
+            return Ok(docs);
         }
 
         [HttpPost("documents")]
         [Consumes("multipart/form-data")]
-        [SwaggerOperation(Summary = "Upload employer document", Tags = new[] { "Documents" })]
         public async Task<IActionResult> UploadDocument([FromForm] string documentType, IFormFile file)
         {
             var e = await _employer.GetByUserIdAsync(GetUserId());
             if (e == null) return NotFound(new { Message = "Profile not found." });
             if (file == null || file.Length == 0) return BadRequest(new { Message = "Select a valid file." });
+
             var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "employer-docs");
             Directory.CreateDirectory(folder);
             var fn = $"{e.Id}_{documentType}_{DateTime.Now:yyyyMMddHHmmss}_{file.FileName}";
+
             using (var s = new FileStream(Path.Combine(folder, fn), FileMode.Create)) await file.CopyToAsync(s);
+
             var url = $"/uploads/employer-docs/{fn}";
             var (ok, msg, doc) = await _employer.UploadDocumentAsync(e.Id, documentType, url);
             return ok ? Ok(new { Message = msg, Document = doc, FileUrl = url }) : BadRequest(new { Message = msg });
         }
 
+        // ══════════════ JOB MANAGEMENT ══════════════
+
         [HttpGet("jobs")]
-        [SwaggerOperation(Summary = "Get my job postings", Tags = new[] { "Jobs" })]
         public async Task<IActionResult> GetJobs()
         {
             var e = await _employer.GetByUserIdAsync(GetUserId());
             return e == null ? NotFound() : Ok(await _employer.GetJobsAsync(e.Id));
         }
 
+        [HttpGet("jobs/{id}")]
+        public async Task<IActionResult> GetJobById(int id)
+        {
+            var job = await _jobs.GetByIdAsync(id);
+            return job == null ? NotFound() : Ok(job);
+        }
+
         [HttpPost("jobs")]
-        [SwaggerOperation(Summary = "Post a new job opening", Tags = new[] { "Jobs" })]
         public async Task<IActionResult> PostJob([FromBody] JobOpening job)
         {
             var e = await _employer.GetByUserIdAsync(GetUserId());
-            if (e == null) return NotFound();
-            job.EmployerId = e.Id; job.PostedDate = DateTime.Now; job.Status = "Open";
-            var (ok, msg) = await _employer.PostJobAsync(job);
-            return ok ? Ok(new { Message = "Job posted.", Job = job }) : BadRequest(new { Message = msg });
+            if (e == null) return NotFound(new { Message = "Profile not found." });
+
+            job.EmployerId = e.Id;
+            var (ok, msg) = await _jobs.CreateAsync(job);
+            return ok ? Ok(new { Message = msg, Job = job }) : BadRequest(new { Message = msg });
         }
 
-        [HttpPut("jobs/{jobId}")]
-        [SwaggerOperation(Summary = "Update a job posting", Tags = new[] { "Jobs" })]
-        public async Task<IActionResult> UpdateJob(int jobId, [FromBody] JobOpening job)
+        [HttpPut("jobs/{id}")]
+        public async Task<IActionResult> UpdateJob(int id, [FromBody] JobOpening job)
         {
-            job.Id = jobId;
-            var (ok, msg) = await _employer.UpdateJobAsync(job);
+            job.Id = id;
+            var (ok, msg) = await _jobs.UpdateAsync(job);
             return ok ? Ok(new { Message = msg }) : BadRequest(new { Message = msg });
         }
 
         [HttpPut("jobs/{jobId}/close")]
-        [SwaggerOperation(Summary = "Close a job posting", Tags = new[] { "Jobs" })]
         public async Task<IActionResult> CloseJob(int jobId)
         {
-            var (ok, msg) = await _employer.CloseJobAsync(jobId);
+            var (ok, msg) = await _jobs.CloseAsync(jobId);
             return ok ? Ok(new { Message = msg }) : BadRequest(new { Message = msg });
         }
 
+        // ══════════════ APPLICATIONS ══════════════
+
         [HttpGet("applications")]
-        [SwaggerOperation(Summary = "Get received applications", Tags = new[] { "Applications" })]
         public async Task<IActionResult> GetApplications()
         {
             var e = await _employer.GetByUserIdAsync(GetUserId());
@@ -133,15 +169,35 @@ namespace WorkForceGovProject.Controllers
         }
 
         [HttpGet("applications/{appId}")]
-        [SwaggerOperation(Summary = "Get application details", Tags = new[] { "Applications" })]
         public async Task<IActionResult> GetApplicationDetails(int appId)
         {
             var app = await _employer.GetApplicationDetailsAsync(appId);
-            return app == null ? NotFound() : Ok(app);
+            if (app == null) return NotFound();
+
+            var resume = await _context.CitizenDocuments
+                .Where(d => d.CitizenId == app.CitizenId
+                         && d.DocumentType == "Resume")
+                .OrderByDescending(d => d.UploadedDate)
+                .FirstOrDefaultAsync();
+
+            if (resume != null && !string.IsNullOrEmpty(resume.FilePath))
+            {
+                string citizenApiBaseUrl = "https://localhost:7002/";
+
+                // 1. Extract ONLY the file name, ignoring any old folders in the database
+                string fileName = Path.GetFileName(resume.FilePath);
+
+                // 2. Force the path to point to your new documents folder
+                string correctPath = $"uploads/documents/{fileName}";
+
+                // 3. Combine them
+                app.ResumeUrl = $"{citizenApiBaseUrl}{correctPath}";
+            }
+
+            return Ok(app);
         }
 
         [HttpPut("applications/{appId}/status")]
-        [SwaggerOperation(Summary = "Update application status", Tags = new[] { "Applications" })]
         public async Task<IActionResult> UpdateApplicationStatus(int appId, [FromQuery] string status, [FromBody] string? notes)
         {
             var (ok, msg) = await _employer.UpdateApplicationStatusAsync(appId, status, notes);
@@ -149,7 +205,6 @@ namespace WorkForceGovProject.Controllers
         }
 
         [HttpGet("notifications")]
-        [SwaggerOperation(Summary = "Get notifications", Tags = new[] { "Notifications" })]
         public async Task<IActionResult> GetNotifications()
         {
             var uid = GetUserId();

@@ -17,12 +17,13 @@ namespace WorkForceGovProject.Repositories.Citizen
             await _set.Include(c => c.Documents).FirstOrDefaultAsync(c => c.Id == citizenId);
 
         public async Task<Models.Citizen?> GetWithApplicationsAsync(int citizenId) =>
-            await _set.Include(c => c.Applications).ThenInclude(a => a.JobOpening)
-                      .ThenInclude(j => j.Employer).FirstOrDefaultAsync(c => c.Id == citizenId);
+            await _set.Include(c => c.Applications)
+                      .ThenInclude(a => a.JobOpening)
+                      .ThenInclude(j => j.Employer)
+                      .FirstOrDefaultAsync(c => c.Id == citizenId);
 
         public async Task<Models.Citizen?> GetWithBenefitsAsync(int citizenId) =>
             await _set.Include(c => c.Benefits)
-                      // FIXED: Changed b.Program to b.EmploymentProgram
                       .ThenInclude(b => b.EmploymentProgram)
                       .FirstOrDefaultAsync(c => c.Id == citizenId);
     }
@@ -56,7 +57,9 @@ namespace WorkForceGovProject.Repositories.Citizen
                       .OrderByDescending(a => a.SubmittedDate).ToListAsync();
 
         public async Task<Application?> GetWithDetailsAsync(int id) =>
-            await _set.Include(a => a.Citizen).Include(a => a.JobOpening).ThenInclude(j => j.Employer)
+            await _set.Include(a => a.Citizen)
+                      .Include(a => a.JobOpening)
+                      .ThenInclude(j => j.Employer)
                       .FirstOrDefaultAsync(a => a.Id == id);
 
         public async Task<bool> HasAppliedAsync(int citizenId, int jobId) =>
@@ -92,16 +95,12 @@ namespace WorkForceGovProject.Repositories.Citizen
     {
         public BenefitRepository(ApplicationDbContext ctx) : base(ctx) { }
 
-        public async Task<IEnumerable<Benefit>> GetByCitizenWithProgramAsync(int citizenId)
-        {
-            return await _set.Include(b => b.EmploymentProgram)
-                             .Where(b => b.CitizenId == citizenId)
-                             .ToListAsync();
-        }
+        public async Task<IEnumerable<Benefit>> GetByCitizenWithProgramAsync(int citizenId) =>
+            await _set.Include(b => b.EmploymentProgram)
+                      .Where(b => b.CitizenId == citizenId)
+                      .ToListAsync();
 
-        public async Task<IEnumerable<Benefit>> GetByProgramAsync(int programId)
-        {
-            return await _set.Where(b => b.ProgramId == programId).ToListAsync();
-        }
+        public async Task<IEnumerable<Benefit>> GetByProgramAsync(int programId) =>
+            await _set.Where(b => b.ProgramId == programId).ToListAsync();
     }
 }

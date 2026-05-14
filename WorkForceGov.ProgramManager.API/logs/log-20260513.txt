@@ -243,3 +243,10 @@
 2026-05-13 23:21:19.453 +05:30 [INF] [ProgramManager.API] TraceId=dc0b9daccb638be606d108cc0b320ced HTTP GET /index.css responded 304 in 213.1950 ms
 2026-05-13 23:21:19.499 +05:30 [INF] [ProgramManager.API] TraceId=14ca2d5ae4308848a51c02099f341481 HTTP GET /index.js responded 304 in 0.8984 ms
 2026-05-13 23:21:20.249 +05:30 [INF] [ProgramManager.API] TraceId=148851fbb261355a830c2fcef8a62fce HTTP GET /swagger/v1/swagger.json responded 200 in 71.8734 ms
+2026-05-13 23:28:12.608 +05:30 [INF] [ProgramManager.API] TraceId=70ba8ab81cb50ce37f5dc2eb49801793 HTTP GET /index.html responded 304 in 119.8864 ms
+2026-05-13 23:28:12.998 +05:30 [INF] [ProgramManager.API] TraceId=5b1af2dabadafd0198a91310400eb444 HTTP GET /index.js responded 304 in 0.7417 ms
+2026-05-13 23:28:13.022 +05:30 [INF] [ProgramManager.API] TraceId=fe44f7b4e23dfaa1b9766a06038a0f54 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 29.8135 ms
+2026-05-13 23:28:13.022 +05:30 [INF] [ProgramManager.API] TraceId=f42ea05efd6db303fe3cc7810aa1aedd HTTP GET /swagger-ui.css responded 304 in 135.8525 ms
+2026-05-13 23:28:13.022 +05:30 [INF] [ProgramManager.API] TraceId=b10d0ff655534b2813596bbd906ae6cb HTTP GET /index.css responded 304 in 31.3115 ms
+2026-05-13 23:28:13.121 +05:30 [INF] [ProgramManager.API] TraceId=9131e1ad29571df2c4764a4d0168d629 HTTP GET /swagger-ui-bundle.js responded 304 in 20.4217 ms
+2026-05-13 23:28:13.660 +05:30 [INF] [ProgramManager.API] TraceId=af6dc2ef0c46df67496297dbc2ef4a3a HTTP GET /swagger/v1/swagger.json responded 200 in 58.8028 ms

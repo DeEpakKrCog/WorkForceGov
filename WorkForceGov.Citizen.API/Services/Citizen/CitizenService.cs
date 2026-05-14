@@ -41,7 +41,7 @@ namespace WorkForceGovProject.Services.Citizen
         public async Task<Models.Citizen?> GetByUserIdAsync(int userId) =>
             await _citizens.GetByUserIdAsync(userId);
 
-        public async Task<(bool, string)> CreateProfileAsync(int userId, string name, string email)
+        public async Task<(bool Success, string Message)> CreateProfileAsync(int userId, string name, string email)
         {
             if (await _citizens.AnyAsync(c => c.UserId == userId))
                 return (false, "Profile already exists.");
@@ -52,11 +52,22 @@ namespace WorkForceGovProject.Services.Citizen
                 FullName = name,
                 Email = email
             });
+
+            // TRIGGER: Welcome Notification
+            await _notifications.AddAsync(new Notification
+            {
+                UserId = userId,
+                Message = "Welcome to WorkForceGov! Complete your profile and upload your resume to start applying for jobs.",
+                CreatedDate = DateTime.Now,
+                IsRead = false
+            });
+
             await _citizens.SaveAsync();
+            await _notifications.SaveAsync();
             return (true, "Citizen profile created successfully.");
         }
 
-        public async Task<(bool, string)> UpdateProfileAsync(Models.Citizen citizen)
+        public async Task<(bool Success, string Message)> UpdateProfileAsync(Models.Citizen citizen)
         {
             _citizens.Update(citizen);
             await _citizens.SaveAsync();
@@ -68,7 +79,7 @@ namespace WorkForceGovProject.Services.Citizen
         public async Task<IEnumerable<CitizenDocument>> GetDocumentsAsync(int citizenId) =>
             await _docs.GetByCitizenAsync(citizenId);
 
-        public async Task<(bool, string)> UploadDocumentAsync(
+        public async Task<(bool Success, string Message)> UploadDocumentAsync(
             int citizenId, string docType, string fileName, string filePath)
         {
             await _docs.AddAsync(new CitizenDocument
@@ -76,8 +87,11 @@ namespace WorkForceGovProject.Services.Citizen
                 CitizenId = citizenId,
                 DocumentType = docType,
                 FileName = fileName,
-                FilePath = filePath
+                FilePath = filePath,
+                VerificationStatus = "Pending",
+                UploadedDate = DateTime.Now
             });
+
             await _docs.SaveAsync();
             return (true, "Document uploaded. Pending verification by Labor Officer.");
         }
@@ -87,44 +101,59 @@ namespace WorkForceGovProject.Services.Citizen
         public async Task<IEnumerable<Application>> GetApplicationsAsync(int citizenId) =>
             await _apps.GetByCitizenAsync(citizenId);
 
-        public async Task<(bool, string)> ApplyForJobAsync(int citizenId, int jobId, string? coverLetter)
+        public async Task<(bool Success, string Message)> ApplyForJobAsync(int citizenId, int jobId, string? coverLetter)
         {
             if (await _apps.HasAppliedAsync(citizenId, jobId))
                 return (false, "You have already applied to this job.");
 
+            // Use Repository method that includes Employer for notification purposes
             var job = await _jobs.GetByIdAsync(jobId);
             if (job == null || job.Status != "Open")
                 return (false, "This job is no longer accepting applications.");
 
-            // ─── RELAXED BUSINESS RULE: Only check if document exists ───
+            // Business Rule: Resume Check
             var docs = (await _docs.GetByCitizenAsync(citizenId)).ToList();
-
-            // Check if any document type contains "resume" (ignore verification status)
             var hasResume = docs.Any(d => d.DocumentType.ToLower().Contains("resume"));
 
             if (!hasResume)
                 return (false, "You must upload your resume before applying for jobs.");
 
-            // REMOVED: Identity verification check (as per your request to apply immediately)
-
-            await _apps.AddAsync(new Application
+            // Create Application record
+            var application = new Application
             {
                 CitizenId = citizenId,
                 JobOpeningId = jobId,
                 CoverLetter = coverLetter,
                 Status = "Pending",
                 SubmittedDate = DateTime.Now
-            });
+            };
+            await _apps.AddAsync(application);
+
+            // NOTIFY EMPLOYER: Triggered when citizen applies
+            if (job.Employer != null)
+            {
+                await _notifications.AddAsync(new Notification
+                {
+                    UserId = job.Employer.UserId,
+                    Message = $"New Application Received: A candidate has applied for your position '{job.JobTitle}'.",
+                    CreatedDate = DateTime.Now,
+                    IsRead = false
+                });
+            }
+
             await _apps.SaveAsync();
+            await _notifications.SaveAsync();
             return (true, "Application submitted successfully.");
         }
 
-        public async Task<(bool, string)> WithdrawApplicationAsync(int applicationId)
+        public async Task<(bool Success, string Message)> WithdrawApplicationAsync(int applicationId)
         {
             var app = await _apps.GetByIdAsync(applicationId);
             if (app == null) return (false, "Application not found.");
-            if (app.Status != "Pending")
-                return (false, "Only pending applications can be withdrawn.");
+
+            // Safety: Only pending/under review applications can be withdrawn
+            if (app.Status == "Approved" || app.Status == "Rejected" || app.Status == "Shortlisted")
+                return (false, "Cannot withdraw an application that is already being processed or completed.");
 
             app.Status = "Withdrawn";
             _apps.Update(app);
@@ -137,17 +166,12 @@ namespace WorkForceGovProject.Services.Citizen
         public async Task<IEnumerable<Benefit>> GetBenefitsAsync(int citizenId) =>
             await _benefits.FindAsync(b => b.CitizenId == citizenId);
 
-        // ══════════════ Complaints (cross-module) ══════════════
+        // ══════════════ Complaints ══════════════
 
         public async Task<IEnumerable<Complaint>> GetMyComplaintsAsync(int userId) =>
             await _complaints.GetByCitizenUserIdAsync(userId);
 
-        /// <summary>
-        /// Citizen raises a complaint against an employer.
-        /// This complaint becomes visible and actionable in the LaborOfficerService
-        /// and ComplianceOfficerService through their own interfaces.
-        /// </summary>
-        public async Task<(bool, string, Complaint?)> RaiseComplaintAsync(
+        public async Task<(bool Success, string Message, Complaint? Complaint)> RaiseComplaintAsync(
             int userId, int employerId, string description)
         {
             if (string.IsNullOrWhiteSpace(description))
@@ -179,21 +203,28 @@ namespace WorkForceGovProject.Services.Citizen
             var apps = (await _apps.GetByCitizenAsync(citizen.Id)).ToList();
             var benefits = (await _benefits.FindAsync(b => b.CitizenId == citizen.Id)).ToList();
             var docs = (await _docs.GetByCitizenAsync(citizen.Id)).ToList();
+
+            // Pull latest 10 notifications for the logged-in user
             var notifications = (await _notifications.GetByUserAsync(userId, 10)).ToList();
-            var recommendedJobs = (await _jobs.GetOpenJobsAsync()).Take(5).ToList();
+
+            // FIX: Filter out "Closed" jobs from recommended list
+            var recommendedJobs = (await _jobs.GetOpenJobsAsync())
+                                    .Where(j => j.Status == "Open")
+                                    .OrderByDescending(j => j.PostedDate)
+                                    .Take(5).ToList();
 
             return new CitizenDashboardViewModel
             {
                 Citizen = citizen,
-                ActiveApplications = apps.Count(a => a.Status == "Pending" || a.Status == "Under Review"),
+                ActiveApplications = apps.Count(a => a.Status == "Pending" || a.Status == "Under Review" || a.Status == "Shortlisted"),
                 TotalBenefits = benefits.Count,
                 TotalBenefitAmount = benefits.Sum(b => b.Amount),
                 DocumentCount = docs.Count,
                 PendingDocs = docs.Count(d => d.VerificationStatus == "Pending"),
                 VerifiedDocs = docs.Count(d => d.VerificationStatus == "Verified"),
-                RecentApplications = apps.Take(5).ToList(),
+                RecentApplications = apps.OrderByDescending(a => a.SubmittedDate).Take(5).ToList(),
                 Notifications = notifications,
-                RecommendedJobs = recommendedJobs.ToList()
+                RecommendedJobs = recommendedJobs
             };
         }
     }

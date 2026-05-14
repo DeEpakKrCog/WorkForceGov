@@ -508,3 +508,4 @@ C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkFo
 C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Employer.API\obj\Debug\net10.0\WorkForceGov.Employer.API.pdb
 C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Employer.API\obj\Debug\net10.0\WorkForceGov.Employer.API.genruntimeconfig.cache
 C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Employer.API\obj\Debug\net10.0\ref\WorkForceGov.Employer.API.dll
+C:\Users\2481439\OneDrive - Cognizant\Documents\Auth_Service\WorkForceGov\WorkForceGov.Employer.API\bin\Debug\net10.0\WorkForceGov.Employer.API.staticwebassets.runtime.json

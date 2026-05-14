@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Annotations;
 using WorkForceGovProject.Interfaces.Services;
+using WorkForceGovProject.Models.ViewModels; // Added for CreateUserViewModel
 
 namespace WorkForceGovProject.Controllers
 {
@@ -23,6 +24,27 @@ namespace WorkForceGovProject.Controllers
             _account = account;
             _config = config;
             _logs = logs;
+        }
+
+        // ════════ NEW REGISTER ENDPOINT ════════
+        [HttpPost("register")]
+        [AllowAnonymous] // Allows public access without a token
+        [SwaggerOperation(Summary = "Register a new user", Tags = new[] { "Auth" })]
+        public async Task<IActionResult> Register([FromBody] CreateUserViewModel model)
+        {
+            // SECURITY GUARD: Prevent random users from assigning themselves Admin roles
+            if (model.Role != "Citizen" && model.Role != "Employer")
+            {
+                model.Role = "Citizen"; // Default to safest role
+            }
+
+            var (success, msg) = await _account.CreateUserAsync(model);
+
+            if (!success)
+                return BadRequest(new { Message = msg });
+
+            // No GetUserId() call here because the user isn't logged in yet!
+            return Ok(new { Message = "Registration successful. You can now log in." });
         }
 
         [HttpPost("login")]
@@ -73,9 +95,6 @@ namespace WorkForceGovProject.Controllers
             });
         }
 
-        // ── NEW LOGOUT ENDPOINT ──
-        // ── UPDATED LOGOUT ENDPOINT ──
-        // ── BULLETPROOF LOGOUT ENDPOINT ──
         [HttpPost("logout")]
         [SwaggerOperation(Summary = "Logout user", Tags = new[] { "Auth" })]
         [ProducesResponseType(typeof(LogoutResponse), 200)]
@@ -83,18 +102,15 @@ namespace WorkForceGovProject.Controllers
         {
             int userId = 0;
 
-            // 1. Try to get ID from X-User-Id header (Foolproof method)
             if (Request.Headers.TryGetValue("X-User-Id", out var h) && int.TryParse(h, out int p))
             {
                 userId = p;
             }
-            // 2. Fallback to HttpContext.User
             else if (User.FindFirst(ClaimTypes.NameIdentifier) is Claim c && int.TryParse(c.Value, out int u))
             {
                 userId = u;
             }
 
-            // 3. If an ID was found, log it
             if (userId > 0)
             {
                 await _logs.LogAsync(userId, "UserLogout", "Session Ended");
@@ -104,8 +120,8 @@ namespace WorkForceGovProject.Controllers
         }
     }
 
-        // --- Records placed inside the namespace but outside the class ---
-        public record LoginRequest(string Email, string Password);
+    // --- Records placed inside the namespace but outside the class ---
+    public record LoginRequest(string Email, string Password);
     public record LogoutResponse(string Message);
 
     public record LoginResponse

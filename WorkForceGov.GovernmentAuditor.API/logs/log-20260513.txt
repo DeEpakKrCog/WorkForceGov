@@ -243,3 +243,10 @@
 2026-05-13 23:21:19.331 +05:30 [INF] [GovernmentAuditor.API] TraceId=bd41e4871248b75b3fe6b8ffca162fcc HTTP GET /index.css responded 304 in 214.3099 ms
 2026-05-13 23:21:19.326 +05:30 [INF] [GovernmentAuditor.API] TraceId=cdb7a517adc73ee453ca4d56516e5c1b HTTP GET /swagger-ui.css responded 304 in 244.0064 ms
 2026-05-13 23:21:19.932 +05:30 [INF] [GovernmentAuditor.API] TraceId=fec10b12d142fe976e98a7b390df1259 HTTP GET /swagger/v1/swagger.json responded 200 in 53.5731 ms
+2026-05-13 23:28:12.506 +05:30 [INF] [GovernmentAuditor.API] TraceId=eeff3efb44f88154956338dfe1623d9a HTTP GET /index.html responded 304 in 145.2422 ms
+2026-05-13 23:28:13.195 +05:30 [INF] [GovernmentAuditor.API] TraceId=b3feb4a30c3ecf6291e18db728ba2c77 HTTP GET /index.css responded 304 in 61.3332 ms
+2026-05-13 23:28:13.195 +05:30 [INF] [GovernmentAuditor.API] TraceId=8c17df708cefcc5de3884f10d6f4aabe HTTP GET /swagger-ui-bundle.js responded 304 in 61.1918 ms
+2026-05-13 23:28:13.195 +05:30 [INF] [GovernmentAuditor.API] TraceId=b0925eb3000dcbdfca55283c78772bf3 HTTP GET /swagger-ui.css responded 304 in 61.4381 ms
+2026-05-13 23:28:13.339 +05:30 [INF] [GovernmentAuditor.API] TraceId=f453fd85543b32249a396f0b9a2e550a HTTP GET /index.js responded 304 in 0.5258 ms
+2026-05-13 23:28:13.340 +05:30 [INF] [GovernmentAuditor.API] TraceId=3c91a30330835806557210fceac7746e HTTP GET /swagger-ui-standalone-preset.js responded 304 in 15.5141 ms
+2026-05-13 23:28:14.775 +05:30 [INF] [GovernmentAuditor.API] TraceId=3891cddd93619338019da6ac9896d229 HTTP GET /swagger/v1/swagger.json responded 200 in 42.3182 ms
