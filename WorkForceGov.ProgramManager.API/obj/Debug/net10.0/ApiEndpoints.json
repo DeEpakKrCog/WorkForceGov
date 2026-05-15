@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "WorkForceGovProject.Controllers.AuthenticationController",
+    "ContainingType": "WorkForceGovProject.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
@@ -9,26 +9,35 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "WorkForceGovProject.Models.LoginRequest",
+        "Type": "WorkForceGovProject.Controllers.LoginRequest",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "WorkForceGovProject.Controllers.LoginResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
   },
   {
-    "ContainingType": "WorkForceGovProject.Controllers.AuthenticationController",
-    "Method": "ValidateToken",
-    "RelativePath": "api/auth/validate-token",
-    "HttpMethod": "POST",
+    "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
+    "Method": "GetAllBenefits",
+    "RelativePath": "api/program-manager/benefits",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "WorkForceGovProject.Controllers.TokenRequest",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -184,32 +193,6 @@
   },
   {
     "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
-    "Method": "GetResources",
-    "RelativePath": "api/program-manager/resources",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
-    "Method": "CreateResource",
-    "RelativePath": "api/program-manager/resources",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "resource",
-        "Type": "WorkForceGovProject.Models.Resource",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
     "Method": "GetTrainings",
     "RelativePath": "api/program-manager/trainings",
     "HttpMethod": "GET",
@@ -236,6 +219,22 @@
   },
   {
     "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
+    "Method": "GetTraining",
+    "RelativePath": "api/program-manager/trainings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
     "Method": "UpdateTraining",
     "RelativePath": "api/program-manager/trainings/{id}",
     "HttpMethod": "PUT",
@@ -250,6 +249,22 @@
       {
         "Name": "training",
         "Type": "WorkForceGovProject.Models.Training",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
+    "Method": "DeleteTraining",
+    "RelativePath": "api/program-manager/trainings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

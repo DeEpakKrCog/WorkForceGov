@@ -159,3 +159,102 @@
 2026-05-14 13:43:58.868 +05:30 [INF] [ProgramManager.API] TraceId=c6d52038dd9258987e2902318d67067c HTTP GET /swagger-ui-bundle.js responded 304 in 33.2457 ms
 2026-05-14 13:43:58.918 +05:30 [INF] [ProgramManager.API] TraceId=13351af92eeccfb09481cba82b746fcb HTTP GET /swagger-ui-standalone-preset.js responded 304 in 135.2821 ms
 2026-05-14 13:43:59.401 +05:30 [INF] [ProgramManager.API] TraceId=49b45d3b2f3cc728827ea0f72f7e26f6 HTTP GET /swagger/v1/swagger.json responded 200 in 73.0906 ms
+2026-05-14 14:17:52.077 +05:30 [INF] [ProgramManager.API] TraceId=a9ea1a91cd270715432a06fc550c63cd HTTP GET /index.html responded 304 in 139.7194 ms
+2026-05-14 14:17:52.596 +05:30 [INF] [ProgramManager.API] TraceId=3de44be066cdb3ac4cb8fbe644079c12 HTTP GET /index.js responded 304 in 1.2812 ms
+2026-05-14 14:17:52.695 +05:30 [INF] [ProgramManager.API] TraceId=a5f483bb3c799e133a11561e7c76f5d3 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 103.0274 ms
+2026-05-14 14:17:52.695 +05:30 [INF] [ProgramManager.API] TraceId=a7e2176f082a67dc696c173ff69e0cf4 HTTP GET /swagger-ui-bundle.js responded 304 in 273.3882 ms
+2026-05-14 14:17:52.695 +05:30 [INF] [ProgramManager.API] TraceId=f833617d69f0767dcf783da46351e77a HTTP GET /index.css responded 304 in 273.4482 ms
+2026-05-14 14:17:52.695 +05:30 [INF] [ProgramManager.API] TraceId=532467505962160b4c49640a0b5ae24f HTTP GET /swagger-ui.css responded 304 in 276.2126 ms
+2026-05-14 14:17:53.166 +05:30 [INF] [ProgramManager.API] TraceId=bb68c4cb13204e6a7f3ce692d0cfe2c3 HTTP GET /swagger/v1/swagger.json responded 200 in 49.5847 ms
+2026-05-14 14:42:39.344 +05:30 [INF] [ProgramManager.API] TraceId=55cc7904e84904a775a1580054186293 HTTP OPTIONS /api/programmanager/dashboard responded 204 in 10.5392 ms
+2026-05-14 14:42:39.703 +05:30 [INF] [ProgramManager.API] TraceId=409bcb4e93e50a42ae5ea9973ece5c77 HTTP GET /api/programmanager/dashboard responded 404 in 331.7848 ms
+2026-05-14 14:42:48.628 +05:30 [INF] [ProgramManager.API] TraceId=201e8c93b7601e17d7bb9142427729e4 HTTP OPTIONS /api/programmanager/programs responded 204 in 0.3847 ms
+2026-05-14 14:42:48.659 +05:30 [INF] [ProgramManager.API] TraceId=3495d415b2c99dcb5c175004453469bc HTTP GET /api/programmanager/programs responded 404 in 8.9645 ms
+2026-05-14 14:42:49.560 +05:30 [INF] [ProgramManager.API] TraceId=807f8be76a5ff681fc40e1befd8ab6b6 HTTP OPTIONS /api/programmanager/benefits responded 204 in 0.0929 ms
+2026-05-14 14:42:49.604 +05:30 [INF] [ProgramManager.API] TraceId=9867cb033d1981c7e2bc8c10ab2a57de HTTP GET /api/programmanager/benefits responded 404 in 9.1910 ms
+2026-05-14 14:42:51.378 +05:30 [INF] [ProgramManager.API] TraceId=75069bdaef2fe5180cb7a047389b5a97 HTTP GET /api/programmanager/programs responded 404 in 0.5175 ms
+2026-05-14 14:42:52.624 +05:30 [INF] [ProgramManager.API] TraceId=43014a4d866fc8f0d0e0d84bb3e2c6ae HTTP OPTIONS /api/programmanager/resources responded 204 in 0.3182 ms
+2026-05-14 14:42:52.648 +05:30 [INF] [ProgramManager.API] TraceId=91351aeab8cbacf92e9809b5c7c241c1 HTTP GET /api/programmanager/resources responded 404 in 0.5954 ms
+2026-05-14 14:42:54.630 +05:30 [INF] [ProgramManager.API] TraceId=613827017db3103ca93b1ec301c715c0 HTTP OPTIONS /api/programmanager/programs responded 204 in 0.0778 ms
+2026-05-14 14:42:54.657 +05:30 [INF] [ProgramManager.API] TraceId=c44e21a5b5eb9c002c8483d15a808b99 HTTP GET /api/programmanager/programs responded 404 in 0.5533 ms
+2026-05-14 14:42:56.417 +05:30 [INF] [ProgramManager.API] TraceId=557509f0a4373ec385ff784f01e49f07 HTTP OPTIONS /api/programmanager/dashboard responded 204 in 0.4882 ms
+2026-05-14 14:42:56.447 +05:30 [INF] [ProgramManager.API] TraceId=d25d80fb014256ba1da5f29fb8d82fbd HTTP GET /api/programmanager/dashboard responded 404 in 0.7190 ms
+2026-05-14 18:00:07.639 +05:30 [INF] [ProgramManager.API] TraceId=bd3490b08a4b06b7a8ec398d4c80a998 HTTP GET /index.html responded 304 in 122.2240 ms
+2026-05-14 18:00:08.004 +05:30 [INF] [ProgramManager.API] TraceId=3f41db7988f88e72555a6053b8bf512c HTTP GET /swagger-ui-bundle.js responded 304 in 20.1878 ms
+2026-05-14 18:00:08.004 +05:30 [INF] [ProgramManager.API] TraceId=1a70581daf1cb2374f0890a16c0b7638 HTTP GET /index.css responded 304 in 72.9304 ms
+2026-05-14 18:00:08.005 +05:30 [INF] [ProgramManager.API] TraceId=f7039bdeb100c56e3d78123131e059f3 HTTP GET /swagger-ui.css responded 304 in 99.6649 ms
+2026-05-14 18:00:08.158 +05:30 [INF] [ProgramManager.API] TraceId=2af0a58a585ab5770c9f11f3f3fd8eb3 HTTP GET /index.js responded 304 in 13.8344 ms
+2026-05-14 18:00:08.160 +05:30 [INF] [ProgramManager.API] TraceId=eddee8e18de9944bfba448dabeb18508 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 15.7170 ms
+2026-05-14 18:00:08.981 +05:30 [INF] [ProgramManager.API] TraceId=cae3255cbc740c445a8b01a7edaae7d3 HTTP GET /swagger/v1/swagger.json responded 200 in 43.6736 ms
+2026-05-14 18:01:23.381 +05:30 [INF] [ProgramManager.API] TraceId=7846591eb4f690f384fea00556d7522a HTTP OPTIONS /api/programmanager/dashboard responded 204 in 1.9284 ms
+2026-05-14 18:01:23.584 +05:30 [INF] [ProgramManager.API] TraceId=3c2317da3fde019ad97d49025af4b8b9 HTTP GET /api/programmanager/dashboard responded 404 in 198.4707 ms
+2026-05-14 18:01:28.117 +05:30 [INF] [ProgramManager.API] TraceId=fa752178677502315d764f27663ed58e HTTP OPTIONS /api/programmanager/programs responded 204 in 0.2427 ms
+2026-05-14 18:01:28.178 +05:30 [INF] [ProgramManager.API] TraceId=08d5c86af1a3ab97733ca1ba9f1c9de8 HTTP GET /api/programmanager/programs responded 404 in 6.3296 ms
+2026-05-14 18:01:29.338 +05:30 [INF] [ProgramManager.API] TraceId=5e1167f9cda4ea299bc94e45e10c8ec8 HTTP OPTIONS /api/programmanager/dashboard responded 204 in 0.1301 ms
+2026-05-14 18:01:29.397 +05:30 [INF] [ProgramManager.API] TraceId=c3bbed544c1b278b2b0aaaada66c6208 HTTP GET /api/programmanager/dashboard responded 404 in 48.8920 ms
+2026-05-14 18:02:23.362 +05:30 [INF] [ProgramManager.API] TraceId=775b1b13137a2b54dc39c9ee90f9e931 HTTP OPTIONS /api/programmanager/dashboard responded 204 in 0.1364 ms
+2026-05-14 18:02:23.378 +05:30 [INF] [ProgramManager.API] TraceId=d4cc8b995a7064efa956194aebd4edff HTTP GET /api/programmanager/dashboard responded 404 in 0.7865 ms
+2026-05-14 18:06:10.076 +05:30 [INF] [ProgramManager.API] TraceId=0d135312182b49cde36f05cfcb00716c HTTP OPTIONS /api/program-manager/dashboard responded 204 in 2.9157 ms
+2026-05-14 18:06:10.535 +05:30 [ERR] [ProgramManager.API] TraceId=1a56348c14fab450b66071b4dcb7c493 An error has occurred while processing the request. TraceId 0HNLHMI3JUHLM:0000000B
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-14 18:06:10.583 +05:30 [INF] [ProgramManager.API] TraceId=1a56348c14fab450b66071b4dcb7c493 HTTP GET /api/program-manager/dashboard responded 409 in 495.6143 ms
+2026-05-14 18:06:17.884 +05:30 [INF] [ProgramManager.API] TraceId=eaae7c4741f4e4e06fe2df6aca7173f4 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.2786 ms
+2026-05-14 18:06:17.924 +05:30 [ERR] [ProgramManager.API] TraceId=a51c13741b54c6b319912e0ae43128dc An error has occurred while processing the request. TraceId 0HNLHMI3JUHLM:0000000F
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-14 18:06:17.936 +05:30 [INF] [ProgramManager.API] TraceId=a51c13741b54c6b319912e0ae43128dc HTTP GET /api/program-manager/dashboard responded 409 in 29.9702 ms
+2026-05-14 18:06:51.986 +05:30 [INF] [ProgramManager.API] TraceId=c2a4d74e4e180d758232a1a0ae3ab186 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1223 ms
+2026-05-14 18:06:52.010 +05:30 [ERR] [ProgramManager.API] TraceId=448a3119b85d648f3a9298f7d318c319 An error has occurred while processing the request. TraceId 0HNLHMI3JUHLM:00000013
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-14 18:06:52.018 +05:30 [INF] [ProgramManager.API] TraceId=448a3119b85d648f3a9298f7d318c319 HTTP GET /api/program-manager/dashboard responded 409 in 21.9521 ms
+2026-05-14 18:09:23.250 +05:30 [INF] [ProgramManager.API] TraceId=bb641e09b4dc758fe36d97904be1d7a9 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1650 ms
+2026-05-14 18:09:23.263 +05:30 [ERR] [ProgramManager.API] TraceId=3a97532f1fa7e4e1d39b12d87e424442 An error has occurred while processing the request. TraceId 0HNLHMI3JUHLN:00000003
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-14 18:09:23.274 +05:30 [INF] [ProgramManager.API] TraceId=3a97532f1fa7e4e1d39b12d87e424442 HTTP GET /api/program-manager/dashboard responded 409 in 15.2122 ms

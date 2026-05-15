@@ -86,6 +86,7 @@ try
 
     // Generic repo
     builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
     // Common repos
     builder.Services.AddScoped<IUserRepository, UserRepository>();
     builder.Services.AddScoped<ISystemLogRepository, SystemLogRepository>();
@@ -93,32 +94,42 @@ try
     builder.Services.AddScoped<ITrainingRepository, TrainingRepository>();
     builder.Services.AddScoped<ITrainingEnrollmentRepository, TrainingEnrollmentRepository>();
     builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
+
     // Citizen repos
     builder.Services.AddScoped<ICitizenRepository, CitizenRepository>();
     builder.Services.AddScoped<IBenefitRepository, BenefitRepository>();
     builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
     builder.Services.AddScoped<ICitizenDocumentRepository, CitizenDocumentRepository>();
     builder.Services.AddScoped<IComplaintRepository, ComplaintRepository>();
+
     // Employer repos
     builder.Services.AddScoped<IEmployerRepository, EmployerRepository>();
     builder.Services.AddScoped<IJobOpeningRepository, JobOpeningRepository>();
+
     // Audit repos
     builder.Services.AddScoped<IAuditRepository, AuditRepository>();
     builder.Services.AddScoped<IReportRepository, ReportRepository>();
+
     // Notification repos
     builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
-    // ProgramManager-specific
+
+    // ProgramManager-specific Repo
     builder.Services.AddScoped<ProgramManagerRepository>();
 
-    // Services
-    builder.Services.AddScoped<WorkForceGovProject.Interfaces.Services.IAuthenticationService,
-                                WorkForceGovProject.Services.Common.AuthenticationService>();
-    builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+    // 🚨 Services (Removed the deleted Auth and JWT services)
     builder.Services.AddScoped<IAccountService, AccountService>();
     builder.Services.AddScoped<INotificationService, NotificationService>();
     builder.Services.AddScoped<ISystemLogService, SystemLogService>();
     builder.Services.AddScoped<IProgramManagerService, ProgramManagerService>();
     builder.Services.AddScoped<ITrainingService, TrainingService>();
+    // 🚨 Add these missing lines to your Program.cs
+    builder.Services.AddScoped<IProgramService, ProgramService>();
+    builder.Services.AddScoped<IResourceService, ResourceService>();
+
+    // Note: IProgramService and IResourceService appear to be missing from DI here, 
+    // but they are injected in your controller. If you get runtime errors about them, uncomment below:
+    // builder.Services.AddScoped<IProgramService, ProgramService>();
+    // builder.Services.AddScoped<IResourceService, ResourceService>();
 
     builder.Services.AddCors(o =>
         o.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));

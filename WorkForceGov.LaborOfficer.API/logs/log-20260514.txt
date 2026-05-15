@@ -166,3 +166,17 @@
 2026-05-14 13:44:02.358 +05:30 [INF] [LaborOfficer.API] TraceId=e2266d280055a6cf71b8d0d42aa0804e HTTP GET /swagger-ui.css responded 304 in 103.0112 ms
 2026-05-14 13:44:02.366 +05:30 [INF] [LaborOfficer.API] TraceId=e8bf3dffff5b99f90821aacaa059c95f HTTP GET /swagger-ui-bundle.js responded 304 in 110.8447 ms
 2026-05-14 13:44:02.555 +05:30 [INF] [LaborOfficer.API] TraceId=0192149bd579f32988d4f0ba5796a757 HTTP GET /swagger/v1/swagger.json responded 200 in 39.4543 ms
+2026-05-14 14:17:55.419 +05:30 [INF] [LaborOfficer.API] TraceId=bd1192b192f9e03ae6709d2eb68f4cff HTTP GET /index.html responded 304 in 92.9452 ms
+2026-05-14 14:17:55.577 +05:30 [INF] [LaborOfficer.API] TraceId=7579065343b343ea3164bb83b91c5630 HTTP GET /index.js responded 304 in 26.0210 ms
+2026-05-14 14:17:55.630 +05:30 [INF] [LaborOfficer.API] TraceId=037335a235cf0828f1a8c5c3a92be49f HTTP GET /index.css responded 304 in 79.0646 ms
+2026-05-14 14:17:55.630 +05:30 [INF] [LaborOfficer.API] TraceId=a2ff43dc9e9ed8034398c58f10f2a366 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 79.2301 ms
+2026-05-14 14:17:55.630 +05:30 [INF] [LaborOfficer.API] TraceId=e2155bd71f5c332e4dea7fb8a7a821f9 HTTP GET /swagger-ui.css responded 304 in 95.2602 ms
+2026-05-14 14:17:55.649 +05:30 [INF] [LaborOfficer.API] TraceId=12c85c7416ce2d7fcd9296356bf1e326 HTTP GET /swagger-ui-bundle.js responded 304 in 97.6861 ms
+2026-05-14 14:17:55.852 +05:30 [INF] [LaborOfficer.API] TraceId=5803dd352b9cde1b3e6eaba8523d974c HTTP GET /swagger/v1/swagger.json responded 200 in 39.9311 ms
+2026-05-14 18:00:11.055 +05:30 [INF] [LaborOfficer.API] TraceId=92cd3ea2678ef14bf23a45c353e8739b HTTP GET /index.html responded 304 in 117.5114 ms
+2026-05-14 18:00:11.255 +05:30 [INF] [LaborOfficer.API] TraceId=842e90dfce3a33ec102d9352bc8ee1ec HTTP GET /index.js responded 304 in 0.6805 ms
+2026-05-14 18:00:11.345 +05:30 [INF] [LaborOfficer.API] TraceId=29e3aacb41d3eb16f63a2227661835a4 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 90.6015 ms
+2026-05-14 18:00:11.381 +05:30 [INF] [LaborOfficer.API] TraceId=da71e55bf53632bae4db04567333ca37 HTTP GET /swagger-ui.css responded 304 in 193.5250 ms
+2026-05-14 18:00:11.383 +05:30 [INF] [LaborOfficer.API] TraceId=4f50b69f9a02a6b745208182a1164701 HTTP GET /swagger-ui-bundle.js responded 304 in 181.5498 ms
+2026-05-14 18:00:11.345 +05:30 [INF] [LaborOfficer.API] TraceId=37a3b1f1ad0f35ee116261250690c2d6 HTTP GET /index.css responded 304 in 151.0639 ms
+2026-05-14 18:00:12.067 +05:30 [INF] [LaborOfficer.API] TraceId=ce23226f4d4fe3529760f4d240aa4e8c HTTP GET /swagger/v1/swagger.json responded 200 in 44.8422 ms

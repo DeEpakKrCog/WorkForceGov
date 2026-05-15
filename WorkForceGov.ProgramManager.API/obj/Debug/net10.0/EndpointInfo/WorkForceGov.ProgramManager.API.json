@@ -11,7 +11,7 @@
         "tags": [
           "Authentication"
         ],
-        "summary": "Login with email and password to receive JWT token",
+        "summary": "Login → get JWT token",
         "requestBody": {
           "content": {
             "application/json": {
@@ -33,39 +33,24 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/auth/validate-token": {
-      "post": {
-        "tags": [
-          "Authentication"
-        ],
-        "summary": "Validate JWT token",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TokenRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TokenRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/TokenRequest"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponse"
+                }
               }
             }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -76,6 +61,19 @@
           "Dashboard"
         ],
         "summary": "Get Program Manager dashboard",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/program-manager/benefits": {
+      "get": {
+        "tags": [
+          "Benefit Approval"
+        ],
+        "summary": "Get all benefit applications",
         "responses": {
           "200": {
             "description": "OK"
@@ -345,6 +343,28 @@
       }
     },
     "/api/program-manager/trainings/{id}": {
+      "get": {
+        "tags": [
+          "Trainings"
+        ],
+        "summary": "Get a training by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "put": {
         "tags": [
           "Trainings"
@@ -385,44 +405,23 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/program-manager/resources": {
-      "get": {
-        "tags": [
-          "Resources"
-        ],
-        "summary": "Get all resources",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       },
-      "post": {
+      "delete": {
         "tags": [
-          "Resources"
+          "Trainings"
         ],
-        "summary": "Create a resource",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Resource"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Resource"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Resource"
-              }
+        "summary": "Delete a training session",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1030,6 +1029,36 @@
         },
         "additionalProperties": false
       },
+      "LoginResponse": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiresAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "Notification": {
         "required": [
           "message",
@@ -1084,6 +1113,33 @@
           }
         },
         "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
       },
       "Report": {
         "required": [
@@ -1209,16 +1265,6 @@
         },
         "additionalProperties": false
       },
-      "TokenRequest": {
-        "type": "object",
-        "properties": {
-          "token": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "Training": {
         "required": [
           "programId",
@@ -1259,13 +1305,6 @@
           },
           "program": {
             "$ref": "#/components/schemas/EmploymentProgram"
-          },
-          "enrollments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TrainingEnrollment"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1400,7 +1439,7 @@
   },
   "tags": [
     {
-      "name": "Authentication"
+      "name": "Auth"
     },
     {
       "name": "ProgramManager"

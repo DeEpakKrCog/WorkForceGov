@@ -48,7 +48,11 @@ namespace WorkForceGovProject.Interfaces.Repositories
     /// <summary>
     /// Data access for training sessions within programs.
     /// </summary>
-    public interface ITrainingRepository : IRepository<Training> { }
+    public interface ITrainingRepository : IRepository<Training>
+    {
+        // 🚨 ADDED THIS LINE
+        Task<IEnumerable<Training>> GetAllWithProgramsAsync();
+    }
 
     /// <summary>
     /// Data access for program resources.

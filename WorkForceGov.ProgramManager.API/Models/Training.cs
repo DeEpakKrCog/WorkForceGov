@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace WorkForceGovProject.Models
 {
@@ -24,10 +25,13 @@ namespace WorkForceGovProject.Models
 
         [Required]
         public int ProgramId { get; set; }
-        [ForeignKey("ProgramId")]
-        public virtual EmploymentProgram Program { get; set; } = null!;
 
-        // Navigation
+        // 🚨 FIX 1: Add the '?' right after EmploymentProgram
+        [ForeignKey("ProgramId")]
+        public virtual EmploymentProgram? Program { get; set; }
+
+        // 🚨 FIX 2: Add [JsonIgnore] or just ignore validation so it doesn't fail if the array is missing
+        [JsonIgnore]
         public virtual ICollection<TrainingEnrollment> Enrollments { get; set; } = new List<TrainingEnrollment>();
     }
 }

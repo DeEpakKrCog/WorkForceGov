@@ -10,6 +10,10 @@ namespace WorkForceGovProject.Interfaces.Services
     public interface IProgramManagerService
     {
         // ── BENEFIT WORKFLOW ─────────────────────────────────────────────────
+
+        /// <summary>Returns all benefits (Active, Pending, Rejected, etc.).</summary>
+        Task<IEnumerable<Benefit>> GetAllBenefitsAsync();
+
         /// <summary>Returns all benefits with status "Pending" awaiting PM review.</summary>
         Task<IEnumerable<Benefit>> GetPendingBenefitsAsync();
 

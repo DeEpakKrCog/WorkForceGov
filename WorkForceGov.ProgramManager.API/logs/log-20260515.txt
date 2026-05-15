@@ -1,0 +1,785 @@
+2026-05-15 09:00:47.709 +05:30 [INF] [ProgramManager.API] TraceId=99895aafcd0751e03917bbb9d635d4ac HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.2507 ms
+2026-05-15 09:00:47.770 +05:30 [INF] [ProgramManager.API] TraceId=422ad5f93fbb6e257da4d551af95f322 HTTP GET /api/program-manager/dashboard responded 401 in 21.5356 ms
+2026-05-15 09:00:49.114 +05:30 [INF] [ProgramManager.API] TraceId=bf8db9c7ab97b7be4106392dc510d1bb HTTP GET /api/program-manager/programs responded 401 in 0.8494 ms
+2026-05-15 09:00:49.152 +05:30 [INF] [ProgramManager.API] TraceId=7874b1d6bd5f9ce90c6e31e59f93a865 HTTP GET /api/program-manager/dashboard responded 401 in 0.5233 ms
+2026-05-15 09:00:52.250 +05:30 [INF] [ProgramManager.API] TraceId=d6f43568672105e95cbb936ce81b1873 HTTP GET /api/program-manager/trainings responded 401 in 0.3998 ms
+2026-05-15 09:00:52.283 +05:30 [INF] [ProgramManager.API] TraceId=827180a42ef68a6e8e2afa881ea50e24 HTTP GET /api/program-manager/dashboard responded 401 in 0.3769 ms
+2026-05-15 09:01:27.817 +05:30 [INF] [ProgramManager.API] TraceId=8f4095d45127a90060ce8daee7952478 HTTP GET /index.html responded 304 in 105.4723 ms
+2026-05-15 09:01:28.090 +05:30 [INF] [ProgramManager.API] TraceId=56025a69724f83c9893013edc19909bf HTTP GET /swagger-ui-standalone-preset.js responded 304 in 51.6984 ms
+2026-05-15 09:01:28.147 +05:30 [INF] [ProgramManager.API] TraceId=7d2013ce9b9218604b1911fd3344035d HTTP GET /index.js responded 304 in 0.6877 ms
+2026-05-15 09:01:28.090 +05:30 [INF] [ProgramManager.API] TraceId=90aa81bcb2c8a4088390198be28f1425 HTTP GET /index.css responded 304 in 65.9945 ms
+2026-05-15 09:01:28.240 +05:30 [INF] [ProgramManager.API] TraceId=b7764a4092d7ee44dee943e6ba5a840c HTTP GET /swagger-ui-bundle.js responded 304 in 210.2305 ms
+2026-05-15 09:01:28.090 +05:30 [INF] [ProgramManager.API] TraceId=1bf6eee5b84e7aaf6ad3a67a0f92a6e4 HTTP GET /swagger-ui.css responded 304 in 117.3466 ms
+2026-05-15 09:01:28.618 +05:30 [INF] [ProgramManager.API] TraceId=ed1f524e24b319c2e73fec99954f8652 HTTP GET /swagger/v1/swagger.json responded 200 in 90.9401 ms
+2026-05-15 09:03:45.795 +05:30 [INF] [ProgramManager.API] TraceId=259aa87e83d9f7e506d558670ad4be89 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 2.6690 ms
+2026-05-15 09:03:46.428 +05:30 [ERR] [ProgramManager.API] TraceId=36c7f640514dad7454dbe229d57b8aee An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:00000003
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:03:46.478 +05:30 [INF] [ProgramManager.API] TraceId=36c7f640514dad7454dbe229d57b8aee HTTP GET /api/program-manager/dashboard responded 409 in 672.7590 ms
+2026-05-15 09:03:48.582 +05:30 [INF] [ProgramManager.API] TraceId=4b82fc9b4cbd469f2fcf96b81609988e HTTP OPTIONS /api/program-manager/programs responded 204 in 2.4100 ms
+2026-05-15 09:03:48.622 +05:30 [ERR] [ProgramManager.API] TraceId=6a1d64c11935701d4053240811bead2a An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:00000007
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method56(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:03:48.630 +05:30 [INF] [ProgramManager.API] TraceId=6a1d64c11935701d4053240811bead2a HTTP GET /api/program-manager/programs responded 409 in 31.5651 ms
+2026-05-15 09:03:49.605 +05:30 [ERR] [ProgramManager.API] TraceId=d7d3cb2c2c43da1db22bb698128e7c68 An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:00000009
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:03:49.614 +05:30 [INF] [ProgramManager.API] TraceId=d7d3cb2c2c43da1db22bb698128e7c68 HTTP GET /api/program-manager/dashboard responded 409 in 27.3071 ms
+2026-05-15 09:03:50.916 +05:30 [INF] [ProgramManager.API] TraceId=3799623a025e0914f4e062198aac22d2 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.1324 ms
+2026-05-15 09:03:50.950 +05:30 [ERR] [ProgramManager.API] TraceId=2afed9e6fb42edaa95243c59a0d0620a An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:0000000D
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method64(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:03:50.967 +05:30 [INF] [ProgramManager.API] TraceId=2afed9e6fb42edaa95243c59a0d0620a HTTP GET /api/program-manager/trainings responded 409 in 31.0919 ms
+2026-05-15 09:03:52.163 +05:30 [INF] [ProgramManager.API] TraceId=308e8184ebdb8166f006bbce246dc936 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0808 ms
+2026-05-15 09:03:52.185 +05:30 [INF] [ProgramManager.API] TraceId=318978768a6f0a4204b51fb25713830e HTTP GET /api/program-manager/benefits responded 404 in 0.8044 ms
+2026-05-15 09:03:53.352 +05:30 [INF] [ProgramManager.API] TraceId=f71c8c74c796494454812df783590b22 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0937 ms
+2026-05-15 09:03:53.370 +05:30 [ERR] [ProgramManager.API] TraceId=47375726f5676ac785490ef8dffe2c97 An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:00000015
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:03:53.380 +05:30 [INF] [ProgramManager.API] TraceId=47375726f5676ac785490ef8dffe2c97 HTTP GET /api/program-manager/dashboard responded 409 in 12.0939 ms
+2026-05-15 09:03:54.566 +05:30 [INF] [ProgramManager.API] TraceId=354779b958140429452ae71f9d7af70a HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1097 ms
+2026-05-15 09:03:54.582 +05:30 [ERR] [ProgramManager.API] TraceId=48b57cad72f3e28f50a8dc5472d8c00e An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:00000019
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method56(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:03:54.605 +05:30 [INF] [ProgramManager.API] TraceId=48b57cad72f3e28f50a8dc5472d8c00e HTTP GET /api/program-manager/programs responded 409 in 26.7062 ms
+2026-05-15 09:03:55.589 +05:30 [ERR] [ProgramManager.API] TraceId=fadf2b6e98818b81885bbd295c993ede An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:0000001B
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:03:55.605 +05:30 [INF] [ProgramManager.API] TraceId=fadf2b6e98818b81885bbd295c993ede HTTP GET /api/program-manager/dashboard responded 409 in 27.1650 ms
+2026-05-15 09:04:34.803 +05:30 [INF] [ProgramManager.API] TraceId=3ffdc372637de85da3aaac49294e3674 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1400 ms
+2026-05-15 09:04:34.830 +05:30 [ERR] [ProgramManager.API] TraceId=e946053b6adc5a076f05eda43fea7173 An error has occurred while processing the request. TraceId 0HNLI69OMG5KV:0000001F
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:04:34.912 +05:30 [INF] [ProgramManager.API] TraceId=e946053b6adc5a076f05eda43fea7173 HTTP GET /api/program-manager/dashboard responded 409 in 85.5306 ms
+2026-05-15 09:14:54.835 +05:30 [INF] [ProgramManager.API] TraceId=0f46cd1abfe673ec5f73321c85ae6624 HTTP GET /index.html responded 304 in 213.4012 ms
+2026-05-15 09:14:55.145 +05:30 [INF] [ProgramManager.API] TraceId=f8dbe2ff26add50404f9343acfeb0be7 HTTP GET /swagger-ui.css responded 304 in 98.2000 ms
+2026-05-15 09:14:55.145 +05:30 [INF] [ProgramManager.API] TraceId=47dfce09cdfb6e3b876e5a5612aab377 HTTP GET /index.css responded 304 in 25.8631 ms
+2026-05-15 09:14:55.155 +05:30 [INF] [ProgramManager.API] TraceId=e0f20f4f3f95f626d6d6f8c52a5e6e7f HTTP GET /swagger-ui-bundle.js responded 304 in 36.2881 ms
+2026-05-15 09:14:55.615 +05:30 [INF] [ProgramManager.API] TraceId=4eeb4a776057ed7e4a65306b3d6a2af9 HTTP GET /index.js responded 304 in 0.7591 ms
+2026-05-15 09:14:55.640 +05:30 [INF] [ProgramManager.API] TraceId=9f142fc753bc08eba6a5347d3967eba1 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 26.2883 ms
+2026-05-15 09:14:56.283 +05:30 [INF] [ProgramManager.API] TraceId=fcb19ef53e08873d17acf37e402874c8 HTTP GET /swagger/v1/swagger.json responded 200 in 48.2819 ms
+2026-05-15 09:15:15.174 +05:30 [INF] [ProgramManager.API] TraceId=65399f328d08fec22d857b4b66162928 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 4.3107 ms
+2026-05-15 09:15:15.921 +05:30 [ERR] [ProgramManager.API] TraceId=c30fb4d5de86b747cc32328acaa8d454 An error has occurred while processing the request. TraceId 0HNLI6H97DM2M:00000003
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:15:15.979 +05:30 [INF] [ProgramManager.API] TraceId=c30fb4d5de86b747cc32328acaa8d454 HTTP GET /api/program-manager/dashboard responded 409 in 794.7064 ms
+2026-05-15 09:28:21.615 +05:30 [INF] [ProgramManager.API] TraceId=75d8c01ef71c16eb21c758ded98f1c76 HTTP GET /index.html responded 304 in 111.8161 ms
+2026-05-15 09:28:22.015 +05:30 [INF] [ProgramManager.API] TraceId=ae42469647acce1de2a223b8e91ed7de HTTP GET /swagger-ui-bundle.js responded 304 in 24.7182 ms
+2026-05-15 09:28:22.015 +05:30 [INF] [ProgramManager.API] TraceId=859b0d5c1dbeeec9d7debf89d85f32ca HTTP GET /swagger-ui.css responded 304 in 45.3962 ms
+2026-05-15 09:28:22.015 +05:30 [INF] [ProgramManager.API] TraceId=bd6cf78aa0419a7209a543078a1524fd HTTP GET /index.css responded 304 in 26.1728 ms
+2026-05-15 09:28:22.063 +05:30 [INF] [ProgramManager.API] TraceId=88604aacfc303b7a2e93ac6d93cfb3fa HTTP GET /swagger-ui-standalone-preset.js responded 304 in 10.0225 ms
+2026-05-15 09:28:22.073 +05:30 [INF] [ProgramManager.API] TraceId=8c5b26537197370bc0029898d7ee5594 HTTP GET /index.js responded 304 in 0.6366 ms
+2026-05-15 09:28:22.808 +05:30 [INF] [ProgramManager.API] TraceId=b83bfb165a535502e0dce488016fbad3 HTTP GET /swagger/v1/swagger.json responded 200 in 52.4255 ms
+2026-05-15 09:30:30.655 +05:30 [INF] [ProgramManager.API] TraceId=103cc695489ce8cd302c93316fad1b98 HTTP POST /api/auth/login responded 200 in 2022.0760 ms
+2026-05-15 09:31:24.821 +05:30 [INF] [ProgramManager.API] TraceId=763e7aaa9de304c30b183bfc82dc62d5 HTTP GET /program-manager/dashboard responded 404 in 62.5820 ms
+2026-05-15 09:31:40.248 +05:30 [INF] [ProgramManager.API] TraceId=3a25d2e26776f8d20456b795fdf53735 HTTP GET /program-manager/dashboard responded 404 in 5.0181 ms
+2026-05-15 09:32:00.133 +05:30 [INF] [ProgramManager.API] TraceId=7b49ebbb38c13b02c076858c6cd2a933 HTTP GET /program-manager/programs responded 404 in 0.4759 ms
+2026-05-15 09:32:02.791 +05:30 [INF] [ProgramManager.API] TraceId=2506684aaadf2ee335ba69604c76f6b4 HTTP GET /program-manager/programs responded 404 in 0.4484 ms
+2026-05-15 09:32:53.367 +05:30 [INF] [ProgramManager.API] TraceId=6f5202a29d7e8b727e95d303017caf37 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 3.0081 ms
+2026-05-15 09:32:53.424 +05:30 [ERR] [ProgramManager.API] TraceId=e54b575f9d8b81e4dda234cbebfe8d2d An error has occurred while processing the request. TraceId 0HNLI6OPNMVQU:00000003
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method293(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:32:53.473 +05:30 [INF] [ProgramManager.API] TraceId=e54b575f9d8b81e4dda234cbebfe8d2d HTTP GET /api/program-manager/dashboard responded 409 in 92.6793 ms
+2026-05-15 09:33:25.803 +05:30 [INF] [ProgramManager.API] TraceId=e29027043c5e59df3d72680a062e2b28 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.2596 ms
+2026-05-15 09:33:25.819 +05:30 [ERR] [ProgramManager.API] TraceId=75d20f6067ddf4d929f660fe7f886e6e An error has occurred while processing the request. TraceId 0HNLI6OPNMVQU:00000007
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method293(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:33:25.868 +05:30 [INF] [ProgramManager.API] TraceId=75d20f6067ddf4d929f660fe7f886e6e HTTP GET /api/program-manager/dashboard responded 409 in 59.1086 ms
+2026-05-15 09:33:51.595 +05:30 [INF] [ProgramManager.API] TraceId=153d3d877b4a32588e7d75de8a071236 HTTP GET /program-manager/dashboard responded 404 in 0.3249 ms
+2026-05-15 09:39:28.906 +05:30 [ERR] [ProgramManager.API] TraceId=87086f7c413a72534d5ce5cc0afc1abc An error has occurred while processing the request. TraceId 0HNLI6OPNMVR2:00000001
+System.InvalidOperationException: Unable to resolve service for type 'WorkForceGovProject.Interfaces.Services.IProgramService' while attempting to activate 'WorkForceGovProject.Controllers.ProgramManagerController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method293(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-15 09:39:28.918 +05:30 [INF] [ProgramManager.API] TraceId=87086f7c413a72534d5ce5cc0afc1abc HTTP GET /api/program-manager/dashboard responded 409 in 64.4994 ms
+2026-05-15 09:42:41.550 +05:30 [INF] [ProgramManager.API] TraceId=d6bfcdb48f8453098c723e38b27514aa HTTP GET /index.html responded 304 in 130.8850 ms
+2026-05-15 09:42:41.739 +05:30 [INF] [ProgramManager.API] TraceId=a5946e9231587b42c8913db9aba005c9 HTTP GET /index.js responded 304 in 1.8080 ms
+2026-05-15 09:42:41.831 +05:30 [INF] [ProgramManager.API] TraceId=2fb7ea1915b7bfec0eb266a577d214e1 HTTP GET /index.css responded 304 in 142.6209 ms
+2026-05-15 09:42:41.831 +05:30 [INF] [ProgramManager.API] TraceId=66876c27719fa718ac2e3684c02e9f23 HTTP GET /swagger-ui.css responded 304 in 142.6212 ms
+2026-05-15 09:42:41.831 +05:30 [INF] [ProgramManager.API] TraceId=3d3f7e0b790cd4c6fdeb5a04fcb31300 HTTP GET /swagger-ui-bundle.js responded 304 in 142.6071 ms
+2026-05-15 09:42:41.833 +05:30 [INF] [ProgramManager.API] TraceId=aabb9a7f80b28fa6577a4d338a528add HTTP GET /swagger-ui-standalone-preset.js responded 304 in 144.7907 ms
+2026-05-15 09:42:42.097 +05:30 [INF] [ProgramManager.API] TraceId=beb571059647c9e40877e3fc15ce0b57 HTTP GET /swagger/v1/swagger.json responded 200 in 65.4849 ms
+2026-05-15 09:43:13.081 +05:30 [INF] [ProgramManager.API] TraceId=93f1624c0f0f82d111dd1513cacef360 HTTP POST /api/auth/login responded 200 in 2133.0000 ms
+2026-05-15 09:43:29.045 +05:30 [INF] [ProgramManager.API] TraceId=12c2bbf53b74126d11b0099766ad3bc8 HTTP GET /api/program-manager/dashboard responded 200 in 334.7993 ms
+2026-05-15 09:43:38.811 +05:30 [INF] [ProgramManager.API] TraceId=3ba7a3d98807dfed9e20c60122b83b9d HTTP OPTIONS /api/program-manager/dashboard responded 204 in 1.5576 ms
+2026-05-15 09:43:38.957 +05:30 [INF] [ProgramManager.API] TraceId=62fca1572836df5233d365f84967e4f9 HTTP GET /api/program-manager/dashboard responded 200 in 138.5409 ms
+2026-05-15 09:43:47.702 +05:30 [INF] [ProgramManager.API] TraceId=3340aa89358a40034d1b98c7f1ccffbc HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2123 ms
+2026-05-15 09:43:47.791 +05:30 [INF] [ProgramManager.API] TraceId=b61c8a3a447dac3494d360ada54cf4e8 HTTP GET /api/program-manager/programs responded 200 in 67.7333 ms
+2026-05-15 09:43:49.938 +05:30 [INF] [ProgramManager.API] TraceId=c13f6f09720539beaa0150be4ed42303 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.1278 ms
+2026-05-15 09:43:49.998 +05:30 [INF] [ProgramManager.API] TraceId=6d74a7320513d23511087d46178f9638 HTTP GET /api/program-manager/trainings responded 200 in 48.7154 ms
+2026-05-15 09:43:53.052 +05:30 [INF] [ProgramManager.API] TraceId=29fabf24bec91c631f280b9657177221 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1452 ms
+2026-05-15 09:43:53.069 +05:30 [INF] [ProgramManager.API] TraceId=92ea332860eb7afeb7bb07f48ec8c76d HTTP GET /api/program-manager/benefits responded 404 in 1.5907 ms
+2026-05-15 09:43:57.978 +05:30 [INF] [ProgramManager.API] TraceId=e63dada51a92f620746bb041d4153540 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1060 ms
+2026-05-15 09:43:57.996 +05:30 [INF] [ProgramManager.API] TraceId=0652f24a005265d9b0fbc6d60520905c HTTP GET /api/program-manager/programs responded 200 in 3.2324 ms
+2026-05-15 09:44:01.853 +05:30 [INF] [ProgramManager.API] TraceId=dc831cc0ccaf6f9a3a3a196e084af700 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.0974 ms
+2026-05-15 09:44:01.892 +05:30 [INF] [ProgramManager.API] TraceId=8d92e9706a8809ef5606ab9154255f8a HTTP GET /api/program-manager/resources responded 200 in 23.3164 ms
+2026-05-15 09:44:03.849 +05:30 [INF] [ProgramManager.API] TraceId=9bd0df72889f9514df88d0c184b97c7a HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2243 ms
+2026-05-15 09:44:03.867 +05:30 [INF] [ProgramManager.API] TraceId=1b94a91fe81093c12299f8c2cdbd5161 HTTP GET /api/program-manager/programs responded 200 in 8.2974 ms
+2026-05-15 09:44:06.052 +05:30 [INF] [ProgramManager.API] TraceId=9564fd6f305a61d379da1e9e4fac274e HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0648 ms
+2026-05-15 09:44:06.052 +05:30 [INF] [ProgramManager.API] TraceId=25cd475ddbeed94e78641c3b7959257d HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1175 ms
+2026-05-15 09:44:06.052 +05:30 [INF] [ProgramManager.API] TraceId=abc7414c889f9f2d5df25574329dff5b HTTP GET /api/program-manager/programs responded 200 in 3.8780 ms
+2026-05-15 09:44:06.069 +05:30 [INF] [ProgramManager.API] TraceId=92c0d9dcce0ee77cedb2acf1df004392 HTTP GET /api/program-manager/trainings responded 200 in 5.6136 ms
+2026-05-15 09:44:06.069 +05:30 [INF] [ProgramManager.API] TraceId=b88d260d7b3a4ffb3e1cfc2c0b0e319a HTTP GET /api/program-manager/benefits responded 404 in 0.5572 ms
+2026-05-15 09:44:08.389 +05:30 [INF] [ProgramManager.API] TraceId=db74bb343cd3fcd90d8a8ffa536f7b78 HTTP OPTIONS /api/program-manager/reports responded 204 in 0.1459 ms
+2026-05-15 09:44:08.403 +05:30 [INF] [ProgramManager.API] TraceId=73f1210ff72e76c690f505872bc031b2 HTTP GET /api/program-manager/reports responded 404 in 0.5956 ms
+2026-05-15 09:44:12.632 +05:30 [INF] [ProgramManager.API] TraceId=144543c8aa92a91bf5f19116e92ea9f0 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1830 ms
+2026-05-15 09:44:12.666 +05:30 [INF] [ProgramManager.API] TraceId=6ca3736ff82d446f4455d72f290ddda7 HTTP GET /api/program-manager/dashboard responded 200 in 27.5572 ms
+2026-05-15 09:45:25.758 +05:30 [INF] [ProgramManager.API] TraceId=7403e5be4754aa057d76b9a5f5e785b4 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0711 ms
+2026-05-15 09:45:25.801 +05:30 [INF] [ProgramManager.API] TraceId=1a5e05b4a8df7a0fee29a26558815a4a HTTP GET /api/program-manager/programs responded 200 in 5.2235 ms
+2026-05-15 09:45:27.038 +05:30 [INF] [ProgramManager.API] TraceId=8e0d0ad9c0f18b3453fb61aa1290247f HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0695 ms
+2026-05-15 09:45:27.055 +05:30 [INF] [ProgramManager.API] TraceId=d840b14f15adeea3a2f8650279d637e5 HTTP GET /api/program-manager/trainings responded 200 in 6.8635 ms
+2026-05-15 09:45:27.935 +05:30 [INF] [ProgramManager.API] TraceId=9813d723c99115286054cf0e5009c6ca HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1671 ms
+2026-05-15 09:45:27.948 +05:30 [INF] [ProgramManager.API] TraceId=42ea4362679034280a237fa3d68cad96 HTTP GET /api/program-manager/benefits responded 404 in 0.4590 ms
+2026-05-15 09:45:28.791 +05:30 [INF] [ProgramManager.API] TraceId=9ee9e4a0a4dd320e7b2833f7b58459ce HTTP GET /api/program-manager/programs responded 200 in 9.4467 ms
+2026-05-15 09:45:30.018 +05:30 [INF] [ProgramManager.API] TraceId=8031b0aeaa32d6ae86589483403a0111 HTTP GET /api/program-manager/benefits responded 404 in 0.6926 ms
+2026-05-15 09:45:31.883 +05:30 [INF] [ProgramManager.API] TraceId=eed8ffb10a0e94b57425f729e08d3e21 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0825 ms
+2026-05-15 09:45:31.903 +05:30 [INF] [ProgramManager.API] TraceId=428dfebc5617be111d5abbcf322e5ff8 HTTP GET /api/program-manager/programs responded 200 in 2.8485 ms
+2026-05-15 09:45:49.668 +05:30 [INF] [ProgramManager.API] TraceId=4df899b1b568cf72bb51f0e2cb2ba263 HTTP OPTIONS /api/program-manager/benefits/assign responded 204 in 0.0424 ms
+2026-05-15 09:45:49.675 +05:30 [INF] [ProgramManager.API] TraceId=5dfb3e0226fa03d6464415cf5fb7fd9d HTTP POST /api/program-manager/benefits/assign responded 404 in 0.4011 ms
+2026-05-15 09:45:54.293 +05:30 [INF] [ProgramManager.API] TraceId=16f8321538b85324625ccdb88a61a565 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.0686 ms
+2026-05-15 09:45:54.342 +05:30 [INF] [ProgramManager.API] TraceId=eaf7168289a6aa74724bd5ec817432b2 HTTP GET /api/program-manager/resources responded 200 in 32.8704 ms
+2026-05-15 09:45:55.551 +05:30 [INF] [ProgramManager.API] TraceId=f139269798662f08c579d946643b5880 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0731 ms
+2026-05-15 09:45:55.567 +05:30 [INF] [ProgramManager.API] TraceId=b395aaa34c9e11cdc5bccd5804803fb1 HTTP GET /api/program-manager/programs responded 200 in 3.5638 ms
+2026-05-15 09:45:56.971 +05:30 [INF] [ProgramManager.API] TraceId=1eb3d8d1dcd39e5c9c2ced1a7a54c55a HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0836 ms
+2026-05-15 09:45:56.971 +05:30 [INF] [ProgramManager.API] TraceId=98e169cff6daada5e6e519ac842755a5 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0664 ms
+2026-05-15 09:45:56.976 +05:30 [INF] [ProgramManager.API] TraceId=fe3c67a29f9d787aff7f5a5b41cd8be0 HTTP GET /api/program-manager/programs responded 200 in 5.2140 ms
+2026-05-15 09:45:56.985 +05:30 [INF] [ProgramManager.API] TraceId=6e7b1b84f17ffb092726502ccea9c03c HTTP GET /api/program-manager/benefits responded 404 in 0.6704 ms
+2026-05-15 09:45:56.996 +05:30 [INF] [ProgramManager.API] TraceId=cd1716f386b701ae69901a521da674b7 HTTP GET /api/program-manager/trainings responded 200 in 7.8930 ms
+2026-05-15 09:45:58.277 +05:30 [INF] [ProgramManager.API] TraceId=00ed01d3c914d9dcf17521f6f4570710 HTTP OPTIONS /api/program-manager/reports responded 204 in 0.0717 ms
+2026-05-15 09:45:58.289 +05:30 [INF] [ProgramManager.API] TraceId=91e145fe2ef3b9867e7c47cbae17c682 HTTP GET /api/program-manager/reports responded 404 in 1.4594 ms
+2026-05-15 09:46:00.997 +05:30 [INF] [ProgramManager.API] TraceId=aaa31e62111db809afde7693af439e09 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0791 ms
+2026-05-15 09:46:01.040 +05:30 [INF] [ProgramManager.API] TraceId=cf168526b714162a49a01b82376015a2 HTTP GET /api/program-manager/dashboard responded 200 in 33.4603 ms
+2026-05-15 09:46:04.702 +05:30 [INF] [ProgramManager.API] TraceId=1f50b9288a0445894d7c70f2d92a85fd HTTP OPTIONS /api/program-manager/reports responded 204 in 0.0736 ms
+2026-05-15 09:46:04.726 +05:30 [INF] [ProgramManager.API] TraceId=a3a3b94caa620d20061321814cb5da49 HTTP GET /api/program-manager/reports responded 404 in 0.7194 ms
+2026-05-15 09:47:18.946 +05:30 [INF] [ProgramManager.API] TraceId=0c38e0642dab8ea43fb9a9d536d4f2f6 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0702 ms
+2026-05-15 09:47:18.976 +05:30 [INF] [ProgramManager.API] TraceId=2bed61a046eeddaa15a91d24cddf5bca HTTP GET /api/program-manager/programs responded 200 in 5.8700 ms
+2026-05-15 09:47:19.933 +05:30 [INF] [ProgramManager.API] TraceId=b6fada7348cddb11b755c747c8b9b870 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0425 ms
+2026-05-15 09:47:19.933 +05:30 [INF] [ProgramManager.API] TraceId=a205a58e848076212b7b447b8026069f HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0407 ms
+2026-05-15 09:47:19.935 +05:30 [INF] [ProgramManager.API] TraceId=58b70fafaaf57c163a58904dad11fff5 HTTP GET /api/program-manager/programs responded 200 in 4.3000 ms
+2026-05-15 09:47:19.955 +05:30 [INF] [ProgramManager.API] TraceId=1fa307cbebf2ad3b585b8df66286a397 HTTP GET /api/program-manager/benefits responded 404 in 0.7883 ms
+2026-05-15 09:47:19.969 +05:30 [INF] [ProgramManager.API] TraceId=1edaf68ca226a4f6005602ac28c1e30c HTTP GET /api/program-manager/trainings responded 200 in 11.3946 ms
+2026-05-15 09:47:21.948 +05:30 [INF] [ProgramManager.API] TraceId=fd16c7d760d3aaf40d4339a062bc5de2 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.1116 ms
+2026-05-15 09:47:21.985 +05:30 [INF] [ProgramManager.API] TraceId=8c0e7eab103787facb6d77523195fb86 HTTP GET /api/program-manager/resources responded 200 in 7.6841 ms
+2026-05-15 09:47:23.029 +05:30 [INF] [ProgramManager.API] TraceId=482f8d368ced94800081a4241ce1a9a8 HTTP GET /api/program-manager/programs responded 200 in 4.4563 ms
+2026-05-15 09:47:24.390 +05:30 [INF] [ProgramManager.API] TraceId=e131d0b72b785e45092f18354b1a9df7 HTTP GET /api/program-manager/resources responded 200 in 6.5360 ms
+2026-05-15 09:47:32.169 +05:30 [INF] [ProgramManager.API] TraceId=b33d7d0312c1d51923b2f65b6d9dbcb3 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0896 ms
+2026-05-15 09:47:32.259 +05:30 [INF] [ProgramManager.API] TraceId=6b3bc7ed18b14bbfc4a13afe277ae509 HTTP GET /api/program-manager/dashboard responded 200 in 81.5031 ms
+2026-05-15 09:47:38.617 +05:30 [INF] [ProgramManager.API] TraceId=822108bf0913214e9427aa2ea5d2cbea HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0616 ms
+2026-05-15 09:47:38.643 +05:30 [INF] [ProgramManager.API] TraceId=ba8da56338ee220980634a2309d2d80e HTTP GET /api/program-manager/programs responded 200 in 8.9997 ms
+2026-05-15 09:47:40.540 +05:30 [INF] [ProgramManager.API] TraceId=7a5686ce9ab77182aac067ada012b58a HTTP OPTIONS /api/program-manager/programs/1 responded 204 in 0.1343 ms
+2026-05-15 09:47:40.599 +05:30 [INF] [ProgramManager.API] TraceId=c3eae988094ba667a6d9dd50f4eef3e2 HTTP GET /api/program-manager/programs/1 responded 200 in 51.7256 ms
+2026-05-15 09:47:57.085 +05:30 [INF] [ProgramManager.API] TraceId=ba41b0e276e09d347cc2adcb477032a6 HTTP OPTIONS /api/program-manager/programs/1 responded 204 in 0.0583 ms
+2026-05-15 09:47:57.305 +05:30 [INF] [ProgramManager.API] TraceId=9c95034955c74d587094314d4862ae32 HTTP PUT /api/program-manager/programs/1 responded 200 in 214.5283 ms
+2026-05-15 09:47:57.323 +05:30 [INF] [ProgramManager.API] TraceId=1f37dae6954e0721ea4f1eab446c0ab6 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0503 ms
+2026-05-15 09:47:57.389 +05:30 [INF] [ProgramManager.API] TraceId=41533e229716880754ceeb4568a7788f HTTP GET /api/program-manager/programs responded 200 in 55.4288 ms
+2026-05-15 09:48:08.573 +05:30 [INF] [ProgramManager.API] TraceId=0703a95ad044f61021573baa13e22abb HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0501 ms
+2026-05-15 09:48:08.686 +05:30 [INF] [ProgramManager.API] TraceId=5c51b6cb0e7aea86c6fd3ee5cd09037c HTTP GET /api/program-manager/dashboard responded 200 in 97.5669 ms
+2026-05-15 09:49:49.624 +05:30 [INF] [ProgramManager.API] TraceId=5aec6abbb9f29bb3457f4db2ee291b81 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0365 ms
+2026-05-15 09:49:49.670 +05:30 [INF] [ProgramManager.API] TraceId=ca1cd66d91d47b6e36b58c47d47453a8 HTTP GET /api/program-manager/dashboard responded 200 in 39.9442 ms
+2026-05-15 09:49:59.771 +05:30 [INF] [ProgramManager.API] TraceId=90b77e80a706803c47555312ac863982 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0441 ms
+2026-05-15 09:49:59.810 +05:30 [INF] [ProgramManager.API] TraceId=71422a17f69b2bf234f27c9461ea1a1a HTTP GET /api/program-manager/dashboard responded 200 in 30.6147 ms
+2026-05-15 09:50:05.138 +05:30 [INF] [ProgramManager.API] TraceId=767e39823f07e36f036ab0e04e38926e HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0383 ms
+2026-05-15 09:50:05.153 +05:30 [INF] [ProgramManager.API] TraceId=d8f3d1acf498ac07ea5f99b17f2e093c HTTP GET /api/program-manager/dashboard responded 200 in 8.2656 ms
+2026-05-15 09:51:04.909 +05:30 [INF] [ProgramManager.API] TraceId=7ab6ae2c9cb80380924622d1f05e297b HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0441 ms
+2026-05-15 09:51:04.942 +05:30 [INF] [ProgramManager.API] TraceId=48b5cc8e3f8419e8b71f81696720825d HTTP GET /api/program-manager/dashboard responded 200 in 25.2194 ms
+2026-05-15 09:51:09.918 +05:30 [INF] [ProgramManager.API] TraceId=60409f191a82fff6def5899db13b356f HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0422 ms
+2026-05-15 09:51:09.934 +05:30 [INF] [ProgramManager.API] TraceId=09a216b0b92f66f1b4a4ecaa70c0b3e5 HTTP GET /api/program-manager/dashboard responded 200 in 5.2613 ms
+2026-05-15 09:54:05.925 +05:30 [INF] [ProgramManager.API] TraceId=94d64b3d8bd8b521df06f3d7985bdeac HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0330 ms
+2026-05-15 09:54:05.958 +05:30 [INF] [ProgramManager.API] TraceId=4deacb8cba986b474367959e5758835c HTTP GET /api/program-manager/dashboard responded 200 in 24.8729 ms
+2026-05-15 09:54:08.313 +05:30 [INF] [ProgramManager.API] TraceId=5919f213f03d84c40b55f0611c037553 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0586 ms
+2026-05-15 09:54:08.315 +05:30 [INF] [ProgramManager.API] TraceId=a23b5a439d061b17056b24a00e02aae9 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0567 ms
+2026-05-15 09:54:08.315 +05:30 [INF] [ProgramManager.API] TraceId=18ff33562f3af1403a4f560c6abdcc67 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0159 ms
+2026-05-15 09:54:08.340 +05:30 [INF] [ProgramManager.API] TraceId=03a683c3f9d5f4cd4e6e415c3d2d85d3 HTTP GET /api/program-manager/programs responded 200 in 13.9620 ms
+2026-05-15 09:54:08.343 +05:30 [INF] [ProgramManager.API] TraceId=63967cdd4b5fa5a205abdb5a7d8f19af HTTP GET /api/program-manager/benefits responded 404 in 0.3842 ms
+2026-05-15 09:54:08.356 +05:30 [INF] [ProgramManager.API] TraceId=25ea383260c36227cfaa25bc7d95ac0b HTTP GET /api/program-manager/trainings responded 200 in 24.1696 ms
+2026-05-15 09:54:10.512 +05:30 [INF] [ProgramManager.API] TraceId=ff8375c92c194ad5ebc47939016bba3d HTTP GET /api/program-manager/dashboard responded 200 in 88.2393 ms
+2026-05-15 09:57:44.194 +05:30 [INF] [ProgramManager.API] TraceId=29f9eb00bd135ab00fe201a52780bed6 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1268 ms
+2026-05-15 09:57:44.243 +05:30 [INF] [ProgramManager.API] TraceId=a16c31e9f24e61a9642b1a9210a6c3e0 HTTP GET /api/program-manager/programs responded 200 in 11.5101 ms
+2026-05-15 09:57:53.765 +05:30 [INF] [ProgramManager.API] TraceId=b896dd9816ebe398ae925985867af010 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0586 ms
+2026-05-15 09:57:53.786 +05:30 [INF] [ProgramManager.API] TraceId=a3f1f84c90907e2815eb2be4e7444f42 HTTP GET /api/program-manager/programs responded 200 in 4.5915 ms
+2026-05-15 09:57:58.955 +05:30 [INF] [ProgramManager.API] TraceId=c92691e3a6f60811ff7b9085141ed01f HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.1093 ms
+2026-05-15 09:57:59.001 +05:30 [INF] [ProgramManager.API] TraceId=eec2c821cf42e1575715e807d7c44ce3 HTTP GET /api/program-manager/trainings responded 200 in 6.2548 ms
+2026-05-15 09:58:01.987 +05:30 [INF] [ProgramManager.API] TraceId=f5aee671a396e0b1873eece8cfebbcff HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1256 ms
+2026-05-15 09:58:02.006 +05:30 [INF] [ProgramManager.API] TraceId=de05dcce400535fe27b83b1ff195dd24 HTTP GET /api/program-manager/programs responded 200 in 5.2528 ms
+2026-05-15 09:58:45.342 +05:30 [INF] [ProgramManager.API] TraceId=f3e41b7f0e420c5268d5eec5f0809d68 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0546 ms
+2026-05-15 09:58:45.555 +05:30 [INF] [ProgramManager.API] TraceId=4fa02f32c60726ef7d88477dfdd17178 HTTP POST /api/program-manager/programs responded 200 in 204.2722 ms
+2026-05-15 09:58:45.579 +05:30 [INF] [ProgramManager.API] TraceId=f2934308d7b73ee2dab955abc1b6552d HTTP GET /api/program-manager/programs responded 200 in 5.0309 ms
+2026-05-15 09:58:52.026 +05:30 [INF] [ProgramManager.API] TraceId=d1e115f649d1d8cd5dde7f887b096f61 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0530 ms
+2026-05-15 09:58:52.048 +05:30 [INF] [ProgramManager.API] TraceId=2c48b5716d3526d768a6ade416adc3e1 HTTP GET /api/program-manager/trainings responded 200 in 9.8730 ms
+2026-05-15 09:58:55.046 +05:30 [INF] [ProgramManager.API] TraceId=daf3dd7043d54ce681684a63ff66371c HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0660 ms
+2026-05-15 09:58:55.063 +05:30 [INF] [ProgramManager.API] TraceId=20db4c4fd82469d15e1a732808b377c8 HTTP GET /api/program-manager/programs responded 200 in 4.1558 ms
+2026-05-15 09:59:01.871 +05:30 [INF] [ProgramManager.API] TraceId=fea7b9722c87ce19abd5b9fd6b5ca580 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0517 ms
+2026-05-15 09:59:01.893 +05:30 [INF] [ProgramManager.API] TraceId=aeb047992ceb97e4409d60c4bacc3631 HTTP GET /api/program-manager/trainings responded 200 in 11.5822 ms
+2026-05-15 09:59:04.341 +05:30 [INF] [ProgramManager.API] TraceId=7bc5e42d6a5d6a54c5184e77b6857b99 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0404 ms
+2026-05-15 09:59:04.364 +05:30 [INF] [ProgramManager.API] TraceId=47fd065237f95295daf28ffcaefe53a3 HTTP GET /api/program-manager/programs responded 200 in 5.6813 ms
+2026-05-15 09:59:18.428 +05:30 [INF] [ProgramManager.API] TraceId=32870dee8ccbc4708704f99ce57c3905 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0574 ms
+2026-05-15 09:59:18.467 +05:30 [INF] [ProgramManager.API] TraceId=16e628ad43808e756e8596c4f2cc9b08 HTTP GET /api/program-manager/trainings responded 200 in 5.5166 ms
+2026-05-15 09:59:26.422 +05:30 [INF] [ProgramManager.API] TraceId=8afcd07df48b17db5d96059dbe935b35 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0479 ms
+2026-05-15 09:59:26.439 +05:30 [INF] [ProgramManager.API] TraceId=231e3bd70840646f01b5dd4edac154ee HTTP GET /api/program-manager/benefits responded 404 in 1.0378 ms
+2026-05-15 09:59:28.665 +05:30 [INF] [ProgramManager.API] TraceId=9a64b84766b8dd522e3588bc02afb884 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0525 ms
+2026-05-15 09:59:28.689 +05:30 [INF] [ProgramManager.API] TraceId=a0c4f9ca81c727cc4aeb265cf8719c29 HTTP GET /api/program-manager/programs responded 200 in 14.2465 ms
+2026-05-15 09:59:30.339 +05:30 [INF] [ProgramManager.API] TraceId=31683cc6e20dd4b08afa71409d88b7a9 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.0602 ms
+2026-05-15 09:59:30.359 +05:30 [INF] [ProgramManager.API] TraceId=01670d0d8a9082493cbd1fc480d5cbc0 HTTP GET /api/program-manager/resources responded 200 in 8.9048 ms
+2026-05-15 09:59:32.615 +05:30 [INF] [ProgramManager.API] TraceId=55325fb9d0f3245051d2e380798356c2 HTTP GET /api/program-manager/programs responded 200 in 3.4630 ms
+2026-05-15 09:59:42.561 +05:30 [INF] [ProgramManager.API] TraceId=0ace32e2f233caeed61805f49a229840 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0847 ms
+2026-05-15 09:59:42.563 +05:30 [INF] [ProgramManager.API] TraceId=98cbe99641d87227e79d0372f2fa2708 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0122 ms
+2026-05-15 09:59:42.563 +05:30 [INF] [ProgramManager.API] TraceId=f1af66899682678d589982e3f7681fcf HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0391 ms
+2026-05-15 09:59:42.599 +05:30 [INF] [ProgramManager.API] TraceId=b4e8758355834631a71030c24af16f46 HTTP GET /api/program-manager/benefits responded 404 in 0.1926 ms
+2026-05-15 09:59:42.606 +05:30 [INF] [ProgramManager.API] TraceId=52dfbce4200c8f7bed1d9c0f176fcf4d HTTP GET /api/program-manager/programs responded 200 in 9.5695 ms
+2026-05-15 09:59:42.619 +05:30 [INF] [ProgramManager.API] TraceId=85949833ca5321d91ef72ce6abbe8fef HTTP GET /api/program-manager/trainings responded 200 in 14.1868 ms
+2026-05-15 09:59:45.570 +05:30 [INF] [ProgramManager.API] TraceId=40ebd211779a823b59ecebb236450935 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0537 ms
+2026-05-15 09:59:45.638 +05:30 [INF] [ProgramManager.API] TraceId=2542404f83235074ad4d368945fe96b7 HTTP GET /api/program-manager/dashboard responded 200 in 55.0977 ms
+2026-05-15 10:10:37.693 +05:30 [INF] [ProgramManager.API] TraceId=bbbc1e3a1beef05d415d7fa146adc9eb HTTP OPTIONS /api/program-manager/resources responded 204 in 0.0715 ms
+2026-05-15 10:10:37.934 +05:30 [INF] [ProgramManager.API] TraceId=babb675e28d2ee68f3b623b78219ee76 HTTP GET /api/program-manager/resources responded 200 in 230.5637 ms
+2026-05-15 10:11:49.996 +05:30 [INF] [ProgramManager.API] TraceId=7c8ffcae5a80cfdf86b498c94abdd95a HTTP GET /index.html responded 304 in 126.4564 ms
+2026-05-15 10:11:50.487 +05:30 [INF] [ProgramManager.API] TraceId=20a80ff2e1bd1d16fe514db40cc63a5f HTTP GET /swagger-ui.css responded 304 in 102.1445 ms
+2026-05-15 10:11:50.488 +05:30 [INF] [ProgramManager.API] TraceId=9d05bc3b437cf9340384f97b3ff24a91 HTTP GET /swagger-ui-bundle.js responded 304 in 101.2965 ms
+2026-05-15 10:11:50.491 +05:30 [INF] [ProgramManager.API] TraceId=b5d8d7b0b373fb2b802ec8a621c9b5b0 HTTP GET /index.css responded 304 in 105.5086 ms
+2026-05-15 10:11:50.557 +05:30 [INF] [ProgramManager.API] TraceId=56d58e8c3618050f7f9585a48b7c4cce HTTP GET /swagger-ui-standalone-preset.js responded 304 in 13.1675 ms
+2026-05-15 10:11:50.581 +05:30 [INF] [ProgramManager.API] TraceId=09aac58703550b12043f72311b93e0a3 HTTP GET /index.js responded 304 in 1.5783 ms
+2026-05-15 10:11:52.169 +05:30 [INF] [ProgramManager.API] TraceId=83cbea11a5ea0eabd059abf5f7224cda HTTP GET /swagger/v1/swagger.json responded 200 in 46.4676 ms
+2026-05-15 10:12:45.143 +05:30 [INF] [ProgramManager.API] TraceId=187eed4909ae784da6f501657f5642b1 HTTP OPTIONS /api/program-manager/programs responded 204 in 4.5594 ms
+2026-05-15 10:12:47.376 +05:30 [INF] [ProgramManager.API] TraceId=1280ce7391506945ab37362eaf2566cf HTTP GET /api/program-manager/programs responded 200 in 2215.8494 ms
+2026-05-15 10:12:55.664 +05:30 [INF] [ProgramManager.API] TraceId=a0c66ae2db4f028cba4ee30d75e51c09 HTTP OPTIONS /api/program-manager/programs/4 responded 204 in 1.0139 ms
+2026-05-15 10:12:55.974 +05:30 [INF] [ProgramManager.API] TraceId=537a9046efc9fbb45aeb6b8ce2ad862c HTTP GET /api/program-manager/programs/4 responded 200 in 294.0326 ms
+2026-05-15 10:12:59.656 +05:30 [INF] [ProgramManager.API] TraceId=35e9d03726ae4264fae60dcbdae8c973 HTTP OPTIONS /api/program-manager/programs/4 responded 204 in 0.2389 ms
+2026-05-15 10:12:59.892 +05:30 [INF] [ProgramManager.API] TraceId=a2bf5f8b4c74674ec99d4f9b6c155304 HTTP PUT /api/program-manager/programs/4 responded 200 in 224.2344 ms
+2026-05-15 10:12:59.906 +05:30 [INF] [ProgramManager.API] TraceId=e4272cf4e4c9e172c1a455ddc6cbfc21 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0802 ms
+2026-05-15 10:12:59.922 +05:30 [INF] [ProgramManager.API] TraceId=78013d958e1fa4527b1a065596f020ae HTTP GET /api/program-manager/programs responded 200 in 6.4885 ms
+2026-05-15 10:13:33.007 +05:30 [INF] [ProgramManager.API] TraceId=201ff2d9c2afe8f487f32ced6d0ad6b0 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2098 ms
+2026-05-15 10:13:33.037 +05:30 [INF] [ProgramManager.API] TraceId=55b1e3211920062952b8ea3740956216 HTTP GET /api/program-manager/programs responded 200 in 3.7055 ms
+2026-05-15 10:13:38.451 +05:30 [INF] [ProgramManager.API] TraceId=4030e1dd07520b73b670c203c19b869e HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2320 ms
+2026-05-15 10:13:38.471 +05:30 [INF] [ProgramManager.API] TraceId=319e11dcd14ebd3f626e362d3508f6dd HTTP GET /api/program-manager/programs responded 200 in 5.7268 ms
+2026-05-15 10:13:40.657 +05:30 [INF] [ProgramManager.API] TraceId=10f1a7de9d02ea48ea7dfc5030a9cd29 HTTP OPTIONS /api/program-manager/programs/4 responded 204 in 0.1965 ms
+2026-05-15 10:13:40.686 +05:30 [INF] [ProgramManager.API] TraceId=fe7a6596a0ec43236e99379e4cd60401 HTTP GET /api/program-manager/programs/4 responded 200 in 15.5183 ms
+2026-05-15 10:13:43.477 +05:30 [INF] [ProgramManager.API] TraceId=e9615a6474cb6387f09e28ee6e44592c HTTP OPTIONS /api/program-manager/programs/4 responded 204 in 0.1617 ms
+2026-05-15 10:13:43.504 +05:30 [INF] [ProgramManager.API] TraceId=53f737aead0a3e062bf7e8fd17b1219c HTTP PUT /api/program-manager/programs/4 responded 200 in 17.3341 ms
+2026-05-15 10:13:43.526 +05:30 [INF] [ProgramManager.API] TraceId=8f483017a18d37d4b6afe37f3183f545 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.3920 ms
+2026-05-15 10:13:43.550 +05:30 [INF] [ProgramManager.API] TraceId=8971e831a16f34d085f436147de4df73 HTTP GET /api/program-manager/programs responded 200 in 7.3984 ms
+2026-05-15 10:13:45.479 +05:30 [INF] [ProgramManager.API] TraceId=9678580a1bc423c60e84963002b71818 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.1314 ms
+2026-05-15 10:13:45.553 +05:30 [INF] [ProgramManager.API] TraceId=7408fcb9043df23f14345016653784cb HTTP GET /api/program-manager/trainings responded 200 in 55.8443 ms
+2026-05-15 10:14:57.017 +05:30 [INF] [ProgramManager.API] TraceId=441429cb1e42ad04a26abe12fdd51b84 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.2833 ms
+2026-05-15 10:14:57.042 +05:30 [INF] [ProgramManager.API] TraceId=b33b80eab21d7f4898014323f0b2ba71 HTTP GET /api/program-manager/benefits responded 404 in 1.1116 ms
+2026-05-15 10:14:58.998 +05:30 [INF] [ProgramManager.API] TraceId=acf3b2e799277c8b588619c2b32c17d8 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0883 ms
+2026-05-15 10:14:59.018 +05:30 [INF] [ProgramManager.API] TraceId=4180e3e82e45e7513ce22796cd97d8de HTTP GET /api/program-manager/programs responded 200 in 5.6148 ms
+2026-05-15 10:15:03.770 +05:30 [INF] [ProgramManager.API] TraceId=4741bcd3a5b051a709e4567b720bf7d8 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.3291 ms
+2026-05-15 10:15:03.787 +05:30 [INF] [ProgramManager.API] TraceId=e5c58d23be842fe16b35efe7add71d16 HTTP GET /api/program-manager/benefits responded 404 in 0.6352 ms
+2026-05-15 10:15:05.257 +05:30 [INF] [ProgramManager.API] TraceId=3b034e9bf3654da0c68933662b7ad348 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0804 ms
+2026-05-15 10:15:05.279 +05:30 [INF] [ProgramManager.API] TraceId=559713a7f3e83f16e3d2d9af5294cfeb HTTP GET /api/program-manager/trainings responded 200 in 8.1757 ms
+2026-05-15 10:15:08.194 +05:30 [INF] [ProgramManager.API] TraceId=71bd72dcb9ca06f32c9e69d7d32476fe HTTP GET /api/program-manager/benefits responded 404 in 1.0059 ms
+2026-05-15 10:16:06.789 +05:30 [INF] [ProgramManager.API] TraceId=22ff87cce9a63e7ed5ec0faa62bf2809 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.6726 ms
+2026-05-15 10:16:06.805 +05:30 [INF] [ProgramManager.API] TraceId=c21a28ed985745d9266555328471f8e9 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.1564 ms
+2026-05-15 10:16:06.805 +05:30 [INF] [ProgramManager.API] TraceId=9b1e879ec2fb3581eeb007c2ba5b021c HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1654 ms
+2026-05-15 10:16:06.818 +05:30 [INF] [ProgramManager.API] TraceId=475dbe0147fedc3cbf1f25a6ce1443b1 HTTP GET /api/program-manager/programs responded 200 in 5.6080 ms
+2026-05-15 10:16:06.855 +05:30 [INF] [ProgramManager.API] TraceId=7b25b7791e38ae3ef254f56abdc730a2 HTTP GET /api/program-manager/benefits responded 404 in 0.4373 ms
+2026-05-15 10:16:06.903 +05:30 [INF] [ProgramManager.API] TraceId=b7d037e97340546d7a35c6db78075dd7 HTTP GET /api/program-manager/trainings responded 200 in 85.4950 ms
+2026-05-15 10:16:11.185 +05:30 [INF] [ProgramManager.API] TraceId=7ee7cbd959a2d735f3adbb297987c8ed HTTP GET /api/program-manager/programs responded 200 in 7.0557 ms
+2026-05-15 10:16:21.558 +05:30 [INF] [ProgramManager.API] TraceId=853d27d6c1cc0183e761f5a39b409de0 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.1329 ms
+2026-05-15 10:16:21.618 +05:30 [INF] [ProgramManager.API] TraceId=0db66f84465424731c938f54ae930934 HTTP GET /api/program-manager/resources responded 200 in 38.3856 ms
+2026-05-15 10:17:10.628 +05:30 [INF] [ProgramManager.API] TraceId=f96336a8a7a70ab7fa56d2883a48525c HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1337 ms
+2026-05-15 10:17:10.661 +05:30 [INF] [ProgramManager.API] TraceId=786c12acb5242e2372f52c97b772408d HTTP GET /api/program-manager/programs responded 200 in 2.6251 ms
+2026-05-15 10:17:19.332 +05:30 [INF] [ProgramManager.API] TraceId=766e44e0108590337d32158b28a898c6 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0610 ms
+2026-05-15 10:17:19.353 +05:30 [INF] [ProgramManager.API] TraceId=068ec1fcb2a082b61f6dcaa8af2c82a6 HTTP GET /api/program-manager/benefits responded 404 in 0.5320 ms
+2026-05-15 10:17:20.798 +05:30 [INF] [ProgramManager.API] TraceId=0b4a7e72e4c4dfd79db33ffd6c8acaea HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0727 ms
+2026-05-15 10:17:20.832 +05:30 [INF] [ProgramManager.API] TraceId=b8f615df76b2cbf40f43cc18ec20272c HTTP GET /api/program-manager/programs responded 200 in 10.4481 ms
+2026-05-15 10:22:07.504 +05:30 [INF] [ProgramManager.API] TraceId=04da5b36dc0b7549d25238e7f987f971 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.2159 ms
+2026-05-15 10:22:07.907 +05:30 [INF] [ProgramManager.API] TraceId=0f27721d117a32827774d956e9bb8cc1 HTTP GET /api/program-manager/dashboard responded 200 in 390.9578 ms
+2026-05-15 10:22:14.265 +05:30 [INF] [ProgramManager.API] TraceId=630f1504defea8ef4b8da912f0652c7c HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1727 ms
+2026-05-15 10:22:14.295 +05:30 [INF] [ProgramManager.API] TraceId=1f95b94c8fcb0bc59a54f314c70d85a5 HTTP GET /api/program-manager/programs responded 200 in 5.8296 ms
+2026-05-15 10:22:20.926 +05:30 [INF] [ProgramManager.API] TraceId=76947518c274bda1f7945d56c0b8a89f HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1552 ms
+2026-05-15 10:22:20.957 +05:30 [INF] [ProgramManager.API] TraceId=404c86c1c365733fee45ac8478527eb2 HTTP GET /api/program-manager/dashboard responded 200 in 18.8627 ms
+2026-05-15 10:22:21.732 +05:30 [INF] [ProgramManager.API] TraceId=b109581c1e970a9d21a5946c605223ca HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1955 ms
+2026-05-15 10:22:21.751 +05:30 [INF] [ProgramManager.API] TraceId=e7bbd30b9eaa1eac37d16f0f69cbb18f HTTP GET /api/program-manager/programs responded 200 in 6.3074 ms
+2026-05-15 10:29:33.966 +05:30 [INF] [ProgramManager.API] TraceId=fedc8575086003c9532dc76173a87b78 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0652 ms
+2026-05-15 10:29:34.221 +05:30 [INF] [ProgramManager.API] TraceId=43a90f34c49d2f73dca9e16d8bf15c48 HTTP GET /api/program-manager/programs responded 200 in 240.7650 ms
+2026-05-15 10:30:27.913 +05:30 [INF] [ProgramManager.API] TraceId=dc1ea18a9cf07404e82087b00e3083ee HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1061 ms
+2026-05-15 10:30:27.931 +05:30 [INF] [ProgramManager.API] TraceId=72ad83e356b5c59fe5d27f8061c1caff HTTP GET /api/program-manager/programs responded 200 in 7.2992 ms
+2026-05-15 10:30:49.489 +05:30 [INF] [ProgramManager.API] TraceId=e2b7849415364aadf171b58bef218a77 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.3290 ms
+2026-05-15 10:30:49.514 +05:30 [INF] [ProgramManager.API] TraceId=60a0ea84abbfcf0872107dcf8a34f1ac HTTP GET /api/program-manager/programs responded 200 in 15.3135 ms
+2026-05-15 10:31:15.868 +05:30 [INF] [ProgramManager.API] TraceId=1383ecc888ff36b3cf279a0a320f3171 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1135 ms
+2026-05-15 10:31:15.965 +05:30 [INF] [ProgramManager.API] TraceId=15701eb42875b3b962f3b401c23f79af HTTP POST /api/program-manager/programs responded 200 in 84.5813 ms
+2026-05-15 10:31:15.983 +05:30 [INF] [ProgramManager.API] TraceId=a6e74ac6c6727dfbe7d463fb5a11aac2 HTTP GET /api/program-manager/programs responded 200 in 3.0321 ms
+2026-05-15 10:31:19.260 +05:30 [INF] [ProgramManager.API] TraceId=5a1c081f3a018109a98a8a770ec7d19e HTTP OPTIONS /api/program-manager/programs/5 responded 204 in 0.2860 ms
+2026-05-15 10:31:19.280 +05:30 [INF] [ProgramManager.API] TraceId=949673554f2d177b5a65092f74241f2a HTTP GET /api/program-manager/programs/5 responded 200 in 8.4304 ms
+2026-05-15 10:31:23.177 +05:30 [INF] [ProgramManager.API] TraceId=12d368532d0b656b0cb1112a127b396c HTTP OPTIONS /api/program-manager/programs/5 responded 204 in 0.2109 ms
+2026-05-15 10:31:23.201 +05:30 [INF] [ProgramManager.API] TraceId=5444e653be47c934e02de7a4ab63b30d HTTP PUT /api/program-manager/programs/5 responded 200 in 13.4255 ms
+2026-05-15 10:31:23.223 +05:30 [INF] [ProgramManager.API] TraceId=c8ecc5262bb98ffbcae7e1d17f776739 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1048 ms
+2026-05-15 10:31:23.241 +05:30 [INF] [ProgramManager.API] TraceId=0693074f5d7a27c559d091e485c0c5f1 HTTP GET /api/program-manager/programs responded 200 in 6.6556 ms
+2026-05-15 10:31:29.923 +05:30 [INF] [ProgramManager.API] TraceId=3a5e0c48e39aee9745edb216de2a88cb HTTP OPTIONS /api/program-manager/programs/5 responded 204 in 0.0602 ms
+2026-05-15 10:31:30.002 +05:30 [INF] [ProgramManager.API] TraceId=f3638d5805abb0971ec4ac87430bc7e3 HTTP DELETE /api/program-manager/programs/5 responded 200 in 72.0539 ms
+2026-05-15 10:31:33.344 +05:30 [INF] [ProgramManager.API] TraceId=499612a9f895b6f50ae7e5bf733a6a79 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0475 ms
+2026-05-15 10:31:33.370 +05:30 [INF] [ProgramManager.API] TraceId=9b2d92bf8734fe14e7e6bcc251e4745b HTTP GET /api/program-manager/trainings responded 200 in 13.8647 ms
+2026-05-15 10:31:43.292 +05:30 [INF] [ProgramManager.API] TraceId=e4b0f4f6d9ce0b2005ed274dbfb5b8ad HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1031 ms
+2026-05-15 10:31:43.323 +05:30 [INF] [ProgramManager.API] TraceId=93f1f0a1640e519ca5b8c103d0857c8d HTTP GET /api/program-manager/programs responded 200 in 4.4546 ms
+2026-05-15 10:31:46.284 +05:30 [INF] [ProgramManager.API] TraceId=26957ff2b377b3cd2d46d9dd1746d36f HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0374 ms
+2026-05-15 10:31:46.298 +05:30 [INF] [ProgramManager.API] TraceId=c2d6bbff671be9c1e3530be05169aea0 HTTP GET /api/program-manager/benefits responded 404 in 0.5752 ms
+2026-05-15 10:31:47.476 +05:30 [INF] [ProgramManager.API] TraceId=7de380a7d4b8932eb1022df661e209d8 HTTP GET /api/program-manager/programs responded 200 in 6.1396 ms
+2026-05-15 10:32:08.995 +05:30 [INF] [ProgramManager.API] TraceId=63e87e26f655b3ac1d0e5bfbcd804dda HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1335 ms
+2026-05-15 10:32:09.025 +05:30 [INF] [ProgramManager.API] TraceId=7caa1b097fe2a2acafcf0dc3fbb8dd87 HTTP GET /api/program-manager/benefits responded 404 in 0.5530 ms
+2026-05-15 10:32:10.441 +05:30 [INF] [ProgramManager.API] TraceId=20582a2d669f6e636049c9f1f45de827 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0472 ms
+2026-05-15 10:32:10.465 +05:30 [INF] [ProgramManager.API] TraceId=20d19d292eab2caf2f80af576675ae73 HTTP GET /api/program-manager/programs responded 200 in 7.1082 ms
+2026-05-15 10:32:19.760 +05:30 [INF] [ProgramManager.API] TraceId=ffc3df4c85bab5258ec6ba0d4869cf8a HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0355 ms
+2026-05-15 10:32:19.784 +05:30 [INF] [ProgramManager.API] TraceId=de1ae8e8e3d218caff25740483da1fae HTTP GET /api/program-manager/trainings responded 200 in 9.3624 ms
+2026-05-15 10:32:25.641 +05:30 [INF] [ProgramManager.API] TraceId=4a9abefe557e73be46b0c7354788f3ae HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0354 ms
+2026-05-15 10:32:25.651 +05:30 [INF] [ProgramManager.API] TraceId=f854c527eed7c58e337bde8301503991 HTTP GET /api/program-manager/benefits responded 404 in 0.2956 ms
+2026-05-15 10:32:30.306 +05:30 [INF] [ProgramManager.API] TraceId=5ca73ee7913a6124ee956dd33ad8f61b HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1936 ms
+2026-05-15 10:32:30.332 +05:30 [INF] [ProgramManager.API] TraceId=735e5cb30af6ac8190b369bec963340b HTTP GET /api/program-manager/programs responded 200 in 4.9209 ms
+2026-05-15 10:32:31.708 +05:30 [INF] [ProgramManager.API] TraceId=1cb6d3e9f66082af035292ad10325089 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0750 ms
+2026-05-15 10:32:31.727 +05:30 [INF] [ProgramManager.API] TraceId=2fda108500690749127e5ab1c933d019 HTTP GET /api/program-manager/trainings responded 200 in 4.3746 ms
+2026-05-15 10:38:18.503 +05:30 [INF] [ProgramManager.API] TraceId=1e9a57665769951a17873d3ef656caed HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0547 ms
+2026-05-15 10:38:18.536 +05:30 [INF] [ProgramManager.API] TraceId=876751c8db2edcc5a5f15e4e918a0843 HTTP GET /api/program-manager/trainings responded 200 in 21.7159 ms
+2026-05-15 10:40:03.975 +05:30 [INF] [ProgramManager.API] TraceId=47511aa87f463e2b46ecabcd9077536d HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.3159 ms
+2026-05-15 10:40:03.999 +05:30 [INF] [ProgramManager.API] TraceId=460962f337a15ace5572c19af0fe0165 HTTP GET /api/program-manager/trainings responded 200 in 7.9613 ms
+2026-05-15 10:44:58.215 +05:30 [INF] [ProgramManager.API] TraceId=35810f3bf6c5d3a264eb1b1124e14789 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0724 ms
+2026-05-15 10:44:58.615 +05:30 [INF] [ProgramManager.API] TraceId=d126684904d994169c2189f8a7e6a10b HTTP GET /api/program-manager/trainings responded 200 in 392.0635 ms
+2026-05-15 10:45:02.825 +05:30 [INF] [ProgramManager.API] TraceId=3f67a1024ed925cc3a15ca7b76748330 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0411 ms
+2026-05-15 10:45:02.840 +05:30 [INF] [ProgramManager.API] TraceId=a2fe4e3e6eaf5d645ae2e8f3699f8b91 HTTP GET /api/program-manager/benefits responded 404 in 0.8116 ms
+2026-05-15 10:45:09.232 +05:30 [INF] [ProgramManager.API] TraceId=f6d2b75b6a54270bd957b36d87a978af HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0635 ms
+2026-05-15 10:45:09.255 +05:30 [INF] [ProgramManager.API] TraceId=0f09b768710b54c6a164795f7e43c650 HTTP GET /api/program-manager/benefits responded 404 in 0.7251 ms
+2026-05-15 10:45:10.928 +05:30 [INF] [ProgramManager.API] TraceId=b1c5540dd054e2691a9f20d0bff313f7 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0350 ms
+2026-05-15 10:45:10.954 +05:30 [INF] [ProgramManager.API] TraceId=329f0514e7e0eccc46ee5e594c2d343a HTTP GET /api/program-manager/programs responded 200 in 14.9658 ms
+2026-05-15 10:45:12.662 +05:30 [INF] [ProgramManager.API] TraceId=549c8e0e5510556c630c7873f68752cb HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0579 ms
+2026-05-15 10:45:12.693 +05:30 [INF] [ProgramManager.API] TraceId=18feaf16691a557d03d1de76c327d447 HTTP GET /api/program-manager/trainings responded 200 in 16.6290 ms
+2026-05-15 10:45:18.238 +05:30 [INF] [ProgramManager.API] TraceId=8a697c33f367d6e6bb0243423982d7a7 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0518 ms
+2026-05-15 10:45:18.252 +05:30 [INF] [ProgramManager.API] TraceId=88ee63fb8a132ea74dd0314927118500 HTTP GET /api/program-manager/benefits responded 404 in 0.8459 ms
+2026-05-15 10:45:32.343 +05:30 [INF] [ProgramManager.API] TraceId=599e0258b222398569b8f2219379bf91 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0472 ms
+2026-05-15 10:45:32.357 +05:30 [INF] [ProgramManager.API] TraceId=5d4809591f3136632cb6c4cfc7d3c972 HTTP GET /api/program-manager/benefits responded 404 in 1.4566 ms
+2026-05-15 10:58:37.250 +05:30 [INF] [ProgramManager.API] TraceId=657aa5cf8b8d1882be0cdcd387f956af HTTP GET /index.html responded 304 in 171.1649 ms
+2026-05-15 10:58:37.701 +05:30 [INF] [ProgramManager.API] TraceId=8051b06a6791a0f23910c1eb80106032 HTTP GET /swagger-ui.css responded 304 in 55.6260 ms
+2026-05-15 10:58:37.701 +05:30 [INF] [ProgramManager.API] TraceId=adbc4b6a2b3f585f084a37c335218729 HTTP GET /swagger-ui-bundle.js responded 304 in 26.1597 ms
+2026-05-15 10:58:37.710 +05:30 [INF] [ProgramManager.API] TraceId=ced4a606897125cebdbf720ebbd50693 HTTP GET /index.css responded 304 in 34.7096 ms
+2026-05-15 10:58:37.758 +05:30 [INF] [ProgramManager.API] TraceId=3046af4180715f0a7a209b01bf566f9b HTTP GET /swagger-ui-standalone-preset.js responded 304 in 14.2893 ms
+2026-05-15 10:58:37.781 +05:30 [INF] [ProgramManager.API] TraceId=452bb119ff39df40c78a1c8f3443eaeb HTTP GET /index.js responded 304 in 1.2336 ms
+2026-05-15 10:58:40.184 +05:30 [INF] [ProgramManager.API] TraceId=506971aa5d163bf1ad5affc184135d68 HTTP GET /swagger/v1/swagger.json responded 200 in 79.0311 ms
+2026-05-15 10:59:02.626 +05:30 [INF] [ProgramManager.API] TraceId=5f2f802ba1f55c297b78cbd2bd0799e0 HTTP OPTIONS /api/program-manager/benefits responded 204 in 3.9641 ms
+2026-05-15 10:59:05.495 +05:30 [INF] [ProgramManager.API] TraceId=e66fc26d25576235412fc5c1be4a0691 HTTP GET /api/program-manager/benefits responded 200 in 2851.4487 ms
+2026-05-15 10:59:32.503 +05:30 [INF] [ProgramManager.API] TraceId=be7e2a67b8f62f3b45171d2e04712cb2 HTTP OPTIONS /api/program-manager/benefits/3/approve responded 204 in 0.3599 ms
+2026-05-15 10:59:33.040 +05:30 [INF] [ProgramManager.API] TraceId=e877f87121803d3359797bd7dbc497bd HTTP PUT /api/program-manager/benefits/3/approve responded 200 in 529.0949 ms
+2026-05-15 10:59:33.049 +05:30 [INF] [ProgramManager.API] TraceId=df8b031d3282b3a9a66fb50a7e2e35f6 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0936 ms
+2026-05-15 10:59:33.101 +05:30 [INF] [ProgramManager.API] TraceId=d6ddcc89ef62b762b96530560ea95b1e HTTP GET /api/program-manager/benefits responded 200 in 43.9887 ms
+2026-05-15 10:59:45.331 +05:30 [INF] [ProgramManager.API] TraceId=3cb62c6969be13de289acc53e36132e8 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2047 ms
+2026-05-15 10:59:45.388 +05:30 [INF] [ProgramManager.API] TraceId=83b5b5e74af74fe3d33cb42324fbdece HTTP GET /api/program-manager/programs responded 200 in 30.7933 ms
+2026-05-15 10:59:46.849 +05:30 [INF] [ProgramManager.API] TraceId=6b18f9e64cb89691347fd2fd039d7e89 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0966 ms
+2026-05-15 10:59:46.879 +05:30 [INF] [ProgramManager.API] TraceId=207150da04deb0a449d52c2e96fce170 HTTP GET /api/program-manager/benefits responded 200 in 18.3451 ms
+2026-05-15 11:00:21.698 +05:30 [INF] [ProgramManager.API] TraceId=141ee60baee7bcf57d91d84e7cd18410 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.1675 ms
+2026-05-15 11:00:21.747 +05:30 [INF] [ProgramManager.API] TraceId=dc38bcf71df129e071f40abe9463908e HTTP GET /api/program-manager/resources responded 200 in 33.9042 ms
+2026-05-15 11:00:23.258 +05:30 [INF] [ProgramManager.API] TraceId=ddab6c3113db7b4e4670739338f31401 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1282 ms
+2026-05-15 11:00:23.295 +05:30 [INF] [ProgramManager.API] TraceId=0413885dc494c33a1b2ab742576fad00 HTTP GET /api/program-manager/benefits responded 200 in 19.8058 ms
+2026-05-15 11:00:24.250 +05:30 [INF] [ProgramManager.API] TraceId=b5a3bdd375a09a58e0059229b9558e81 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.1309 ms
+2026-05-15 11:00:24.318 +05:30 [INF] [ProgramManager.API] TraceId=cd4b28547b31d787faee188fdccda8f2 HTTP GET /api/program-manager/trainings responded 200 in 49.7452 ms
+2026-05-15 11:00:25.517 +05:30 [INF] [ProgramManager.API] TraceId=77a778e4dfb511626358e0eaef42076c HTTP GET /api/program-manager/benefits responded 200 in 28.5216 ms
+2026-05-15 11:00:39.502 +05:30 [INF] [ProgramManager.API] TraceId=6521e4637e54fa82be771901ed7d4fb6 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2855 ms
+2026-05-15 11:00:39.528 +05:30 [INF] [ProgramManager.API] TraceId=e2c37bc7d22989d9dc08e21967445e59 HTTP GET /api/program-manager/programs responded 200 in 16.5128 ms
+2026-05-15 11:00:43.443 +05:30 [INF] [ProgramManager.API] TraceId=8a92e802f01748aad80a821270fff225 HTTP GET /api/program-manager/programs responded 200 in 7.6028 ms
+2026-05-15 11:00:49.134 +05:30 [INF] [ProgramManager.API] TraceId=167219c902d3145174cc988c78ec5a8f HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1816 ms
+2026-05-15 11:00:49.356 +05:30 [INF] [ProgramManager.API] TraceId=8582169dfca64a80365bcbda9e7a96cc HTTP GET /api/program-manager/dashboard responded 200 in 202.7459 ms
+2026-05-15 11:00:57.162 +05:30 [INF] [ProgramManager.API] TraceId=971580d9b96827a4bfa125030763c881 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2309 ms
+2026-05-15 11:00:57.214 +05:30 [INF] [ProgramManager.API] TraceId=d9530239feb242685d7902e7b92b74d8 HTTP GET /api/program-manager/programs responded 200 in 16.5064 ms
+2026-05-15 11:00:58.537 +05:30 [INF] [ProgramManager.API] TraceId=f8db8f2b580fd83de0266c9063462eaf HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.3920 ms
+2026-05-15 11:00:58.554 +05:30 [INF] [ProgramManager.API] TraceId=4cde1f621b12c55c782a709951c0ddf5 HTTP GET /api/program-manager/trainings responded 200 in 5.3709 ms
+2026-05-15 11:01:04.543 +05:30 [INF] [ProgramManager.API] TraceId=2b8a2cd37bfb3be571020bc491b03bcf HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.2222 ms
+2026-05-15 11:01:04.616 +05:30 [INF] [ProgramManager.API] TraceId=c9fdfd5d54561d9488e5070e440eb8f1 HTTP GET /api/program-manager/benefits responded 200 in 57.8917 ms
+2026-05-15 11:02:01.860 +05:30 [INF] [ProgramManager.API] TraceId=ebd842b32d63a345f740aea3fae82cc0 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0803 ms
+2026-05-15 11:02:01.883 +05:30 [INF] [ProgramManager.API] TraceId=ded06c62db2e2e4ecdc47b0a098dee3e HTTP GET /api/program-manager/programs responded 200 in 6.1214 ms
+2026-05-15 11:02:33.664 +05:30 [INF] [ProgramManager.API] TraceId=2b895f217417e052728a7bcadbd42f8b HTTP OPTIONS /api/program-manager/benefits/assign responded 204 in 0.0645 ms
+2026-05-15 11:02:33.671 +05:30 [INF] [ProgramManager.API] TraceId=dd5a3a30b432888520d0d7d0fc52edb9 HTTP POST /api/program-manager/benefits/assign responded 404 in 0.6517 ms
+2026-05-15 11:04:11.341 +05:30 [INF] [ProgramManager.API] TraceId=a5e737beff8e8bd1f144039dad90cd96 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1117 ms
+2026-05-15 11:04:11.388 +05:30 [INF] [ProgramManager.API] TraceId=06a00e31be90aca9c809e8a9d81fc725 HTTP GET /api/program-manager/benefits responded 200 in 18.1483 ms
+2026-05-15 11:04:14.211 +05:30 [INF] [ProgramManager.API] TraceId=f479680a7da8307220e0a0fa6ad4e740 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1095 ms
+2026-05-15 11:04:14.228 +05:30 [INF] [ProgramManager.API] TraceId=95ef2b948233edfe00187c615d31974f HTTP GET /api/program-manager/programs responded 200 in 4.0925 ms
+2026-05-15 11:04:22.429 +05:30 [INF] [ProgramManager.API] TraceId=84f7275328e9dbb3d01a7e9a0c1d2161 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0633 ms
+2026-05-15 11:04:22.459 +05:30 [INF] [ProgramManager.API] TraceId=b8b39047fa37e44eb05f4ac805d43ea9 HTTP GET /api/program-manager/benefits responded 200 in 17.9816 ms
+2026-05-15 11:11:13.752 +05:30 [INF] [ProgramManager.API] TraceId=aabc62a6192ce989fe835e2213977ed6 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.2222 ms
+2026-05-15 11:11:13.997 +05:30 [INF] [ProgramManager.API] TraceId=1a700a81c5762fd1848a6ad789caf8d9 HTTP GET /api/program-manager/benefits responded 200 in 234.2355 ms
+2026-05-15 11:11:33.908 +05:30 [INF] [ProgramManager.API] TraceId=3075581bb8f2b2f14c0b1577c61d733e HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.2299 ms
+2026-05-15 11:11:33.923 +05:30 [INF] [ProgramManager.API] TraceId=68ab9b63563c6bd87de2a2ce46be7681 HTTP GET /api/program-manager/benefits responded 200 in 4.9463 ms
+2026-05-15 11:12:03.030 +05:30 [INF] [ProgramManager.API] TraceId=eae2f43653469db5a07c421cd50349ca HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0771 ms
+2026-05-15 11:12:03.062 +05:30 [INF] [ProgramManager.API] TraceId=a7b0115d9495b4da9700d89112350dc8 HTTP GET /api/program-manager/benefits responded 200 in 25.7562 ms
+2026-05-15 11:12:40.498 +05:30 [INF] [ProgramManager.API] TraceId=a94ee19e90185668e3beb1e8a009535c HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0784 ms
+2026-05-15 11:12:40.513 +05:30 [INF] [ProgramManager.API] TraceId=e1a95d44a9806b771895b6a08852eb00 HTTP GET /api/program-manager/benefits responded 200 in 4.4999 ms
+2026-05-15 11:12:45.959 +05:30 [INF] [ProgramManager.API] TraceId=6cd66df96a231dd772a2ac43bccd904f HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.3589 ms
+2026-05-15 11:12:45.979 +05:30 [INF] [ProgramManager.API] TraceId=336eb83188513ce159bc007844c19abc HTTP GET /api/program-manager/trainings responded 200 in 8.9703 ms
+2026-05-15 11:13:14.054 +05:30 [INF] [ProgramManager.API] TraceId=29b05a0c33938c0caabd42a2cc26c704 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.3267 ms
+2026-05-15 11:13:14.080 +05:30 [INF] [ProgramManager.API] TraceId=d759b50683daaec9cf5284a3ef9fe203 HTTP GET /api/program-manager/programs responded 200 in 12.3960 ms
+2026-05-15 11:13:52.668 +05:30 [INF] [ProgramManager.API] TraceId=125a7cdd1a5bff42079a74e874adadee HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.3692 ms
+2026-05-15 11:13:52.756 +05:30 [INF] [ProgramManager.API] TraceId=bc7563bf63d7c24951fce310381dce93 HTTP POST /api/program-manager/trainings responded 400 in 78.9682 ms
+2026-05-15 11:14:09.139 +05:30 [INF] [ProgramManager.API] TraceId=0cb2e9457b3972a86892c26b38ec14b5 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0686 ms
+2026-05-15 11:14:09.149 +05:30 [INF] [ProgramManager.API] TraceId=53c6c9fcf6a70c43a2b44a0d2d70625c HTTP POST /api/program-manager/trainings responded 400 in 2.3147 ms
+2026-05-15 11:19:51.917 +05:30 [INF] [ProgramManager.API] TraceId=a57c7e2a689de62e38ec730997b96cf6 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0606 ms
+2026-05-15 11:19:52.127 +05:30 [INF] [ProgramManager.API] TraceId=fe5b65858c08df362c8e787223cc93bb HTTP GET /api/program-manager/programs responded 200 in 203.0918 ms
+2026-05-15 11:19:57.052 +05:30 [INF] [ProgramManager.API] TraceId=9b1bd076c5251480e28bc2be4d0c04b8 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.4258 ms
+2026-05-15 11:19:57.072 +05:30 [INF] [ProgramManager.API] TraceId=085a92df658c02f84bc88e3692e919ab HTTP GET /api/program-manager/programs responded 200 in 9.9059 ms
+2026-05-15 11:20:14.476 +05:30 [INF] [ProgramManager.API] TraceId=6fdd9de1442c7d4d2931aba9cd45b316 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0632 ms
+2026-05-15 11:20:14.487 +05:30 [INF] [ProgramManager.API] TraceId=aa84bb1c0d7a0847bb80ec538db82884 HTTP POST /api/program-manager/trainings responded 400 in 2.5034 ms
+2026-05-15 11:20:29.365 +05:30 [INF] [ProgramManager.API] TraceId=d03ef7eff6da8e0ec081bbb2537567dd HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1833 ms
+2026-05-15 11:20:29.388 +05:30 [INF] [ProgramManager.API] TraceId=aaea9746e3f9d3ee966bb21740954735 HTTP GET /api/program-manager/programs responded 200 in 8.6716 ms
+2026-05-15 11:20:42.485 +05:30 [INF] [ProgramManager.API] TraceId=8af8691329916ddf1974f82210727f4d HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.6119 ms
+2026-05-15 11:20:42.523 +05:30 [INF] [ProgramManager.API] TraceId=15dcf888ffcbdbdf598d2388b1189cde HTTP GET /api/program-manager/trainings responded 200 in 17.0628 ms
+2026-05-15 11:20:48.394 +05:30 [INF] [ProgramManager.API] TraceId=518770077739b59cb5cfaf341241d49e HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0931 ms
+2026-05-15 11:20:48.436 +05:30 [INF] [ProgramManager.API] TraceId=b4f6d6070f7bf7ba440e76c84e1cee94 HTTP GET /api/program-manager/benefits responded 200 in 28.4237 ms
+2026-05-15 11:20:50.486 +05:30 [INF] [ProgramManager.API] TraceId=efbefa516eae3433a0af24edc10730bb HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1120 ms
+2026-05-15 11:20:50.505 +05:30 [INF] [ProgramManager.API] TraceId=89232d379cf89f3952a1c103f1b0f7df HTTP GET /api/program-manager/programs responded 200 in 7.8909 ms
+2026-05-15 11:20:52.174 +05:30 [INF] [ProgramManager.API] TraceId=6fa8af9f2fafcea15078c05915ff7e99 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0610 ms
+2026-05-15 11:20:52.219 +05:30 [INF] [ProgramManager.API] TraceId=86e7e6c91ff0bec6cb1c9b605bb62108 HTTP GET /api/program-manager/dashboard responded 200 in 32.3410 ms
+2026-05-15 11:20:57.772 +05:30 [INF] [ProgramManager.API] TraceId=606ba5bb955b9f189187879957ec2a9c HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0655 ms
+2026-05-15 11:20:57.801 +05:30 [INF] [ProgramManager.API] TraceId=ab9aa17b1b434b736bccad652ae75700 HTTP GET /api/program-manager/trainings responded 200 in 12.9606 ms
+2026-05-15 11:21:19.059 +05:30 [INF] [ProgramManager.API] TraceId=15db7bdd3803b8e04eea7294f027f75c HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0582 ms
+2026-05-15 11:21:19.085 +05:30 [INF] [ProgramManager.API] TraceId=8415ed70dd7c9dca161b8e811f82f3c7 HTTP GET /api/program-manager/programs responded 200 in 8.8552 ms
+2026-05-15 11:21:19.969 +05:30 [INF] [ProgramManager.API] TraceId=a9160f0b806c9079a18a8e5dcece6cf8 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0506 ms
+2026-05-15 11:21:19.988 +05:30 [INF] [ProgramManager.API] TraceId=c4dd52bb5426e0db94bf538d14b41fdf HTTP GET /api/program-manager/trainings responded 200 in 5.2778 ms
+2026-05-15 11:21:28.966 +05:30 [INF] [ProgramManager.API] TraceId=1363b4931dd6fa9de0423b23dc015f54 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0552 ms
+2026-05-15 11:21:28.984 +05:30 [INF] [ProgramManager.API] TraceId=180d430ae19d1846d289386a943289d9 HTTP GET /api/program-manager/programs responded 200 in 6.9856 ms
+2026-05-15 11:21:31.516 +05:30 [INF] [ProgramManager.API] TraceId=ade0b95234619c1d33a28d8850e449eb HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.3123 ms
+2026-05-15 11:21:31.546 +05:30 [INF] [ProgramManager.API] TraceId=87f51a50c848f28d10c60c35376c98a5 HTTP GET /api/program-manager/trainings responded 200 in 4.2536 ms
+2026-05-15 11:21:39.017 +05:30 [INF] [ProgramManager.API] TraceId=0bfdd243041f890356e334c26ad96be1 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0579 ms
+2026-05-15 11:21:39.038 +05:30 [INF] [ProgramManager.API] TraceId=e573c1fd7c4984c1bd9629732b76b75a HTTP GET /api/program-manager/benefits responded 200 in 5.9508 ms
+2026-05-15 11:21:40.024 +05:30 [INF] [ProgramManager.API] TraceId=a7b15258cac8bcc82668835d9e5ac76a HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0311 ms
+2026-05-15 11:21:40.036 +05:30 [INF] [ProgramManager.API] TraceId=11e9cec8d1bb76585073bdb0f9582194 HTTP GET /api/program-manager/trainings responded 200 in 2.3698 ms
+2026-05-15 11:21:41.469 +05:30 [INF] [ProgramManager.API] TraceId=9424b95acd56ff820c3fc52a2a71d030 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0645 ms
+2026-05-15 11:21:41.486 +05:30 [INF] [ProgramManager.API] TraceId=c6e22d8ee66c3328532704ead660ec71 HTTP GET /api/program-manager/programs responded 200 in 4.9103 ms
+2026-05-15 11:22:03.882 +05:30 [INF] [ProgramManager.API] TraceId=8015609af983c19f7736969545a623ce HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0611 ms
+2026-05-15 11:22:03.894 +05:30 [INF] [ProgramManager.API] TraceId=82b89d1c4234291a78562637a62e8f88 HTTP POST /api/program-manager/trainings responded 400 in 3.1546 ms
+2026-05-15 11:23:33.719 +05:30 [INF] [ProgramManager.API] TraceId=231f3c266f00913e19db29497444f521 HTTP GET /index.html responded 304 in 124.1441 ms
+2026-05-15 11:23:34.196 +05:30 [INF] [ProgramManager.API] TraceId=3d5788e096db6efea909f078c7395e39 HTTP GET /swagger-ui-bundle.js responded 304 in 18.3373 ms
+2026-05-15 11:23:34.196 +05:30 [INF] [ProgramManager.API] TraceId=f7fdc48e641cc3a7185d506270c9691a HTTP GET /swagger-ui.css responded 304 in 24.0895 ms
+2026-05-15 11:23:34.196 +05:30 [INF] [ProgramManager.API] TraceId=209780e2ff409ae84818c15bed937cfe HTTP GET /index.css responded 304 in 43.1981 ms
+2026-05-15 11:23:34.383 +05:30 [INF] [ProgramManager.API] TraceId=6bb2bf2bddc10f46a1ff4344f4f67cdf HTTP GET /swagger-ui-standalone-preset.js responded 304 in 5.6157 ms
+2026-05-15 11:23:34.384 +05:30 [INF] [ProgramManager.API] TraceId=b0a4b41b3cb997a02e1da54c2a754d29 HTTP GET /index.js responded 304 in 0.6296 ms
+2026-05-15 11:23:54.441 +05:30 [INF] [ProgramManager.API] TraceId=c9fe02974525837425d0d1394d8b7925 HTTP OPTIONS /api/program-manager/trainings responded 204 in 2.8273 ms
+2026-05-15 11:23:56.668 +05:30 [INF] [ProgramManager.API] TraceId=55f2aae87b1819656b8d7afbc55085ab HTTP POST /api/program-manager/trainings responded 200 in 2214.8138 ms
+2026-05-15 11:23:57.028 +05:30 [INF] [ProgramManager.API] TraceId=dbd005e79cb21d2ac31607f0f77aaf81 HTTP GET /api/program-manager/trainings responded 200 in 318.1210 ms
+2026-05-15 11:24:59.767 +05:30 [INF] [ProgramManager.API] TraceId=7c296b951e1ee35d342cda32552de5e7 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.3458 ms
+2026-05-15 11:25:00.106 +05:30 [INF] [ProgramManager.API] TraceId=f5326c06b83acdf30c1896cbcd900a65 HTTP GET /api/program-manager/benefits responded 200 in 328.1594 ms
+2026-05-15 11:25:01.518 +05:30 [INF] [ProgramManager.API] TraceId=aad2dd51ddac23aa1980760996b4d788 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.6298 ms
+2026-05-15 11:25:01.746 +05:30 [INF] [ProgramManager.API] TraceId=149a4bec0c32d80b8f2e939d7448ded4 HTTP GET /api/program-manager/dashboard responded 200 in 215.4839 ms
+2026-05-15 11:25:02.406 +05:30 [INF] [ProgramManager.API] TraceId=6a2a2605c769222b1ffd6cfce36976b6 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.2602 ms
+2026-05-15 11:25:02.462 +05:30 [INF] [ProgramManager.API] TraceId=a652939eccfdecd865b43b3147ec18db HTTP GET /api/program-manager/programs responded 200 in 36.1428 ms
+2026-05-15 11:25:03.420 +05:30 [INF] [ProgramManager.API] TraceId=02a733fed85caf17acd97f5cf8b91039 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.2824 ms
+2026-05-15 11:25:03.445 +05:30 [INF] [ProgramManager.API] TraceId=c9c0f2d187022c292453407901be4e98 HTTP GET /api/program-manager/trainings responded 200 in 11.9641 ms
+2026-05-15 11:25:04.441 +05:30 [INF] [ProgramManager.API] TraceId=4ba0db02fa8ca1a472de414a373e09b6 HTTP GET /api/program-manager/programs responded 200 in 15.8825 ms
+2026-05-15 11:25:12.863 +05:30 [INF] [ProgramManager.API] TraceId=22c50a81f2ade48cf5eec1abc1b31f83 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1658 ms
+2026-05-15 11:25:12.916 +05:30 [INF] [ProgramManager.API] TraceId=3d7cabc03845f781cb8ab92d31c8df30 HTTP GET /api/program-manager/dashboard responded 200 in 32.8733 ms
+2026-05-15 11:25:14.234 +05:30 [INF] [ProgramManager.API] TraceId=a918e7e647ff8a6c3f13f31e0e7c7fe9 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0901 ms
+2026-05-15 11:25:14.250 +05:30 [INF] [ProgramManager.API] TraceId=abcf067f41d8a8c88699a4000322faa9 HTTP GET /api/program-manager/trainings responded 200 in 2.3276 ms
+2026-05-15 11:25:15.419 +05:30 [INF] [ProgramManager.API] TraceId=b98b1ea65a0fad34bb0cf18237010038 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0906 ms
+2026-05-15 11:25:15.436 +05:30 [INF] [ProgramManager.API] TraceId=03c6bab815e30b15fccbecae7da1c8c8 HTTP GET /api/program-manager/programs responded 200 in 2.7180 ms
+2026-05-15 11:25:18.349 +05:30 [INF] [ProgramManager.API] TraceId=eee7ef4be582bf91d0df55865fff3395 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1067 ms
+2026-05-15 11:25:18.368 +05:30 [INF] [ProgramManager.API] TraceId=40e04fd1861548d23dba91978ae1e79f HTTP GET /api/program-manager/dashboard responded 200 in 6.3845 ms
+2026-05-15 11:25:20.846 +05:30 [INF] [ProgramManager.API] TraceId=dce48ccc6c2cd4067af6fdfcdbddbdf7 HTTP OPTIONS /api/program-manager/trainings responded 204 in 1.4110 ms
+2026-05-15 11:25:20.857 +05:30 [INF] [ProgramManager.API] TraceId=8b955c1631d500c33d07aa8821838fb2 HTTP GET /api/program-manager/trainings responded 200 in 2.5511 ms
+2026-05-15 11:32:22.448 +05:30 [INF] [ProgramManager.API] TraceId=246db27fe13fa8f4cc316e3fa2a5a6ac HTTP GET /index.html responded 304 in 118.9260 ms
+2026-05-15 11:32:22.895 +05:30 [INF] [ProgramManager.API] TraceId=27be7e2b6546b409e587d6e33e8bc011 HTTP GET /index.css responded 304 in 321.6397 ms
+2026-05-15 11:32:23.094 +05:30 [INF] [ProgramManager.API] TraceId=d5d8b55ca6a934daee68fa964122534f HTTP GET /swagger-ui.css responded 200 in 521.1704 ms
+2026-05-15 11:32:23.094 +05:30 [INF] [ProgramManager.API] TraceId=0d425afb972e069e7f6c5ff7890ecbd2 HTTP GET /swagger-ui-bundle.js responded 200 in 521.1789 ms
+2026-05-15 11:32:23.217 +05:30 [INF] [ProgramManager.API] TraceId=5dedaf1be9611e10d815346d51879d56 HTTP GET /index.js responded 304 in 0.4469 ms
+2026-05-15 11:32:23.218 +05:30 [INF] [ProgramManager.API] TraceId=b31a7c8a9d186419b02ab2aa419adc8c HTTP GET /swagger-ui-standalone-preset.js responded 200 in 6.9638 ms
+2026-05-15 11:32:25.002 +05:30 [INF] [ProgramManager.API] TraceId=a455f4cc1119d3a13a834cb52711e987 HTTP GET /swagger/v1/swagger.json responded 200 in 56.0122 ms
+2026-05-15 11:32:30.255 +05:30 [INF] [ProgramManager.API] TraceId=e30a3da2f1892d0808fb2c9bdb79ef40 HTTP OPTIONS /api/program-manager/trainings responded 204 in 2.1944 ms
+2026-05-15 11:32:32.292 +05:30 [INF] [ProgramManager.API] TraceId=de1622f8146efb56fb33e6af94f1ba7a HTTP GET /api/program-manager/trainings responded 200 in 2029.3263 ms
+2026-05-15 11:32:40.108 +05:30 [INF] [ProgramManager.API] TraceId=b48e0de094d3a066a750c1f88acb2783 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.3458 ms
+2026-05-15 11:32:40.108 +05:30 [INF] [ProgramManager.API] TraceId=8da70bdb2950e4b6835c3e7418f4bd7a HTTP OPTIONS /api/program-manager/trainings/5 responded 204 in 0.3021 ms
+2026-05-15 11:32:40.126 +05:30 [INF] [ProgramManager.API] TraceId=aeda60113381821fa87bd5f771e4c514 HTTP GET /api/program-manager/trainings/5 responded 405 in 3.3496 ms
+2026-05-15 11:32:40.212 +05:30 [INF] [ProgramManager.API] TraceId=b482e158a5c901bdb30e38f7852b94d4 HTTP GET /api/program-manager/programs responded 200 in 98.9444 ms
+2026-05-15 11:32:54.965 +05:30 [INF] [ProgramManager.API] TraceId=6fab52a6dbba98f8328484bde99e1c90 HTTP OPTIONS /api/program-manager/trainings/5 responded 204 in 0.0891 ms
+2026-05-15 11:32:55.214 +05:30 [INF] [ProgramManager.API] TraceId=19d15e05ce833aee8170a40b83090489 HTTP PUT /api/program-manager/trainings/5 responded 200 in 239.2647 ms
+2026-05-15 11:32:55.229 +05:30 [INF] [ProgramManager.API] TraceId=79c284fb2eee9fe49da27b8cfb24e47c HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0779 ms
+2026-05-15 11:32:55.255 +05:30 [INF] [ProgramManager.API] TraceId=8958e1ad7fc9516f1897a62a8cc1d4a5 HTTP GET /api/program-manager/trainings responded 200 in 9.2147 ms
+2026-05-15 11:33:12.756 +05:30 [INF] [ProgramManager.API] TraceId=8fd9861c4e5a031771f40d72922a2012 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1294 ms
+2026-05-15 11:33:12.757 +05:30 [INF] [ProgramManager.API] TraceId=4ba8a0e024c7e38b1225bd6d128d204e HTTP OPTIONS /api/program-manager/trainings/6 responded 204 in 0.0685 ms
+2026-05-15 11:33:12.773 +05:30 [INF] [ProgramManager.API] TraceId=895cd85da1375873bd354a0e0f188332 HTTP GET /api/program-manager/trainings/6 responded 405 in 1.6004 ms
+2026-05-15 11:33:12.776 +05:30 [INF] [ProgramManager.API] TraceId=7709a80969c3a0009b5bd5987af8a55c HTTP GET /api/program-manager/programs responded 200 in 7.6875 ms
+2026-05-15 11:33:50.399 +05:30 [INF] [ProgramManager.API] TraceId=e2cd534eff507a224065d536a260479b HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0945 ms
+2026-05-15 11:33:50.425 +05:30 [INF] [ProgramManager.API] TraceId=51773b83e48840a29dd59e9b539d8c85 HTTP GET /api/program-manager/trainings responded 200 in 16.4659 ms
+2026-05-15 11:35:35.002 +05:30 [INF] [ProgramManager.API] TraceId=289506fdbdc63de041a660b4e3cb0986 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.2159 ms
+2026-05-15 11:35:35.029 +05:30 [INF] [ProgramManager.API] TraceId=c5311342922f52ac7bbf1848bc585b1e HTTP GET /api/program-manager/trainings responded 200 in 18.9675 ms
+2026-05-15 11:35:40.427 +05:30 [INF] [ProgramManager.API] TraceId=2ead785ad228c174e5e7758b27183a93 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0665 ms
+2026-05-15 11:35:40.438 +05:30 [INF] [ProgramManager.API] TraceId=aabb776a2c2e00a434afd95be2d4d01e HTTP GET /api/program-manager/trainings responded 200 in 4.0354 ms
+2026-05-15 11:35:44.030 +05:30 [INF] [ProgramManager.API] TraceId=af94e953f5656f627087d967b479359f HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0624 ms
+2026-05-15 11:35:44.032 +05:30 [INF] [ProgramManager.API] TraceId=6e1f389cbbe4f49f323b4ae060a68808 HTTP OPTIONS /api/program-manager/trainings/5 responded 204 in 0.0729 ms
+2026-05-15 11:35:44.048 +05:30 [INF] [ProgramManager.API] TraceId=33bbe845a5feef1a37e70b883e505bd8 HTTP GET /api/program-manager/trainings/5 responded 405 in 0.4659 ms
+2026-05-15 11:35:44.048 +05:30 [INF] [ProgramManager.API] TraceId=7c779afd8472c057d095fd806de091c1 HTTP GET /api/program-manager/programs responded 200 in 3.9377 ms
+2026-05-15 11:35:49.911 +05:30 [INF] [ProgramManager.API] TraceId=0f20804b3674e49a1fcab61d839e9496 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.5279 ms
+2026-05-15 11:35:49.937 +05:30 [INF] [ProgramManager.API] TraceId=94ed54820a595f02e028caa318451cdc HTTP GET /api/program-manager/trainings responded 200 in 4.0633 ms
+2026-05-15 11:35:52.756 +05:30 [INF] [ProgramManager.API] TraceId=95b4aa73ad7a887371cdd09a5a4ffc63 HTTP OPTIONS /api/program-manager/trainings/5 responded 204 in 0.0672 ms
+2026-05-15 11:35:52.756 +05:30 [INF] [ProgramManager.API] TraceId=836139576b0df51d9b5962b30bee2605 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0672 ms
+2026-05-15 11:35:52.767 +05:30 [INF] [ProgramManager.API] TraceId=c7249cae3cdd95e6f90ea6a4f1da614e HTTP GET /api/program-manager/trainings/5 responded 405 in 0.7082 ms
+2026-05-15 11:35:52.774 +05:30 [INF] [ProgramManager.API] TraceId=69b5206230ef24a968f7634bee694f8e HTTP GET /api/program-manager/programs responded 200 in 2.1437 ms
+2026-05-15 11:41:17.359 +05:30 [INF] [ProgramManager.API] TraceId=0cff70168248a077507d348d64bf3896 HTTP GET /index.html responded 304 in 122.2806 ms
+2026-05-15 11:41:18.056 +05:30 [INF] [ProgramManager.API] TraceId=4c0ba68b95a2b470cc1834b9da9495bf HTTP GET /index.css responded 304 in 36.2625 ms
+2026-05-15 11:41:18.106 +05:30 [INF] [ProgramManager.API] TraceId=a8f35c91da8b11c4814ca3632582f148 HTTP GET /swagger-ui-standalone-preset.js responded 200 in 38.8034 ms
+2026-05-15 11:41:18.106 +05:30 [INF] [ProgramManager.API] TraceId=69f3a34b7d66261daab997f2125c68f3 HTTP GET /swagger-ui.css responded 200 in 87.8593 ms
+2026-05-15 11:41:18.107 +05:30 [INF] [ProgramManager.API] TraceId=1b96dede91694cdb24587b23b75813ee HTTP GET /swagger-ui-bundle.js responded 200 in 88.0745 ms
+2026-05-15 11:41:18.128 +05:30 [INF] [ProgramManager.API] TraceId=c1bdf5b42c383f79fff6d6dfa8d98f29 HTTP GET /index.js responded 304 in 1.2669 ms
+2026-05-15 11:41:19.106 +05:30 [INF] [ProgramManager.API] TraceId=33b48e6a103606b3c5beccecd9b64538 HTTP GET /swagger/v1/swagger.json responded 200 in 57.9207 ms
+2026-05-15 11:41:35.940 +05:30 [INF] [ProgramManager.API] TraceId=8036c3fd72afccf818dc59a99f0dd38d HTTP OPTIONS /api/program-manager/programs responded 204 in 1.7742 ms
+2026-05-15 11:41:35.940 +05:30 [INF] [ProgramManager.API] TraceId=420753abc0aee6101a48376f0ca631c6 HTTP OPTIONS /api/program-manager/trainings/5 responded 204 in 1.7125 ms
+2026-05-15 11:41:38.496 +05:30 [INF] [ProgramManager.API] TraceId=f166ec460040aceb7929ef5d70c0c054 HTTP GET /api/program-manager/trainings/5 responded 200 in 2544.7642 ms
+2026-05-15 11:41:38.496 +05:30 [INF] [ProgramManager.API] TraceId=e79600ba03cf1ff2718d4b971872f383 HTTP GET /api/program-manager/programs responded 200 in 2547.8607 ms
+2026-05-15 11:41:50.590 +05:30 [INF] [ProgramManager.API] TraceId=279192a8c88a4f0b3fbb60620e1fbdbf HTTP OPTIONS /api/program-manager/trainings/5 responded 204 in 0.1971 ms
+2026-05-15 11:41:50.590 +05:30 [INF] [ProgramManager.API] TraceId=9f363bcd2f0df4486753d7ee8d552f48 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1971 ms
+2026-05-15 11:41:50.673 +05:30 [INF] [ProgramManager.API] TraceId=ddc45ae7f27ddc4cf3c4acac9fd84fa9 HTTP GET /api/program-manager/programs responded 200 in 73.2357 ms
+2026-05-15 11:41:50.673 +05:30 [INF] [ProgramManager.API] TraceId=37eead4ce941866d1f95fad0ecbba8dc HTTP GET /api/program-manager/trainings/5 responded 200 in 76.7295 ms
+2026-05-15 11:41:55.536 +05:30 [INF] [ProgramManager.API] TraceId=8a88370191c41f894ee450e4e2b68fa3 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.1013 ms
+2026-05-15 11:41:55.638 +05:30 [INF] [ProgramManager.API] TraceId=1a9a9d15f8c288c1016a68ae46852890 HTTP GET /api/program-manager/trainings responded 200 in 91.8444 ms
+2026-05-15 11:42:01.016 +05:30 [INF] [ProgramManager.API] TraceId=7fc73f1de4b1782ff08c51407c482473 HTTP OPTIONS /api/program-manager/trainings/5 responded 204 in 0.0961 ms
+2026-05-15 11:42:01.153 +05:30 [INF] [ProgramManager.API] TraceId=750593de2a4c42e294058c8fc2488978 HTTP DELETE /api/program-manager/trainings/5 responded 200 in 131.7772 ms
+2026-05-15 11:42:02.858 +05:30 [INF] [ProgramManager.API] TraceId=356d4777312920e1558d20d4e34d15ec HTTP OPTIONS /api/program-manager/programs responded 204 in 0.4690 ms
+2026-05-15 11:42:02.858 +05:30 [INF] [ProgramManager.API] TraceId=c44aa6768b1c4f06a1be74351b147564 HTTP OPTIONS /api/program-manager/trainings/6 responded 204 in 0.0363 ms
+2026-05-15 11:42:02.887 +05:30 [INF] [ProgramManager.API] TraceId=58db2af3b0721ecf3fae38537b2b0ef7 HTTP GET /api/program-manager/programs responded 200 in 2.7496 ms
+2026-05-15 11:42:02.891 +05:30 [INF] [ProgramManager.API] TraceId=0540b8a155d724ab94bdfd06188c185c HTTP GET /api/program-manager/trainings/6 responded 200 in 2.7302 ms
+2026-05-15 11:42:12.147 +05:30 [INF] [ProgramManager.API] TraceId=f9647a23b4413776fc73230a5817be58 HTTP OPTIONS /api/program-manager/trainings/6 responded 204 in 0.1064 ms
+2026-05-15 11:42:12.227 +05:30 [INF] [ProgramManager.API] TraceId=ad8c5c38201332b1e718d2b08c2e3068 HTTP PUT /api/program-manager/trainings/6 responded 200 in 72.0194 ms
+2026-05-15 11:42:12.240 +05:30 [INF] [ProgramManager.API] TraceId=161537164842f907dd8ff1cbc3f42743 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0661 ms
+2026-05-15 11:42:12.254 +05:30 [INF] [ProgramManager.API] TraceId=61d1455f3ebf6e2d523f535b83334cf9 HTTP GET /api/program-manager/trainings responded 200 in 5.5363 ms
+2026-05-15 11:42:54.314 +05:30 [INF] [ProgramManager.API] TraceId=3dd22b39909f30a58be11a86cc7c5cb0 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0808 ms
+2026-05-15 11:42:54.361 +05:30 [INF] [ProgramManager.API] TraceId=ebc4c8e9d60ba574dfe74005249514e7 HTTP GET /api/program-manager/programs responded 200 in 40.4977 ms
+2026-05-15 11:42:58.154 +05:30 [INF] [ProgramManager.API] TraceId=b14f3be77b94b4461f82b0b0050fa4a0 HTTP OPTIONS /api/program-manager/programs/1 responded 204 in 0.1043 ms
+2026-05-15 11:42:58.193 +05:30 [INF] [ProgramManager.API] TraceId=8237d1092015308005fec032d1d4db1a HTTP GET /api/program-manager/programs/1 responded 200 in 24.2881 ms
+2026-05-15 11:43:03.700 +05:30 [INF] [ProgramManager.API] TraceId=c78144056990f514e5a5e773fb9e0dd9 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.1694 ms
+2026-05-15 11:43:03.731 +05:30 [INF] [ProgramManager.API] TraceId=5540f7463777e8b33ddb1ad0390a1f07 HTTP GET /api/program-manager/resources responded 200 in 20.7154 ms
+2026-05-15 11:43:05.626 +05:30 [INF] [ProgramManager.API] TraceId=0f85a5bb97328fb54f0db387cdf99fe9 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0836 ms
+2026-05-15 11:43:05.745 +05:30 [INF] [ProgramManager.API] TraceId=67a00484ef7f55674515c4a11f5680d9 HTTP GET /api/program-manager/benefits responded 200 in 108.5201 ms
+2026-05-15 11:43:12.298 +05:30 [INF] [ProgramManager.API] TraceId=604d2d54927ad1f6e9c2348bdddaf076 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.3212 ms
+2026-05-15 11:43:12.315 +05:30 [INF] [ProgramManager.API] TraceId=5b240b6a59df3f67378591cf6f7a306d HTTP GET /api/program-manager/trainings responded 200 in 9.0045 ms
+2026-05-15 11:43:22.964 +05:30 [INF] [ProgramManager.API] TraceId=b6c2d97b26d62cee91e73f5a2c9e1d31 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0966 ms
+2026-05-15 11:43:22.984 +05:30 [INF] [ProgramManager.API] TraceId=8bbbf157d7abcb27d8dd5c5d4e554de7 HTTP GET /api/program-manager/benefits responded 200 in 4.3715 ms
+2026-05-15 11:43:30.879 +05:30 [INF] [ProgramManager.API] TraceId=6979563673342a6dd66d031cdfcf69c6 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.1799 ms
+2026-05-15 11:43:30.896 +05:30 [INF] [ProgramManager.API] TraceId=081de19b7d75fcd0e748ba8ee97c7c17 HTTP GET /api/program-manager/resources responded 200 in 3.6573 ms
+2026-05-15 11:43:42.380 +05:30 [INF] [ProgramManager.API] TraceId=9eb2992af1b8b6501d6e4c47208aa2a7 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.1214 ms
+2026-05-15 11:43:42.400 +05:30 [INF] [ProgramManager.API] TraceId=d8f829d78842cf07fdfd10054f6c6375 HTTP GET /api/program-manager/benefits responded 200 in 6.0892 ms
+2026-05-15 11:43:54.343 +05:30 [INF] [ProgramManager.API] TraceId=c0d92a5cf2434889c454353ebe3ef737 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.0517 ms
+2026-05-15 11:43:54.368 +05:30 [INF] [ProgramManager.API] TraceId=f7cf618bc22bccd821dc135ff8854aab HTTP GET /api/program-manager/resources responded 200 in 13.0717 ms
+2026-05-15 11:43:58.851 +05:30 [INF] [ProgramManager.API] TraceId=733ddb299d93a8b7aa91c7e81a271566 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1124 ms
+2026-05-15 11:43:58.866 +05:30 [INF] [ProgramManager.API] TraceId=54b0100d6002c5fecef186bc469918eb HTTP GET /api/program-manager/programs responded 200 in 5.5166 ms
+2026-05-15 11:44:17.243 +05:30 [INF] [ProgramManager.API] TraceId=f3497fe577943ecf36605b7f22c48cd4 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0690 ms
+2026-05-15 11:44:17.460 +05:30 [INF] [ProgramManager.API] TraceId=e9b017bdbccbecb6c9b72b60bf0e8e9b HTTP GET /api/program-manager/dashboard responded 200 in 193.2316 ms
+2026-05-15 11:44:22.621 +05:30 [INF] [ProgramManager.API] TraceId=b8470cc90a479713498b38e3e74bb8ac HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.2151 ms
+2026-05-15 11:44:22.638 +05:30 [INF] [ProgramManager.API] TraceId=2d4d2a330a759698767670d869e4c2f2 HTTP GET /api/program-manager/trainings responded 200 in 6.3203 ms
+2026-05-15 11:44:24.064 +05:30 [INF] [ProgramManager.API] TraceId=958ea54a1e0909cef13bab0d6e502e9d HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0418 ms
+2026-05-15 11:44:24.079 +05:30 [INF] [ProgramManager.API] TraceId=d38c2e7b0887a7cf4a3bdc0857a32284 HTTP GET /api/program-manager/dashboard responded 200 in 8.2820 ms
+2026-05-15 11:44:32.048 +05:30 [INF] [ProgramManager.API] TraceId=3cbf91fb923d5ef834cce694db30cdb1 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.2873 ms
+2026-05-15 11:44:32.069 +05:30 [INF] [ProgramManager.API] TraceId=17ea17cc04d3ce1ab619bdca4517c526 HTTP GET /api/program-manager/resources responded 200 in 2.1103 ms
+2026-05-15 11:44:33.630 +05:30 [INF] [ProgramManager.API] TraceId=9dc3ebc94ff33a54ab05af2eee05509f HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0428 ms
+2026-05-15 11:44:33.641 +05:30 [INF] [ProgramManager.API] TraceId=b96282fd259deaad5e82702294795efb HTTP GET /api/program-manager/programs responded 200 in 2.6545 ms
+2026-05-15 11:44:41.117 +05:30 [INF] [ProgramManager.API] TraceId=2777cf45c0a391c946b7f8683101f257 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.1035 ms
+2026-05-15 11:44:41.132 +05:30 [INF] [ProgramManager.API] TraceId=67fb63fa70bc019b9977593fd4906a62 HTTP GET /api/program-manager/resources responded 200 in 2.6159 ms
+2026-05-15 11:45:04.110 +05:30 [INF] [ProgramManager.API] TraceId=c45a1dfaf70a5137fef28bbe3039a5f9 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0498 ms
+2026-05-15 11:45:04.136 +05:30 [INF] [ProgramManager.API] TraceId=2a8b08651eb84037a1c89b71a4a14d10 HTTP GET /api/program-manager/programs responded 200 in 16.7739 ms
+2026-05-15 11:45:05.676 +05:30 [INF] [ProgramManager.API] TraceId=5b5b66586e7ff6ace835976aa653aaa4 HTTP OPTIONS /api/program-manager/resources responded 204 in 0.0428 ms
+2026-05-15 11:45:05.687 +05:30 [INF] [ProgramManager.API] TraceId=72e0013d9b9810f788e6afa644bdfc18 HTTP GET /api/program-manager/resources responded 200 in 4.4912 ms
+2026-05-15 11:45:48.346 +05:30 [INF] [ProgramManager.API] TraceId=f22dc9a1890a22f5d268e3bb3dc4cb9d HTTP POST /api/auth/login responded 200 in 39.5695 ms
+2026-05-15 11:46:04.877 +05:30 [INF] [ProgramManager.API] TraceId=77d1cbdac0294778e61827d94a77852e HTTP GET /api/program-manager/dashboard responded 200 in 36.3600 ms
+2026-05-15 11:46:31.115 +05:30 [INF] [ProgramManager.API] TraceId=1a47d3a61777bfc7a4b9817b10fe9711 HTTP GET /api/program-manager/resources responded 200 in 4.9448 ms
+2026-05-15 11:48:39.332 +05:30 [INF] [ProgramManager.API] TraceId=5cf5df6b02e664a91b2c262f5837469d HTTP GET /index.html responded 304 in 108.6849 ms
+2026-05-15 11:48:40.387 +05:30 [INF] [ProgramManager.API] TraceId=a32250cee3156a25dcdb54f26422926a HTTP GET /index.css responded 304 in 24.1376 ms
+2026-05-15 11:48:40.416 +05:30 [INF] [ProgramManager.API] TraceId=5c3fdbcb574c4e0d59579f4c960b941c HTTP GET /swagger-ui.css responded 200 in 111.6805 ms
+2026-05-15 11:48:40.477 +05:30 [INF] [ProgramManager.API] TraceId=206e52b2770f1725df41712364bc5ec4 HTTP GET /swagger-ui-bundle.js responded 200 in 169.2819 ms
+2026-05-15 11:48:40.482 +05:30 [INF] [ProgramManager.API] TraceId=e91a497c33b494341b26dcdd1f371553 HTTP GET /index.js responded 304 in 0.4046 ms
+2026-05-15 11:48:40.483 +05:30 [INF] [ProgramManager.API] TraceId=ef42a9d696282cb10b23a3834a6494c5 HTTP GET /swagger-ui-standalone-preset.js responded 200 in 2.0041 ms
+2026-05-15 11:48:41.368 +05:30 [INF] [ProgramManager.API] TraceId=761557af68f48f9e0a128995a36c2f7c HTTP GET /swagger/v1/swagger.json responded 200 in 43.2961 ms
+2026-05-15 11:50:49.529 +05:30 [INF] [ProgramManager.API] TraceId=e4e5764c416fc978212acc007e994e1e HTTP POST /api/auth/login responded 200 in 1790.7365 ms
+2026-05-15 11:51:04.548 +05:30 [INF] [ProgramManager.API] TraceId=93e224a03b637764056619c0aeaf7bbe HTTP GET /api/program-manager/resources responded 404 in 37.6704 ms
+2026-05-15 11:51:11.110 +05:30 [INF] [ProgramManager.API] TraceId=360a8701dbdbc0332b3b05a9143b16c0 HTTP GET /api/program-manager/notifications responded 200 in 139.2994 ms
+2026-05-15 11:51:21.177 +05:30 [INF] [ProgramManager.API] TraceId=fff0bc24c5b782ab1301cfd231b7666b HTTP OPTIONS /api/program-manager/dashboard responded 204 in 2.1881 ms
+2026-05-15 11:51:21.442 +05:30 [INF] [ProgramManager.API] TraceId=e94245f78a41e3d9c5bb5fdd79034529 HTTP GET /api/program-manager/dashboard responded 200 in 256.5356 ms
+2026-05-15 11:51:26.965 +05:30 [INF] [ProgramManager.API] TraceId=d956d2e879facff32b1da7609e5ba1fb HTTP OPTIONS /api/program-manager/programs responded 204 in 0.3853 ms
+2026-05-15 11:51:27.045 +05:30 [INF] [ProgramManager.API] TraceId=da01dda6b074e73f5eec50ee97170d07 HTTP GET /api/program-manager/programs responded 200 in 66.9489 ms
+2026-05-15 11:51:30.448 +05:30 [INF] [ProgramManager.API] TraceId=843f558e03232b7aa7fb306ced792bd5 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0600 ms
+2026-05-15 11:51:30.448 +05:30 [INF] [ProgramManager.API] TraceId=6bf0c7b763722bc6b556d4d1946eaf30 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0386 ms
+2026-05-15 11:51:30.460 +05:30 [INF] [ProgramManager.API] TraceId=80b038b23430408c5dfc846879c4a8eb HTTP GET /api/program-manager/programs responded 200 in 15.2418 ms
+2026-05-15 11:51:30.539 +05:30 [INF] [ProgramManager.API] TraceId=d55bbb2a83aabf2b7ac2ad4d51014045 HTTP GET /api/program-manager/trainings responded 200 in 73.0618 ms
+2026-05-15 11:51:30.578 +05:30 [INF] [ProgramManager.API] TraceId=f568ee339e4422d6cbecf95b2e7a3bc9 HTTP GET /api/program-manager/benefits responded 200 in 112.0046 ms
+2026-05-15 11:51:43.055 +05:30 [INF] [ProgramManager.API] TraceId=7b4d9dac910408c414ebc758e20d8eda HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1117 ms
+2026-05-15 11:51:43.089 +05:30 [INF] [ProgramManager.API] TraceId=a8f4a0277a80f953d2eee56ff960182a HTTP GET /api/program-manager/programs responded 200 in 12.6253 ms
+2026-05-15 11:51:47.246 +05:30 [INF] [ProgramManager.API] TraceId=98e37181c8090f0d80d03342b782ea09 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0828 ms
+2026-05-15 11:51:47.252 +05:30 [INF] [ProgramManager.API] TraceId=a7c29c0b0427536b7292b370577e748f HTTP GET /api/program-manager/programs responded 200 in 6.3247 ms
+2026-05-15 11:51:47.246 +05:30 [INF] [ProgramManager.API] TraceId=c9147bf52ef0089b893765f56074b453 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0290 ms
+2026-05-15 11:51:47.266 +05:30 [INF] [ProgramManager.API] TraceId=259098d983b032d165fa7f491c8693ac HTTP GET /api/program-manager/trainings responded 200 in 11.4605 ms
+2026-05-15 11:51:47.275 +05:30 [INF] [ProgramManager.API] TraceId=ad1b8a6ef5247525465fc9d91f950c10 HTTP GET /api/program-manager/benefits responded 200 in 13.8477 ms
+2026-05-15 11:51:54.605 +05:30 [INF] [ProgramManager.API] TraceId=111f2c35efe90d1ca95dfac9e3b17a9d HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0717 ms
+2026-05-15 11:51:54.645 +05:30 [INF] [ProgramManager.API] TraceId=1c34a3700ce5707b2c4619dc0f20c4fa HTTP GET /api/program-manager/dashboard responded 200 in 29.1127 ms
+2026-05-15 11:51:58.648 +05:30 [INF] [ProgramManager.API] TraceId=12bd470eef409e56a144b6fa97651cca HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1313 ms
+2026-05-15 11:51:58.648 +05:30 [INF] [ProgramManager.API] TraceId=29ca35e04d9d8eb6dabfdec88fb3e5e8 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0519 ms
+2026-05-15 11:51:58.649 +05:30 [INF] [ProgramManager.API] TraceId=4cf07faaad59b784cbc95c8ede00f846 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0425 ms
+2026-05-15 11:51:58.661 +05:30 [INF] [ProgramManager.API] TraceId=0783f705afb2c7325c3f17af3d79f607 HTTP GET /api/program-manager/programs responded 200 in 3.2035 ms
+2026-05-15 11:51:58.664 +05:30 [INF] [ProgramManager.API] TraceId=0dce590a4cd64001f63b18b5abb9338c HTTP GET /api/program-manager/benefits responded 200 in 3.6080 ms
+2026-05-15 11:51:58.668 +05:30 [INF] [ProgramManager.API] TraceId=9a1c6b5a908270424d5db4b4ed073eff HTTP GET /api/program-manager/trainings responded 200 in 3.1363 ms
+2026-05-15 11:51:59.871 +05:30 [INF] [ProgramManager.API] TraceId=061fbac281b02ad54c14bb7f685d5090 HTTP GET /api/program-manager/programs responded 200 in 2.1804 ms
+2026-05-15 11:52:01.285 +05:30 [INF] [ProgramManager.API] TraceId=533526b0ede35a5a0252ac99fc471c7f HTTP GET /api/program-manager/programs responded 200 in 31.4880 ms
+2026-05-15 11:52:01.285 +05:30 [INF] [ProgramManager.API] TraceId=59ea75580ae029d14d0dc527b4b62743 HTTP GET /api/program-manager/trainings responded 200 in 30.9345 ms
+2026-05-15 11:52:01.287 +05:30 [INF] [ProgramManager.API] TraceId=3a4dd1cf9f0e01860e996101520cfb3f HTTP GET /api/program-manager/benefits responded 200 in 32.7972 ms
+2026-05-15 11:52:06.106 +05:30 [INF] [ProgramManager.API] TraceId=d1759ef07e6aa3e7c60587e5ce07f2ad HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.1818 ms
+2026-05-15 11:52:06.126 +05:30 [INF] [ProgramManager.API] TraceId=f928b8fa0de4a535bf4652af373d71e0 HTTP GET /api/program-manager/dashboard responded 200 in 11.1756 ms
+2026-05-15 11:52:07.882 +05:30 [INF] [ProgramManager.API] TraceId=456388aff693d8e9055df1eb71e1b5f8 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1110 ms
+2026-05-15 11:52:07.883 +05:30 [INF] [ProgramManager.API] TraceId=b8a2880ca51128fb15b3af2ae016d208 HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0343 ms
+2026-05-15 11:52:07.883 +05:30 [INF] [ProgramManager.API] TraceId=a14d079ce79a6ebcd6c4f88ff41a29c3 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0364 ms
+2026-05-15 11:52:07.893 +05:30 [INF] [ProgramManager.API] TraceId=1d732dc8c045724d9182e74fa89af4f5 HTTP GET /api/program-manager/programs responded 200 in 3.4677 ms
+2026-05-15 11:52:07.898 +05:30 [INF] [ProgramManager.API] TraceId=1f3a231cc4f2d6831b4d2f866bdd0555 HTTP GET /api/program-manager/trainings responded 200 in 3.5114 ms
+2026-05-15 11:52:07.903 +05:30 [INF] [ProgramManager.API] TraceId=31c3d4ed486f4049d5046c85e3185fd2 HTTP GET /api/program-manager/benefits responded 200 in 3.8608 ms
+2026-05-15 11:53:02.660 +05:30 [INF] [ProgramManager.API] TraceId=ed73747eb41bce7fadb7a11d242200d7 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0712 ms
+2026-05-15 11:53:02.700 +05:30 [INF] [ProgramManager.API] TraceId=e16770aafe3dbe18906890c42eea6f2e HTTP GET /api/program-manager/dashboard responded 200 in 25.0770 ms
+2026-05-15 11:53:05.137 +05:30 [INF] [ProgramManager.API] TraceId=7870763750845c95d694de1cdb43b58b HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0452 ms
+2026-05-15 11:53:05.150 +05:30 [INF] [ProgramManager.API] TraceId=08ba7e96186b9d959dc3cf0ae0fb10b9 HTTP GET /api/program-manager/programs responded 200 in 4.2926 ms
+2026-05-15 11:53:06.022 +05:30 [INF] [ProgramManager.API] TraceId=eb93eb426849da57de9e825d7c91ac3f HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0459 ms
+2026-05-15 11:53:06.039 +05:30 [INF] [ProgramManager.API] TraceId=90401c69b38b19f670a47fb52b4ed1e5 HTTP GET /api/program-manager/trainings responded 200 in 4.8737 ms
+2026-05-15 11:53:07.472 +05:30 [INF] [ProgramManager.API] TraceId=695c7693751c30a15af6a754b073a75a HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0588 ms
+2026-05-15 11:53:07.494 +05:30 [INF] [ProgramManager.API] TraceId=056b594858d1d90fcf975a7c3434ccb2 HTTP GET /api/program-manager/benefits responded 200 in 10.0021 ms
+2026-05-15 11:53:08.464 +05:30 [INF] [ProgramManager.API] TraceId=0185f4f8ea8236795834682b42c380e5 HTTP GET /api/program-manager/programs responded 200 in 3.8287 ms
+2026-05-15 11:53:13.058 +05:30 [INF] [ProgramManager.API] TraceId=67334bbaefa849ed66a57373ca74143d HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0405 ms
+2026-05-15 11:53:13.081 +05:30 [INF] [ProgramManager.API] TraceId=6c0a5e4f5e7462dcf6a2ce8bc230b0bb HTTP GET /api/program-manager/dashboard responded 200 in 6.3405 ms
+2026-05-15 11:53:14.684 +05:30 [INF] [ProgramManager.API] TraceId=b87040df635eb1d6fd9758fa6cc63bb0 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0579 ms
+2026-05-15 11:53:14.695 +05:30 [INF] [ProgramManager.API] TraceId=a6e2dd3a00f22615a737102f2e9552a4 HTTP GET /api/program-manager/programs responded 200 in 2.7936 ms
+2026-05-15 11:53:15.936 +05:30 [INF] [ProgramManager.API] TraceId=ac15e30c2c00424dc0331a9e7f6dabfa HTTP OPTIONS /api/program-manager/trainings responded 204 in 0.0556 ms
+2026-05-15 11:53:15.951 +05:30 [INF] [ProgramManager.API] TraceId=a1c76097e9e5437a1812dff4c731f2a1 HTTP GET /api/program-manager/trainings responded 200 in 3.2385 ms
+2026-05-15 11:53:16.814 +05:30 [INF] [ProgramManager.API] TraceId=45932958db0faf38fe79ac5bc86e35a6 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0973 ms
+2026-05-15 11:53:16.825 +05:30 [INF] [ProgramManager.API] TraceId=5dd29b92316a733c5b902bdaac283c37 HTTP GET /api/program-manager/benefits responded 200 in 2.9605 ms
+2026-05-15 11:53:17.591 +05:30 [INF] [ProgramManager.API] TraceId=bfdfc2fd63c073e3dd5ba9d99aecc620 HTTP GET /api/program-manager/programs responded 200 in 2.7261 ms
+2026-05-15 11:54:35.689 +05:30 [INF] [ProgramManager.API] TraceId=398bd98fa79d09dcf90753f022327563 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0697 ms
+2026-05-15 11:54:35.730 +05:30 [INF] [ProgramManager.API] TraceId=5d92ddd706b2edbb49c822c7c8013fb2 HTTP GET /api/program-manager/dashboard responded 200 in 30.2772 ms
+2026-05-15 11:54:38.640 +05:30 [INF] [ProgramManager.API] TraceId=31d1b27a872e0c65220b289d8e8f0ff3 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.1232 ms
+2026-05-15 11:54:38.664 +05:30 [INF] [ProgramManager.API] TraceId=f65fb0f8aee1c6d0652860ad09d8aef9 HTTP GET /api/program-manager/programs responded 200 in 3.9222 ms
+2026-05-15 11:54:42.123 +05:30 [INF] [ProgramManager.API] TraceId=86fd75eb9d3a51f00fac470d258f3eb0 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0437 ms
+2026-05-15 11:54:42.138 +05:30 [INF] [ProgramManager.API] TraceId=06ef783d73a48c0ac940bf706ad5d77f HTTP GET /api/program-manager/dashboard responded 200 in 5.1360 ms
+2026-05-15 11:54:44.688 +05:30 [INF] [ProgramManager.API] TraceId=39a3ec8bb0f4c2f6da6282cc7d738c3d HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0565 ms
+2026-05-15 11:54:44.701 +05:30 [INF] [ProgramManager.API] TraceId=a87dc42285993ca8d91bfa971cdc0b00 HTTP GET /api/program-manager/programs responded 200 in 1.8264 ms
+2026-05-15 11:54:45.503 +05:30 [INF] [ProgramManager.API] TraceId=4132500030eab2cc2c5170978ffb2837 HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.0512 ms
+2026-05-15 11:54:45.525 +05:30 [INF] [ProgramManager.API] TraceId=9e9c0053c75011d339b96c5c886d33ad HTTP GET /api/program-manager/benefits responded 200 in 13.0241 ms
+2026-05-15 11:54:48.426 +05:30 [INF] [ProgramManager.API] TraceId=add3886a97f8d915bd14249ed6ee034b HTTP GET /api/program-manager/programs responded 200 in 9.9562 ms
+2026-05-15 11:58:29.768 +05:30 [INF] [ProgramManager.API] TraceId=c8d73ecac53cb37ed6cbd2d37fb68bc4 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0681 ms
+2026-05-15 11:58:29.802 +05:30 [INF] [ProgramManager.API] TraceId=3342203a92aa134ccbcb35064d2c02bc HTTP GET /api/program-manager/dashboard responded 200 in 25.8073 ms
+2026-05-15 11:58:36.914 +05:30 [INF] [ProgramManager.API] TraceId=336527670b175e6e82087a8df03ac55c HTTP OPTIONS /api/program-manager/benefits responded 204 in 0.4523 ms
+2026-05-15 11:58:36.945 +05:30 [INF] [ProgramManager.API] TraceId=161011aab6cc5434706ef6ceac9af45f HTTP GET /api/program-manager/benefits responded 200 in 14.9715 ms
+2026-05-15 11:58:42.549 +05:30 [INF] [ProgramManager.API] TraceId=46bf478b82247165d990568fb491bc25 HTTP OPTIONS /api/program-manager/dashboard responded 204 in 0.0279 ms
+2026-05-15 11:58:42.563 +05:30 [INF] [ProgramManager.API] TraceId=010e5429a06f4d7d588c4b86942ea453 HTTP GET /api/program-manager/dashboard responded 200 in 7.1974 ms
+2026-05-15 11:58:47.483 +05:30 [INF] [ProgramManager.API] TraceId=1ebc51f47de65011e2bea13594602b39 HTTP OPTIONS /api/program-manager/programs responded 204 in 0.0302 ms
+2026-05-15 11:58:47.503 +05:30 [INF] [ProgramManager.API] TraceId=1a5b7f8573b684082f167c1d30395c6a HTTP GET /api/program-manager/programs responded 200 in 6.1434 ms

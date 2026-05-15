@@ -29,6 +29,10 @@
       {
         "Path": "WorkForceGov.ProgramManager.API\\WorkForceGov.ProgramManager.API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "WorkForceGov\\WorkForceGov.csproj",
+        "Action": "Start"
       }
     ]
   }

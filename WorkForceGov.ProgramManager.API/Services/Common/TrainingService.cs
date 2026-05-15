@@ -18,8 +18,9 @@ namespace WorkForceGovProject.Services.Common
         public async Task<IEnumerable<Training>> GetAllAsync() =>
             await _trainingRepository.GetAllAsync();
 
+        // 🚨 UPDATED THIS METHOD to use the new repository method
         public async Task<IEnumerable<Training>> GetAllTrainingsAsync() =>
-            await _trainingRepository.GetAllAsync();
+            await _trainingRepository.GetAllWithProgramsAsync();
 
         public async Task<Training?> GetByIdAsync(int id) =>
             await _trainingRepository.GetByIdAsync(id);

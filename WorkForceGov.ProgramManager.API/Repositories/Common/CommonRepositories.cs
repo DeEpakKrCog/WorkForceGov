@@ -27,6 +27,15 @@ namespace WorkForceGovProject.Repositories.Common
     public class TrainingRepository : Repository<Training>, ITrainingRepository
     {
         public TrainingRepository(ApplicationDbContext ctx) : base(ctx) { }
+
+        // 🚨 ADDED METHOD: This includes the Program data so the name isn't blank in Angular
+        public async Task<IEnumerable<Training>> GetAllWithProgramsAsync()
+        {
+            return await _set
+                .Include(t => t.Program)
+                .OrderByDescending(t => t.StartDate)
+                .ToListAsync();
+        }
     }
 
     public class TrainingEnrollmentRepository : Repository<TrainingEnrollment>, ITrainingEnrollmentRepository

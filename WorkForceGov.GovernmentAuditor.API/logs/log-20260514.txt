@@ -159,3 +159,17 @@
 2026-05-14 13:43:58.725 +05:30 [INF] [GovernmentAuditor.API] TraceId=6cdb498c8dcb4ef7a3b5d17f84e6e5de HTTP GET /swagger-ui-standalone-preset.js responded 304 in 78.2476 ms
 2026-05-14 13:43:58.695 +05:30 [INF] [GovernmentAuditor.API] TraceId=03dab89e1f5eeb047ccccdfaaebaa920 HTTP GET /swagger-ui.css responded 304 in 50.8889 ms
 2026-05-14 13:43:59.078 +05:30 [INF] [GovernmentAuditor.API] TraceId=8f8f7d13aae7ffb03e268afa9a7cf942 HTTP GET /swagger/v1/swagger.json responded 200 in 46.0911 ms
+2026-05-14 14:17:51.875 +05:30 [INF] [GovernmentAuditor.API] TraceId=0915bc7c9c84d50d71398d4b4e0fbc95 HTTP GET /index.html responded 304 in 133.4737 ms
+2026-05-14 14:17:52.302 +05:30 [INF] [GovernmentAuditor.API] TraceId=9b932b39c6443f71f501e852532937d6 HTTP GET /index.css responded 304 in 78.7989 ms
+2026-05-14 14:17:52.302 +05:30 [INF] [GovernmentAuditor.API] TraceId=8a236323184c09da957c7242c1b8a649 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 35.5394 ms
+2026-05-14 14:17:52.302 +05:30 [INF] [GovernmentAuditor.API] TraceId=e20c04b018fd93e052c192396443374c HTTP GET /swagger-ui.css responded 304 in 83.3270 ms
+2026-05-14 14:17:52.427 +05:30 [INF] [GovernmentAuditor.API] TraceId=f47c3c4335eeec2ccf325e05a31f8ba5 HTTP GET /index.js responded 304 in 3.9035 ms
+2026-05-14 14:17:52.322 +05:30 [INF] [GovernmentAuditor.API] TraceId=02527b90e2b0f56f42857a354c87590a HTTP GET /swagger-ui-bundle.js responded 304 in 61.1434 ms
+2026-05-14 14:17:52.869 +05:30 [INF] [GovernmentAuditor.API] TraceId=c3e86c25564f8b04246ac8178b9e48ca HTTP GET /swagger/v1/swagger.json responded 200 in 44.1022 ms
+2026-05-14 18:00:07.642 +05:30 [INF] [GovernmentAuditor.API] TraceId=c0bfcf1ffca4f2590825e8bcab37df0b HTTP GET /index.html responded 304 in 129.5001 ms
+2026-05-14 18:00:08.004 +05:30 [INF] [GovernmentAuditor.API] TraceId=145bb410681bfd5155b37055df05a710 HTTP GET /swagger-ui.css responded 304 in 78.4076 ms
+2026-05-14 18:00:08.004 +05:30 [INF] [GovernmentAuditor.API] TraceId=ab8640b5494fca690e7a707b4013a131 HTTP GET /index.css responded 304 in 78.4075 ms
+2026-05-14 18:00:08.004 +05:30 [INF] [GovernmentAuditor.API] TraceId=94b93ecf20a128a94c2a03375acb685f HTTP GET /swagger-ui-bundle.js responded 304 in 44.2304 ms
+2026-05-14 18:00:08.169 +05:30 [INF] [GovernmentAuditor.API] TraceId=5ed1788266fa8d7ceb2d88de46d2d0c6 HTTP GET /index.js responded 304 in 14.8747 ms
+2026-05-14 18:00:08.170 +05:30 [INF] [GovernmentAuditor.API] TraceId=839402ccfe7f95b586e8dac6f7808e50 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 24.8026 ms
+2026-05-14 18:00:08.815 +05:30 [INF] [GovernmentAuditor.API] TraceId=8fdf49eda1212e29265e74e8e300856c HTTP GET /swagger/v1/swagger.json responded 200 in 33.6139 ms
