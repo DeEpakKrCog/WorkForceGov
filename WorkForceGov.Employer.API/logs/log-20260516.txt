@@ -392,3 +392,10 @@ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Text.Json.JsonEle
 2026-05-16 19:45:42.664 +05:30 [INF] [Employer.API] TraceId=cb0cc4c81ca1131fa30b2aaba80c4bcc HTTP GET /api/employer/profile responded 200 in 17.0795 ms
 2026-05-16 19:45:51.834 +05:30 [INF] [Employer.API] TraceId=bfcb16c31400df32aab58ef41808df62 HTTP OPTIONS /api/employer/profile responded 204 in 0.1184 ms
 2026-05-16 19:45:52.083 +05:30 [INF] [Employer.API] TraceId=4fd1074d1bac3cb21a3af9ea1da335ec HTTP PUT /api/employer/profile responded 200 in 243.0935 ms
+2026-05-16 20:03:24.334 +05:30 [INF] [Employer.API] TraceId=b4453df02ae92838418f5b045f5304cf HTTP GET /index.html responded 304 in 166.1063 ms
+2026-05-16 20:03:24.657 +05:30 [INF] [Employer.API] TraceId=ea96250211b43cc6b95418cd7705912f HTTP GET /index.js responded 304 in 31.3983 ms
+2026-05-16 20:03:24.705 +05:30 [INF] [Employer.API] TraceId=4e25b4d06d7b57d5e9557c392b5afef2 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 86.5380 ms
+2026-05-16 20:03:24.705 +05:30 [INF] [Employer.API] TraceId=c53b569eef146296f497f4c6e79051bd HTTP GET /index.css responded 304 in 94.7572 ms
+2026-05-16 20:03:24.709 +05:30 [INF] [Employer.API] TraceId=8fa1f16434ce70d1af324a1bfd8d5b94 HTTP GET /swagger-ui-bundle.js responded 304 in 92.5707 ms
+2026-05-16 20:03:24.706 +05:30 [INF] [Employer.API] TraceId=685366007ae65a89d2969cdc66c1c7a9 HTTP GET /swagger-ui.css responded 304 in 132.0008 ms
+2026-05-16 20:03:25.274 +05:30 [INF] [Employer.API] TraceId=a394a407843df97ebc4e6f142c184705 HTTP GET /swagger/v1/swagger.json responded 200 in 88.3472 ms

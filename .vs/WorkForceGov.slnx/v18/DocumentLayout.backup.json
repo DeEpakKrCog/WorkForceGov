@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F820EE5-61E0-8014-D912-F3CDC7AD6C5F}|WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.employer.api\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F820EE5-61E0-8014-D912-F3CDC7AD6C5F}|WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj|solutionrelative:workforcegov.employer.api\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F820EE5-61E0-8014-D912-F3CDC7AD6C5F}|WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.employer.api\\controllers\\employercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F820EE5-61E0-8014-D912-F3CDC7AD6C5F}|WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj|solutionrelative:workforcegov.employer.api\\controllers\\employercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27D17AA2-DAF3-82AA-AF07-1E415A9C8A19}|WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.admin.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27D17AA2-DAF3-82AA-AF07-1E415A9C8A19}|WorkForceGov.Admin.API\\WorkForceGov.Admin.API.csproj|solutionrelative:workforcegov.admin.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F820EE5-61E0-8014-D912-F3CDC7AD6C5F}|WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj|c:\\users\\2481439\\onedrive - cognizant\\documents\\auth_service\\workforcegov\\workforcegov.employer.api\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F820EE5-61E0-8014-D912-F3CDC7AD6C5F}|WorkForceGov.Employer.API\\WorkForceGov.Employer.API.csproj|solutionrelative:workforcegov.employer.api\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "WorkForceGov.Admin.API\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Admin.API\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "WorkForceGov.Admin.API\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAkwMcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAkwNAAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-13T17:28:10.623Z",
               "IsPinned": true,
@@ -41,11 +45,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EmployerController.cs",
+              "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\Controllers\\EmployerController.cs",
+              "RelativeDocumentMoniker": "WorkForceGov.Employer.API\\Controllers\\EmployerController.cs",
+              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\Controllers\\EmployerController.cs*",
+              "RelativeToolTip": "WorkForceGov.Employer.API\\Controllers\\EmployerController.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwGoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T14:14:24.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Employer.cs",
               "DocumentMoniker": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\Models\\Employer.cs",
               "RelativeDocumentMoniker": "WorkForceGov.Employer.API\\Models\\Employer.cs",
-              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\Models\\Employer.cs*",
-              "RelativeToolTip": "WorkForceGov.Employer.API\\Models\\Employer.cs*",
+              "ToolTip": "C:\\Users\\2481439\\OneDrive - Cognizant\\Documents\\Auth_Service\\WorkForceGov\\WorkForceGov.Employer.API\\Models\\Employer.cs",
+              "RelativeToolTip": "WorkForceGov.Employer.API\\Models\\Employer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-16T14:03:41.003Z",

@@ -136,3 +136,14 @@
 2026-05-16 19:45:24.145 +05:30 [INF] [Citizen.API] TraceId=688c95e3d71d90b12ddbb15d12d64879 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 43.4936 ms
 2026-05-16 19:45:24.147 +05:30 [INF] [Citizen.API] TraceId=e96720db5786b4c384e0fe638edc34e4 HTTP GET /swagger-ui-bundle.js responded 304 in 100.1959 ms
 2026-05-16 19:45:24.992 +05:30 [INF] [Citizen.API] TraceId=94c2ef7ec72d801ec5210d458a8c2f6b HTTP GET /swagger/v1/swagger.json responded 200 in 225.8918 ms
+2026-05-16 20:03:19.761 +05:30 [INF] [Citizen.API] TraceId=47ef3408454f4e88624cf86e3a897583 HTTP GET /index.html responded 304 in 117.9801 ms
+2026-05-16 20:03:20.329 +05:30 [INF] [Citizen.API] TraceId=29189b07c8073b4b78c7c2dd6c5bb77d HTTP GET /index.css responded 304 in 123.9719 ms
+2026-05-16 20:03:20.333 +05:30 [INF] [Citizen.API] TraceId=ff757934c93c3f675b7e7f01f8755895 HTTP GET /swagger-ui.css responded 304 in 131.2002 ms
+2026-05-16 20:03:20.329 +05:30 [INF] [Citizen.API] TraceId=5e869f8519c000ac2369e961106d2282 HTTP GET /swagger-ui-bundle.js responded 304 in 64.8833 ms
+2026-05-16 20:03:20.362 +05:30 [INF] [Citizen.API] TraceId=0a3eb19ba8ed0facb1fd5716fb565ee2 HTTP GET /swagger-ui-standalone-preset.js responded 304 in 2.2171 ms
+2026-05-16 20:03:20.393 +05:30 [INF] [Citizen.API] TraceId=fb648647a53b57cd155688a4f4de25e0 HTTP GET /index.js responded 304 in 0.7344 ms
+2026-05-16 20:03:22.966 +05:30 [INF] [Citizen.API] TraceId=dae46a51075354218f98b830042d5e2e HTTP GET /swagger/v1/swagger.json responded 200 in 118.0212 ms
+2026-05-16 21:03:45.224 +05:30 [INF] [Citizen.API] TraceId=a73a70fbb23b3c3601274768a08f37f8 HTTP OPTIONS /api/citizen/jobs responded 204 in 4.2617 ms
+2026-05-16 21:03:45.522 +05:30 [INF] [Citizen.API] TraceId=14392a70d293eea47bb970e372e9e929 HTTP GET /api/citizen/jobs responded 404 in 280.8120 ms
+2026-05-16 21:04:20.995 +05:30 [INF] [Citizen.API] TraceId=a17b59222b66fed9b88a832a5c68af88 HTTP OPTIONS /api/citizen/jobs responded 204 in 0.2507 ms
+2026-05-16 21:04:21.003 +05:30 [INF] [Citizen.API] TraceId=eb24ab2c02d4f68fb592b31609b984df HTTP GET /api/citizen/jobs responded 404 in 2.0747 ms
