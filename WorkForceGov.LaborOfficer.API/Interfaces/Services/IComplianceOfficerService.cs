@@ -25,12 +25,14 @@ namespace WorkForceGovProject.Interfaces.Services
         /// </summary>
         Task<IEnumerable<EmployerDocument>> GetPendingEmployerDocumentsAsync();
 
+        // 🚨 FIXED: Renamed to VerifyEmployerDocumentAsync to match Controller expectations
         /// <summary>
         /// Approves an employer document. If ALL documents for the employer
         /// are now verified, the employer status is upgraded to "Verified".
         /// </summary>
-        Task<(bool Success, string Message)> ApproveEmployerDocumentAsync(int documentId, int officerId);
+        Task<(bool Success, string Message)> VerifyEmployerDocumentAsync(int documentId, int officerId);
 
+        // 🚨 FIXED: Ensure name matches controller expectations
         /// <summary>
         /// Rejects an employer document and flags the employer as "Suspended".
         /// </summary>

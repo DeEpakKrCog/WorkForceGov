@@ -1,3 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore; // 🚨 Added for .Include() and .ToListAsync()
+using WorkForceGovProject.Data; // 🚨 Added for ApplicationDbContext
 using WorkForceGovProject.Interfaces.Repositories;
 using WorkForceGovProject.Interfaces.Services;
 using WorkForceGovProject.Models;
@@ -13,6 +19,7 @@ namespace WorkForceGovProject.Services.LaborOfficer
         private readonly IViolationRepository _violations;
         private readonly IApplicationRepository _apps;
         private readonly INotificationRepository _notifications;
+        private readonly ApplicationDbContext _context; // 🚨 Added to query database directly
 
         public LaborOfficerService(
             ICitizenDocumentRepository citizenDocs,
@@ -20,7 +27,8 @@ namespace WorkForceGovProject.Services.LaborOfficer
             IComplianceRecordRepository compliance,
             IViolationRepository violations,
             IApplicationRepository apps,
-            INotificationRepository notifications)
+            INotificationRepository notifications,
+            ApplicationDbContext context) // 🚨 Injected here
         {
             _citizenDocs = citizenDocs;
             _complaints = complaints;
@@ -28,6 +36,7 @@ namespace WorkForceGovProject.Services.LaborOfficer
             _violations = violations;
             _apps = apps;
             _notifications = notifications;
+            _context = context;
         }
 
         // ══════════════ Document Verification ══════════════
@@ -46,10 +55,9 @@ namespace WorkForceGovProject.Services.LaborOfficer
             _citizenDocs.Update(doc);
             await _citizenDocs.SaveAsync();
 
-            // Notify the citizen
             await _notifications.AddAsync(new Notification
             {
-                UserId = doc.CitizenId, // Citizen's user ID will be resolved via FK
+                UserId = doc.CitizenId,
                 Message = $"Your document '{doc.DocumentType}' has been verified.",
                 Category = "DocumentVerification",
                 EntityId = doc.Id,
@@ -76,9 +84,7 @@ namespace WorkForceGovProject.Services.LaborOfficer
             return (true, "Document rejected.");
         }
 
-        // ══════════════ Complaint Management (cross-module) ══════════════
-        // These complaints are created by CitizenService.RaiseComplaintAsync()
-        // and consumed here by the Labor Officer for investigation.
+        // ══════════════ Complaint Management ══════════════
 
         public async Task<IEnumerable<Complaint>> GetAllComplaintsAsync() =>
             await _complaints.GetAllAsync();
@@ -86,10 +92,6 @@ namespace WorkForceGovProject.Services.LaborOfficer
         public async Task<IEnumerable<Complaint>> GetPendingComplaintsAsync() =>
             await _complaints.GetPendingComplaintsAsync();
 
-        /// <summary>
-        /// Labor Officer investigates and resolves a complaint that was
-        /// raised by a citizen through the Citizen module.
-        /// </summary>
         public async Task<(bool, string)> InvestigateComplaintAsync(
             int complaintId, string resolution, string newStatus)
         {
@@ -105,7 +107,6 @@ namespace WorkForceGovProject.Services.LaborOfficer
             _complaints.Update(complaint);
             await _complaints.SaveAsync();
 
-            // Notify the citizen who raised the complaint
             await _notifications.AddAsync(new Notification
             {
                 UserId = complaint.UserId,
@@ -147,9 +148,13 @@ namespace WorkForceGovProject.Services.LaborOfficer
 
         // ══════════════ Application Oversight ══════════════
 
+        // 🚨 APPLIED FIX: Using DbContext directly to join the Citizen data!
         public async Task<IEnumerable<Application>> GetAllApplicationsAsync()
         {
-            return await _apps.GetAllAsync();
+            return await _context.Applications
+                .Include(a => a.Citizen) // This grabs the name
+                .OrderByDescending(a => a.SubmittedDate)
+                .ToListAsync();
         }
 
         public async Task<(bool, string)> FlagApplicationAsync(int applicationId, string notes)
@@ -163,22 +168,71 @@ namespace WorkForceGovProject.Services.LaborOfficer
             return (true, "Application flagged for review.");
         }
 
+        public async Task<(bool Success, string Message)> ApproveApplicationAsync(int applicationId)
+        {
+            try
+            {
+                var app = await _apps.GetByIdAsync(applicationId);
+                if (app == null) return (false, "Application not found.");
+
+                app.Status = "Approved";
+                _apps.Update(app);
+                await _apps.SaveAsync();
+
+                return (true, "Application approved successfully.");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error approving application: {ex.Message}");
+            }
+        }
+
+        public async Task<(bool Success, string Message)> RejectApplicationAsync(int applicationId, string notes)
+        {
+            try
+            {
+                var app = await _apps.GetByIdAsync(applicationId);
+                if (app == null) return (false, "Application not found.");
+
+                app.Status = "Rejected";
+                app.ReviewNotes = string.IsNullOrEmpty(app.ReviewNotes) ? notes : $"{app.ReviewNotes}\n\nRejection Notes: {notes}";
+
+                _apps.Update(app);
+                await _apps.SaveAsync();
+
+                return (true, "Application rejected successfully.");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error rejecting application: {ex.Message}");
+            }
+        }
+
         // ══════════════ Dashboard ══════════════
 
         public async Task<LaborOfficerDashboardViewModel> GetDashboardAsync(int userId)
         {
-            var pendingDocs = (await _citizenDocs.GetPendingVerificationsAsync()).ToList();
-            var pendingComplaints = (await _complaints.GetPendingComplaintsAsync()).ToList();
+            // Fetch Applications
             var allApps = (await _apps.GetAllAsync()).ToList();
+
+            var pendingDocs = (await _citizenDocs.GetPendingVerificationsAsync()).ToList();
+            var allDocs = (await _citizenDocs.GetAllAsync()).ToList();
+
+            var pendingComplaints = (await _complaints.GetPendingComplaintsAsync()).ToList();
             var notifications = (await _notifications.GetByUserAsync(userId, 10)).ToList();
 
             return new LaborOfficerDashboardViewModel
             {
                 PendingDocuments = pendingDocs.Count,
-                ComplianceAlerts = pendingComplaints.Count,
                 PendingApplications = allApps.Count(a => a.Status == "Pending"),
-                ApprovedApplications = allApps.Count(a => a.Status == "Approved"),
-                RejectedApplications = allApps.Count(a => a.Status == "Rejected"),
+
+                ApprovedApplications = allApps.Count(a => a.Status == "Approved") +
+                                       allDocs.Count(d => d.VerificationStatus == "Verified" || d.VerificationStatus == "Approved"),
+
+                RejectedApplications = allApps.Count(a => a.Status == "Rejected") +
+                                       allDocs.Count(d => d.VerificationStatus == "Rejected"),
+
+                ComplianceAlerts = pendingComplaints.Count,
                 PendingDocs = pendingDocs,
                 RecentApplications = allApps.Take(10).ToList(),
                 FlaggedEmployers = new List<Models.Employer>(),

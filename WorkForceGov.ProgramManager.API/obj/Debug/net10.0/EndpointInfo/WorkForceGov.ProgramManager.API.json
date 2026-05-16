@@ -428,19 +428,6 @@
           }
         }
       }
-    },
-    "/api/program-manager/notifications": {
-      "get": {
-        "tags": [
-          "Notifications"
-        ],
-        "summary": "Get notifications",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
     }
   },
   "components": {

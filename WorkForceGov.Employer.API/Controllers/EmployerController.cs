@@ -61,15 +61,45 @@ namespace WorkForceGovProject.Controllers
         [HttpPut("profile")]
         public async Task<IActionResult> UpdateProfile([FromBody] Employer model)
         {
-            var e = await _employer.GetByUserIdAsync(GetUserId());
-            if (e == null) return NotFound(new { Message = "Profile not found." });
+            var userId = GetUserId();
+            var e = await _employer.GetByUserIdAsync(userId);
 
-            e.CompanyName = model.CompanyName; e.Industry = model.Industry;
-            e.Address = model.Address; e.PhoneNumber = model.PhoneNumber;
-            e.Website = model.Website; e.Description = model.Description;
+            // If it's a brand new employer, initialize the record cleanly so it can be saved
+            if (e == null)
+            {
+                // 🚨 CRITICAL FIX: Strip away any incoming tracked primary keys so Entity Framework 
+                // knows it must generate a clean new auto-incremented Row inside the SQL table.
+                var newEmployer = new Employer
+                {
+                    Id = 0, // Force identity generation
+                    UserId = userId,
+                    CompanyName = model.CompanyName ?? "New Company",
+                    Industry = model.Industry ?? "Unassigned",
+                    Address = model.Address,
+                    PhoneNumber = model.PhoneNumber,
+                    Website = model.Website,
+                    Description = model.Description,
+                    Status = "Pending"
+                };
+
+                var (registerOk, registerMsg) = await _employer.RegisterAsync(userId, newEmployer);
+                return registerOk
+                    ? Ok(new { Message = "Profile initialized.", Employer = newEmployer })
+                    : BadRequest(new { Message = registerMsg });
+            }
+
+            // Otherwise, map fields safely for the existing employer
+            e.CompanyName = model.CompanyName;
+            e.Industry = model.Industry;
+            e.Address = model.Address;
+            e.PhoneNumber = model.PhoneNumber;
+            e.Website = model.Website;
+            e.Description = model.Description;
 
             var (ok, msg) = await _employer.UpdateProfileAsync(e);
-            return ok ? Ok(new { Message = "Profile updated.", Employer = e }) : BadRequest(new { Message = msg });
+            return ok
+                ? Ok(new { Message = "Profile updated.", Employer = e })
+                : BadRequest(new { Message = msg });
         }
 
         // ══════════════ DOCUMENT MANAGEMENT ══════════════

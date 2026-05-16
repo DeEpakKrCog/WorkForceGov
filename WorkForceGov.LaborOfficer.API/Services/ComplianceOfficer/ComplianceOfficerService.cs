@@ -47,11 +47,12 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
         public async Task<IEnumerable<EmployerDocument>> GetPendingEmployerDocumentsAsync() =>
             await _employerDocs.GetPendingVerificationsAsync();
 
+        // 🚨 FIXED: Renamed from ApproveEmployerDocumentAsync to VerifyEmployerDocumentAsync
         /// <summary>
         /// Approves an employer document. After approval, checks whether ALL documents
         /// for this employer are now verified. If yes, upgrades employer status to "Verified".
         /// </summary>
-        public async Task<(bool, string)> ApproveEmployerDocumentAsync(int documentId, int officerId)
+        public async Task<(bool Success, string Message)> VerifyEmployerDocumentAsync(int documentId, int officerId)
         {
             var doc = await _employerDocs.GetByIdAsync(documentId);
             if (doc == null) return (false, "Document not found.");
@@ -106,7 +107,7 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
         /// <summary>
         /// Rejects an employer document and sets employer status to "Suspended".
         /// </summary>
-        public async Task<(bool, string)> RejectEmployerDocumentAsync(
+        public async Task<(bool Success, string Message)> RejectEmployerDocumentAsync(
             int documentId, int officerId, string reason)
         {
             var doc = await _employerDocs.GetByIdAsync(documentId);
@@ -150,7 +151,7 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
         //  NON-COMPLIANCE FLAGGING (ACTIVE write operations)
         // ══════════════════════════════════════════════════════
 
-        public async Task<(bool, string)> FlagEmployerNonCompliantAsync(
+        public async Task<(bool Success, string Message)> FlagEmployerNonCompliantAsync(
             int employerId, int officerId, string reason)
         {
             var employer = await _employers.GetByIdAsync(employerId);
@@ -182,7 +183,7 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
             return (true, "Employer flagged as non-compliant.");
         }
 
-        public async Task<(bool, string)> ClearNonComplianceFlagAsync(
+        public async Task<(bool Success, string Message)> ClearNonComplianceFlagAsync(
             int employerId, int officerId, string notes)
         {
             var employer = await _employers.GetByIdAsync(employerId);
@@ -221,7 +222,7 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
         public async Task<IEnumerable<Complaint>> GetAllComplaintsAsync() =>
             await _complaints.GetAllAsync();
 
-        public async Task<(bool, string)> ResolveComplaintAsync(
+        public async Task<(bool Success, string Message)> ResolveComplaintAsync(
             int complaintId, int officerId, string resolution)
         {
             var complaint = await _complaints.GetByIdAsync(complaintId);
@@ -241,7 +242,7 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
         public async Task<IEnumerable<ComplianceRecord>> GetAllComplianceRecordsAsync() =>
             await _compliance.GetAllAsync();
 
-        public async Task<(bool, string)> CreateComplianceRecordAsync(ComplianceRecord record)
+        public async Task<(bool Success, string Message)> CreateComplianceRecordAsync(ComplianceRecord record)
         {
             record.Date = DateTime.Now;
             await _compliance.AddAsync(record);
@@ -249,7 +250,7 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
             return (true, "Compliance record created.");
         }
 
-        public async Task<(bool, string)> UpdateComplianceResultAsync(
+        public async Task<(bool Success, string Message)> UpdateComplianceResultAsync(
             int recordId, string result, string notes)
         {
             var record = await _compliance.GetByIdAsync(recordId);
@@ -268,7 +269,7 @@ namespace WorkForceGovProject.Services.ComplianceOfficer
         public async Task<IEnumerable<Violation>> GetAllViolationsAsync() =>
             await _violations.GetAllAsync();
 
-        public async Task<(bool, string)> RecordViolationAsync(Violation violation)
+        public async Task<(bool Success, string Message)> RecordViolationAsync(Violation violation)
         {
             violation.ViolationDate = DateTime.Now;
             await _violations.AddAsync(violation);

@@ -104,16 +104,6 @@
   },
   {
     "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
-    "Method": "GetNotifications",
-    "RelativePath": "api/program-manager/notifications",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkForceGovProject.Controllers.ProgramManagerController",
     "Method": "GetPrograms",
     "RelativePath": "api/program-manager/programs",
     "HttpMethod": "GET",

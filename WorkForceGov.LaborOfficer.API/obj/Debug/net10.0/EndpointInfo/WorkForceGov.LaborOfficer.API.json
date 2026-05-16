@@ -219,6 +219,73 @@
         }
       }
     },
+    "/api/labor-officer/documents/employer/{id}/verify": {
+      "put": {
+        "tags": [
+          "Document Verification"
+        ],
+        "summary": "Verify an employer document",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/labor-officer/documents/employer/{id}/reject": {
+      "put": {
+        "tags": [
+          "Document Verification"
+        ],
+        "summary": "Reject an employer document",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/labor-officer/complaints": {
       "get": {
         "tags": [
@@ -250,7 +317,7 @@
         "tags": [
           "Complaints"
         ],
-        "summary": "Investigate a complaint (Resolved/Under Investigation/Dismissed)",
+        "summary": "Investigate a complaint",
         "parameters": [
           {
             "name": "id",
@@ -382,12 +449,92 @@
         }
       }
     },
+    "/api/labor-officer/audits": {
+      "get": {
+        "tags": [
+          "Audits"
+        ],
+        "summary": "Get all audits",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/labor-officer/applications": {
       "get": {
         "tags": [
           "Applications"
         ],
         "summary": "Get all applications (oversight)",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/labor-officer/applications/{id}/approve": {
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Approve a job application",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/labor-officer/applications/{id}/reject": {
+      "put": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Reject a job application",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
