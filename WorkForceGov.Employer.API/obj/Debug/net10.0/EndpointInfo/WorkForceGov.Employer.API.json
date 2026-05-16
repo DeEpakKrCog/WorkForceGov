@@ -784,65 +784,6 @@
           "userId": {
             "type": "integer",
             "format": "int32"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          },
-          "documents": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/EmployerDocument"
-            },
-            "nullable": true
-          },
-          "jobOpenings": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/JobOpening"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "EmployerDocument": {
-        "required": [
-          "docType",
-          "employerId",
-          "fileURL"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "employerId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "employer": {
-            "$ref": "#/components/schemas/Employer"
-          },
-          "docType": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "fileURL": {
-            "maxLength": 500,
-            "minLength": 0,
-            "type": "string"
-          },
-          "uploadedDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "verificationStatus": {
-            "maxLength": 30,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

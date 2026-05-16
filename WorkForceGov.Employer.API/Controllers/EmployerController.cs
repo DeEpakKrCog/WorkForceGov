@@ -64,17 +64,18 @@ namespace WorkForceGovProject.Controllers
             var userId = GetUserId();
             var e = await _employer.GetByUserIdAsync(userId);
 
-            // If it's a brand new employer, initialize the record cleanly so it can be saved
+            // 1. FOR BRAND NEW EMPLOYERS (Upsert logic)
             if (e == null)
             {
-                // 🚨 CRITICAL FIX: Strip away any incoming tracked primary keys so Entity Framework 
-                // knows it must generate a clean new auto-incremented Row inside the SQL table.
                 var newEmployer = new Employer
                 {
-                    Id = 0, // Force identity generation
+                    Id = 0,
                     UserId = userId,
                     CompanyName = model.CompanyName ?? "New Company",
                     Industry = model.Industry ?? "Unassigned",
+
+                    ContactInfo = model.ContactInfo, // 👈 ADD THIS LINE
+
                     Address = model.Address,
                     PhoneNumber = model.PhoneNumber,
                     Website = model.Website,
@@ -88,9 +89,12 @@ namespace WorkForceGovProject.Controllers
                     : BadRequest(new { Message = registerMsg });
             }
 
-            // Otherwise, map fields safely for the existing employer
+            // 2. FOR EXISTING EMPLOYERS
             e.CompanyName = model.CompanyName;
             e.Industry = model.Industry;
+
+            e.ContactInfo = model.ContactInfo; // 👈 AND ADD THIS LINE
+
             e.Address = model.Address;
             e.PhoneNumber = model.PhoneNumber;
             e.Website = model.Website;
@@ -101,7 +105,6 @@ namespace WorkForceGovProject.Controllers
                 ? Ok(new { Message = "Profile updated.", Employer = e })
                 : BadRequest(new { Message = msg });
         }
-
         // ══════════════ DOCUMENT MANAGEMENT ══════════════
 
         [HttpGet("documents")]

@@ -5,12 +5,14 @@ using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using WorkForceGovProject.Interfaces.Services;
 using WorkForceGovProject.Models;
-using WorkForceGovProject.Data; // 🚨 Added to access the database directly
+using WorkForceGovProject.Data;
+using Microsoft.AspNetCore.Authorization; // 🚨 Added to access the database directly
 
 namespace WorkForceGovProject.Controllers
 {
     [Route("api/labor-officer")]
     [ApiController]
+    [Authorize]
     [Produces("application/json")]
     public class LaborOfficerController : ControllerBase
     {
